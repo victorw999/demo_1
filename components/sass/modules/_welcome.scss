@@ -1,0 +1,45 @@
+#welcome {
+  @include background-image(linear-gradient(top, $yellow, $orange));
+
+  article{
+    text-align: center;
+    //default
+    @include container(85%);
+
+    //bigger than smaller view
+    @include breakpoint ($small){
+      @include container(85em);
+      padding: 60px 0;
+    }//breakpoint
+  }//artitle
+
+  h1{
+    font-weight: normal;
+    line-height: 100%;
+    color:lighten($orange,30);
+    padding:10px 0;
+  }//h1
+
+  .gallery{
+    @include clearfix;
+    img{
+    //  max-width: 200px; // shrink victor's images
+      @include border-radius(20%);
+      display: none;
+
+      //smaller view, show 4 img
+      @include breakpoint($small){
+        @include gallery(1 of 4);
+        display: inline;
+        &.hidesm{display: none;}
+      }//breakpoint
+
+      // medium view, show all img
+      @include breakpoint($medium){
+        @include gallery(1 of 5);
+        display:inline;
+        &.hidesm{display: inline;}
+      }//breakpoint
+    }//img
+  }//gallery
+}// welcome

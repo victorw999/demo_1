@@ -1,6 +1,6 @@
 // style.scss
 // ==============
- 
+
 //Compass imports
 @import "compass";
 @import "compass/reset";
@@ -14,3 +14,19 @@
 @import "susy";
 @import "breakpoint";
 
+// Core Partials;
+@import "variables";
+@import "mixins"; // functions
+@import "base";
+@import "layout";
+
+// import modules
+@import "modules/intro";
+@import "modules/nav";
+@import "modules/welcome";
+@import "modules/events";
+@import "modules/dining";
+@import "modules/hotelinfo";
+@import "modules/rooms";
+@import "modules/attractions";
+@import "modules/footer";

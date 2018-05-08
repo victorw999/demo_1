@@ -1,0 +1,48 @@
+#rooms{
+  header{
+    margin-bottom:20px;
+    @include container(90%);
+    @include breakpoint($medium){
+      @include container;
+      @include pad(1,1);
+    }//breakpoint
+  }//header
+
+  .room{
+    @include container(100%);
+    @include pad(1,1);
+
+    // using flexbox to center element
+    // for broswers support flexbox
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
+    // for older broswers that don't support flexbox
+    // use padding to center
+    padding:200px 0;
+
+    @include breakpoint($small){
+      @include pad(7,1);
+    }//breakpoint
+
+
+    .content{
+      @include border-radius(10px);
+      background:rgba($light,.8);
+      padding:20px;
+      //margin:200px 0;
+
+      h1{
+        color:red;
+      }
+    }//content
+  }// artitle.room
+  #piccadilly{@include backImage('../images/hotel/rooms_1.jpg');}
+  #cambridge{@include backImage('../images/hotel/rooms_2.jpg');}
+  #westminster{@include backImage('../images/hotel/rooms_3.jpg');}
+  #oxford{@include backImage('../images/hotel/rooms_4.jpg');}
+  #victoria{@include backImage('../images/hotel/rooms_5.jpg');}
+  #manchester{@include backImage('../images/hotel/rooms_6.jpg');}
+
+}//#rooms

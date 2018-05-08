@@ -1,0 +1,32 @@
+#attractions{
+  @include clearfix;
+  @include container(100%);
+  padding:0;
+  @include backImage('../images/hotel/attractions.jpg');
+
+  // compass mix
+  // use flex to center aritcle
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
+
+  article{
+    @include container(80%);
+    @include breakpoint($medium){
+      @include container(50%);
+    }// breakpoint
+    padding:40px 20px;
+
+    // fallback for the flexbox,
+    // eventhought flexbox center it, these margin config will work for older IE browser
+    margin-top:200px;
+    margin-bottom:200px;
+
+    background:rgba($dark, .7);
+    @include border-radius(10px);
+
+    h1, p{color:$light;}
+    p{padding:10px;}
+  }// article
+
+}// #attractions
