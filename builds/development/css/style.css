@@ -188,16 +188,30 @@ header .fullheight .hgroup h2 {
   padding: 10px;
   font-size: 1.3em;
 }
-/* line 38, ../../../components/sass/modules/_intro.scss */
+/* line 36, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 43, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h2:hover {
+  color: #000000;
+  background: #ffffff;
+}
+/* line 45, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h2:hover a {
+  color: #df4848;
+}
+/* line 50, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p {
   text-align: center;
 }
-/* line 40, ../../../components/sass/modules/_intro.scss */
+/* line 52, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p img {
   padding-top: 50px;
   max-width: 50px;
 }
-/* line 48, ../../../components/sass/modules/_intro.scss */
+/* line 60, ../../../components/sass/modules/_intro.scss */
 header .fullheight-test {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("http://via.placeholder.com/2000x990");
@@ -1052,4 +1066,56 @@ footer #socialmedia ul li img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+
+/* line 1, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+#tweendemo {
+  background: red;
+}
+
+/* line 7, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+header#tweendemo_header article.fullheight {
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+  min-height: 500px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 22, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+header#tweendemo_header .hgroup div.circle_icon_wrapper {
+  padding: 10px;
+  margin-top: 10px;
+}
+/* line 26, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+header#tweendemo_header .hgroup div.circle_icon {
+  margin: auto;
+  background: gray;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 37, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+header#tweendemo_header .hgroup div.circle_icon img {
+  max-width: 40px;
+}
+/* line 40, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+header#tweendemo_header .hgroup div.circle_icon:hover {
+  background: #000000;
+}
+/* line 45, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+header#tweendemo_header .hgroup.div-2 {
+  width: 50%;
+  background-image: -webkit-linear-gradient(30deg, #004E95 50%, #013A6B 50%);
 }

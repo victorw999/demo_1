@@ -1,0 +1,52 @@
+#tweendemo{
+  background: red;
+}
+
+header#tweendemo_header{
+
+  article.fullheight{
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+    min-height: 500px;
+
+    // center img with flexbox
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(column);
+
+  }// artile.fullheight
+
+
+  .hgroup{
+    div.circle_icon_wrapper{
+      padding:10px;
+      margin-top:10px;
+    }
+    div.circle_icon{
+      margin:auto; // center div.circle_icon
+                    // against it's wrapper div
+      background: lighten($dark, 50%);
+      width:70px;height:70px;
+      border-radius: 100%;
+
+      // center img with flexbox
+      @include display-flex();
+      @include align-items(center);
+      @include justify-content(center);
+      img{
+        max-width: 40px;
+      }
+      &:hover{
+        background:$dark;
+      }
+    }// div.circle_icon
+
+    &.div-2{
+      width: 50%;
+      background-image: -webkit-linear-gradient(30deg, #004E95 50%, #013A6B 50%);
+    }// .hgroup.div-2
+  }//.hgroup
+
+
+} // tweendemo_header
