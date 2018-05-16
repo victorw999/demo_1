@@ -1,6 +1,62 @@
-#tweendemo{
-  background: red;
+.fullheight{
+  height: 100vh;
 }
+
+blockquote{
+  @include container(80%);
+  margin: 0 auto; // center block horizaontally
+  font:"monospace";
+  background:black;
+  color:white;
+  padding:10px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+
+// borrow .hgroup's format as my general section format
+// i shall name it mydiv_format
+.mydiv_format{
+  padding: 100px 0;
+  h1 {
+    color:$light;
+    font-size: 5em;
+    font-weight: $heavy;
+    line-height: .8em;
+    @include text-shadow($dark 0 0 20px);
+    text-align: center;
+  }// h1
+  h2{
+    display: block;
+    color:$light;
+    background: rgba($headersubbg, .5);
+    width:60%;max-width: 500px;
+    margin: 0 auto; // center
+    text-align: center;
+    border: 1px solid $light;
+    margin-top:15px;
+    padding:10px;
+    font-size: 1.3em;
+    a{
+      text-decoration: none;
+      color:$light;
+    }//a
+  }//h2
+
+  p{
+    text-align: center;
+    font-size: 1.2em;
+    padding:10px;
+    img{
+      padding-top:50px;
+      max-width:50px;
+    }//img
+  }//p
+
+  ul{ list-style-type: square;}
+
+}// .mydiv_format
+
 
 header#tweendemo_header{
 
@@ -16,37 +72,52 @@ header#tweendemo_header{
     @include flex-direction(column);
 
   }// artile.fullheight
-
-
   .hgroup{
-    div.circle_icon_wrapper{
-      padding:10px;
-      margin-top:10px;
-    }
-    div.circle_icon{
-      margin:auto; // center div.circle_icon
-                    // against it's wrapper div
-      background: lighten($dark, 50%);
-      width:70px;height:70px;
-      border-radius: 100%;
-
-      // center img with flexbox
-      @include display-flex();
-      @include align-items(center);
-      @include justify-content(center);
-      img{
-        max-width: 40px;
-      }
-      &:hover{
-        background:$dark;
-      }
-    }// div.circle_icon
-
     &.div-2{
       width: 50%;
       background-image: -webkit-linear-gradient(30deg, #004E95 50%, #013A6B 50%);
     }// .hgroup.div-2
   }//.hgroup
-
-
 } // tweendemo_header
+
+
+/* circle_icon format */
+div.circle_icon_wrapper{
+  padding:10px;
+  margin-top:10px;
+}
+div.circle_icon{
+  margin:auto; // center div.circle_icon, against its wrapper div
+  background: lighten($dark, 50%);
+  width:70px;height:70px;
+  border-radius: 100%;
+
+  // center img with flexbox
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
+  img{ max-width: 40px; }
+  &:hover{ background:$dark; }
+}// div.circle_icon
+
+/* */
+.tweendemo{
+  .content{
+    @include container(80%); min-height:300px;
+    padding:30px;
+    background-color: darken($light,20);
+  }
+}//.tweendemo
+
+#tween1, #tween3{
+  background-color: $light;
+  background-image: -webkit-linear-gradient(30deg, $light 50%, darken($light,10) 50%);
+  #trigger1{
+    background-color: $light;
+  }
+}// #tween1
+
+#tween2{
+  background-color: $light;
+  background-image: -webkit-linear-gradient(210deg, $light 50%, darken($light,10) 50%);
+}// #tween2

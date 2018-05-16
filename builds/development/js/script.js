@@ -131,7 +131,7 @@ $(function(){
 
 // Check if this is a touch device
 if (!isTouch) {
-  
+
     /* ROOM ANIMATION*/
     var roomOrigin = {
       bottom: -700,
@@ -194,6 +194,8 @@ if (!isTouch) {
     globalSceneOptions: { triggerHook:"onLeave"}
   });
 
+
+
   // follow: http://scrollmagic.io/examples/basic/simple_tweening.html
   // unfortunately, ScrollMagic.Scene() doesn't work with current installed conversation
 
@@ -206,6 +208,57 @@ if (!isTouch) {
       .addTo(controller);
 
 */
+
+
+// demo tween on index.html
+var tween1 =
+    TweenMax.staggerFromTo("#tween1 .content",
+    1,
+    {opacity:0, scale:0},
+    {delay:1, opacity:1, scale:1, ease:Back.easeOut});
+
+var tween2 =
+    TweenMax.staggerFromTo("#tween2 .content",
+    2,
+    {opacity:0, x:300, ease:Back.easeIn},
+    {delay:0.1, x:0, opacity:1, scale:1, ease:Back.easeOut});
+
+var target3 = $("#tween3 .content");
+var tween3 = new TimelineMax({delay:0.1,repeat:0});
+tween3.set(target3, {autoAlpha:0, bottom:100});
+tween3.to (target3, 3, {autoAlpha:1, top:100});
+
+
+
+var scene1 = new ScrollScene({
+  triggerElement:"#tween1",offset:-topoffset-100}).setTween(tween1).addTo(controller);
+var scene2 = new ScrollScene({
+  triggerElement:"#tween2",offset:-topoffset-100}).setTween(tween2).addTo(controller);
+var scene3 = new ScrollScene({
+  triggerElement:"#tween3",offset:-topoffset-100}).setTween(tween3).addTo(controller);
+
+});// on load
+
+$(function(){
+  // TweenDmo.html
+
+  var controller = new ScrollMagic({
+    globalSceneOptions: { triggerHook:"onLeave"}
+  });
+
+
+
+  var tween1 = TweenMax.staggerFromTo("#tweendemo #tween1 .content",1,
+      {opacity:0, scale:0},
+      {delay:1, opacity:1, scale:1, ease:Back.easeOut});
+
+  var scene1 = new ScrollScene({
+    triggerElement: "#tweendemo #tween1 #trigger1",
+    offset: -topoffset-20
+  }).setTween(tween1)
+    .addTo(controller);
+
+
 });// on load
 
 }).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})

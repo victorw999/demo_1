@@ -1069,11 +1069,79 @@ footer #socialmedia ul li img {
 }
 
 /* line 1, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-#tweendemo {
-  background: red;
+.fullheight {
+  height: 100vh;
 }
 
-/* line 7, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 5, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+blockquote {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  font: "monospace";
+  background: black;
+  color: white;
+  padding: 10px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+/* line 12, ../../../../../../.rvm/gems/ruby-2.4.1/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+blockquote:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 19, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+.mydiv_format {
+  padding: 100px 0;
+}
+/* line 21, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+.mydiv_format h1 {
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 800;
+  line-height: .8em;
+  text-shadow: #000000 0 0 20px;
+  text-align: center;
+}
+/* line 29, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+.mydiv_format h2 {
+  display: block;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1.3em;
+}
+/* line 40, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+.mydiv_format h2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 46, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+.mydiv_format p {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px;
+}
+/* line 50, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+.mydiv_format p img {
+  padding-top: 50px;
+  max-width: 50px;
+}
+/* line 56, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+.mydiv_format ul {
+  list-style-type: square;
+}
+
+/* line 63, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 header#tweendemo_header article.fullheight {
   background-color: #013A6B;
   background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
@@ -1087,13 +1155,21 @@ header#tweendemo_header article.fullheight {
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-/* line 22, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-header#tweendemo_header .hgroup div.circle_icon_wrapper {
+/* line 76, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+header#tweendemo_header .hgroup.div-2 {
+  width: 50%;
+  background-image: -webkit-linear-gradient(30deg, #004E95 50%, #013A6B 50%);
+}
+
+/* circle_icon format */
+/* line 85, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+div.circle_icon_wrapper {
   padding: 10px;
   margin-top: 10px;
 }
-/* line 26, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-header#tweendemo_header .hgroup div.circle_icon {
+
+/* line 89, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+div.circle_icon {
   margin: auto;
   background: gray;
   width: 70px;
@@ -1106,16 +1182,54 @@ header#tweendemo_header .hgroup div.circle_icon {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 37, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-header#tweendemo_header .hgroup div.circle_icon img {
+/* line 99, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+div.circle_icon img {
   max-width: 40px;
 }
-/* line 40, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-header#tweendemo_header .hgroup div.circle_icon:hover {
+/* line 100, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+div.circle_icon:hover {
   background: #000000;
 }
-/* line 45, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-header#tweendemo_header .hgroup.div-2 {
-  width: 50%;
-  background-image: -webkit-linear-gradient(30deg, #004E95 50%, #013A6B 50%);
+
+/* */
+/* line 105, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+.tweendemo .content {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 300px;
+  padding: 30px;
+  background-color: #cccccc;
+}
+/* line 12, ../../../../../../.rvm/gems/ruby-2.4.1/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.tweendemo .content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 112, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+#tween1, #tween3 {
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient(30deg, #ffffff 50%, #e6e6e6 50%);
+}
+/* line 115, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+#tween1 #trigger1, #tween3 #trigger1 {
+  background-color: #ffffff;
+}
+
+/* line 120, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+#tween2 {
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient(210deg, #ffffff 50%, #e6e6e6 50%);
+}
+
+/* line 1, ../../../components/sass/modules_vicmod/_css001_diagonal2color.scss */
+#diagonal_two_color {
+  background-color: #063642;
+  background-image: -webkit-linear-gradient(30deg, #0f83a0 50%, #063642 50%);
+}
+/* line 4, ../../../components/sass/modules_vicmod/_css001_diagonal2color.scss */
+#diagonal_two_color h2, #diagonal_two_color p, #diagonal_two_color a {
+  color: white;
 }

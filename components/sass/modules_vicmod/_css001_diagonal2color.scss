@@ -1,0 +1,5 @@
+#diagonal_two_color{
+  background-color: $blue;
+  background-image: -webkit-linear-gradient(30deg, lighten($blue,20%) 50%, $blue 50%);
+  h2, p, a {color:white;}
+}

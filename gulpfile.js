@@ -31,7 +31,8 @@ jsSources = [
   'components/scripts/jqloader.js',
   'components/scripts/TweenMax.min.js',
   'components/scripts/jquery.scrollmagic.min.js',
-  'components/scripts/script.js'
+  'components/scripts/script.js',
+  'components/scripts/script_vic.js'
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];

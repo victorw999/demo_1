@@ -16,7 +16,6 @@
         <h2><a href="#">Empty</a></h2>
         <p><a href="#welcome"><img src="images/misc/arrow.png" alt="down arrow"></a></p>
       </div>
-      
     </article>
 
     <nav id="nav">
@@ -35,6 +34,66 @@
 
 
 <main id="wrapper">
+
+  <div class="mydiv_format tweendemo" id="tween1">
+    <div class="circle_icon_wrapper" id="trigger1">
+      <div class="circle_icon">
+        <img src="images/icons/001.png">
+      </div>
+    </div><!--circle_icon_wrapper-->
+    <div class="content">
+      <h2>Tween1</h2>
+      <p>grow from small to large</p>
+    </div>
+    <blockquote>
+      var tween1 = <br>
+      TweenMax.staggerFromTo("#tween1 .content",<br/>
+          1,<br/>
+          {opacity:0, scale:0},<br/>
+          {delay:1, opacity:1, scale:1, ease:Back.easeOut});<br/>
+    </blockquote>
+  </div><!-- tween1 -->
+
+
+  <div class="mydiv_format tweendemo" id="tween2">
+    <h2>Tween2</h2>
+    <div class="content">
+      <p>this tween is used @ aflexusa banner; element fly-in from right
+      </p>
+    </div>
+    <blockquote>
+      var tween2 = <br>
+          TweenMax.staggerFromTo("#tween2 .content",<br>
+          2,<br>
+          {opacity:0, x:300, ease:Back.easeIn},<br>
+          {delay:0.1, x:0, opacity:1, scale:1, ease:Back.easeOut});<br>
+    </blockquote>
+  </div><!-- tween2 -->
+
+  <div class="mydiv_format tweendemo" id="tween3" >
+    <h2>Tween3</h2>
+    <div style="position:relative;height:450px;">
+      <div class="content" style="position:absolute;">
+        <p>moving down, fade in<br>
+           used in aflexusa: log dropping down<br>
+
+           <ul>
+             <li>in order for it to work</li>
+             <li>the target must position:absolute</li>
+             <li>and its wrapper position:relative</li>
+           </ul>
+        </p>
+      </div>
+    </div><!-- wrapper -->
+
+    <blockquote>
+      var target3 = $("#tween3 .content");<br>
+      var tween3 = new TimelineMax({delay:1,repeat:0});<br>
+      tween3.set(target3, {autoAlpha:0, bottom:200});<br>
+      tween3.to (target3, 3, {autoAlpha:1, top:200});<br>
+    </blockquote>
+  </div><!-- tween3 -->
+
   <div class="scene" id="welcome">
     <article class="content">
       <div class="gallery">
