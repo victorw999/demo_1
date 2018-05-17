@@ -2,16 +2,7 @@
   height: 100vh;
 }
 
-blockquote{
-  @include container(80%);
-  margin: 0 auto; // center block horizaontally
-  font:"monospace";
-  background:black;
-  color:white;
-  padding:10px;
-  font-size: 1.2em;
-  line-height: 1.2em;
-}
+
 
 
 // borrow .hgroup's format as my general section format
@@ -36,16 +27,15 @@ blockquote{
     border: 1px solid $light;
     margin-top:15px;
     padding:10px;
-    font-size: 1.3em;
+    font-size: 1.7em;
     a{
       text-decoration: none;
       color:$light;
     }//a
   }//h2
 
-  p{
-    text-align: center;
-    font-size: 1.2em;
+  p, ul, blockquote{
+    font-size: 1.5em; line-height: 1.3em; font-weight:600;
     padding:10px;
     img{
       padding-top:50px;
@@ -121,3 +111,17 @@ div.circle_icon{
   background-color: $light;
   background-image: -webkit-linear-gradient(210deg, $light 50%, darken($light,10) 50%);
 }// #tween2
+
+
+
+
+
+
+
+blockquote{
+  @include container(80%);
+  margin: 0 auto; // center block horizaontally
+  font:1.5em/1em bold Monospace,serif;
+  background:black;
+  color:white;
+}
