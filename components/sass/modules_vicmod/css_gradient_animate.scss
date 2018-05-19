@@ -1,0 +1,59 @@
+#css_001{
+  .parent{
+    background-image: -webkit-linear-gradient(30deg, lighten($blue,20%) 50%, $blue 50%);
+    margin: 0 auto;
+    width: 30vw;
+    min-height: 30vh;
+    padding-top: 5vh;
+    box-sizing: border-box;
+  }
+  .child{
+    background:orange;
+    margin:0 auto;
+    width:20vw;
+    min-height: 20vh;
+  }
+  .parent:hover{
+    //background:red;
+  }
+
+  .gradient_animate_1{
+    margin:0 auto;
+    width:30vw;min-height:200px;
+    //border-radius: 100%;
+    background-size: 100%;
+    cursor: pointer;
+    position: relative;
+
+    // Essential for gradient animation
+    background-image: linear-gradient(#fff, #000);
+    z-index: 100; // make all content inside this element appear in front of the psudo-element 'before'
+
+    &:before{
+      border-radius: inherit;
+      background-image: linear-gradient(#000, #fff);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      opacity: 0;
+      width: 100%;
+      z-index: -100;
+    }
+
+    &:hover{
+      &:before{
+        opacity:1;
+      }
+    }
+
+  }//.gradient_animate_1
+
+  .gradient_animate_2{
+    height:50vh;
+    width:50vw;
+    @include gradient-animation(red, blue, 2s);
+  }//.gradient_animate_2
+
+}// #css_001
