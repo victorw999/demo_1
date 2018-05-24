@@ -1,10 +1,6 @@
 .fullheight{
   height: 100vh;
 }
-
-
-
-
 // borrow .hgroup's format as my general section format
 // i shall name it mydiv_format
 .mydiv_format{
@@ -33,7 +29,6 @@
       color:$light;
     }//a
   }//h2
-
   p, ul, blockquote{
     font-size: 1.5em; line-height: 1.3em; font-weight:600;
     padding:10px;
@@ -42,14 +37,15 @@
       max-width:50px;
     }//img
   }//p
-
   ul{ list-style-type: square;}
-
+  .content{
+    @include container(80%); min-height:300px;
+    padding:30px;margin:30px auto;
+    background-color: darken($light,20);
+  }// .mydiv_format .content
 }// .mydiv_format
 
-
 header#tweendemo_header{
-
   article.fullheight{
     background-color: #013A6B;
     background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
@@ -90,33 +86,20 @@ div.circle_icon{
   &:hover{ background:$dark; }
 }// div.circle_icon
 
-/* */
-.tweendemo{
-  .content{
-    @include container(80%); min-height:300px;
-    padding:30px;
-    background-color: darken($light,20);
-  }
-}//.tweendemo
-
-#tween1, #tween3{
-  background-color: $light;
-  background-image: -webkit-linear-gradient(30deg, $light 50%, darken($light,10) 50%);
+#tween1{
   #trigger1{
     background-color: $light;
   }
 }// #tween1
 
-#tween2{
+.split_bg_left{
   background-color: $light;
   background-image: -webkit-linear-gradient(210deg, $light 50%, darken($light,10) 50%);
-}// #tween2
-
-
-
-
-
-
+}
+.split_bg_right{
+  background-color: $light;
+  background-image: -webkit-linear-gradient(30deg, $light 50%, darken($light,10) 50%);
+}
 
 blockquote{
   @include container(80%);

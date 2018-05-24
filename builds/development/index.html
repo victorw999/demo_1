@@ -34,8 +34,7 @@
 
 
 <main id="wrapper">
-
-  <div class="mydiv_format tweendemo" id="tween1">
+  <div class="mydiv_format split_bg_right" id="tween1">
     <div class="circle_icon_wrapper" id="trigger1">
       <div class="circle_icon">
         <img src="images/icons/001.png">
@@ -55,7 +54,7 @@
   </div><!-- tween1 -->
 
 
-  <div class="mydiv_format tweendemo" id="tween2">
+  <div class="mydiv_format split_bg_left" id="tween2">
     <h2>Tween2</h2>
     <div class="content">
       <p>this tween is used @ aflexusa banner; element fly-in from right
@@ -70,7 +69,7 @@
     </blockquote>
   </div><!-- tween2 -->
 
-  <div class="mydiv_format tweendemo" id="tween3" >
+  <div class="mydiv_format split_bg_right" id="tween3" >
     <h2>Tween3</h2>
     <div style="position:relative;height:450px;">
       <div class="content" style="position:absolute;left:0;right:0;top:0;bottom:0;">
@@ -85,7 +84,6 @@
         </p>
       </div>
     </div><!-- wrapper -->
-
     <blockquote>
       var target3 = $("#tween3 .content");<br>
       var tween3 = new TimelineMax({delay:1,repeat:0});<br>
@@ -94,19 +92,16 @@
     </blockquote>
   </div><!-- tween3 -->
 
-  <div class="mydiv_format" id="css_001" >
-    <h2>css_001</h2>
-    <div class="parent">
-      <div class="child content">
-        <p> hover child element, affect parent element <br/>
-
-        </p>
+  <div class="mydiv_format split_bg_left" id="css_001" >
+    <h2>css_001: Hover bg Animations</h2>
+    <div class="content parent split_bg_right">
+      <div class="content child">
+        <p> demo different types of hover background animations <br/></p>
       </div>
     </div><!-- wrapper -->
-    <br>
-    <div class="gradient_animate_1"  >
+    <div class="content gradient_animate_1"  >
       <h3>gradient_animate_1</h3>
-      <div class="content child">
+      <div class="child content">
         <p><a href="https://medium.com/@dave_lunny/animating-css-gradients-using-only-css-d2fd7671e759">Reference Link</a> <br/>
           <ul>
             <li>":before" psudo-element</li>
@@ -116,7 +111,7 @@
       </div>
     </div><!-- wrapper -->
     <br>
-    <div class="gradient_animate_2 parent"  >
+    <div class="content gradient_animate_2"  style="margin-bottom:0;padding-bottom:0;">
       <h3>gradient_animate_2</h3>
       <div class="content child">
         <p><a href="https://medium.com/@dave_lunny/animating-css-gradients-using-only-css-d2fd7671e759" target="_blank">Reference Link</a> <br/>
@@ -124,16 +119,12 @@
             <li><a href="https://codepen.io/anon/pen/WJLXNy?editors=1100" target="_blank">Codepen Link</a></li>
             <li>I modified its LESS mixin into SCSS</li>
             <li>created mixin in file: _mixins.scss</li>
+            <li>@mixin gradient-animation( $start, $end, $transTime)</li>
           </ul>
         </p>
       </div>
     </div><!-- wrapper -->
-
-    <blockquote>
-
-    </blockquote>
   </div><!-- css_001 -->
-
 
 
 

@@ -1,25 +1,19 @@
 #css_001{
-  .parent{
-    background-image: -webkit-linear-gradient(30deg, lighten($blue,20%) 50%, $blue 50%);
-    margin: 0 auto;
-    width: 30vw;
-    min-height: 30vh;
-    padding-top: 5vh;
-    box-sizing: border-box;
-  }
+  .parent{}
   .child{
-    background:orange;
+    background:lighten($yellow,20%);
     margin:0 auto;
-    width:20vw;
+    width:50vw;
     min-height: 20vh;
   }
   .parent:hover{
     //background:red;
+    background-image: -webkit-linear-gradient(30deg, lighten($blue,20%) 50%, $blue 50%);
   }
 
   .gradient_animate_1{
     margin:0 auto;
-    width:30vw;min-height:200px;
+    //width:30vw;min-height:200px;
     //border-radius: 100%;
     background-size: 100%;
     cursor: pointer;
@@ -51,9 +45,10 @@
   }//.gradient_animate_1
 
   .gradient_animate_2{
-    height:50vh;
-    width:50vw;
-    @include gradient-animation(red, blue, 2s);
+    //height:50vh;
+    //width:50vw;
+    @include gradient-animation(darken($light,30), darken($light,10), 2s);
+    //background-image: -webkit-linear-gradient(30deg, $light 50%, darken($light,10) 50%);
   }//.gradient_animate_2
 
 }// #css_001
