@@ -3,3 +3,44 @@
   background-image: -webkit-linear-gradient(30deg, lighten($blue,20%) 50%, $blue 50%);
   h2, p, a {color:white;}
 }
+
+
+/* To understand Display: Tabel-Cell*/
+#css_002{
+  @include clearfix;
+  @include background-image(linear-gradient(top, $yellow, $orange));
+  .content{
+    @include clearfix;
+    display: table;
+
+    .a, .b, .c{
+      @include span(1 of 3);
+      @include pad(1,1);
+      display: table-row;
+      @include background-image(linear-gradient(30deg, $light, lighten($orange,20%)));
+      height:100px;
+      font-size: 2em;
+    } // inner .a .b. .c
+    .a{
+      display:table-cell;
+      vertical-align: middle;
+      position:relative;
+    }
+  }// Content
+
+
+  .outter{
+    background:grey;
+    display: table;
+    padding:50px;
+    margin:auto; // centering
+
+    .inner{
+      background: white;
+      width:250px;height:250px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }// .outtter
+}
