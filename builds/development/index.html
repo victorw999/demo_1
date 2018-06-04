@@ -125,6 +125,7 @@
       </div>
     </div><!-- wrapper -->
   </div><!-- css_001 -->
+
   <div class="mydiv_format" id="css_002">
     <h2>css_002: display:table-cell</h2>
     <div class="content">
@@ -133,7 +134,6 @@
       <div class="c">C</div>
     </div>
     <div class="outter">
-      
       <div class="inner">
         Test D
         Display:table-cell;
@@ -141,6 +141,39 @@
     </div>
   </div><!-- css 002-->
 
+  <div class="mydiv_format split_bg_left" id="css_003" >
+    <h2>css_003: Angled Edge with CSS</h2>
+    <div class="content">
+      <p>REF: <a target="_blank" href="https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms/"> Angled Edges with CSS Masks and Transforms</a></p>
+      <img src="http://via.placeholder.com/350x150/e27a3f/ffffff"></img>
+    </div>
+    <img class="angled_edge_via_clip_path" src="http://via.placeholder.com/500x100/e27a3f"></img>
+    <blockquote>
+      img.angled_edge_via_clip_path{<br>
+      &nbsp;&nbsp;  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);<br>
+      &nbsp;&nbsp;  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);<br>
+      }<br>
+    </blockquote>
+
+
+    <div class="hero">
+      <figure>
+        <img src="https://unsplash.it/1600/500?image=830" alt="" />
+        <figcaption>
+          <h2>Angled Edge: Image with CSS clip-path</h2>
+          <p>REF: demo is from <a href="https://codepen.io/jeremyfrank/pen/zvdXZM?editors=1100">CodePen</a></p>
+        </figcaption>
+      </figure>
+    </div>
+    <blockquote>
+     clip-path: polygon(x y, x y, x y, x y); <br>
+     specifies 4 points, 0 for x is left most, 0 of y is top most
+    </blockquote>
+    <div class="promo">
+      <h2>Angled Edge: CSS background with CSS clip-path</h2>
+      <p></p>
+    </div>
+  </div><!-- css_003 -->
 
   <div class="scene" id="welcome">
     <article class="content">
