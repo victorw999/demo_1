@@ -143,12 +143,42 @@
 
   <div class="mydiv_format split_bg_right" id="css_002a">
     <h2>css_002a: Centering: using transform:translate</h2>
-    <div class="outter">
+    <div class="outter ex1">
       <div class="inner">
+        position:relative;<br>
         transform: translate(-50%, -50%);
       </div>
     </div>
+    <div class="outter ex2">
+      <div class="inner">
+        position:absolute;<br>
+        transform: translate(-50%, -50%);
+      </div>
+    </div>
+
+
   </div><!-- css 002a-->
+
+  <div class="mydiv_format split_bg_left" id="css_002b">
+    <h2><mark>postion:relative</mark> vs. <mark>transform:translate()</mark></h2>
+    <p style="text-align:center;">
+      <a target="_blank" href="https://www.sitepoint.com/atoz-css-translate-vs-position/">Reference</a>
+    </p>
+    <div class="box position-relative">
+      #1<br>
+      position:relative;<br>
+      left:50%;
+    </div>
+    <div class="box position-absolute">
+      #2<br>
+      position:absolute;<br>
+      left:50%;
+    </div>
+    <div class="box translate">
+      #3<br>
+      transform:translate(50%);
+    </div>
+  </div><!-- css 002b-->
 
   <div class="mydiv_format split_bg_left" id="css_003" >
     <h2>css_003: Angled Edge with CSS</h2>
