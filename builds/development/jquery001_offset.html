@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jquery offset</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body id="jquery001">
+  <div id="ex1">
+    <p id="p1">
+      <a href="http://api.jquery.com/offset/">REFERENCE</a>
+      understand how offset() function works
+    </p>
+    <p id="p2">2nd Paragraph</p>
+    <div id="header">
+      <div id="header__background">
+        <div id="header__centered">
+          <h2 id="opacity"></h2>
+          <h1>jQuery parallax-scrolling Example</h1>
+        </div>
+      </div>
+    </div><!--#header parallax dimmer demo-->
+  </div>
+  <script>
+    var p = $( "#p2" );
+    var offset = p.offset();
+    p.html( "left: " + offset.left + ",<br/> top: " + offset.top );
+
+  </script>
+
+  <div id="ex2">
+    <div id="result">Click an element.</div>
+      <p>
+        This is the best way to <span>find</span> an offset.
+      </p>
+    <div class="abs"></div>
+    <div class="abs2"><p class="prompt">test</p></div>
+  </div>
+  <div class="ex3"></div>
+  <div class="ex3"></div>
+  <div class="ex3"></div>
+  <div class="ex3"></div>
+  <div class="ex3"></div>
+
+  <script>
+    $( "*", document.body ).click(function( event ) {
+      var offset = $( this ).offset();
+      event.stopPropagation();
+      $( "#result" ).text( this.tagName +
+        " coords ( " + offset.left + ", " + offset.top + " )"
+
+      );
+      });
+
+      var header_top_pos = $("#header").offset().top;
+      var header_top_pos_fix = parseFloat(Math.round(header_top_pos * 100) / 100).toFixed(1);
+      var moving__background = $("#header__background");
+      var height = moving__background.height();
+      $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        var windowpos_fix = parseFloat(Math.round(windowpos * 100) / 100).toFixed(1);
+        var diff = windowpos_fix - header_top_pos_fix;
+        var opac_val = (height - diff)/height;
+        $("#ex2 .prompt").text(
+          " windowpos: (" + windowpos_fix + ") " +
+          " header_top_pos: (" + header_top_pos_fix + ") " +
+          " opac_val: (" + opac_val + ") "
+        );// prompt
+        moving__background.css('opacity', opac_val); // Fading out
+      });
+
+  </script>
+
+</body>
+</html>

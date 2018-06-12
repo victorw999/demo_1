@@ -63,9 +63,6 @@
       transform:translate(-50%,-50%);
     }
   }
-
-
-
 }//css_002a
 
 #css_002b{
@@ -128,3 +125,32 @@
 
   }// .promo
 }//#css_003
+
+#parallax_001{
+  padding:0; height:500px;background: lighten($blue, 80%);
+  .topbar{  width:100%; height:300px; background: lighten($blue, 20%); }
+  section{ width:100%; height:100vh; background:lighten($blue, 75%); }
+}// parallax_001
+
+#parallax_002{
+  padding:0;  background: lighten($yellow, 80%);
+  #header {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    background: white;
+  }
+
+  #header__background {
+    background-image: url("https://unsplash.it/2000/1200/?random");
+    background-size: cover;
+    background-position: center;
+    width: inherit;
+    height: inherit;
+    display: table;
+  }
+  #header__centered{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

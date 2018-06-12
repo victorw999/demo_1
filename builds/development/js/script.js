@@ -34,7 +34,6 @@ $(function(){
 
   // offset top-margins when nav is sticky
   var topoffset = 20;
-
   var isTouch = 'ontouchstart' in document.documentElement;
 
   /* WINDOW HEIGHT*/
@@ -96,6 +95,10 @@ $(function(){
 
   /* HIGHLIGHT Nav During Scroll */
   $(window).scroll(function(){
+    // prompting curr scrolltop position
+    var win_scrolltop = $(window).scrollTop();
+    $('#nav .navbar .prompt').text("win_scrolltop: " + win_scrolltop);
+
     var windowpos = $(window).scrollTop() + topoffset;
     $('nav li a').removeClass('active');
     if(windowpos > $('#hotelinfo').offset().top){
@@ -189,10 +192,7 @@ if (!isTouch) {
   }).setTween(attractionstween)
     .addTo(controller);
 
-  // PRACTICE
-  var controller2 = new ScrollMagic({
-    globalSceneOptions: { triggerHook:"onLeave"}
-  });
+
 
 
 
@@ -237,17 +237,68 @@ var scene2 = new ScrollScene({
 var scene3 = new ScrollScene({
   triggerElement:"#tween3",offset:-topoffset-100}).setTween(tween3).addTo(controller);
 
+
+/* 180606 #parallax_001 */
+  $(window).scroll(function(){
+    var windowpos = $(window).scrollTop() + topoffset;
+    var p = $("#parallax_001 .topbar");
+    $("#parallax_001 .prompt").text("topbar's scrollTop value is " + p.scrollTop());
+    if(windowpos > p.offset().top){
+      $("#parallax_001 .topbar").css({"opacity":"0.5"})
+    }
+    else{
+      $("#parallax_001 .topbar").css({"opacity":"1"})
+    }
+  });
+/* END: 180606 #parallax_001 */
+
+/* 180606 #parallax_002 */
+  var moving__background = $("#header__background");
+  var current_top_pos = $("#parallax_002 #header__background").offset().top; //current element's top position'
+  var cur_height = moving__background.height();
+
+  $(window).scroll(function() {
+    var windowpos = $(window).scrollTop();
+    var diff = windowpos - current_top_pos;
+    var abs_diff = Math.abs(diff);
+    //moving__background.css('margin-top', (windowpos)/3); // Parallax scrolling
+    moving__background.css('margin-top', (abs_diff)/3);
+
+    if (abs_diff < 2*cur_height) {
+      var opacity_val = 1-(diff/cur_height);
+      moving__background.css('opacity', opacity_val); // Fading out
+      $("#header__centered #prompt_1").text(" windowpos: " +  windowpos.toFixed(1)   );
+      $("#header__centered #prompt_2").text(" current_top_pos: " +  current_top_pos.toFixed(1));
+      $("#header__centered #prompt_3").text(" diff: " +  diff.toFixed(1));
+      $("#header__centered #prompt_4").text(" 1-diff/height(): " +  opacity_val.toFixed(1));
+
+
+    } else{
+        moving__background.css('opacity', 1);
+    }// only apply effect when diff is within the heightrange.
+    // see if this technique will combat the zoom problem
+
+
+    $("#parallax_002 .prompt2").text(" moving__background.height()/(windowpos-current_top_pos) :" +  moving__background.height()/(windowpos-current_top_pos));
+
+  });
+/* END: 180606 #parallax_002 */
+
 });// on load
 
 $(function(){
   // TweenDmo.html
 
+  var p = $( "p:last" );
+  var offset = p.offset();
+  p.html( "left: " + offset.left + ", top: " + offset.top );
+
   var controller = new ScrollMagic({
     globalSceneOptions: { triggerHook:"onLeave"}
   });
 
-
-
+/*
+  var topoffset = 20;
   var tween1 = TweenMax.staggerFromTo("#tweendemo #tween1 .content",1,
       {opacity:0, scale:0},
       {delay:1, opacity:1, scale:1, ease:Back.easeOut});
@@ -257,7 +308,7 @@ $(function(){
     offset: -topoffset-20
   }).setTween(tween1)
     .addTo(controller);
-
+*/
 
 });// on load
 

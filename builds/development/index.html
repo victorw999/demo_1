@@ -11,9 +11,8 @@
     <article class="fullheight">
       <div class="hgroup">
         <h1>title mkup</h1>
-        <h2>SASS TEST</h2>
         <h2><a href="TweenDemo.html">TweenDemo</a></h2>
-        <h2><a href="#">Empty</a></h2>
+        <h2><a href="jquery001_offset.html">jquery001_offset.html</a></h2>
         <p><a href="#welcome"><img src="images/misc/arrow.png" alt="down arrow"></a></p>
       </div>
     </article>
@@ -28,6 +27,7 @@
           <li><a class="icon events" href="#events"><span>events</span></a></li>
           <li><a class="icon attractions" href="#attractions"><span>attractions</span></a></li>
         </ul>
+        <div class="prompt" style="color:white;">test</div>
       </div><!-- navbar -->
     </nav>
   </header>
@@ -160,6 +160,7 @@
   </div><!-- css 002a-->
 
   <div class="mydiv_format split_bg_left" id="css_002b">
+    <h2>css_002b</h2>
     <h2><mark>postion:relative</mark> vs. <mark>transform:translate()</mark></h2>
     <p style="text-align:center;">
       <a target="_blank" href="https://www.sitepoint.com/atoz-css-translate-vs-position/">Reference</a>
@@ -180,7 +181,11 @@
     </div>
   </div><!-- css 002b-->
 
-  <div class="mydiv_format split_bg_left" id="css_003" >
+  <!--
+    some unknown element from this division's is causing
+    #parallax002's scrollTop() calculation OFF
+  -->
+  <div class="mydiv_format split_bg_left" id="css_003" style="display:none;">
     <h2>css_003: Angled Edge with CSS</h2>
     <div class="content">
       <p>REF: <a target="_blank" href="https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms/"> Angled Edges with CSS Masks and Transforms</a></p>
@@ -219,6 +224,39 @@
     </div>
   </div><!-- css_003 -->
 
+  <div class="mydiv_format" id="parallax_001" >
+    <h2>parallax_001</h2>
+    <p class='prompt'></p>
+    <div class="topbar">
+      <p>When scrolling, this 'topbar' dim to opacity 0.5</p>
+    </div>
+    <section>
+      <p>Parallax Tutorial <a href="https://youtu.be/TjBDjw0cZVo">Reference</a></p>
+    </section>
+    <section></section>
+  </div> <!-- parallax_001 -->
+
+  <div class="mydiv_format" id="parallax_002" >
+    <div id="header">
+      <div id="header__background">
+        <div id="header__centered">
+          <h2>parallax_002</h2>
+          <h2><a target="_blank" href="https://www.jqueryscript.net/animation/Parallax-Fade-out-Hero-Header-jQuery.html">
+              jQuery Scrolling: Parallax + Fade Out</a>
+          </h2>
+          <h2 id="prompt_1"></h2>
+          <h2 id="prompt_2"></h2>
+          <h2 id="prompt_3"></h2>
+          <h2 id="prompt_4"></h2>
+
+
+
+        </div>
+      </div>
+    </div><!--#header parallax dimmer demo-->
+    <p class='prompt2'></p>
+  </div> <!-- parallax_002 -->
+
   <div class="scene" id="welcome">
     <article class="content">
       <div class="gallery">
@@ -232,7 +270,11 @@
       <p>The original Landon perseveres after 50 years in the heart of West London. The West End neighborhood has something for everyone&mdash;from theater to dining to historic sights. And the not-to-miss Rooftop Cafe is a great place for travelers and locals to engage over drinks, food, and good&nbsp;conversation.</p>
     </article>
   </div><!-- welcome -->
-
+  <p>
+    temp:
+    CSS Grid Responsive Image Gallery
+    https://codepen.io/ramenhog/pen/MpORPa
+  </p>
   <div class="scene" id="hotelinfo">
     <article class="heading">
       <h1>Essential Info</h1>
