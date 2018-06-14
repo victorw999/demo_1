@@ -92,32 +92,34 @@ $(function(){
     });// finished coping from css tricks
 
 
+if ($('body').is('#original')){ //check if this is body#original page
 
   /* HIGHLIGHT Nav During Scroll */
-  $(window).scroll(function(){
-    // prompting curr scrolltop position
-    var win_scrolltop = $(window).scrollTop();
-    $('#nav .navbar .prompt').text("win_scrolltop: " + win_scrolltop);
+    $(window).scroll(function(){
+      // prompting curr scrolltop position
+      var win_scrolltop = $(window).scrollTop();
+      $('#nav .navbar .prompt').text("win_scrolltop: " + win_scrolltop);
 
-    var windowpos = $(window).scrollTop() + topoffset;
-    $('nav li a').removeClass('active');
-    if(windowpos > $('#hotelinfo').offset().top){
+      var windowpos = $(window).scrollTop() + topoffset;
       $('nav li a').removeClass('active');
-      $('a[href$="#hotelinfo"]').addClass('active');
-    } //
-    if(windowpos > $('#rooms').offset().top){
-      $('nav li a').removeClass('active');
-      $('a[href$="#rooms"]').addClass('active');
-    } // windowpos
-    if(windowpos > $('#dining').offset().top){
-      $('nav li a').removeClass('active');
-      $('a[href$="#dining"]').addClass('active');
-    } // windowpos
-    if(windowpos > $('#events').offset().top){
-      $('nav li a').removeClass('active');
-      $('a[href$="#events"]').addClass('active');
-    } // windowpos
-  });//window scroll
+      if(windowpos > $('#hotelinfo').offset().top){
+        $('nav li a').removeClass('active');
+        $('a[href$="#hotelinfo"]').addClass('active');
+      } //
+      if(windowpos > $('#rooms').offset().top){
+        $('nav li a').removeClass('active');
+        $('a[href$="#rooms"]').addClass('active');
+      } // windowpos
+      if(windowpos > $('#dining').offset().top){
+        $('nav li a').removeClass('active');
+        $('a[href$="#dining"]').addClass('active');
+      } // windowpos
+      if(windowpos > $('#events').offset().top){
+        $('nav li a').removeClass('active');
+        $('a[href$="#events"]').addClass('active');
+      } // windowpos
+    });//window scroll
+
 
 
   //set up "Scroll Magic"
@@ -177,9 +179,6 @@ if (!isTouch) {
 
 } // not a touch device
 
-
-
-
   /* ATTRACTION ANIMATION */
   var attractionstween = TweenMax.
     staggerFromTo('#attractions article',1,
@@ -210,35 +209,35 @@ if (!isTouch) {
 */
 
 
-// demo tween on index.html
-var tween1 =
-    TweenMax.staggerFromTo("#tween1 .content",
-    1,
-    {opacity:0, scale:0},
-    {delay:1, opacity:1, scale:1, ease:Back.easeOut});
+  // demo tween on index.html
+  var tween1 =
+      TweenMax.staggerFromTo("#tween1 .content",
+      1,
+      {opacity:0, scale:0},
+      {delay:1, opacity:1, scale:1, ease:Back.easeOut});
 
-var tween2 =
-    TweenMax.staggerFromTo("#tween2 .content",
-    2,
-    {opacity:0, x:300, ease:Back.easeIn},
-    {delay:0.1, x:0, opacity:1, scale:1, ease:Back.easeOut});
+  var tween2 =
+      TweenMax.staggerFromTo("#tween2 .content",
+      2,
+      {opacity:0, x:300, ease:Back.easeIn},
+      {delay:0.1, x:0, opacity:1, scale:1, ease:Back.easeOut});
 
-var target3 = $("#tween3 .content");
-var tween3 = new TimelineMax({delay:0.1,repeat:0});
-tween3.set(target3, {autoAlpha:0, bottom:100});
-tween3.to (target3, 3, {autoAlpha:1, top:100});
-
-
-
-var scene1 = new ScrollScene({
-  triggerElement:"#tween1",offset:-topoffset-100}).setTween(tween1).addTo(controller);
-var scene2 = new ScrollScene({
-  triggerElement:"#tween2",offset:-topoffset-100}).setTween(tween2).addTo(controller);
-var scene3 = new ScrollScene({
-  triggerElement:"#tween3",offset:-topoffset-100}).setTween(tween3).addTo(controller);
+  var target3 = $("#tween3 .content");
+  var tween3 = new TimelineMax({delay:0.1,repeat:0});
+  tween3.set(target3, {autoAlpha:0, bottom:100});
+  tween3.to (target3, 3, {autoAlpha:1, top:100});
 
 
-/* 180606 #parallax_001 */
+
+  var scene1 = new ScrollScene({
+    triggerElement:"#tween1",offset:-topoffset-100}).setTween(tween1).addTo(controller);
+  var scene2 = new ScrollScene({
+    triggerElement:"#tween2",offset:-topoffset-100}).setTween(tween2).addTo(controller);
+  var scene3 = new ScrollScene({
+    triggerElement:"#tween3",offset:-topoffset-100}).setTween(tween3).addTo(controller);
+
+
+  /* 180606 #parallax_001 */
   $(window).scroll(function(){
     var windowpos = $(window).scrollTop() + topoffset;
     var p = $("#parallax_001 .topbar");
@@ -250,7 +249,8 @@ var scene3 = new ScrollScene({
       $("#parallax_001 .topbar").css({"opacity":"1"})
     }
   });
-/* END: 180606 #parallax_001 */
+  /* END: 180606 #parallax_001 */
+}// END: check if this is body#original page
 
 /* 180606 #parallax_002 */
   var moving__background = $("#header__background");
