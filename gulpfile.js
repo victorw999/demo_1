@@ -54,6 +54,7 @@ gulp.task('compass', function() {
       css: outputDir + 'css',
       image: outputDir + 'images',
       style: sassStyle,
+      sourcemap: true,
       require: ['susy', 'breakpoint']
     })
     .on('error', gutil.log))
