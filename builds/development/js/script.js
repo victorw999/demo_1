@@ -120,8 +120,6 @@ if ($('body').is('#original')){ //check if this is body#original page
       } // windowpos
     });//window scroll
 
-
-
   //set up "Scroll Magic"
   var controller = new ScrollMagic({
     globalSceneOptions: {
@@ -190,11 +188,6 @@ if (!isTouch) {
     offset: -topoffset-20
   }).setTween(attractionstween)
     .addTo(controller);
-
-
-
-
-
   // follow: http://scrollmagic.io/examples/basic/simple_tweening.html
   // unfortunately, ScrollMagic.Scene() doesn't work with current installed conversation
 

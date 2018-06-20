@@ -235,12 +235,12 @@ header #nav {
   width: 100%;
   z-index: 100;
 }
-/* line 28, ../../../components/sass/_mixins.scss */
+/* line 27, ../../../components/sass/_mixins.scss */
 header #nav:before, header #nav:after {
   content: '';
   display: table;
 }
-/* line 34, ../../../components/sass/_mixins.scss */
+/* line 33, ../../../components/sass/_mixins.scss */
 header #nav:after {
   clear: both;
 }
@@ -438,12 +438,12 @@ header #nav .navbar ul li a.active {
   color: #f6d6c4;
   padding: 10px 0;
 }
-/* line 28, ../../../components/sass/_mixins.scss */
+/* line 27, ../../../components/sass/_mixins.scss */
 #welcome .gallery:before, #welcome .gallery:after {
   content: '';
   display: table;
 }
-/* line 34, ../../../components/sass/_mixins.scss */
+/* line 33, ../../../components/sass/_mixins.scss */
 #welcome .gallery:after {
   clear: both;
 }
@@ -547,12 +547,12 @@ header #nav .navbar ul li a.active {
 #events {
   padding: 0;
 }
-/* line 28, ../../../components/sass/_mixins.scss */
+/* line 27, ../../../components/sass/_mixins.scss */
 #events:before, #events:after {
   content: '';
   display: table;
 }
-/* line 34, ../../../components/sass/_mixins.scss */
+/* line 33, ../../../components/sass/_mixins.scss */
 #events:after {
   clear: both;
 }
@@ -719,12 +719,12 @@ header #nav .navbar ul li a.active {
   font-size: 3em;
   font-weight: 200;
 }
-/* line 28, ../../../components/sass/_mixins.scss */
+/* line 27, ../../../components/sass/_mixins.scss */
 #hotelinfo #usefulinfo:before, #hotelinfo #usefulinfo:after {
   content: '';
   display: table;
 }
-/* line 34, ../../../components/sass/_mixins.scss */
+/* line 33, ../../../components/sass/_mixins.scss */
 #hotelinfo #usefulinfo:after {
   clear: both;
 }
@@ -976,12 +976,12 @@ header #nav .navbar ul li a.active {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 28, ../../../components/sass/_mixins.scss */
+/* line 27, ../../../components/sass/_mixins.scss */
 #attractions:before, #attractions:after {
   content: '';
   display: table;
 }
-/* line 34, ../../../components/sass/_mixins.scss */
+/* line 33, ../../../components/sass/_mixins.scss */
 #attractions:after {
   clear: both;
 }
@@ -1242,12 +1242,12 @@ blockquote:after {
   background-image: -webkit-linear-gradient(top, #efc94c, #e27a3f);
   background-image: linear-gradient(to bottom, #efc94c, #e27a3f);
 }
-/* line 28, ../../../components/sass/_mixins.scss */
+/* line 27, ../../../components/sass/_mixins.scss */
 #css_002:before, #css_002:after {
   content: '';
   display: table;
 }
-/* line 34, ../../../components/sass/_mixins.scss */
+/* line 33, ../../../components/sass/_mixins.scss */
 #css_002:after {
   clear: both;
 }
@@ -1255,12 +1255,12 @@ blockquote:after {
 #css_002 .content {
   display: table;
 }
-/* line 28, ../../../components/sass/_mixins.scss */
+/* line 27, ../../../components/sass/_mixins.scss */
 #css_002 .content:before, #css_002 .content:after {
   content: '';
   display: table;
 }
-/* line 34, ../../../components/sass/_mixins.scss */
+/* line 33, ../../../components/sass/_mixins.scss */
 #css_002 .content:after {
   clear: both;
 }
@@ -1492,7 +1492,7 @@ blockquote:after {
   position: relative;
   z-index: 100;
 }
-/* line 50, ../../../components/sass/_mixins.scss */
+/* line 49, ../../../components/sass/_mixins.scss */
 #css_001 .gradient_animate_2:before {
   border-radius: inherit;
   background-image: -webkit-linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
@@ -1510,7 +1510,7 @@ blockquote:after {
   -webkit-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out;
 }
-/* line 67, ../../../components/sass/_mixins.scss */
+/* line 66, ../../../components/sass/_mixins.scss */
 #css_001 .gradient_animate_2:hover:before {
   opacity: 1;
 }
@@ -1608,4 +1608,18 @@ blockquote:after {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* line 2, ../../../components/sass/modules_vicmod/_css001.scss */
+#cs001_html header .fullheight2 {
+  /* vic-comment: code copied frm css-tricks */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("http://via.placeholder.com/2000x990");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 }
