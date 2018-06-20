@@ -22,6 +22,22 @@
   background-size: cover;
 }//backImage
 
+@mixin backImage2(
+  $image,
+  $bgPos: center center
+  ) {
+  /* vic-comment: code copied frm css-tricks */
+  background: url($image);
+  background-repeat: no-repeat;
+  background-position:$bgPos;
+  //background-attachment:fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}//backImage2
+
 @mixin clearfix {
 
     &:before,
