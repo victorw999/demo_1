@@ -9,7 +9,6 @@
 }
 
 //FORMAT
-
 body#cs001_html h1 { color: white; background: grey;}
 div#header h1, div#main h1{ color: white; background: black;}
 #inner{
@@ -30,8 +29,7 @@ div#header h1, div#main h1{ color: white; background: black;}
       padding: 0 10px;
     }// li
   }//ol
-
-}
+}// #inner
 
 xmp{
   background: black; font-weight: 500px; color:white;
@@ -42,3 +40,16 @@ mark{
   font-weight: 900;
   padding: 2px 8px;
 }
+
+// css pages header FORMAT
+header{
+  .fullheightbg{
+    height: 100vh;
+    @include backImage('../images/hotel/events_2.jpg');
+    // apply overlay on .hgroup
+    .hgroup{
+        background:#00000085;
+        height:100vh;
+    }
+  }// .fullheightbg
+}// header

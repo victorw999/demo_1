@@ -1,4 +1,4 @@
-@mixin backImage(  
+@mixin backImage(
   $image,
   $grDir: to bottom,
   $opStart: 0,
@@ -20,6 +20,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+   -webkit-backface-visibility: hidden;
 }//backImage
 
 @mixin backImage2(

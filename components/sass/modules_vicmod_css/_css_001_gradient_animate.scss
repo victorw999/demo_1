@@ -1,5 +1,4 @@
 #css_001{
-  .parent{}
   .child{
     background:lighten($yellow,20%);
     margin:0 auto;
@@ -7,7 +6,6 @@
     min-height: 20vh;
   }
   .parent:hover{
-    //background:red;
     background-image: -webkit-linear-gradient(30deg, lighten($blue,20%) 50%, $blue 50%);
   }
 

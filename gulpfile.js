@@ -35,7 +35,7 @@ jsSources = [
   'components/scripts/script_vic.js'
 ];
 sassSources = ['components/sass/style.scss'];
-sassSources2 = ['components/sass/style_css001.scss'];
+sassSources2 = ['components/sass/style_csspage001.scss'];
 htmlSources = [outputDir + '*.html'];
 
 gulp.task('js', function() {

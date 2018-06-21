@@ -152,6 +152,7 @@ header .fullheight {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
   /* for broswers support flexbox*/
   display: -webkit-flex;
   display: flex;
@@ -161,12 +162,12 @@ header .fullheight {
   justify-content: center;
   padding: 200px 0;
 }
-/* line 43, ../../../components/sass/_mixins.scss */
+/* line 45, ../../../components/sass/_mixins.scss */
 header .fullheight:before, header .fullheight:after {
   content: '';
   display: table;
 }
-/* line 49, ../../../components/sass/_mixins.scss */
+/* line 51, ../../../components/sass/_mixins.scss */
 header .fullheight:after {
   clear: both;
 }
@@ -231,6 +232,7 @@ header .fullheight-test {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 
 /* line 1, ../../../components/sass/modules/_nav.scss */
@@ -244,12 +246,12 @@ header #nav {
   width: 100%;
   z-index: 100;
 }
-/* line 43, ../../../components/sass/_mixins.scss */
+/* line 45, ../../../components/sass/_mixins.scss */
 header #nav:before, header #nav:after {
   content: '';
   display: table;
 }
-/* line 49, ../../../components/sass/_mixins.scss */
+/* line 51, ../../../components/sass/_mixins.scss */
 header #nav:after {
   clear: both;
 }
@@ -447,12 +449,12 @@ header #nav .navbar ul li a.active {
   color: #f6d6c4;
   padding: 10px 0;
 }
-/* line 43, ../../../components/sass/_mixins.scss */
+/* line 45, ../../../components/sass/_mixins.scss */
 #welcome .gallery:before, #welcome .gallery:after {
   content: '';
   display: table;
 }
-/* line 49, ../../../components/sass/_mixins.scss */
+/* line 51, ../../../components/sass/_mixins.scss */
 #welcome .gallery:after {
   clear: both;
 }
@@ -556,12 +558,12 @@ header #nav .navbar ul li a.active {
 #events {
   padding: 0;
 }
-/* line 43, ../../../components/sass/_mixins.scss */
+/* line 45, ../../../components/sass/_mixins.scss */
 #events:before, #events:after {
   content: '';
   display: table;
 }
-/* line 49, ../../../components/sass/_mixins.scss */
+/* line 51, ../../../components/sass/_mixins.scss */
 #events:after {
   clear: both;
 }
@@ -619,6 +621,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 /* line 33, ../../../components/sass/modules/_events.scss */
 #events #weddings {
@@ -632,6 +635,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 
 /* line 2, ../../../components/sass/modules/_dining.scss */
@@ -728,12 +732,12 @@ header #nav .navbar ul li a.active {
   font-size: 3em;
   font-weight: 200;
 }
-/* line 43, ../../../components/sass/_mixins.scss */
+/* line 45, ../../../components/sass/_mixins.scss */
 #hotelinfo #usefulinfo:before, #hotelinfo #usefulinfo:after {
   content: '';
   display: table;
 }
-/* line 49, ../../../components/sass/_mixins.scss */
+/* line 51, ../../../components/sass/_mixins.scss */
 #hotelinfo #usefulinfo:after {
   clear: both;
 }
@@ -901,6 +905,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 /* line 42, ../../../components/sass/modules/_rooms.scss */
 #rooms #cambridge {
@@ -913,6 +918,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 /* line 43, ../../../components/sass/modules/_rooms.scss */
 #rooms #westminster {
@@ -925,6 +931,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 /* line 44, ../../../components/sass/modules/_rooms.scss */
 #rooms #oxford {
@@ -937,6 +944,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 /* line 45, ../../../components/sass/modules/_rooms.scss */
 #rooms #victoria {
@@ -949,6 +957,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 /* line 46, ../../../components/sass/modules/_rooms.scss */
 #rooms #manchester {
@@ -961,6 +970,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 
 /* line 1, ../../../components/sass/modules/_attractions.scss */
@@ -978,6 +988,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -985,12 +996,12 @@ header #nav .navbar ul li a.active {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 43, ../../../components/sass/_mixins.scss */
+/* line 45, ../../../components/sass/_mixins.scss */
 #attractions:before, #attractions:after {
   content: '';
   display: table;
 }
-/* line 49, ../../../components/sass/_mixins.scss */
+/* line 51, ../../../components/sass/_mixins.scss */
 #attractions:after {
   clear: both;
 }
@@ -1082,72 +1093,7 @@ footer #socialmedia ul li img {
   height: 100vh;
 }
 
-/* line 6, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format {
-  padding: 100px 0;
-}
-/* line 8, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format h1 {
-  color: #ffffff;
-  font-size: 5em;
-  font-weight: 800;
-  line-height: .8em;
-  text-shadow: #000000 0 0 20px;
-  text-align: center;
-}
-/* line 16, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format h2, .mydiv_format .vic_subhead {
-  display: block;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
-  width: 60%;
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid #ffffff;
-  margin-top: 15px;
-  padding: 10px;
-  font-size: 1.7em;
-}
-/* line 27, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format h2 a, .mydiv_format .vic_subhead a {
-  text-decoration: none;
-  color: #ffffff;
-}
-/* line 32, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format p, .mydiv_format ul, .mydiv_format blockquote {
-  font-size: 1.5em;
-  line-height: 1.3em;
-  font-weight: 600;
-  padding: 10px;
-}
-/* line 35, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format p img, .mydiv_format ul img, .mydiv_format blockquote img {
-  padding-top: 50px;
-  max-width: 50px;
-}
-/* line 40, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format ul {
-  list-style-type: square;
-}
-/* line 41, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format .content {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 300px;
-  padding: 30px;
-  margin: 30px auto;
-  background-color: #cccccc;
-}
-/* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
-.mydiv_format .content:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/* line 52, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 10, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 header#tweendemo_header article.fullheight {
   background-color: #013A6B;
   background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
@@ -1161,20 +1107,20 @@ header#tweendemo_header article.fullheight {
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-/* line 65, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 23, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 header#tweendemo_header .hgroup.div-2 {
   width: 50%;
   background-image: -webkit-linear-gradient(30deg, #004E95 50%, #013A6B 50%);
 }
 
 /* circle_icon format */
-/* line 74, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 32, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 div.circle_icon_wrapper {
   padding: 10px;
   margin-top: 10px;
 }
 
-/* line 78, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 36, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 div.circle_icon {
   margin: auto;
   background: gray;
@@ -1188,33 +1134,33 @@ div.circle_icon {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 88, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 46, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 div.circle_icon img {
   max-width: 40px;
 }
-/* line 89, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 47, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 div.circle_icon:hover {
   background: #000000;
 }
 
-/* line 93, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 51, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 #tween1 #trigger1 {
   background-color: #ffffff;
 }
 
-/* line 98, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 56, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 .split_bg_left {
   background-color: #ffffff;
   background-image: -webkit-linear-gradient(210deg, #ffffff 50%, #e6e6e6 50%);
 }
 
-/* line 102, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 60, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 .split_bg_right {
   background-color: #ffffff;
   background-image: -webkit-linear-gradient(30deg, #ffffff 50%, #e6e6e6 50%);
 }
 
-/* line 107, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 65, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 blockquote {
   max-width: 80%;
   margin-left: auto;
@@ -1229,299 +1175,6 @@ blockquote:after {
   content: " ";
   display: block;
   clear: both;
-}
-
-/* line 1, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#diagonal_two_color {
-  background-color: #063642;
-  background-image: -webkit-linear-gradient(30deg, #0f83a0 50%, #063642 50%);
-}
-/* line 4, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#diagonal_two_color h2, #diagonal_two_color p, #diagonal_two_color a {
-  color: white;
-}
-
-/* To understand Display: Tabel-Cell*/
-/* line 9, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002 {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmYzk0YyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UyN2EzZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efc94c), color-stop(100%, #e27a3f));
-  background-image: -moz-linear-gradient(top, #efc94c, #e27a3f);
-  background-image: -webkit-linear-gradient(top, #efc94c, #e27a3f);
-  background-image: linear-gradient(to bottom, #efc94c, #e27a3f);
-}
-/* line 43, ../../../components/sass/_mixins.scss */
-#css_002:before, #css_002:after {
-  content: '';
-  display: table;
-}
-/* line 49, ../../../components/sass/_mixins.scss */
-#css_002:after {
-  clear: both;
-}
-/* line 12, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002 .content {
-  display: table;
-}
-/* line 43, ../../../components/sass/_mixins.scss */
-#css_002 .content:before, #css_002 .content:after {
-  content: '';
-  display: table;
-}
-/* line 49, ../../../components/sass/_mixins.scss */
-#css_002 .content:after {
-  clear: both;
-}
-/* line 15, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002 .content .a, #css_002 .content .b, #css_002 .content .c {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 3.33333%;
-  padding-right: 3.33333%;
-  padding-left: 9.16667%;
-  padding-right: 9.16667%;
-  display: table-row;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMTU4NDk0IiB5MT0iMS4wOTE1MDYiIHgyPSIwLjg0MTUwNiIgeTI9Ii0wLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VmYjc5OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -moz-linear-gradient(60deg, #ffffff, #efb798);
-  background-image: -webkit-linear-gradient(60deg, #ffffff, #efb798);
-  background-image: linear-gradient(30deg, #ffffff, #efb798);
-  height: 100px;
-  font-size: 2em;
-}
-/* line 23, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002 .content .a {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
-}
-/* line 29, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002 .outter {
-  background: grey;
-  display: table;
-  padding: 50px;
-  margin: auto;
-}
-/* line 34, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002 .outter .inner {
-  background: white;
-  width: 250px;
-  height: 250px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/* line 45, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002a .outter {
-  background: gray;
-  border: 20px solid aliceblue;
-  width: 100%;
-  height: 400px;
-}
-/* line 50, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002a .inner {
-  background: #cccccc;
-  width: 200px;
-  height: 200px;
-}
-/* line 55, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002a .ex1.outter .inner {
-  position: relative;
-  transform: translate(-50%, -50%);
-}
-/* line 61, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002a .ex2.outter .inner {
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-/* line 69, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002b .box {
-  width: 200px;
-  height: 200px;
-  color: white;
-  font-weight: 900;
-}
-/* line 72, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002b .position-relative {
-  background: #cc0000;
-  position: relative;
-  left: 50%;
-}
-/* line 77, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002b .position-absolute {
-  background: #660000;
-  position: absolute;
-  left: 50%;
-}
-/* line 82, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_002b .translate {
-  background: black;
-  transform: translate(50%);
-}
-
-/* line 90, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_003 img {
-  width: 100%;
-}
-/* line 91, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_003 img.angled_edge_via_clip_path {
-  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
-}
-/* line 97, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_003 .hero img {
-  -webkit-clip-path: polygon(20% 20%, 100% 0, 80% 80%, 0 100%);
-  clip-path: polygon(20% 20%, 100% 0, 80% 80%, 0 100%);
-}
-/* line 101, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_003 .hero {
-  position: relative;
-  text-align: center;
-}
-/* line 104, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_003 .hero figcaption {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  background: yellow;
-}
-/* line 113, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_003 .promo {
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-  clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-}
-/* line 117, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#css_003 .promo {
-  background: url(https://unsplash.it/1600/900?image=830) no-repeat;
-  background-size: cover;
-  margin: 50px 0;
-  overflow: hidden;
-  padding: 150px 20px;
-  position: relative;
-  text-align: center;
-}
-
-/* line 129, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#parallax_001 {
-  padding: 0;
-  height: 500px;
-  background: #e4f8fd;
-}
-/* line 131, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#parallax_001 .topbar {
-  width: 100%;
-  height: 300px;
-  background: #0f83a0;
-}
-/* line 132, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#parallax_001 section {
-  width: 100%;
-  height: 100vh;
-  background: #ccf1fa;
-}
-
-/* line 135, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#parallax_002 {
-  padding: 0;
-  background: white;
-}
-/* line 137, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#parallax_002 #header {
-  width: 100%;
-  height: 1000px;
-  overflow: hidden;
-  background: white;
-}
-/* line 144, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#parallax_002 #header__background {
-  background-image: url("https://unsplash.it/2000/1200/?random");
-  background-size: cover;
-  background-position: center;
-  width: inherit;
-  height: inherit;
-  display: table;
-}
-/* line 152, ../../../components/sass/modules_vicmod/_cssdemo.scss */
-#parallax_002 #header__centered {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 3, ../../../components/sass/modules_vicmod/css_gradient_animate.scss */
-#css_001 .child {
-  background: #f7e5aa;
-  margin: 0 auto;
-  width: 50vw;
-  min-height: 20vh;
-}
-/* line 9, ../../../components/sass/modules_vicmod/css_gradient_animate.scss */
-#css_001 .parent:hover {
-  background-image: -webkit-linear-gradient(30deg, #0f83a0 50%, #063642 50%);
-}
-/* line 14, ../../../components/sass/modules_vicmod/css_gradient_animate.scss */
-#css_001 .gradient_animate_1 {
-  margin: 0 auto;
-  background-size: 100%;
-  cursor: pointer;
-  position: relative;
-  background-image: linear-gradient(#ffffff, #000000);
-  z-index: 100;
-}
-/* line 26, ../../../components/sass/modules_vicmod/css_gradient_animate.scss */
-#css_001 .gradient_animate_1:before {
-  border-radius: inherit;
-  background-image: linear-gradient(#000000, #ffffff);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  z-index: -100;
-}
-/* line 40, ../../../components/sass/modules_vicmod/css_gradient_animate.scss */
-#css_001 .gradient_animate_1:hover:before {
-  opacity: 1;
-}
-/* line 47, ../../../components/sass/modules_vicmod/css_gradient_animate.scss */
-#css_001 .gradient_animate_2 {
-  background-size: 100%;
-  background-image: -webkit-linear-gradient(to bottom left, #b3b3b3 50%, #e6e6e6 50%);
-  background-image: linear-gradient(to bottom left, #b3b3b3 50%, #e6e6e6 50%);
-  position: relative;
-  z-index: 100;
-}
-/* line 65, ../../../components/sass/_mixins.scss */
-#css_001 .gradient_animate_2:before {
-  border-radius: inherit;
-  background-image: -webkit-linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
-  background-image: linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -100;
-  -moz-transition: opacity 2s ease-in-out;
-  -webkit-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
-}
-/* line 82, ../../../components/sass/_mixins.scss */
-#css_001 .gradient_animate_2:hover:before {
-  opacity: 1;
 }
 
 /* line 2, ../../../components/sass/modules_vicmod/_cssjquery.scss */
@@ -1617,9 +1270,10 @@ blockquote:after {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
 }
 
-/* line 4, ../../../components/sass/modules_vicmod/_vic_base.scss */
+/* line 3, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .vic_subhead {
   display: block;
   color: #ffffff;
@@ -1632,14 +1286,18 @@ blockquote:after {
   padding: 10px;
   font-size: 1.7em;
 }
-/* line 15, ../../../components/sass/modules_vicmod/_vic_base.scss */
+/* line 14, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .vic_subhead h2, .vic_subhead a, .vic_subhead p {
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
   margin: 5px;
 }
-/* line 18, ../../../components/sass/modules_vicmod/_vic_base.scss */
+/* line 17, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.vic_subhead h2 {
+  border: none !important;
+}
+/* line 18, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .vic_subhead p {
   color: #ffffff;
   font-weight: 100;
@@ -1650,18 +1308,376 @@ blockquote:after {
   padding: 10px;
 }
 
-/* line 26, ../../../components/sass/modules_vicmod/_vic_base.scss */
+/* line 26, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .vic_subhead:hover {
   color: #000000;
   background: #ffffff;
 }
-/* line 28, ../../../components/sass/modules_vicmod/_vic_base.scss */
-.vic_subhead:hover a, .vic_subhead:hover p {
+/* line 28, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.vic_subhead:hover a, .vic_subhead:hover p, .vic_subhead:hover h1, .vic_subhead:hover h2 {
   color: #df4848;
 }
-/* line 29, ../../../components/sass/modules_vicmod/_vic_base.scss */
+/* line 29, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .vic_subhead:hover p {
   font-weight: 600;
+}
+
+/* line 34, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.mydiv_format {
+  padding: 100px 0;
+}
+/* line 36, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.mydiv_format h1 {
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 800;
+  line-height: .8em;
+  text-shadow: #000000 0 0 20px;
+  text-align: center;
+}
+/* line 44, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.mydiv_format h2, .mydiv_format .vic_subhead {
+  display: block;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1.7em;
+}
+/* line 55, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.mydiv_format h2 a, .mydiv_format .vic_subhead a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 60, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.mydiv_format p, .mydiv_format ul, .mydiv_format blockquote {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: 600;
+  padding: 10px;
+}
+/* line 63, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.mydiv_format p img, .mydiv_format ul img, .mydiv_format blockquote img {
+  padding-top: 50px;
+  max-width: 50px;
+}
+/* line 68, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.mydiv_format ul {
+  list-style-type: square;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.mydiv_format .content {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 300px;
+  padding: 30px;
+  margin: 30px auto;
+  background-color: #cccccc;
+}
+/* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
+.mydiv_format .content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 1, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#diagonal_two_color {
+  background-color: #063642;
+  background-image: -webkit-linear-gradient(30deg, #0f83a0 50%, #063642 50%);
+}
+/* line 4, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#diagonal_two_color h2, #diagonal_two_color p, #diagonal_two_color a {
+  color: white;
+}
+
+/* To understand Display: Tabel-Cell*/
+/* line 9, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002 {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmYzk0YyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UyN2EzZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efc94c), color-stop(100%, #e27a3f));
+  background-image: -moz-linear-gradient(top, #efc94c, #e27a3f);
+  background-image: -webkit-linear-gradient(top, #efc94c, #e27a3f);
+  background-image: linear-gradient(to bottom, #efc94c, #e27a3f);
+}
+/* line 45, ../../../components/sass/_mixins.scss */
+#css_002:before, #css_002:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+#css_002:after {
+  clear: both;
+}
+/* line 12, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002 .content {
+  display: table;
+}
+/* line 45, ../../../components/sass/_mixins.scss */
+#css_002 .content:before, #css_002 .content:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+#css_002 .content:after {
+  clear: both;
+}
+/* line 15, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002 .content .a, #css_002 .content .b, #css_002 .content .c {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 3.33333%;
+  padding-right: 3.33333%;
+  padding-left: 9.16667%;
+  padding-right: 9.16667%;
+  display: table-row;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMTU4NDk0IiB5MT0iMS4wOTE1MDYiIHgyPSIwLjg0MTUwNiIgeTI9Ii0wLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VmYjc5OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(60deg, #ffffff, #efb798);
+  background-image: -webkit-linear-gradient(60deg, #ffffff, #efb798);
+  background-image: linear-gradient(30deg, #ffffff, #efb798);
+  height: 100px;
+  font-size: 2em;
+}
+/* line 23, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002 .content .a {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 29, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002 .outter {
+  background: grey;
+  display: table;
+  padding: 50px;
+  margin: auto;
+}
+/* line 34, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002 .outter .inner {
+  background: white;
+  width: 250px;
+  height: 250px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 45, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002a .outter {
+  background: gray;
+  border: 20px solid aliceblue;
+  width: 100%;
+  height: 400px;
+}
+/* line 50, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002a .inner {
+  background: #cccccc;
+  width: 200px;
+  height: 200px;
+}
+/* line 55, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002a .ex1.outter .inner {
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+/* line 61, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002a .ex2.outter .inner {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* line 69, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002b .box {
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-weight: 900;
+}
+/* line 72, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002b .position-relative {
+  background: #cc0000;
+  position: relative;
+  left: 50%;
+}
+/* line 77, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002b .position-absolute {
+  background: #660000;
+  position: absolute;
+  left: 50%;
+}
+/* line 82, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_002b .translate {
+  background: black;
+  transform: translate(50%);
+}
+
+/* line 90, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_003 img {
+  width: 100%;
+}
+/* line 91, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_003 img.angled_edge_via_clip_path {
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+}
+/* line 97, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_003 .hero img {
+  -webkit-clip-path: polygon(20% 20%, 100% 0, 80% 80%, 0 100%);
+  clip-path: polygon(20% 20%, 100% 0, 80% 80%, 0 100%);
+}
+/* line 101, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_003 .hero {
+  position: relative;
+  text-align: center;
+}
+/* line 104, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_003 .hero figcaption {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: yellow;
+}
+/* line 113, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_003 .promo {
+  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+  clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+}
+/* line 117, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#css_003 .promo {
+  background: url(https://unsplash.it/1600/900?image=830) no-repeat;
+  background-size: cover;
+  margin: 50px 0;
+  overflow: hidden;
+  padding: 150px 20px;
+  position: relative;
+  text-align: center;
+}
+
+/* line 129, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#parallax_001 {
+  padding: 0;
+  height: 500px;
+  background: #e4f8fd;
+}
+/* line 131, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#parallax_001 .topbar {
+  width: 100%;
+  height: 300px;
+  background: #0f83a0;
+}
+/* line 132, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#parallax_001 section {
+  width: 100%;
+  height: 100vh;
+  background: #ccf1fa;
+}
+
+/* line 135, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#parallax_002 {
+  padding: 0;
+  background: white;
+}
+/* line 137, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#parallax_002 #header {
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  background: white;
+}
+/* line 144, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#parallax_002 #header__background {
+  background-image: url("https://unsplash.it/2000/1200/?random");
+  background-size: cover;
+  background-position: center;
+  width: inherit;
+  height: inherit;
+  display: table;
+}
+/* line 152, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
+#parallax_002 #header__centered {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 2, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .child {
+  background: #f7e5aa;
+  margin: 0 auto;
+  width: 50vw;
+  min-height: 20vh;
+}
+/* line 8, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .parent:hover {
+  background-image: -webkit-linear-gradient(30deg, #0f83a0 50%, #063642 50%);
+}
+/* line 12, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .gradient_animate_1 {
+  margin: 0 auto;
+  background-size: 100%;
+  cursor: pointer;
+  position: relative;
+  background-image: linear-gradient(#ffffff, #000000);
+  z-index: 100;
+}
+/* line 24, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .gradient_animate_1:before {
+  border-radius: inherit;
+  background-image: linear-gradient(#000000, #ffffff);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+}
+/* line 38, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .gradient_animate_1:hover:before {
+  opacity: 1;
+}
+/* line 45, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .gradient_animate_2 {
+  background-size: 100%;
+  background-image: -webkit-linear-gradient(to bottom left, #b3b3b3 50%, #e6e6e6 50%);
+  background-image: linear-gradient(to bottom left, #b3b3b3 50%, #e6e6e6 50%);
+  position: relative;
+  z-index: 100;
+}
+/* line 67, ../../../components/sass/_mixins.scss */
+#css_001 .gradient_animate_2:before {
+  border-radius: inherit;
+  background-image: -webkit-linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
+  background-image: linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -100;
+  -moz-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+/* line 84, ../../../components/sass/_mixins.scss */
+#css_001 .gradient_animate_2:hover:before {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

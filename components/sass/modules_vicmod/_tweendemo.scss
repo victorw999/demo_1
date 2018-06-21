@@ -1,49 +1,7 @@
 .fullheight{
   height: 100vh;
 }
-// borrow .hgroup's format as my general section format
-// i shall name it mydiv_format
-.mydiv_format{
-  padding: 100px 0;
-  h1 {
-    color:$light;
-    font-size: 5em;
-    font-weight: $heavy;
-    line-height: .8em;
-    @include text-shadow($dark 0 0 20px);
-    text-align: center;
-  }// h1
-  h2, .vic_subhead{
-    display: block;
-    color:$light;
-    background: rgba($headersubbg, .5);
-    width:60%;max-width: 500px;
-    margin: 0 auto; // center
-    text-align: center;
-    border: 1px solid $light;
-    margin-top:15px;
-    padding:10px;
-    font-size: 1.7em;
-    a{
-      text-decoration: none;
-      color:$light;
-    }//a
-  }//h2
-  p, ul, blockquote{
-    font-size: 1.5em; line-height: 1.3em; font-weight:600;
-    padding:10px;
-    img{
-      padding-top:50px;
-      max-width:50px;
-    }//img
-  }//p
-  ul{ list-style-type: square;}
-  .content{
-    @include container(80%); min-height:300px;
-    padding:30px;margin:30px auto;
-    background-color: darken($light,20);
-  }// .mydiv_format .content
-}// .mydiv_format
+
 
 
 
