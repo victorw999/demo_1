@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 
 var env,
     jsSources,
-    sassSources,
+    sassSources, sassSources2,
     htmlSources,
     outputDir,
     sassStyle;
@@ -35,6 +35,7 @@ jsSources = [
   'components/scripts/script_vic.js'
 ];
 sassSources = ['components/sass/style.scss'];
+sassSources2 = ['components/sass/style_css001.scss'];
 htmlSources = [outputDir + '*.html'];
 
 gulp.task('js', function() {
@@ -62,9 +63,24 @@ gulp.task('compass', function() {
     .pipe(connect.reload())
 });
 
+gulp.task('compass2', function() {
+  gulp.src(sassSources2)
+    .pipe(compass({
+      sass: 'components/sass',
+      css: outputDir + 'css',
+      image: outputDir + 'images',
+      style: sassStyle,
+      require: ['susy', 'breakpoint']
+    })
+    .on('error', gutil.log))
+    .pipe(connect.reload())
+});
+
+
 gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass']);
+  gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass2']);
   gulp.watch('builds/development/*.html', ['html']);
 });
 
@@ -88,4 +104,4 @@ gulp.task('move', function() {
   .pipe(gulpif(env === 'production', gulp.dest(outputDir+'images')))
 });
 
-gulp.task('default', ['watch', 'html', 'js', 'compass', 'move', 'connect']);
+gulp.task('default', ['watch', 'html', 'js', 'compass', 'compass2', 'move', 'connect']);

@@ -146,7 +146,7 @@ header .fullheight {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/splash_hotelphoto.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -160,6 +160,15 @@ header .fullheight {
   -webkit-justify-content: center;
   justify-content: center;
   padding: 200px 0;
+}
+/* line 43, ../../../components/sass/_mixins.scss */
+header .fullheight:before, header .fullheight:after {
+  content: '';
+  display: table;
+}
+/* line 49, ../../../components/sass/_mixins.scss */
+header .fullheight:after {
+  clear: both;
 }
 /* line 14, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup {
@@ -216,7 +225,7 @@ header .fullheight-test {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("http://via.placeholder.com/2000x990");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -886,7 +895,7 @@ header #nav .navbar ul li a.active {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_1.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -898,7 +907,7 @@ header #nav .navbar ul li a.active {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_2.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -910,7 +919,7 @@ header #nav .navbar ul li a.active {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_3.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -922,7 +931,7 @@ header #nav .navbar ul li a.active {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_4.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -934,7 +943,7 @@ header #nav .navbar ul li a.active {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_5.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -946,7 +955,7 @@ header #nav .navbar ul li a.active {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_6.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -963,7 +972,7 @@ header #nav .navbar ul li a.active {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/attractions.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1087,7 +1096,7 @@ footer #socialmedia ul li img {
   text-align: center;
 }
 /* line 16, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format h2 {
+.mydiv_format h2, .mydiv_format .vic_subhead {
   display: block;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.5);
@@ -1101,7 +1110,7 @@ footer #socialmedia ul li img {
   font-size: 1.7em;
 }
 /* line 27, ../../../components/sass/modules_vicmod/_tweendemo.scss */
-.mydiv_format h2 a {
+.mydiv_format h2 a, .mydiv_format .vic_subhead a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -1138,7 +1147,7 @@ footer #socialmedia ul li img {
   clear: both;
 }
 
-/* line 49, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 52, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 header#tweendemo_header article.fullheight {
   background-color: #013A6B;
   background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
@@ -1152,20 +1161,20 @@ header#tweendemo_header article.fullheight {
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-/* line 62, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 65, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 header#tweendemo_header .hgroup.div-2 {
   width: 50%;
   background-image: -webkit-linear-gradient(30deg, #004E95 50%, #013A6B 50%);
 }
 
 /* circle_icon format */
-/* line 71, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 74, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 div.circle_icon_wrapper {
   padding: 10px;
   margin-top: 10px;
 }
 
-/* line 75, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 78, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 div.circle_icon {
   margin: auto;
   background: gray;
@@ -1179,33 +1188,33 @@ div.circle_icon {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 85, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 88, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 div.circle_icon img {
   max-width: 40px;
 }
-/* line 86, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 89, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 div.circle_icon:hover {
   background: #000000;
 }
 
-/* line 90, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 93, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 #tween1 #trigger1 {
   background-color: #ffffff;
 }
 
-/* line 95, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 98, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 .split_bg_left {
   background-color: #ffffff;
   background-image: -webkit-linear-gradient(210deg, #ffffff 50%, #e6e6e6 50%);
 }
 
-/* line 99, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 102, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 .split_bg_right {
   background-color: #ffffff;
   background-image: -webkit-linear-gradient(30deg, #ffffff 50%, #e6e6e6 50%);
 }
 
-/* line 104, ../../../components/sass/modules_vicmod/_tweendemo.scss */
+/* line 107, ../../../components/sass/modules_vicmod/_tweendemo.scss */
 blockquote {
   max-width: 80%;
   margin-left: auto;
@@ -1602,7 +1611,7 @@ blockquote:after {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/events_2.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1610,15 +1619,49 @@ blockquote:after {
   background-size: cover;
 }
 
-/* line 2, ../../../components/sass/modules_vicmod/_css001.scss */
-#cs001_html header .fullheight2 {
-  /* vic-comment: code copied frm css-tricks */
-  background: url("http://via.placeholder.com/2000x990");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
+/* line 4, ../../../components/sass/modules_vicmod/_vic_base.scss */
+.vic_subhead {
+  display: block;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1.7em;
 }
+/* line 15, ../../../components/sass/modules_vicmod/_vic_base.scss */
+.vic_subhead h2, .vic_subhead a, .vic_subhead p {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 5px;
+}
+/* line 18, ../../../components/sass/modules_vicmod/_vic_base.scss */
+.vic_subhead p {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 0.7em;
+  line-height: 1.1em;
+  letter-spacing: 1px;
+  text-align: left !important;
+  padding: 10px;
+}
+
+/* line 26, ../../../components/sass/modules_vicmod/_vic_base.scss */
+.vic_subhead:hover {
+  color: #000000;
+  background: #ffffff;
+}
+/* line 28, ../../../components/sass/modules_vicmod/_vic_base.scss */
+.vic_subhead:hover a, .vic_subhead:hover p {
+  color: #df4848;
+}
+/* line 29, ../../../components/sass/modules_vicmod/_vic_base.scss */
+.vic_subhead:hover p {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 header{
   .fullheight {
-
+    @include clearfix;
     @include backImage('../images/hotel/splash_hotelphoto.jpg');
 
     // using flexbox to center element

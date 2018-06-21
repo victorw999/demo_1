@@ -3,28 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS001</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_css001.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+  <style>
+
+  </style>
 </head>
 
 <body id="cs001_html">
-  <header id=" ">
-    <article class="fullheight2">
-      <div class="">
-        <h1>CSS001</h1>
-        <h2><a href="#">#</a></h2>
-      </div>
-    </article>
-  </header>
+  <h1>body#cs001_html</h1>
+  <div id="header">
+    <h1>div#header</h1>
+  </div>
 
-  <main id="" style="height:9000px;background:grey;">
+  <div id="main" style="height:9000px;background:grey;">
+    <h1>div#main</h1>
+    <div id="inner" style="position:relative;height:100%;">
+      <h1>ISSUE:</h1>
+      <p>
+        When displaying this page in Chrome, the top banner stay still.<br>
+        Contributing factors:
+        <br>
+      </p>
 
-  </main>
+      <p>
+        1. layout
+      </p>
+      <xmp>
+        <body id="cs001_html">
+          <div id="header"></div>
+          <div id="main"></div>
+        </body >
+      </xmp>
 
- 
+      <p>
+        2. body's <mark>poistion: absolute;</mark>
+      </p>
+      <xmp>
+        body {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      </xmp>
 
-  <!--<script src="js/script.js"></script>
-  -->
+      <p>
+        3. #header banner css   <mark>background-attachment: fixed;</mark>
+      </p>
+      <xmp>
+        #header {
+          height:100vh;
+          background: url('https://source.unsplash.com/random/2000x990');
+          background-attachment: fixed;
+          background-position: center center;
+          background-size: cover;
+        }
+      </xmp>
+
+      <p>
+        4. Possible Solution
+        <a target="_blank" href="https://stackoverflow.com/q/23571578/5844090">REFERENCE</a>
+        <br>
+        When apply EITHER one of the follwing properties to #header, it solves the banner issue on chrome.
+      </p>
+      <xmp>
+        #header {
+         -webkit-backface-visibility: hidden;
+         -webkit-transform: translate3d(0, 0, 0);
+        }
+      </xmp>
+
+
+    </div>
+  </div>
+
 </body>
 </html>

@@ -1,9 +1,9 @@
-@mixin backImage(
+@mixin backImage(  
   $image,
   $grDir: to bottom,
   $opStart: 0,
   $opEnd:0,
-  $bgPos: center center
+  $bgPos: center top
   ) {
   /* vic-comment: code copied frm css-tricks */
   background: linear-gradient(
@@ -30,7 +30,7 @@
   background: url($image);
   background-repeat: no-repeat;
   background-position:$bgPos;
-  //background-attachment:fixed;
+  background-attachment:fixed;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
