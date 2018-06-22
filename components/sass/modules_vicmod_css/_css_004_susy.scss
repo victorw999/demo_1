@@ -1,19 +1,49 @@
 #css_004{
   #sec_wrapper{
     @include clearfix;
+    border: 15px solid rgba( $light, .9 );
     section{
-      @include span(1 of 3);
+      @include span(4 of 12);
+      border: 15px solid lighten( $blue, 65% );
     }
-  }
+  }// sec_wrapper
 
   // xmp code section
   #sec_wrapper2{
     @include clearfix;
+    background: rgba($dark, 0.5);
+
     section{
       @include span(1 of 2);
-      xmp{
-        height: 300px;  
-      }
+      xmp{ height: 400px; }
+    }// section
+  }// #sec_wrapper2
+
+  #sec_wrapper3{
+    @include clearfix;
+    //@include container(60em);
+    border: 15px solid rgba( $light, .9 );
+    section{
+      background:white;
+      height:200px;
+      @include span(4 of 12);
+      border: 15px solid lighten( $blue, 65% );
+
+      @include breakpoint( 450px $small){
+        @include span(1 of 2);
+      }// breakpoint
+      @include breakpoint( 0px 450px ){
+        @include span(1 of 1);
+      }// breakpoint
+    } // section
+  }// sec_wrapper3
+
+    #sec_wrapper4{
+      @include clearfix;
+      background: rgba($dark, 0.5);
+      section{
+        @include span(1 of 2);
+        xmp{ height: 400px; }
+      }// section
     }
-  }
-}
+}// #css_004

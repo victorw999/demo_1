@@ -14,7 +14,8 @@
         <div class="vic_subhead">
           <a href="#" target="_blank">
             <h2>csspage004</h2>
-            <p> Susy's Mixin Span <br>
+            <p> Susy's Mixin <br>
+              Span, Container
             </p>
           </a>
         </div><!-- vic_subhead -->
@@ -47,8 +48,8 @@
         </section>
       </article><!-- sec_wrapper-->
 
-      <article id="sec_wrapper2">
-        <section id="html">
+      <article id="sec_wrapper2"><p class="show_element_name">article#sec_wrapper2</p>
+        <section>
           <xmp>
             <article id="sec_wrapper">
               <section id="section1"></section>
@@ -58,7 +59,7 @@
           </xmp>
         </section>
 
-        <section id="css">
+        <section>
           <xmp>
             #css_004{
               #sec_wrapper{
@@ -66,15 +67,90 @@
                 section{
                   @include span(1 of 3);
                 }
+              }// #sec_wrapper
+
+              #sec_wrapper{
+                border: 15px solid white;
+              }
+              section{
+                border: 15px solid blue;
               }
             }
           </xmp>
         </section>
+      </article> <!-- sec_wrapper2 -->
 
+      <article id="sec_wrapper3">
+        <p class="show_element_name">article#sec_wrapper3</p>
+        <h3 style="text-align:center;color:white;">@include <mark>breakpoint()</mark></h3>
+        <section id="section4">
+          <p class="show_element_name">section#section4</p>
+        </section>
+        <section id="section5">
+          <p class="show_element_name">section#section5</p>
+        </section>
+        <section id="section6">
+          <p class="show_element_name">section#section6</p>
+        </section>
+      </article><!-- sec_wrapper3-->
 
-    </article>
+      <article id="sec_wrapper4"><p class="show_element_name">article#sec_wrapper2</p>
+        <section>
+          <xmp>
+            <article id="sec_wrapper3">
+              <section id="section4"></section>
+              <section id="section5"></section>
+              <section id="section6"></section>
+            </article><!-- sec_wrapper3-->
+          </xmp>
+        </section>
+
+        <section>
+          <xmp>
+            #sec_wrapper3{
+              @include clearfix;
+              section{
+
+                @include span(4 of 12);
+
+                @include breakpoint( 450px $small){
+                  @include span(1 of 2);
+                }
+
+                @include breakpoint( 0px 450px ){
+                  @include span(1 of 1);
+                }
+
+              } // section
+            }// sec_wrapper3
+
+          </xmp>
+        </section>
+      </article> <!-- sec_wrapper4 -->
+
     </div><!-- css_004 susy mixin span demo -->
 
+    <div class="mydiv_format" id="css_005">
+      <h2>css_005 @include <mark>container();</mark></h2>
+      <p></p>
+      <div class="content" id="div_1"> <p class="show_element_name">#div_1</p>
+        <xmp>
+          #div_1{
+            // Establish an 60em container
+            @include container(60em);
+          }
+        </xmp>
+      </div><!-- #div_1-->
+      <div class="content" id="div_2"> <p class="show_element_name">#div_2</p>
+        <xmp>
+          #div_1{
+            // Establish an 60em container
+            @include container(60%);
+          }
+        </xmp>
+      </div><!-- #div_1-->
+
+    </div><!-- css_004 susy mixin span demo -->
 
   </main> <!-- #main -->
 

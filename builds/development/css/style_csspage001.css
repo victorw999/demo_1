@@ -257,11 +257,26 @@ body {
 
 /* line 76, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .show_element_name {
-  background: #000000bb;
   color: #ffffff;
-  font-size: 1em !important;
+  background: #ff5252bb;
   font-weight: 500 !important;
-  letter-spacing: 2px;
+  padding: 3px !important;
+  font: 1em/1.1em Monospace !important;
+}
+
+/* line 85, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+xmp {
+  background: black;
+  font-weight: 500px;
+  color: white;
+  padding: 10px;
+  font: 1.2em/1.4em Monospace;
+}
+
+/* line 91, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+mark {
+  font-weight: 900;
+  padding: 2px 8px;
 }
 
 /* line 1, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
@@ -544,18 +559,17 @@ xmp {
   background: black;
   font-weight: 500px;
   color: white;
-  margin: 10px 20px 10px 30px;
   padding: 10px;
   font: 1.2em/1.4em Monospace;
 }
 
-/* line 39, ../../../components/sass/modules_vicmod_css/_csspage001.scss */
+/* line 40, ../../../components/sass/modules_vicmod_css/_csspage001.scss */
 mark {
   font-weight: 900;
   padding: 2px 8px;
 }
 
-/* line 46, ../../../components/sass/modules_vicmod_css/_csspage001.scss */
+/* line 47, ../../../components/sass/modules_vicmod_css/_csspage001.scss */
 header .fullheightbg {
   height: 100vh;
   /* vic-comment: code copied frm css-tricks */
@@ -569,7 +583,7 @@ header .fullheightbg {
   background-size: cover;
   -webkit-backface-visibility: hidden;
 }
-/* line 50, ../../../components/sass/modules_vicmod_css/_csspage001.scss */
+/* line 51, ../../../components/sass/modules_vicmod_css/_csspage001.scss */
 header .fullheightbg .hgroup {
   background: #00000085;
   height: 100vh;
@@ -644,6 +658,10 @@ header .fullheightbg .hgroup {
   opacity: 1;
 }
 
+/* line 2, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper {
+  border: 15px solid rgba(255, 255, 255, 0.9);
+}
 /* line 45, ../../../components/sass/_mixins.scss */
 #css_004 #sec_wrapper:before, #css_004 #sec_wrapper:after {
   content: '';
@@ -653,15 +671,20 @@ header .fullheightbg .hgroup {
 #css_004 #sec_wrapper:after {
   clear: both;
 }
-/* line 4, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+/* line 5, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
 #css_004 #sec_wrapper section {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 33.33333%;
   float: left;
-  padding-left: 3.33333%;
-  padding-right: 3.33333%;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  border: 15px solid #9de4f6;
+}
+/* line 12, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper2 {
+  background: rgba(0, 0, 0, 0.5);
 }
 /* line 45, ../../../components/sass/_mixins.scss */
 #css_004 #sec_wrapper2:before, #css_004 #sec_wrapper2:after {
@@ -672,7 +695,7 @@ header .fullheightbg .hgroup {
 #css_004 #sec_wrapper2:after {
   clear: both;
 }
-/* line 12, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+/* line 16, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
 #css_004 #sec_wrapper2 section {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -682,7 +705,113 @@ header .fullheightbg .hgroup {
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 14, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+/* line 18, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
 #css_004 #sec_wrapper2 section xmp {
-  height: 300px;
+  height: 400px;
+}
+/* line 22, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper3 {
+  border: 15px solid rgba(255, 255, 255, 0.9);
+}
+/* line 45, ../../../components/sass/_mixins.scss */
+#css_004 #sec_wrapper3:before, #css_004 #sec_wrapper3:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+#css_004 #sec_wrapper3:after {
+  clear: both;
+}
+/* line 26, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper3 section {
+  background: white;
+  height: 200px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  border: 15px solid #9de4f6;
+}
+@media (min-width: 450px) and (max-width: 650px) {
+  /* line 26, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+  #css_004 #sec_wrapper3 section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (min-width: 0px) and (max-width: 450px) {
+  /* line 26, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+  #css_004 #sec_wrapper3 section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+/* line 41, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper4 {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 45, ../../../components/sass/_mixins.scss */
+#css_004 #sec_wrapper4:before, #css_004 #sec_wrapper4:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+#css_004 #sec_wrapper4:after {
+  clear: both;
+}
+/* line 44, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper4 section {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* line 46, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper4 section xmp {
+  height: 400px;
+}
+
+/* line 1, ../../../components/sass/modules_vicmod_css/_css_005_container.scss */
+#css_005 {
+  background: #000000;
+}
+/* line 3, ../../../components/sass/modules_vicmod_css/_css_005_container.scss */
+#css_005 #div_1 {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
+#css_005 #div_1:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 6, ../../../components/sass/modules_vicmod_css/_css_005_container.scss */
+#css_005 #div_2 {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
+#css_005 #div_2:after {
+  content: " ";
+  display: block;
+  clear: both;
 }

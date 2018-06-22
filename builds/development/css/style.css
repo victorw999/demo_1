@@ -1389,11 +1389,26 @@ blockquote:after {
 
 /* line 76, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .show_element_name {
-  background: #000000bb;
   color: #ffffff;
-  font-size: 1em !important;
+  background: #ff5252bb;
   font-weight: 500 !important;
-  letter-spacing: 2px;
+  padding: 3px !important;
+  font: 1em/1.1em Monospace !important;
+}
+
+/* line 85, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+xmp {
+  background: black;
+  font-weight: 500px;
+  color: white;
+  padding: 10px;
+  font: 1.2em/1.4em Monospace;
+}
+
+/* line 91, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+mark {
+  font-weight: 900;
+  padding: 2px 8px;
 }
 
 /* line 1, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */

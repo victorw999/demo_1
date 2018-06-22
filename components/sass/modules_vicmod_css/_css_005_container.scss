@@ -1,0 +1,9 @@
+#css_005{
+  background: $dark;
+  #div_1{
+    @include container(60em);
+  }
+  #div_2{
+    @include container(60%);
+  }
+}// #css_005

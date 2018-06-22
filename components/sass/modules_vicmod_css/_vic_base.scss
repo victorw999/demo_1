@@ -74,9 +74,21 @@
 }// .mydiv_format
 
 .show_element_name{
-  background: #000000bb;
   color:$light;
-  font-size:1em !important;
-  font-weight:500 !important;
-  letter-spacing: 2px;
+  background: #ff5252bb;
+  font-weight: 500 !important;
+  padding: 3px !important;
+  font: 1em/1.1em Monospace !important;
+}
+
+
+xmp{
+  background: black; font-weight: 500px; color:white;
+  //margin:10px 20px 10px 30px;
+  padding:10px;
+  font:1.2em/1.4em Monospace;
+}
+mark{
+  font-weight: 900;
+  padding: 2px 8px;
 }
