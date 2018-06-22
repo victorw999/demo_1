@@ -1387,6 +1387,15 @@ blockquote:after {
   clear: both;
 }
 
+/* line 76, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.show_element_name {
+  background: #000000bb;
+  color: #ffffff;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  letter-spacing: 2px;
+}
+
 /* line 1, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
 #diagonal_two_color {
   background-color: #063642;

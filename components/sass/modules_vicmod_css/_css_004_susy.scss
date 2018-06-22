@@ -1,0 +1,19 @@
+#css_004{
+  #sec_wrapper{
+    @include clearfix;
+    section{
+      @include span(1 of 3);
+    }
+  }
+
+  // xmp code section
+  #sec_wrapper2{
+    @include clearfix;
+    section{
+      @include span(1 of 2);
+      xmp{
+        height: 300px;  
+      }
+    }
+  }
+}

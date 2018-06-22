@@ -72,3 +72,11 @@
     background-color: darken($light,20);
   }// .mydiv_format .content
 }// .mydiv_format
+
+.show_element_name{
+  background: #000000bb;
+  color:$light;
+  font-size:1em !important;
+  font-weight:500 !important;
+  letter-spacing: 2px;
+}

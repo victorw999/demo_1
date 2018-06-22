@@ -255,6 +255,15 @@ body {
   clear: both;
 }
 
+/* line 76, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+.show_element_name {
+  background: #000000bb;
+  color: #ffffff;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  letter-spacing: 2px;
+}
+
 /* line 1, ../../../components/sass/modules_vicmod_css/_cssdemo.scss */
 #diagonal_two_color {
   background-color: #063642;
@@ -479,75 +488,6 @@ body {
   vertical-align: middle;
 }
 
-/* line 2, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
-#css_001 .child {
-  background: #f7e5aa;
-  margin: 0 auto;
-  width: 50vw;
-  min-height: 20vh;
-}
-/* line 8, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
-#css_001 .parent:hover {
-  background-image: -webkit-linear-gradient(30deg, #0f83a0 50%, #063642 50%);
-}
-/* line 12, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
-#css_001 .gradient_animate_1 {
-  margin: 0 auto;
-  background-size: 100%;
-  cursor: pointer;
-  position: relative;
-  background-image: linear-gradient(#ffffff, #000000);
-  z-index: 100;
-}
-/* line 24, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
-#css_001 .gradient_animate_1:before {
-  border-radius: inherit;
-  background-image: linear-gradient(#000000, #ffffff);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  z-index: -100;
-}
-/* line 38, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
-#css_001 .gradient_animate_1:hover:before {
-  opacity: 1;
-}
-/* line 45, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
-#css_001 .gradient_animate_2 {
-  background-size: 100%;
-  background-image: -webkit-linear-gradient(to bottom left, #b3b3b3 50%, #e6e6e6 50%);
-  background-image: linear-gradient(to bottom left, #b3b3b3 50%, #e6e6e6 50%);
-  position: relative;
-  z-index: 100;
-}
-/* line 67, ../../../components/sass/_mixins.scss */
-#css_001 .gradient_animate_2:before {
-  border-radius: inherit;
-  background-image: -webkit-linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
-  background-image: linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -100;
-  -moz-transition: opacity 2s ease-in-out;
-  -webkit-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
-}
-/* line 84, ../../../components/sass/_mixins.scss */
-#css_001 .gradient_animate_2:hover:before {
-  opacity: 1;
-}
-
 /* line 1, ../../../components/sass/modules_vicmod_css/_csspage001.scss */
 #cs001_html #header {
   height: 100vh;
@@ -633,4 +573,116 @@ header .fullheightbg {
 header .fullheightbg .hgroup {
   background: #00000085;
   height: 100vh;
+}
+
+/* line 2, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .child {
+  background: #f7e5aa;
+  margin: 0 auto;
+  width: 50vw;
+  min-height: 20vh;
+}
+/* line 8, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .parent:hover {
+  background-image: -webkit-linear-gradient(30deg, #0f83a0 50%, #063642 50%);
+}
+/* line 12, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .gradient_animate_1 {
+  margin: 0 auto;
+  background-size: 100%;
+  cursor: pointer;
+  position: relative;
+  background-image: linear-gradient(#ffffff, #000000);
+  z-index: 100;
+}
+/* line 24, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .gradient_animate_1:before {
+  border-radius: inherit;
+  background-image: linear-gradient(#000000, #ffffff);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+}
+/* line 38, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .gradient_animate_1:hover:before {
+  opacity: 1;
+}
+/* line 45, ../../../components/sass/modules_vicmod_css/_css_001_gradient_animate.scss */
+#css_001 .gradient_animate_2 {
+  background-size: 100%;
+  background-image: -webkit-linear-gradient(to bottom left, #b3b3b3 50%, #e6e6e6 50%);
+  background-image: linear-gradient(to bottom left, #b3b3b3 50%, #e6e6e6 50%);
+  position: relative;
+  z-index: 100;
+}
+/* line 67, ../../../components/sass/_mixins.scss */
+#css_001 .gradient_animate_2:before {
+  border-radius: inherit;
+  background-image: -webkit-linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
+  background-image: linear-gradient(to bottom left, #e6e6e6 50%, #b3b3b3 50%);
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -100;
+  -moz-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+/* line 84, ../../../components/sass/_mixins.scss */
+#css_001 .gradient_animate_2:hover:before {
+  opacity: 1;
+}
+
+/* line 45, ../../../components/sass/_mixins.scss */
+#css_004 #sec_wrapper:before, #css_004 #sec_wrapper:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+#css_004 #sec_wrapper:after {
+  clear: both;
+}
+/* line 4, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper section {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 3.33333%;
+  padding-right: 3.33333%;
+}
+/* line 45, ../../../components/sass/_mixins.scss */
+#css_004 #sec_wrapper2:before, #css_004 #sec_wrapper2:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+#css_004 #sec_wrapper2:after {
+  clear: both;
+}
+/* line 12, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper2 section {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* line 14, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+#css_004 #sec_wrapper2 section xmp {
+  height: 300px;
 }

@@ -25,17 +25,54 @@
   <main id="main" style="height:9000px;background:grey;">
 
     <div class="mydiv_format split_bg_left" id="css_004">
-      <h2>susy grid gutter</h2>
-      <article class="content">
-        <div class="gallery">
-          <img src="images/hotel/intro_room.jpg">
-          <img src="images/hotel/intro_pool.jpg">
-          <img src="images/hotel/intro_dining.jpg">
-          <img src="images/hotel/intro_attractions.jpg">
-          <img class="hidesm" src="images/hotel/intro_wedding.jpg">
-        </div>
-      </article>
-    </div><!-- welcome -->
+      <h2>css_004 susy's mixin @include <mark>span</mark></h2>
+      <p>
+        susy version: 2.2.14<br>
+        template based on "#hotelinfo"
+      </p>
+      <article id="sec_wrapper">
+        <p class="show_element_name">article#sec_wrapper</p>
+        <section id="section1">
+          <p class="show_element_name">section#section1</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        </section>
+        <section id="section2">
+          <p class="show_element_name">section#section2</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        </section>
+        <section id="section3">
+          <p class="show_element_name">section#section3</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        </section>
+      </article><!-- sec_wrapper-->
+
+      <article id="sec_wrapper2">
+        <section id="html">
+          <xmp>
+            <article id="sec_wrapper">
+              <section id="section1"></section>
+              <section id="section2"></section>
+              <section id="section3"></section>
+            </article><!-- sec_wrapper-->
+          </xmp>
+        </section>
+
+        <section id="css">
+          <xmp>
+            #css_004{
+              #sec_wrapper{
+                @include clearfix;
+                section{
+                  @include span(1 of 3);
+                }
+              }
+            }
+          </xmp>
+        </section>
+
+
+    </article>
+    </div><!-- css_004 susy mixin span demo -->
 
     <div class="mydiv_format split_bg_left" id="css_001" >
       <h2>css_001: Hover bg Animations</h2>
