@@ -31,26 +31,14 @@ div#header h1, div#main h1{ color: white; background: black;}
   }//ol
 }// #inner
 
-xmp{
-  background: black; font-weight: 500px; color:white;
-  //margin:10px 20px 10px 30px;
-  padding:10px;
-  font:1.2em/1.4em Monospace;
-}
-mark{
-  font-weight: 900;
-  padding: 2px 8px;
-}
-
 // css pages header FORMAT
-header{
-  .fullheightbg{
-    height: 100vh;
-    @include backImage('../images/hotel/events_2.jpg');
-    // apply overlay on .hgroup
-    .hgroup{
-        background:#00000085;
-        height:100vh;
-    }
-  }// .fullheightbg
-}// header
+
+.fullheightbg{
+  height: 100vh;
+  @include backImage('../images/hotel/events_2.jpg');
+  // apply overlay on .hgroup
+  .hgroup{
+      background:#00000085;
+      height:100vh;
+  }
+}// .fullheightbg
