@@ -12,12 +12,14 @@
     <article class="fullheightbg">
       <div class="hgroup">
         <div class="vic_subhead">
-          <a href="#" target="_blank">
-            <h2>csspage004</h2>
-            <p> Susy's Mixin <br>
-              Span, Container
-            </p>
-          </a>
+          <h2>csspage004</h2>
+          <p> Susy's Mixin <br>
+            Span, Container
+          </p>
+          <p>
+            <a target="_blank" href="https://bit.ly/2KcmWIg">Susy 2 Documentation Reference
+            </a>
+          </p>
         </div><!-- vic_subhead -->
       </div> <!-- hgroup -->
     </article> <!-- fullheightbg -->
@@ -94,7 +96,8 @@
         </section>
       </article><!-- sec_wrapper3-->
 
-      <article id="sec_wrapper4"><p class="show_element_name">article#sec_wrapper2</p>
+      <article id="sec_wrapper4">
+        <p class="show_element_name">article#sec_wrapper4</p>
         <section>
           <xmp>
             <article id="sec_wrapper3">
@@ -127,6 +130,45 @@
           </xmp>
         </section>
       </article> <!-- sec_wrapper4 -->
+
+      <article id="sec_wrapper5">
+        <p class="show_element_name">article#sec_wrapper5</p>
+        <p>
+          <a target="_blank" style="color:white;"
+            href="https://zellwk.com/blog/susy2-tutorial/">
+            TUTORIAL
+          </a>
+        </p>
+        <xmp>
+          // susy2's span syntax
+          @include span( <width> [<wide / wider>] of <layout> [<last>] );
+        </xmp>
+        <section> <p class="show_element_name">1</p> </section>
+        <section> <p class="show_element_name">2</p> </section>
+        <section> <p class="show_element_name">3</p> </section>
+      </article><!-- sec_wrapper5-->
+      <xmp style="margin:0;padding:0;">
+        section{
+          @include span (3 wide of 9);
+        }
+      </xmp>
+
+      <article id="sec_wrapper6">
+        <p class="show_element_name">article#sec_wrapper6</p>
+        <section> <p class="show_element_name">1</p> </section>
+        <section> <p class="show_element_name">2</p> </section>
+        <section> <p class="show_element_name">3</p> </section>
+      </article><!-- sec_wrapper5-->
+      <xmp style="margin:0;padding:0;">
+        section{
+          // wider
+          @include span (3 wider of 9);
+        }
+
+        [<wide / wider>] is a optional argument
+        lets you expand the width of the column to include 1 or 2 more gutters respectively
+      </xmp>
+
 
     </div><!-- css_004 susy mixin span demo -->
 

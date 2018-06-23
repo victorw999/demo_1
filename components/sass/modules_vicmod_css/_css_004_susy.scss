@@ -38,12 +38,42 @@
     } // section
   }// sec_wrapper3
 
-    #sec_wrapper4{
-      @include clearfix;
-      background: rgba($dark, 0.5);
-      section{
-        @include span(1 of 2);
-        xmp{ height: 400px; }
-      }// section
+  #sec_wrapper4{
+    @include clearfix;
+    background: rgba($dark, 0.5);
+    section{
+      @include span(1 of 2);
+      xmp{ height: 400px; }
+    }// section
+  }// #sec_wrapper4
+
+// format section number
+#sec_wrapper5 section .show_element_name,
+#sec_wrapper6 section .show_element_name{
+  font-size: 5em !important;
+  width:100%
+}
+  #sec_wrapper5{
+    @include clearfix;
+
+    section{
+      @include span (3 wide of 9);
+      background-color: $light;
+      height:200px;
+      border: 15px solid lighten( $blue, 65% );
     }
+  }//#sec_wrapper5
+
+  #sec_wrapper6{
+    @include clearfix;
+
+    box-sizing: border-box;
+    section{
+      @include span (3 wider of 9);
+      background-color: $light;
+      height:200px;
+      border: 15px solid lighten( $blue, 65% );
+    }
+  }//#sec_wrapper5
+
 }// #css_004
