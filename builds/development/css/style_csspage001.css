@@ -810,17 +810,17 @@ div#header h1, div#main h1 {
 #css_004 #sec_wrapper7:after, #css_004a #sec_wrapper7:after {
   clear: both;
 }
-/* line 76, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+/* line 77, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
 #css_004 #sec_wrapper7 .three-columns, #css_004a #sec_wrapper7 .three-columns {
   width: 33.33333%;
-  padding-left: 4.16667%;
-  padding-right: 4.16667%;
+  padding-left: 5.55556%;
+  padding-right: 5.55556%;
   float: left;
   background-color: #ffffff;
   height: 200px;
   border: 1px solid #9de4f6;
 }
-/* line 85, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
+/* line 86, ../../../components/sass/modules_vicmod_css/_css_004_susy.scss */
 #css_004 #sec_wrapper7 .three-columns p, #css_004a #sec_wrapper7 .three-columns p {
   width: 100%;
   height: 100%;
