@@ -50,7 +50,7 @@
         </section>
       </article><!-- sec_wrapper-->
 
-      <article id="sec_wrapper2"><p class="show_element_name">article#sec_wrapper2</p>
+      <article class="xmp_split_panes">
         <section>
           <xmp>
             <article id="sec_wrapper">
@@ -80,7 +80,7 @@
             }
           </xmp>
         </section>
-      </article> <!-- sec_wrapper2 -->
+      </article>
 
       <article id="sec_wrapper3">
         <p class="show_element_name">article#sec_wrapper3</p>
@@ -96,8 +96,7 @@
         </section>
       </article><!-- sec_wrapper3-->
 
-      <article id="sec_wrapper4">
-        <p class="show_element_name">article#sec_wrapper4</p>
+      <article class="xmp_split_panes">
         <section>
           <xmp>
             <article id="sec_wrapper3">
@@ -107,7 +106,6 @@
             </article><!-- sec_wrapper3-->
           </xmp>
         </section>
-
         <section>
           <xmp>
             #sec_wrapper3{
@@ -126,10 +124,9 @@
 
               } // section
             }// sec_wrapper3
-
           </xmp>
         </section>
-      </article> <!-- sec_wrapper4 -->
+      </article>
 
       <article id="sec_wrapper5">
         <p class="show_element_name">article#sec_wrapper5</p>
@@ -175,6 +172,56 @@
     <!-- ****************** -->
     <div class="fullheightbg gap" style="height:300px;"> </div>
     <!-- ****************** -->
+
+    <div class="mydiv_format" id="css_004a">
+      <h2>Span(Fuction)</h2>
+      <article id="sec_wrapper7">
+        <p class="show_element_name">article#sec_wrapper7</p>
+        <p>
+          <a target="_blank" style="color:white;"
+            href="https://zellwk.com/blog/susy2-tutorial/">
+            TUTORIAL
+          </a>
+        </p>
+        <div class="wrapper">
+          <section class="three-columns"> <p class="show_element_name">1</p> </section>
+          <section class="three-columns"> <p class="show_element_name">2</p> </section>
+          <section class="three-columns"> <p class="show_element_name">3</p> </section>
+        </div>
+      </article><!-- sec_wrapper5-->
+
+      <article class="xmp_split_panes">
+        <section>
+          <xmp>
+          <article id="sec_wrapper7">
+            <section class="three-columns"></section>
+            <section class="three-columns"></section>
+            <section class="three-columns"></section>
+          </article><!-- sec_wrapper7-->
+          </xmp>
+        </section>
+
+        <section>
+          <xmp>
+            #sec_wrapper7{
+              @include clearfix;
+              .three-columns{
+                width: span(3 of 9);
+                padding-left: span(1 of 24);
+                padding-right: span(1 of 24);
+                float:left;
+              } // .three-columns
+            } //#sec_wrapper7
+          </xmp>
+        </section>
+      </article>
+
+    </div>
+
+    <!-- ****************** -->
+    <div class="fullheightbg gap" style="height:300px;"> </div>
+    <!-- ****************** -->
+
 
     <div class="mydiv_format" id="css_005">
       <h2>css_005 @include <mark>container();</mark></h2>

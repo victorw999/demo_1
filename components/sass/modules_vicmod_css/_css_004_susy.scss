@@ -1,4 +1,4 @@
-#css_004{
+#css_004, #css_004a{
   #sec_wrapper{
     @include clearfix;
     border: 15px solid rgba( $light, .9 );
@@ -9,15 +9,16 @@
   }// sec_wrapper
 
   // xmp code section
-  #sec_wrapper2{
+  .xmp_split_panes{
     @include clearfix;
     background: rgba($dark, 0.5);
-
     section{
       @include span(1 of 2);
       xmp{ height: 400px; }
+      padding-left: span(1 of 150);
+      padding-right: span(1 of 150);
     }// section
-  }// #sec_wrapper2
+  }//.xmp_split_panes
 
   #sec_wrapper3{
     @include clearfix;
@@ -38,21 +39,13 @@
     } // section
   }// sec_wrapper3
 
-  #sec_wrapper4{
-    @include clearfix;
-    background: rgba($dark, 0.5);
-    section{
-      @include span(1 of 2);
-      xmp{ height: 400px; }
-    }// section
-  }// #sec_wrapper4
 
-// format section number
-#sec_wrapper5 section .show_element_name,
-#sec_wrapper6 section .show_element_name{
-  font-size: 5em !important;
-  width:100%
-}
+  // format section number
+  #sec_wrapper5 section .show_element_name,
+  #sec_wrapper6 section .show_element_name{
+    font-size: 5em !important;
+    width:100%
+  }
   #sec_wrapper5{
     @include clearfix;
 
@@ -74,6 +67,26 @@
       height:200px;
       border: 15px solid lighten( $blue, 65% );
     }
-  }//#sec_wrapper5
+  }//#sec_wrapper6
 
-}// #css_004
+  // demo span(fuctions)
+  #sec_wrapper7{
+    @include clearfix;
+    // This has a width of 3 columns out of 9 columns
+    .three-columns{
+      width: span(3 of 9);
+      padding-left: span(1 of 24);
+      padding-right: span(1 of 24);
+
+      float:left;
+      background-color: $light;
+      height:200px;
+      border: 1px solid lighten( $blue, 65% );
+      p{
+        width: 100%; height:100%;
+      }
+    }// .three-columns
+  }//#sec_wrapper7
+
+
+}// #css_004,#css_004a
