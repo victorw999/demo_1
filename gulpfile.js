@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 
 var env,
     jsSources,
-    sassSources, sassSources2,
+    sassSources, sassSources1, sassSources5,
     htmlSources,
     outputDir,
     sassStyle;
@@ -35,7 +35,8 @@ jsSources = [
   'components/scripts/script_vic.js'
 ];
 sassSources = ['components/sass/style.scss'];
-sassSources2 = ['components/sass/style_csspage001.scss'];
+sassSources1 = ['components/sass/style_csspage001.scss'];
+sassSources5 = ['components/sass/style_csspage005.scss'];
 htmlSources = [outputDir + '*.html'];
 
 gulp.task('js', function() {
@@ -59,12 +60,11 @@ gulp.task('compass', function() {
       require: ['susy', 'breakpoint']
     })
     .on('error', gutil.log))
-//    .pipe(gulp.dest( outputDir + 'css'))
     .pipe(connect.reload())
 });
 
-gulp.task('compass2', function() {
-  gulp.src(sassSources2)
+gulp.task('compass1', function() {
+  gulp.src(sassSources1)
     .pipe(compass({
       sass: 'components/sass',
       css: outputDir + 'css',
@@ -77,10 +77,24 @@ gulp.task('compass2', function() {
 });
 
 
+gulp.task('compass5', function() {
+  gulp.src(sassSources5)
+    .pipe(compass({
+      sass: 'components/sass',
+      css: outputDir + 'css',
+      image: outputDir + 'images',
+      style: sassStyle,
+      require: ['susy', 'breakpoint']
+    })
+    .on('error', gutil.log))
+    .pipe(connect.reload())
+});
+
 gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass']);
-  gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass2']);
+  gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass1']);
+  gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass5']);
   gulp.watch('builds/development/*.html', ['html']);
 });
 
@@ -104,4 +118,4 @@ gulp.task('move', function() {
   .pipe(gulpif(env === 'production', gulp.dest(outputDir+'images')))
 });
 
-gulp.task('default', ['watch', 'html', 'js', 'compass', 'compass2', 'move', 'connect']);
+gulp.task('default', ['watch', 'html', 'js', 'compass', 'compass1', 'compass5', 'move', 'connect']);
