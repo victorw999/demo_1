@@ -1,0 +1,55 @@
+#cspage005_html{
+  h2,h3, p, .button{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .vic_headline_block{
+    width: 45%;
+    margin:50px auto;
+
+    h2{
+      font-size: 3rem;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      color: #797979;
+      font-weight: 400;
+    }// h2
+    h3{
+      color:black;font-weight: 100;
+      text-transform: uppercase;
+      padding:50px;
+    }
+  }// vic_headline_block
+
+
+  // Lululemon
+  .button {
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all .3s ease;
+    background: #fafafa;
+    border: 1px solid currentColor;
+
+    font-size: .875rem;
+    font-weight: 700;
+    padding: 1.42rem 1.4rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1.4px;
+    letter-spacing: .0875rem;
+    line-height: 1.4;
+  }// .btton
+  .button:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+  }
+  a, a.cta-link {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }//a
+
+
+}// cspage005_html

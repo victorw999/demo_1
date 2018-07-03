@@ -503,6 +503,61 @@ mark {
   vertical-align: middle;
 }
 
+/* line 2, ../../../components/sass/modules_vicmod_css/_csspage005.scss */
+#cspage005_html h2, #cspage005_html h3, #cspage005_html p, #cspage005_html .button {
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* line 5, ../../../components/sass/modules_vicmod_css/_csspage005.scss */
+#cspage005_html .vic_headline_block {
+  width: 45%;
+  margin: 50px auto;
+}
+/* line 9, ../../../components/sass/modules_vicmod_css/_csspage005.scss */
+#cspage005_html .vic_headline_block h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  color: #797979;
+  font-weight: 400;
+}
+/* line 16, ../../../components/sass/modules_vicmod_css/_csspage005.scss */
+#cspage005_html .vic_headline_block h3 {
+  color: black;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 50px;
+}
+/* line 25, ../../../components/sass/modules_vicmod_css/_csspage005.scss */
+#cspage005_html .button {
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all .3s ease;
+  background: #fafafa;
+  border: 1px solid currentColor;
+  font-size: .875rem;
+  font-weight: 700;
+  padding: 1.42rem 1.4rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1.4px;
+  letter-spacing: .0875rem;
+  line-height: 1.4;
+}
+/* line 42, ../../../components/sass/modules_vicmod_css/_csspage005.scss */
+#cspage005_html .button:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+/* line 47, ../../../components/sass/modules_vicmod_css/_csspage005.scss */
+#cspage005_html a, #cspage005_html a.cta-link {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
 /*
 body:before {
     content: 'small';
