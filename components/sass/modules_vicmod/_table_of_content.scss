@@ -1,0 +1,31 @@
+
+$this_blue : lighten( $blue, 75% );
+
+#table_of_content{
+  @include clearfix;
+  section{
+    @include span (4 of 12);
+    border: 15px solid $this_blue;
+    padding:10px;
+
+    @include breakpoint( 450px $small){
+      @include span(1 of 2);
+    }// breakpoint
+    @include breakpoint( 0px 450px ){
+      @include span(1 of 1);
+    }// breakpoint
+  }
+
+  // formatting
+  a, h2, p {color:black;}
+  a{ text-decoration: none;}
+  h2{
+    background:$this_blue;
+  }
+  p{
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-weight: 600;
+    padding: 10px;
+  }
+}// # table_of_content
