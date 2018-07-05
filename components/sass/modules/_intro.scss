@@ -1,8 +1,8 @@
 header{
   .fullheight {
     @include clearfix;
-    @include backImage('../images/hotel/splash_hotelphoto.jpg');
-
+    //@include backImage('../images/hotel/splash_hotelphoto.jpg');
+    @include backImage('../images/main-banner-slub-terry.jpg');
     // using flexbox to center element
     /* for broswers support flexbox*/
     @include display-flex();
