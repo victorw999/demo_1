@@ -3,8 +3,21 @@ $this_blue : lighten( $blue, 75% );
 
 #table_of_content{
   @include clearfix;
+  position: relative;
+  height:2000px;
+  background: url("../images/hotel/splash_hotelphoto.jpg");
+
+  .overlay {
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;
+    height: 100%; width: 100%;
+    opacity: 0.9;
+    background-color: white;
+  }
+
   section{
-    @include span (4 of 12);
+    height:300px;
+    @include span (3 of 12);
     border: 15px solid $this_blue;
     padding:10px;
 
@@ -21,10 +34,11 @@ $this_blue : lighten( $blue, 75% );
   a{ text-decoration: none;}
   h2{
     background:$this_blue;
+    font-size:1.2em;
   }
   p{
-    font-size: 1.2em;
-    line-height: 1.3em;
+    font-size: 1em;
+    line-height: 1.2em;
     font-weight: 600;
     padding: 10px;
   }

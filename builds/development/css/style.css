@@ -1273,6 +1273,12 @@ blockquote:after {
   -webkit-backface-visibility: hidden;
 }
 
+/* line 4, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+#table_of_content {
+  position: relative;
+  height: 2000px;
+  background: url("../images/hotel/splash_hotelphoto.jpg");
+}
 /* line 45, ../../../components/sass/_mixins.scss */
 #table_of_content:before, #table_of_content:after {
   content: '';
@@ -1282,12 +1288,25 @@ blockquote:after {
 #table_of_content:after {
   clear: both;
 }
-/* line 6, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 10, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+#table_of_content .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  background-color: white;
+}
+/* line 18, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content section {
+  height: 300px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 33.33333%;
+  width: 25%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
@@ -1295,7 +1314,7 @@ blockquote:after {
   padding: 10px;
 }
 @media (min-width: 450px) and (max-width: 650px) {
-  /* line 6, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+  /* line 18, ../../../components/sass/modules_vicmod/_table_of_content.scss */
   #table_of_content section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1307,7 +1326,7 @@ blockquote:after {
   }
 }
 @media (min-width: 0px) and (max-width: 450px) {
-  /* line 6, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+  /* line 18, ../../../components/sass/modules_vicmod/_table_of_content.scss */
   #table_of_content section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1318,22 +1337,23 @@ blockquote:after {
     padding-right: 10%;
   }
 }
-/* line 20, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 33, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content a, #table_of_content h2, #table_of_content p {
   color: black;
 }
-/* line 21, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 34, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content a {
   text-decoration: none;
 }
-/* line 22, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 35, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content h2 {
   background: #ccf1fa;
-}
-/* line 25, ../../../components/sass/modules_vicmod/_table_of_content.scss */
-#table_of_content p {
   font-size: 1.2em;
-  line-height: 1.3em;
+}
+/* line 39, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+#table_of_content p {
+  font-size: 1em;
+  line-height: 1.2em;
   font-weight: 600;
   padding: 10px;
 }
@@ -1819,6 +1839,59 @@ mark {
 /* line 84, ../../../components/sass/_mixins.scss */
 #css_001 .gradient_animate_2:hover:before {
   opacity: 1;
+}
+
+/* line 2, ../../../components/sass/modules_vicmod_css/_csspage007.scss */
+#cs007_html #ex1 {
+  text-align: center;
+}
+/* line 4, ../../../components/sass/modules_vicmod_css/_csspage007.scss */
+#cs007_html #ex1 .container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+/* line 10, ../../../components/sass/modules_vicmod_css/_csspage007.scss */
+#cs007_html #ex1 .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 16, ../../../components/sass/modules_vicmod_css/_csspage007.scss */
+#cs007_html #ex1 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+/* line 28, ../../../components/sass/modules_vicmod_css/_csspage007.scss */
+#cs007_html #ex1 .overlay.ex1a {
+  opacity: 0.1;
+}
+/* line 29, ../../../components/sass/modules_vicmod_css/_csspage007.scss */
+#cs007_html #ex1 .overlay.ex1b {
+  opacity: 0.8;
+}
+/* line 31, ../../../components/sass/modules_vicmod_css/_csspage007.scss */
+#cs007_html #ex1 .container:hover .overlay {
+  opacity: 1;
+}
+/* line 35, ../../../components/sass/modules_vicmod_css/_csspage007.scss */
+#cs007_html #ex1 .text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
