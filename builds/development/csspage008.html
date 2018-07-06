@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
-<body id="css008_html"> 
+<body id="css008_html">
 
   <div class="mydiv_format split_bg_right" id="css_002a">
     <h2>css_002a: Centering: using transform:translate</h2>
@@ -24,6 +24,36 @@
       </div>
     </div>
   </div><!-- css 002a-->
+
+  <div class="mydiv_format" id="css008_02">
+    <p class="show_element_name">#css008_02</p>
+    <div class="vic_subhead">
+      <p>
+        <ul>
+          <h2>Centering: using mixin</h2>
+          <li>Parent element must be position:relative</li>
+          <li>tutorial: <a href="https://css-tricks.com/snippets/sass/centering-mixin/" target="_blank">REF</a></li>
+        </ul>
+      </p>
+    </div><!-- .vic_subhead -->
+    <div class="parent">
+      <p class="show_element_name">.parent</p>
+      <div class="child">
+        <p class="show_element_name">.child</p>
+          This is the "inner element" being centered
+      </div>
+    </div>
+    <xmp>
+      @mixin centerer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .parent { position: relative;}
+      .child  { @include centerer; }
+    </xmp>
+  </div>
 
   <div class="mydiv_format split_bg_left" id="css_002b">
     <h2>css_002b</h2>

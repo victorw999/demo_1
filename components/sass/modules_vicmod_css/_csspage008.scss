@@ -23,11 +23,38 @@
   }
   .ex2.outter{
     .inner{
-      position:absolute;
+      position:relative;
       transform:translate(-50%,-50%);
     }
   }
 }//css_002a
+
+#css008_02{
+  padding: 0;
+
+  .parent{
+    background: lighten(red, 45%);width:50%;height:300px;margin:auto;
+    position:relative;
+    .child{
+      @include centerer;
+      border: 20px solid grey;
+    }// child
+  }// parent
+
+  //formatting...
+  .vic_subhead{
+    max-width: none; width:50%;padding:0px 50px;background: white;
+    h2, ul li, a {font-size: 18px; letter-spacing: 1px; color:black}
+    ul {
+      text-align: left;
+      line-height: 0.6em;
+    }
+  }
+  xmp{
+    width:50%;margin:auto;
+  }
+
+}//#css008_02
 
 #css_002b{
   .box{
