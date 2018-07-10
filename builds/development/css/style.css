@@ -1759,51 +1759,55 @@ mark {
   margin: auto;
 }
 
-/* line 59, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
-#css_002b .box {
+/* line 58, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+#csspage008_03 {
+  padding-top: 0px;
+}
+/* line 60, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+#csspage008_03 .box {
   width: 200px;
   height: 200px;
   color: white;
   font-weight: 900;
 }
-/* line 62, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
-#css_002b .position-relative {
+/* line 63, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+#csspage008_03 .position-relative {
   background: #cc0000;
   position: relative;
   left: 50%;
 }
-/* line 67, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
-#css_002b .position-absolute {
+/* line 68, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+#csspage008_03 .position-absolute {
   background: #660000;
   position: absolute;
   left: 50%;
 }
-/* line 72, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
-#css_002b .translate {
+/* line 73, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+#csspage008_03 .translate {
   background: black;
-  transform: translate(50%);
+  transform: translate(50%, -50%);
 }
 
-/* line 80, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 81, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 img {
   width: 100%;
 }
-/* line 81, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 82, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 img.angled_edge_via_clip_path {
   -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
 }
-/* line 87, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 88, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .hero img {
   -webkit-clip-path: polygon(20% 20%, 100% 0, 80% 80%, 0 100%);
   clip-path: polygon(20% 20%, 100% 0, 80% 80%, 0 100%);
 }
-/* line 91, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 92, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .hero {
   position: relative;
   text-align: center;
 }
-/* line 94, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 95, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .hero figcaption {
   left: 50%;
   position: absolute;
@@ -1812,12 +1816,12 @@ mark {
   width: 100%;
   background: yellow;
 }
-/* line 103, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 104, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .promo {
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 }
-/* line 107, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 108, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .promo {
   background: url(https://unsplash.it/1600/900?image=830) no-repeat;
   background-size: cover;
@@ -1828,38 +1832,38 @@ mark {
   text-align: center;
 }
 
-/* line 119, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 120, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_001 {
   padding: 0;
   height: 500px;
   background: #e4f8fd;
 }
-/* line 121, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 122, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_001 .topbar {
   width: 100%;
   height: 300px;
   background: #0f83a0;
 }
-/* line 122, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 123, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_001 section {
   width: 100%;
   height: 100vh;
   background: #ccf1fa;
 }
 
-/* line 125, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 126, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_002 {
   padding: 0;
   background: white;
 }
-/* line 127, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 128, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_002 #header {
   width: 100%;
   height: 1000px;
   overflow: hidden;
   background: white;
 }
-/* line 134, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 135, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_002 #header__background {
   background-image: url("https://unsplash.it/2000/1200/?random");
   background-size: cover;
@@ -1868,7 +1872,7 @@ mark {
   height: inherit;
   display: table;
 }
-/* line 142, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 143, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_002 #header__centered {
   display: table-cell;
   vertical-align: middle;

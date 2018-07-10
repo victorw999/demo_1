@@ -55,7 +55,8 @@
 
 }//#css008_02
 
-#css_002b{
+#csspage008_03{
+  padding-top:0px;
   .box{
     width:200px; height:200px;color:white; font-weight:900;
   }
@@ -71,9 +72,9 @@
   }
   .translate{
     background:darken(red,50%);
-    transform:translate(50%);
+    transform:translate(50%, -50%);
   }
-}// css_002b
+}// css008_03
 
 // #css_003
 #css_003{
