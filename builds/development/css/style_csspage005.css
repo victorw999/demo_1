@@ -1,12 +1,12 @@
 /*
 Error: Undefined mixin 'centerer'.
-        on line 37 of C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss, in `centerer'
-        from line 37 of C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss
+        on line 38 of C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss, in `centerer'
+        from line 38 of C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss
         from line 24 of C:/Users/Linda/Desktop/github/demo_1/components/sass/style_csspage005.scss
 
 Backtrace:
-C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss:37:in `centerer'
-C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss:37
+C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss:38:in `centerer'
+C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss:38
 C:/Users/Linda/Desktop/github/demo_1/components/sass/style_csspage005.scss:24
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -97,4 +97,4 @@ C:/Ruby24-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'centerer'.\A         on line 37 of C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss, in `centerer'\A         from line 37 of C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss\A         from line 24 of C:/Users/Linda/Desktop/github/demo_1/components/sass/style_csspage005.scss"; }
+  content: "Error: Undefined mixin 'centerer'.\A         on line 38 of C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss, in `centerer'\A         from line 38 of C:/Users/Linda/Desktop/github/demo_1/components/sass/modules_vicmod_css/_csspage008.scss\A         from line 24 of C:/Users/Linda/Desktop/github/demo_1/components/sass/style_csspage005.scss"; }
