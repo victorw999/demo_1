@@ -23,7 +23,7 @@
   .gallery{
     @include clearfix;
     img{
-    //  max-width: 200px; // shrink victor's images
+      //  max-width: 200px; // shrink victor's images
       @include border-radius(20%);
       display: none;
 
