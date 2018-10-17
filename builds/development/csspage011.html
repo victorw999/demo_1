@@ -5,6 +5,16 @@
   <title>011</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    figure{
+      padding: 0 1em;
+      max-wdith: 33em;
+    }
+    img{
+      display:block;
+      width: 100$
+    }
+  </style>
 </head>
 
 <body id="css011_html">
@@ -17,11 +27,19 @@
         <a href="https://alistapart.com/article/responsive-images-in-practice#section2"
           target="_blank">REF: scaling with scrset and sizes</a></p>
 
-      <p>
-      </p>
+
     </div>
   </div>
 
+  <figure>
+    <img srcset =  "images/responsive_img/couple_1920.jpg 1920w,
+                    images/responsive_img/couple_1024.jpg 1024w,
+                    images/responsive_img/couple_960.jpg  960w,
+                    images/responsive_img/couple_480.jpg  480w"
+         src=      "images/responsive_img/couple_960.jpg">
+    </img>
+    <figcaption> CAPTION </figcaption>
+  </figure>
   <script>
   </script>
 </body>
