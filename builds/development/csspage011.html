@@ -37,7 +37,7 @@
   <h2>test1</h2>
   <figure>
     <figcaption> When load this page on linda-win7-2015, it loads 1920 image. When load on iphone, it loads 960 image. </figcaption>
-    <img srcset =  "images/responsive_img/couple_1920.jpg 2920w,
+    <img srcset =  "images/responsive_img/couple_1920.jpg 1920w,
                     images/responsive_img/couple_1024.jpg 1024w,
                     images/responsive_img/couple_960.jpg  960w,
                     images/responsive_img/couple_480.jpg  480w"
@@ -53,13 +53,34 @@
                     images/responsive_img/couple_960.jpg  960w,
                     images/responsive_img/couple_480.jpg  480w"
          src=      "images/responsive_img/couple_960.jpg"
-
+         sizes="(min-width: 33em) 33em, 100vw"
          >
     </img>
-    <!--
-     sizes="(min-width: 33em) 33em, 100vw"
-    -->
   </figure>
+
+  <h2>test3</h2>
+  <p>Chrome & Firefox respond differently</p>
+  <figure>
+    <img srcset =  "https://via.placeholder.com/236x100  236w,
+                    https://via.placeholder.com/300x100  300w,
+                    https://via.placeholder.com/472x100  472w,
+                    https://via.placeholder.com/600x100  600w,
+                    https://via.placeholder.com/943x100  943w
+                    "
+         src=      "https://via.placeholder.com/236x100"
+         sizes="(min-width: 1341px) 450px,
+                (min-width: 1181px) 400px,
+                (min-width: 961px)  350px,
+                (min-width: 881px)  325px,
+                (min-width: 801px)  300px,
+                (min-width: 721px)  250px,
+                calc(100vw - 30px)"
+         >
+    </img>
+  </figure>
+
+  <div style="height:100vh;"></div>
+
 
 
   <script>

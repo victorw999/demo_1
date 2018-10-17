@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>011</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    body{
+      font-size: 1.25em;
+    }
+    figure{
+      padding: 0;
+      max-width: 33em;
+    }
+    img{
+      display:block;
+      width: 100$
+    }
+    .viewport_width{
+      display: block;
+      background: red;
+      height:20px;width:99px;
+      color:white;
+      float:left; text-align: right;
+      font-size: 16px; line-height: 16px; font-weight: 600;
+      border:1px solid white;
+    }
+
+    @media screen and (min-width:500px) {
+      #test_media_query { font-weight:bold; }
+    }
+
+    @media screen and (min-width:700px) {
+      #test_media_query { color:red; }
+    }
+  </style>
+</head>
+
+<body id="css011_html">
+
+  <div class="mydiv_format" id="">
+    <h2>Media Query min-width max-width</h2>
+    <div class="content">
+      <p>
+        <a href="https://stackoverflow.com/a/16647547"
+          target="_blank">REF
+        </a><br>
+        <a href="http://ryanve.com/lab/dimensions/"
+          target="_blank">REF: display viewport in realtime (very useful)
+        </a>
+      </p>
+      <p id="viewport"></p>
+
+    </div>
+  </div>
+  <p id="test_media_query">test_media_query</p>
+
+
+  <p class="viewport_width">100px</p>
+  <p class="viewport_width">200px</p>
+  <p class="viewport_width">300px</p>
+  <p class="viewport_width">400px</p>
+  <p class="viewport_width">500px</p>
+  <p class="viewport_width">600px</p>
+  <p class="viewport_width">700px</p>
+  <p class="viewport_width">800px</p>
+  <p class="viewport_width">900px</p>
+  <p class="viewport_width">1000px</p>
+
+  <xmp>
+    // activiates when viewport > 500px
+    @media screen and (min-width:500px) {
+      #test_media_query { font-weight:bold; }
+    }
+
+    // activiates when viewport > 700px
+    @media screen and (min-width:700px) {
+      #test_media_query { color:red; }
+    }
+  </xmp>
+
+
+  <div style="height:100vh;"></div>
+
+
+
+  <script>
+
+  </script>
+</body>
+
+</html>
