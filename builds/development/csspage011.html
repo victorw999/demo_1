@@ -6,9 +6,12 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <style>
+    body{
+      font-size: 1.25em;
+    }
     figure{
-      padding: 0 1em;
-      max-wdith: 33em;
+      padding: 0;
+      max-width: 33em;
     }
     img{
       display:block;
@@ -31,15 +34,34 @@
     </div>
   </div>
 
+  <h2>test1</h2>
+  <figure>
+    <figcaption> When load this page on linda-win7-2015, it loads 1920 image. When load on iphone, it loads 960 image. </figcaption>
+    <img srcset =  "images/responsive_img/couple_1920.jpg 2920w,
+                    images/responsive_img/couple_1024.jpg 1024w,
+                    images/responsive_img/couple_960.jpg  960w,
+                    images/responsive_img/couple_480.jpg  480w"
+         src=      "images/responsive_img/couple_960.jpg"
+         >
+    </img>
+  </figure>
+
+  <h2>test2: added 'sizes' attribute</h2>
   <figure>
     <img srcset =  "images/responsive_img/couple_1920.jpg 1920w,
                     images/responsive_img/couple_1024.jpg 1024w,
                     images/responsive_img/couple_960.jpg  960w,
                     images/responsive_img/couple_480.jpg  480w"
-         src=      "images/responsive_img/couple_960.jpg">
+         src=      "images/responsive_img/couple_960.jpg"
+
+         >
     </img>
-    <figcaption> CAPTION </figcaption>
+    <!--
+     sizes="(min-width: 33em) 33em, 100vw"
+    -->
   </figure>
+
+
   <script>
   </script>
 </body>
