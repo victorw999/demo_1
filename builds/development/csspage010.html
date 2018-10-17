@@ -5,6 +5,12 @@
   <title>010</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    #logger{
+      width: 300px;
+      overflow-wrap: break-word;
+    }
+  </style>
 </head>
 
 <body id="css010_html">
@@ -12,35 +18,42 @@
   <div class="mydiv_format" id="">
     <h2>Responsive Images: srcset</h2>
     <div class="content">
-      <p>Utilizing picture+source element and javascript to show responsive images based on viewport width</p>
-      <p><a href="https://cloudfour.com/thinks/responsive-images-101-part-2-img-required/" target="_blank">Tutorial Reference</a></p>
-      <picture>
-      	<source media="(min-width: 650px)" srcset="images/responsive_img/640.jpg">
-      	<source media="(min-width: 465px)" srcset="images/responsive_img/320.jpg">
-      	<!-- img tag for browsers that do not support picture element -->
-      	<img src="images/responsive_img/160.jpg" id="image_element">
-      </picture>
 
+      <p><a href="https://cloudfour.com/thinks/responsive-images-101-part-2-img-required/" target="_blank">Tutorial Reference</a></p>
+      <picture style="display:block; text-align:center;">
+      	<source media="(min-width: 650px)" srcset="images/responsive_img/640x100.jpg">
+      	<source media="(min-width: 465px)" srcset="images/responsive_img/320x100.jpg">
+      	<!-- img tag for browsers that do not support picture element -->
+      	<img src="images/responsive_img/160x100.jpg" id="image_element">
+      </picture>
+      <p>
+        <xmp>
+
+          * Utilizing <picture> & <source> element and javascript
+          to supply alternate image format based on viewport width
+
+
+        </xmp>
+      </p>
       <p id = "logger"></p>
     </div>
   </div>
 
   <script>
     (function() {
-    var currentSrc, oldSrc, imgEl;
-    var showPicSrc = function() {
-      oldSrc     = currentSrc;
-      imgEl      = document.getElementById('image_element');
-      currentSrc = imgEl.currentSrc || imgEl.src;
+      var currentSrc, oldSrc, imgEl;
+      var showPicSrc = function() {
+        oldSrc     = currentSrc;
+        imgEl      = document.getElementById('image_element');
+        currentSrc = imgEl.currentSrc || imgEl.src;
 
-      if (typeof oldSrc === 'undefined' || oldSrc !== currentSrc) {
-        document.getElementById('logger').innerHTML = currentSrc;
-      }
-    };
-
-    // You may wish to debounce resize if you have performance concerns
-    window.addEventListener('resize', showPicSrc);
-    window.addEventListener('load', showPicSrc);
+        if (typeof oldSrc === 'undefined' || oldSrc !== currentSrc) {
+          document.getElementById('logger').innerHTML = currentSrc;
+        }
+      };
+      // You may wish to debounce resize if you have performance concerns
+      window.addEventListener('resize', showPicSrc);
+      window.addEventListener('load', showPicSrc);
     })(window);
   </script>
 </body>
