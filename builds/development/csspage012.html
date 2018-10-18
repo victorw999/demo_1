@@ -17,16 +17,6 @@
       display:block;
       width: 100$
     }
-    .viewport_width{
-      display: block;
-      background: red;
-      height:20px;width:99px;
-      color:white;
-      float:left; text-align: right;
-      font-size: 16px; line-height: 16px; font-weight: 600;
-      border:1px solid white;
-    }
-
     @media screen and (min-width:500px) {
       #test_media_query { font-weight:bold; }
     }
@@ -54,19 +44,6 @@
 
     </div>
   </div>
-  <p id="test_media_query">test_media_query</p>
-
-
-  <p class="viewport_width">100px</p>
-  <p class="viewport_width">200px</p>
-  <p class="viewport_width">300px</p>
-  <p class="viewport_width">400px</p>
-  <p class="viewport_width">500px</p>
-  <p class="viewport_width">600px</p>
-  <p class="viewport_width">700px</p>
-  <p class="viewport_width">800px</p>
-  <p class="viewport_width">900px</p>
-  <p class="viewport_width">1000px</p>
 
   <xmp>
     // activiates when viewport > 500px
@@ -79,15 +56,34 @@
       #test_media_query { color:red; }
     }
   </xmp>
-
-
+  <p id="test_media_query">test_media_query</p>
+  <p id="viewport_width"></p>
   <div style="height:100vh;"></div>
 
 
 
-  <script>
 
-  </script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    // display viewport size
+    // borrow code from : https://stackoverflow.com/a/9720333
+    $(document).ready(function() {
+      // Optimalisation: Store the references outside the event handler:
+      var $window = $(window);
+      var $pane = $('#pane1');
+
+      function checkWidth() {
+          var windowsize = $window.width();
+          document.querySelector('#viewport_width').innerHTML = "viewport: " + windowsize;
+      }
+      // Execute on load
+      checkWidth();
+      // Bind event listener
+      $(window).resize(checkWidth);
+    });
+    </script>
+
 </body>
 
 </html>
