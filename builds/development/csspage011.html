@@ -17,6 +17,7 @@
       display:block;
       width: 100$
     }
+    #viewport_width{color:red;font-weight: 600;}
   </style>
 </head>
 
@@ -73,17 +74,34 @@
                 (min-width: 961px)  350px,
                 (min-width: 881px)  325px,
                 (min-width: 801px)  300px,
-                (min-width: 721px)  250px,
-                calc(100vw - 30px)"
+                (min-width: 721px)  250px
+                "
          >
     </img>
   </figure>
 
+  <p id="viewport_width"></p>
   <div style="height:100vh;"></div>
 
 
-
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script>
+  // display viewport size
+  // borrow code from : https://stackoverflow.com/a/9720333
+  $(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        document.querySelector('#viewport_width').innerHTML = "viewport: " + windowsize;
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+  });
   </script>
 </body>
 
