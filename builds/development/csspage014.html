@@ -28,7 +28,8 @@
     <h2>csspage014.html: <br>youtube: Srcset & Sizes Attributes</h2>
     <div class="content">
       <p>
-        * Window.devicePixelRatio: <a href="https://youtu.be/UqP_aCwXH4w" target="_blank">youtube: Srcset & Sizes Attributes</a>
+        * Window.devicePixelRatio: <a href="https://youtu.be/UqP_aCwXH4w" target="_blank">youtube: Srcset & Sizes Attributes</a><br>
+        * <a href="https://css-tricks.com/responsive-images-css/#article-header-id-1" target="_blank">Read this link</a> a nice explaination of what 'Sizes' does
       </p>
     </div>
   </div>
@@ -37,6 +38,7 @@
     <p id="viewport_width"></p>
     <p id="pixel_ratio"></p>
     <p>There're 5 images:<br> img_1x.jpg (1500x1000), img_2x.jpg (3000x2000), img_large.jpg (3000x2000), img_medium.jpg (1500x1000), img_small.jpg (800x800)</p>
+    <h3>test1</h3>
     <xmp>
       <img  src     = "images/responsive_img/014/img_1x.jpg"
             srcset  = "images/responsive_img/014/img_1x.jpg 1x,
@@ -48,12 +50,36 @@
           srcset  = "images/responsive_img/014/img_1x.jpg 1x,
                      images/responsive_img/014/img_2x.jpg 2x
                      "></img>
-    -->
+
     <h3>test2</h3>
     <img  src     = "images/responsive_img/014/img_1x.jpg"
           srcset  = "images/responsive_img/014/img_1x.jpg 500w,
                     images/responsive_img/014/img_2x.jpg  1000w
                     "></img>
+    -->
+    <h3>test3</h3>
+    <img srcset =  "https://via.placeholder.com/600x100   600w,
+                    https://via.placeholder.com/1500x100  1500w,
+                    https://via.placeholder.com/3000x100  3000w
+                    "
+         src=       "https://via.placeholder.com/1350x100"
+         sizes=     "(min-width: 1024px) 3000px,
+                     (min-width: 768px) and (max-width: 1023px) 1500px
+                    ">
+    </img>
+
+    <h3>test4</h3>
+    <img srcset =  "images/responsive_img/014/img_small.jpg   600w,
+                    images/responsive_img/014/img_medium.jpg  1500w,
+                    images/responsive_img/014/img_large.jpg   3000w
+                    "
+         src=       "images/responsive_img/014/img_medium.jpg"
+         sizes=     "(min-width: 1024px) 3000px,
+                     (min-width: 768px) and (max-width: 1023px) 1500px
+                    "></img>
+
+
+
   </div>
 
 
