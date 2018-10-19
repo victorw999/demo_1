@@ -24,7 +24,7 @@
 
 <body id="css014_html">
 
-  <div class="mydiv_format" id="">
+  <div class="mydiv_format">
     <h2>csspage014.html: <br>youtube: Srcset & Sizes Attributes</h2>
     <div class="content">
       <p>
@@ -33,40 +33,30 @@
     </div>
   </div>
 
-
   <div class="content">
     <p id="viewport_width"></p>
     <p id="pixel_ratio"></p>
-    <img src="images/responsive_img/014/img_1x.jpg"></img>
+    <p>There're 5 images:<br> img_1x.jpg (1500x1000), img_2x.jpg (3000x2000), img_large.jpg (3000x2000), img_medium.jpg (1500x1000), img_small.jpg (800x800)</p>
+    <xmp>
+      <img  src     = "images/responsive_img/014/img_1x.jpg"
+            srcset  = "images/responsive_img/014/img_1x.jpg 1x,
+                       images/responsive_img/014/img_2x.jpg 2x
+                       "></img>
+    </xmp>
+    <!--
+    <img  src     = "images/responsive_img/014/img_1x.jpg"
+          srcset  = "images/responsive_img/014/img_1x.jpg 1x,
+                     images/responsive_img/014/img_2x.jpg 2x
+                     "></img>
+    -->
+    <h3>test2</h3>
+    <img  src     = "images/responsive_img/014/img_1x.jpg"
+          srcset  = "images/responsive_img/014/img_1x.jpg 500w,
+                    images/responsive_img/014/img_2x.jpg  1000w
+                    "></img>
   </div>
 
 
-  <figure>
-    <img srcset =  "https://via.placeholder.com/320x100  320w,
-                    https://via.placeholder.com/480x100  480w,
-                    https://via.placeholder.com/800x100  800w
-                    "
-         src=       "https://via.placeholder.com/800x100"
-         sizes=     "(max-width: 320px) 280px,
-                     (max-width: 480px) 440px,
-                     800px
-                    ">
-    </img>
-  </figure>
-
-
-
-
-  <figure>
-    <figcaption> When load this page on linda-win7-2015, it loads 1920 image. When load on iphone, it loads 960 image. </figcaption>
-    <img srcset =  "images/responsive_img/couple_1920.jpg 1920w,
-                    images/responsive_img/couple_1024.jpg 1024w,
-                    images/responsive_img/couple_960.jpg  960w,
-                    images/responsive_img/couple_480.jpg  480w"
-         src=      "images/responsive_img/couple_960.jpg"
-         >
-    </img>
-  </figure>
 
   <div style="height:100vh;"></div>
 
