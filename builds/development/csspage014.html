@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>014</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    .content{
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    figure{
+      padding: 0;
+      max-width: 33em;
+    }
+    img{
+      display:block;
+      max-width: 100%;
+    }
+    #viewport_width, #pixel_ratio{color:red;font-weight: 600;}
+  </style>
+</head>
+
+<body id="css014_html">
+
+  <div class="mydiv_format" id="">
+    <h2>csspage014.html: <br>youtube: Srcset & Sizes Attributes</h2>
+    <div class="content">
+      <p>
+        * Window.devicePixelRatio: <a href="https://youtu.be/UqP_aCwXH4w" target="_blank">youtube: Srcset & Sizes Attributes</a>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="content">
+    <p id="viewport_width"></p>
+    <p id="pixel_ratio"></p>
+    <img src="images/responsive_img/014/img_1x.jpg"></img>
+  </div>
+
+
+  <figure>
+    <img srcset =  "https://via.placeholder.com/320x100  320w,
+                    https://via.placeholder.com/480x100  480w,
+                    https://via.placeholder.com/800x100  800w
+                    "
+         src=       "https://via.placeholder.com/800x100"
+         sizes=     "(max-width: 320px) 280px,
+                     (max-width: 480px) 440px,
+                     800px
+                    ">
+    </img>
+  </figure>
+
+
+
+
+  <figure>
+    <figcaption> When load this page on linda-win7-2015, it loads 1920 image. When load on iphone, it loads 960 image. </figcaption>
+    <img srcset =  "images/responsive_img/couple_1920.jpg 1920w,
+                    images/responsive_img/couple_1024.jpg 1024w,
+                    images/responsive_img/couple_960.jpg  960w,
+                    images/responsive_img/couple_480.jpg  480w"
+         src=      "images/responsive_img/couple_960.jpg"
+         >
+    </img>
+  </figure>
+
+  <div style="height:100vh;"></div>
+
+
+<!--
+  <script src="js/script.js"></script>-->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+  // display viewport size
+  // borrow code from : https://stackoverflow.com/a/9720333
+  $(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        var pixel_ratio = window.devicePixelRatio;
+        document.querySelector('#viewport_width').innerHTML = "window.width: " + windowsize;
+        document.querySelector('#pixel_ratio').innerHTML = "window.devicePixelRatio: " + pixel_ratio;
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+  });
+  </script>
+</body>
+
+</html>
