@@ -1276,8 +1276,6 @@ blockquote:after {
 /* line 4, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content {
   position: relative;
-  height: 1000px;
-  background: url("../images/hotel/splash_hotelphoto.jpg");
 }
 /* line 45, ../../../components/sass/_mixins.scss */
 #table_of_content:before, #table_of_content:after {
@@ -1300,7 +1298,7 @@ blockquote:after {
   opacity: 0.85;
   background-color: white;
 }
-/* line 18, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 20, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content section {
   height: 300px;
   -moz-box-sizing: border-box;
@@ -1314,7 +1312,7 @@ blockquote:after {
   padding: 10px;
 }
 @media (min-width: 450px) and (max-width: 650px) {
-  /* line 18, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+  /* line 20, ../../../components/sass/modules_vicmod/_table_of_content.scss */
   #table_of_content section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1326,7 +1324,7 @@ blockquote:after {
   }
 }
 @media (min-width: 0px) and (max-width: 450px) {
-  /* line 18, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+  /* line 20, ../../../components/sass/modules_vicmod/_table_of_content.scss */
   #table_of_content section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1337,20 +1335,20 @@ blockquote:after {
     padding-right: 10%;
   }
 }
-/* line 33, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 35, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content a, #table_of_content h2, #table_of_content p {
   color: black;
 }
-/* line 34, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 36, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content a {
   text-decoration: none;
 }
-/* line 35, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 37, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content h2 {
   background: #ccf1fa;
   font-size: 1.2em;
 }
-/* line 39, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 41, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content p, #table_of_content ul, #table_of_content li {
   font-size: 1em;
   line-height: 1.2em;

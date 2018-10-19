@@ -4,8 +4,8 @@ $this_blue : lighten( $blue, 75% );
 #table_of_content{
   @include clearfix;
   position: relative;
-  height:1000px;
-  background: url("../images/hotel/splash_hotelphoto.jpg");
+  //height:1000px;
+//  background: url("../images/hotel/splash_hotelphoto.jpg");
 
   .overlay {
     position: absolute;
@@ -14,6 +14,8 @@ $this_blue : lighten( $blue, 75% );
     opacity:0.85;
     background-color: white;
   }
+
+
 
   section{
     height:300px;
