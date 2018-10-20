@@ -19,6 +19,10 @@
       max-width: 100%;
     }
     #viewport_width, #pixel_ratio{color:red;font-weight: 600;}
+    textarea{
+      width:100%; height:50px;
+    }
+    h5{font-size:1em;}
   </style>
 </head>
 
@@ -33,23 +37,17 @@
     </div>
   </div>
 
-  <div class="content">
+  <div class="content" id="imagediv">
     <p id="viewport_width"></p>
     <p id="pixel_ratio"></p>
-
-
   </div>
-  <img srcset =  "https://via.placeholder.com/600x100   600w,
-                  https://via.placeholder.com/1500x300  1500w,
-                  https://via.placeholder.com/3000x600  3000w
-                  "
-       src=       "https://via.placeholder.com/1350x100"
-       sizes=     "(min-width: 1024px) 3000px,
-                   (min-width: 768px) and (max-width: 1023px) 1500px
-                  ">
-  </img>
 
-
+  <div class="content">
+    <h5>Source Set</h5>
+    <textarea id="srcset_output"></textarea>
+    <h5>Media Condition</h5>
+    <textarea id="media_condition_output"></textarea>
+  </div>
   <div style="height:100vh;"></div>
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -75,7 +73,28 @@
 
 
     // do my own "size" calculation
-    var image_size
+    var image_size;
+    var small = 333, medium = 666, large = 999;
+    var media_condition_small=400, media_condition_medium=800, media_condition_large=1500;
+    var viewport_small="100vw", viewport_medium="80vw", viewport_large="50vw";
+    var string_srcset = "https://via.placeholder.com/" + small  + "x200 " + small  +"w," +
+                        "https://via.placeholder.com/" + medium + "x200 " + medium +"w," +
+                        "https://via.placeholder.com/" + large  + "x200 " + large  +"w";
+    var string_src    = "https://via.placeholder.com/" + medium + "x200 " + medium +"w";
+
+    var string_media_condition = "(min-width:" + media_condition_large  + "px) " + viewport_large + ", " +
+                                 "(min-width:" + media_condition_medium + "px) and (max-width:" + (media_condition_large-1)  + "px) " + viewport_medium + ", " +
+                                 "(min-width:" + media_condition_small  + "px) and (max-width:" + (media_condition_medium-1) + "px) " + viewport_small
+    //create image using jQuery https://stackoverflow.com/a/8013814
+    var img = $('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
+    img.attr('src', string_src);
+    img.attr('srcset', string_srcset);
+    img.attr('sizes', string_media_condition);
+    img.appendTo('#imagediv');
+
+    //document.querySelector("textarea#media_condition_output").innerHTML = media_condition_output;
+    $("textarea#srcset_output").append(string_srcset);
+    $("textarea#media_condition_output").append(string_media_condition);
   });
   </script>
 </body>
