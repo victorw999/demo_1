@@ -1275,7 +1275,15 @@ blockquote:after {
 
 /* line 4, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content {
-  position: relative;
+  /*
+  .overlay {
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;
+    height:100%; width:100%;
+    opacity:0.85;
+    background-color: white;
+  }
+  */
 }
 /* line 45, ../../../components/sass/_mixins.scss */
 #table_of_content:before, #table_of_content:after {
@@ -1286,19 +1294,7 @@ blockquote:after {
 #table_of_content:after {
   clear: both;
 }
-/* line 10, ../../../components/sass/modules_vicmod/_table_of_content.scss */
-#table_of_content .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.85;
-  background-color: white;
-}
-/* line 20, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 22, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content section {
   height: 300px;
   -moz-box-sizing: border-box;
@@ -1312,7 +1308,7 @@ blockquote:after {
   padding: 10px;
 }
 @media (min-width: 450px) and (max-width: 650px) {
-  /* line 20, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+  /* line 22, ../../../components/sass/modules_vicmod/_table_of_content.scss */
   #table_of_content section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1324,7 +1320,7 @@ blockquote:after {
   }
 }
 @media (min-width: 0px) and (max-width: 450px) {
-  /* line 20, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+  /* line 22, ../../../components/sass/modules_vicmod/_table_of_content.scss */
   #table_of_content section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1335,20 +1331,20 @@ blockquote:after {
     padding-right: 10%;
   }
 }
-/* line 35, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 37, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content a, #table_of_content h2, #table_of_content p {
   color: black;
 }
-/* line 36, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 38, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content a {
   text-decoration: none;
 }
-/* line 37, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 39, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content h2 {
   background: #ccf1fa;
   font-size: 1.2em;
 }
-/* line 41, ../../../components/sass/modules_vicmod/_table_of_content.scss */
+/* line 43, ../../../components/sass/modules_vicmod/_table_of_content.scss */
 #table_of_content p, #table_of_content ul, #table_of_content li {
   font-size: 1em;
   line-height: 1.2em;
