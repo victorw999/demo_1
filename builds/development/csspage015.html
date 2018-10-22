@@ -23,7 +23,8 @@
       width:100%; height:50px;
     }
     h5{font-size:1em;}
-    #input_table tr td{text-align: center;}
+    table#input_table tr td{text-align: center;padding: 2px 10px;}
+    table#knowledge_nuggets tr td{border: 1px solid black;padding: 5px 10px;}
   </style>
 </head>
 
@@ -33,8 +34,19 @@
     <h2>csspage015.html: <br>"Sizes" Attributes</h2>
     <div class="content">
       <p>
-        * <a href="https://css-tricks.com/responsive-images-css/#article-header-id-1" target="_blank">Read this link</a> a nice explaination of what 'Sizes' does
+        * <a href="https://css-tricks.com/responsive-images-css/#article-header-id-1" target="_blank">A nice explaination of what 'Sizes' does</a><br>
       </p>
+      <p>
+        <h3>Summarize knowledge nuggets:</h3>
+      </p>
+      <table id="knowledge_nuggets">
+        <tr>
+          <td>use jQuery to add text in textarea</td>
+          <td> $("element").val(string_variable)</td>
+        </tr>
+
+      </table>
+
     </div>
   </div>
 
@@ -54,8 +66,21 @@
         <td><input type="text" id="input_img_size_medium"></input></td>
         <td><input type="text" id="input_img_size_large"></input></td>
       </tr>
+      <tr>
+        <td>Media Condition (breakpoints)</td>
+        <td><input type="text" id="input_media_condition_small"></input></td>
+        <td><input type="text" id="input_media_condition_medium"></input></td>
+        <td><input type="text" id="input_media_condition_large"></input></td>
+      </tr>
+      <tr>
+        <td>Specified Viewport Size</td>
+        <td><input type="text" id="input_viewport_small"></input></td>
+        <td><input type="text" id="input_viewport_medium"></input></td>
+        <td><input type="text" id="input_viewport_large"></input></td>
+      </tr>
     </table>
-    <button>Set the value of the input field</button>
+    <br>
+    <button style="padding:10px 20px;margin:20px;">Set the value of the input field</button>
   </div>
 
   <div class="content">
@@ -94,11 +119,19 @@
     var media_condition_small=400, media_condition_medium=800, media_condition_large=1500;
     var viewport_small="100vw", viewport_medium="80vw", viewport_large="50vw";
 
+
+    // assign input value into variables
     $("button").click(function(){
-      // assign input value into variables
       small = $("#input_img_size_small").val();
       medium = $("#input_img_size_medium").val();
       large = $("#input_img_size_large").val();
+      media_condition_small = $('#input_media_condition_small').val();
+      media_condition_medium = $('#input_media_condition_medium').val();
+      media_condition_large = $('#input_media_condition_large').val();
+      viewport_small = $('#input_viewport_small').val();
+      viewport_medium = $('#input_viewport_medium').val();
+      viewport_large = $('#input_viewport_large').val();
+
 
       // if image already created, then delete the old and create a new
       if ($("#dynamic").length){
@@ -108,10 +141,10 @@
       createIMG();
     });
 
-
+    //default;
+    createIMG();
 
     function createIMG(){
-
       var string_srcset = "https://via.placeholder.com/" + small  + "x200 " + small  +"w," +
                           "https://via.placeholder.com/" + medium + "x200 " + medium +"w," +
                           "https://via.placeholder.com/" + large  + "x200 " + large  +"w";
@@ -128,10 +161,9 @@
       img.appendTo('#imagediv');
 
       //document.querySelector("textarea#media_condition_output").innerHTML = media_condition_output;
-      $("textarea#srcset_output").val(''); // clear textarea
-      $("textarea#srcset_output").append(string_srcset);
-      $("textarea#media_condition_output").val(''); // clear textarea
-      $("textarea#media_condition_output").append(string_media_condition);
+      $("textarea#srcset_output").val(string_srcset);
+      $("textarea#media_condition_output").val(string_media_condition);
+
 
 
 
