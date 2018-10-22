@@ -24,6 +24,7 @@
     }
     h5{font-size:1em;}
     table#input_table tr td{text-align: center;padding: 2px 10px;}
+    table#input_table { }
     table#knowledge_nuggets tr td{border: 1px solid black;padding: 5px 10px;}
   </style>
 </head>
@@ -44,6 +45,40 @@
           <td>use jQuery to add text in textarea</td>
           <td> $("element").val(string_variable)</td>
         </tr>
+
+        <tr>
+          <td>
+            <span>(jQuery)</span><br>
+            $('#elementid').text(string)<br><br>
+            <span>(javascript)</span><br>
+            document.querySelector('#elementid').innerHTML = string
+          </td>
+          <td> When using jQuery, the text() couldn't display 'br' linebreak. So i used js's innerHTML to genreate linebreaks</td>
+        </tr>
+
+        <tr>
+          <td>Chrome vs. Firefox</td>
+          <td>
+            I've noticed that once Chrome already load the big image, it won't switch to the small image when the viewport size decreases. That's not the case in Firefox<br><br>
+            And if image doesn't change, then i coudn't use this technique to deploy different img on AKWA mobile
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>
+            Base on <a href="https://github.com/scottjehl/picturefill/issues/642#issuecomment-186973911">THIS LINK</a>,
+            some browser indeed doesn't choose small img once the bigger one are displayed.
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>
+            QUOTE:<br>
+            <a href="https://github.com/scottjehl/picturefill/issues/642#issuecomment-186973911">With <span style="font-weight:900;color:red;">srcset</span>, if you've already got a larger resolution downloaded and cached, it will not swap this out for a smaller one when your viewport shrinks</a>,
+
+          </td>
+        </tr>
+
 
       </table>
 
@@ -84,10 +119,16 @@
   </div>
 
   <div class="content">
+    <br>
     <h5>Source Set</h5>
-    <textarea id="srcset_output"></textarea>
+    <p id="srcset_output_2"></p>
     <h5>Media Condition</h5>
+    <p id="media_condition_output_2"></p>
+
+    <!-- disabled textarea
+    <textarea id="srcset_output"></textarea>
     <textarea id="media_condition_output"></textarea>
+    -->
   </div>
   <div style="height:100vh;"></div>
 
@@ -113,9 +154,8 @@
 
 
 
-    // do my own "size" calculation
-    var image_size;
-    var small = 333, medium = 666, large = 999;
+    // default value for the dynamic image
+    var small = 333, medium = 666, large = 999; // image size
     var media_condition_small=400, media_condition_medium=800, media_condition_large=1500;
     var viewport_small="100vw", viewport_medium="80vw", viewport_large="50vw";
 
@@ -152,7 +192,8 @@
 
       var string_media_condition = "(min-width:" + media_condition_large  + "px) " + viewport_large + ", " +
                                    "(min-width:" + media_condition_medium + "px) and (max-width:" + (media_condition_large-1)  + "px) " + viewport_medium + ", " +
-                                   "(min-width:" + media_condition_small  + "px) and (max-width:" + (media_condition_medium-1) + "px) " + viewport_small
+                                   "(min-width:" + media_condition_small  + "px) and (max-width:" + (media_condition_medium-1) + "px) " + viewport_small;
+
       //create image using jQuery https://stackoverflow.com/a/8013814
       var img = $('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
       img.attr('src', string_src);
@@ -161,11 +202,24 @@
       img.appendTo('#imagediv');
 
       //document.querySelector("textarea#media_condition_output").innerHTML = media_condition_output;
-      $("textarea#srcset_output").val(string_srcset);
-      $("textarea#media_condition_output").val(string_media_condition);
+      /* disabled textarea display*/
+      //$("textarea#srcset_output").val(string_srcset);
+      //$("textarea#media_condition_output").val(string_media_condition);
+
+      // display srcset & sizes in another way
+      var display_string_srcset =     small  + "x200 " + small  +"w," + "<br>" +
+                                      medium + "x200 " + medium +"w," + "<br>" +
+                                      large  + "x200 " + large  +"w";
 
 
+      var display_string_media_condition = "(min-width:" + media_condition_large  + "px) " + viewport_large + ", " + "<br>"  +
+                                   "(min-width:" + media_condition_medium + "px) and (max-width:" + (media_condition_large-1)  + "px) " + viewport_medium + ", " + "<br>" +
+                                   "(min-width:" + media_condition_small  + "px) and (max-width:" + (media_condition_medium-1) + "px) " + viewport_small;
 
+     //$("p#srcset_output_2").text(display_string_srcset); this jQuery .text() can't display <br>
+
+     document.querySelector("p#srcset_output_2").innerHTML = display_string_srcset;
+     document.querySelector("p#media_condition_output_2").innerHTML = display_string_media_condition;
 
     }
   });

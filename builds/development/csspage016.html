@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>016</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    .content{
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    figure{
+      padding: 0;
+      max-width: 33em;
+    }
+    img{
+      display:block;
+      max-width: 100%;
+    }
+    #viewport_width, #pixel_ratio{color:red;font-weight: 600;}
+    textarea{
+      width:100%; height:50px;
+    }
+    h5{font-size:1em;}
+    table#input_table tr td{text-align: center;padding: 2px 10px;}
+    table#input_table { }
+    table#knowledge_nuggets tr td{border: 1px solid black;padding: 5px 10px;}
+  </style>
+</head>
+
+<body id="css016_html">
+
+  <div class="mydiv_format">
+    <h2>
+      csspage016.html: <br>
+      "Sizes" Attributes # 2<br>
+
+    </h2>
+    <div class="content">
+      <p>
+        LINK: <a href="https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/" target="_blank">Another good exercise tutorial for "sizes" & "srcset"</a>
+      </p>
+
+
+    </div>
+  </div>
+
+  <div class="content" id="imagediv">
+    <p id="viewport_width"></p>
+    <p id="pixel_ratio"></p>
+
+    <br>
+
+  </div>
+
+
+  <div style="height:100vh;"></div>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+  // display viewport size
+  // borrow code from : https://stackoverflow.com/a/9720333
+  $(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        var pixel_ratio = window.devicePixelRatio;
+        document.querySelector('#viewport_width').innerHTML = "window.width: " + windowsize;
+        document.querySelector('#pixel_ratio').innerHTML = "window.devicePixelRatio: " + pixel_ratio;
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+
+
+
+
+
+    }
+  });
+  </script>
+</body>
+
+</html>
