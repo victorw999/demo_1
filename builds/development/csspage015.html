@@ -23,6 +23,7 @@
       width:100%; height:50px;
     }
     h5{font-size:1em;}
+    #input_table tr td{text-align: center;}
   </style>
 </head>
 
@@ -40,6 +41,21 @@
   <div class="content" id="imagediv">
     <p id="viewport_width"></p>
     <p id="pixel_ratio"></p>
+    <table id="input_table">
+      <tr>
+        <td></td>
+        <td>Small</td>
+        <td>Medium</td>
+        <td>Large</td>
+      </tr>
+      <tr>
+        <td>Image Size</td>
+        <td><input type="text" id="input_img_size_small"></input></td>
+        <td><input type="text" id="input_img_size_medium"></input></td>
+        <td><input type="text" id="input_img_size_large"></input></td>
+      </tr>
+    </table>
+    <button>Set the value of the input field</button>
   </div>
 
   <div class="content">
@@ -77,24 +93,49 @@
     var small = 333, medium = 666, large = 999;
     var media_condition_small=400, media_condition_medium=800, media_condition_large=1500;
     var viewport_small="100vw", viewport_medium="80vw", viewport_large="50vw";
-    var string_srcset = "https://via.placeholder.com/" + small  + "x200 " + small  +"w," +
-                        "https://via.placeholder.com/" + medium + "x200 " + medium +"w," +
-                        "https://via.placeholder.com/" + large  + "x200 " + large  +"w";
-    var string_src    = "https://via.placeholder.com/" + medium + "x200 " + medium +"w";
 
-    var string_media_condition = "(min-width:" + media_condition_large  + "px) " + viewport_large + ", " +
-                                 "(min-width:" + media_condition_medium + "px) and (max-width:" + (media_condition_large-1)  + "px) " + viewport_medium + ", " +
-                                 "(min-width:" + media_condition_small  + "px) and (max-width:" + (media_condition_medium-1) + "px) " + viewport_small
-    //create image using jQuery https://stackoverflow.com/a/8013814
-    var img = $('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
-    img.attr('src', string_src);
-    img.attr('srcset', string_srcset);
-    img.attr('sizes', string_media_condition);
-    img.appendTo('#imagediv');
+    $("button").click(function(){
+      // assign input value into variables
+      small = $("#input_img_size_small").val();
+      medium = $("#input_img_size_medium").val();
+      large = $("#input_img_size_large").val();
 
-    //document.querySelector("textarea#media_condition_output").innerHTML = media_condition_output;
-    $("textarea#srcset_output").append(string_srcset);
-    $("textarea#media_condition_output").append(string_media_condition);
+      // if image already created, then delete the old and create a new
+      if ($("#dynamic").length){
+        $( "#dynamic" ).remove();
+        console.log("old image removed!");
+      }
+      createIMG();
+    });
+
+
+
+    function createIMG(){
+
+      var string_srcset = "https://via.placeholder.com/" + small  + "x200 " + small  +"w," +
+                          "https://via.placeholder.com/" + medium + "x200 " + medium +"w," +
+                          "https://via.placeholder.com/" + large  + "x200 " + large  +"w";
+      var string_src    = "https://via.placeholder.com/" + medium + "x200 " + medium +"w";
+
+      var string_media_condition = "(min-width:" + media_condition_large  + "px) " + viewport_large + ", " +
+                                   "(min-width:" + media_condition_medium + "px) and (max-width:" + (media_condition_large-1)  + "px) " + viewport_medium + ", " +
+                                   "(min-width:" + media_condition_small  + "px) and (max-width:" + (media_condition_medium-1) + "px) " + viewport_small
+      //create image using jQuery https://stackoverflow.com/a/8013814
+      var img = $('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
+      img.attr('src', string_src);
+      img.attr('srcset', string_srcset);
+      img.attr('sizes', string_media_condition);
+      img.appendTo('#imagediv');
+
+      //document.querySelector("textarea#media_condition_output").innerHTML = media_condition_output;
+      $("textarea#srcset_output").val(''); // clear textarea
+      $("textarea#srcset_output").append(string_srcset);
+      $("textarea#media_condition_output").val(''); // clear textarea
+      $("textarea#media_condition_output").append(string_media_condition);
+
+
+
+    }
   });
   </script>
 </body>
