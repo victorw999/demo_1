@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Wolves</title>
+<link href='http://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet' type='text/css'>
+<style>
+* { box-sizing: border-box; }
+body, figure { margin: 0; }
+main img { display: block; width: 100%; }
+
+body {
+	font-family: Avenir, Corbel, sans-serif;
+	text-align: center;
+}
+h1 {
+	font-family: 'UnifrakturCook', Avenir, Corbel, sans-serif;
+	margin: 0.125em;
+	font-size: 4em;
+	margin: 0.5em;
+	text-align: center;
+}
+
+figure {
+	padding: 1px;
+}
+
+figcaption {
+	display: block;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	position: relative;
+	top: -3em;
+	text-shadow: 1px 1px 1px #000;
+	height: 0;
+	padding: 0;
+	font-size: 1.125em;
+}
+
+@media (min-width: 36em) {
+	figure {
+		display: block;
+		float: left;
+		width: 33.3333333333333%;
+	}
+}
+
+section .wrapper{
+  padding:1px;
+}
+
+section img{
+  float:left;
+}
+</style>
+</head>
+
+<body>
+<h2><a href="https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/">Tutorial Page</a></h2>
+<h2><a href="https://ericportis.com/etc/smashing-mag-picture-examples/variable-size.html">Original Wolf Demo Page: </a></h2>
+<h1>Wolves</h1>
+
+<main>
+<h2>this section's image behaves responsively, with just CSS</h2>
+<figure>
+  <img src="https://via.placeholder.com/320x240/36677F/fff " alt="A red wolf" />
+	<figcaption>The Gray Wolf</figcaption>
+</figure><!--
+
+--><figure>
+	<img src="https://via.placeholder.com/320x240/36677F/fff " alt="A red wolf" />
+	<figcaption>The Red Wolf</figcaption>
+</figure><!--
+
+--><figure>
+	<img src="https://via.placeholder.com/320x240/36677F/fff " alt="A white wolf" />
+	<figcaption>The Arctic Wolf</figcaption>
+</figure><!--
+
+--><figure>
+	<img src="https://via.placeholder.com/320x240/36677F/fff " alt="Another reddish wolf" />
+	<figcaption>The Ethiopian Wolf</figcaption>
+</figure><!--
+
+--><figure>
+	<img src="https://via.placeholder.com/320x240/36677F/fff " alt="This wolf looks sort of yellowish" />
+	<figcaption>The Indian Wolf</figcaption>
+</figure><!--
+
+--><figure>
+	<img src="https://via.placeholder.com/320x240/36677F/fff " alt="A rad wolf" />
+	<figcaption>The Rad Wolf</figcaption>
+</figure>
+</main>
+
+<h2>this section will use srcset and size attributes</h2>
+<section class="section_2">
+  <div class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) 33.3vw, 100vw"/>
+  </div>
+  <div class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) 33.3vw, 100vw"/>
+  </div>
+  <div class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) 33.3vw, 100vw"/>
+  </div>
+</section>
+
+
+</body>
+</html>
