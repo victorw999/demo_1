@@ -7,8 +7,8 @@
 <link href='http://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet' type='text/css'>
 <style>
 * { box-sizing: border-box; }
-body, figure { margin: 0; }
-main img { display: block; width: 100%; }
+body, figure, .wrapper { margin: 0; }
+img { display: block; width: 100%; }
 
 body {
 	font-family: Avenir, Corbel, sans-serif;
@@ -22,7 +22,7 @@ h1 {
 	text-align: center;
 }
 
-figure {
+figure, .wrapper{
 	padding: 1px;
 }
 
@@ -41,22 +41,13 @@ figcaption {
 }
 
 @media (min-width: 36em) {
-	figure {
+	figure, .wrapper {
 		display: block;
 		float: left;
 		width: 33.3333333333333%;
 	}
 }
 
-section .wrapper{
-  //padding:1px;
-	//float:left;
-	display: block;margin:0;
-}
-
-section img{
-
-}
 </style>
 </head>
 
@@ -68,17 +59,30 @@ section img{
 <main>
 <h2>this section's image behaves responsively, with just CSS</h2>
 <figure>
-  <img src="https://via.placeholder.com/320x240/36677F/fff " alt="A red wolf" />
+	<img srcset="https://via.placeholder.com/1024x768 1024w,
+							 https://via.placeholder.com/640x480  640w,
+							 https://via.placeholder.com/320x240  320w"
+			 src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+			 sizes="(min-width: 36em) 33.3vw, 100vw"/>
 	<figcaption>The Gray Wolf</figcaption>
 </figure><!--
 
---><figure>
-	<img src="https://via.placeholder.com/320x240/36677F/fff " alt="A red wolf" />
+-->
+<figure>
+	<img srcset="https://via.placeholder.com/1024x768 1024w,
+							 https://via.placeholder.com/640x480  640w,
+							 https://via.placeholder.com/320x240  320w"
+			 src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+			 sizes="(min-width: 36em) 33.3vw, 100vw"/>
 	<figcaption>The Red Wolf</figcaption>
 </figure><!--
 
 --><figure>
-	<img src="https://via.placeholder.com/320x240/36677F/fff " alt="A white wolf" />
+	<img srcset="https://via.placeholder.com/1024x768 1024w,
+							 https://via.placeholder.com/640x480  640w,
+							 https://via.placeholder.com/320x240  320w"
+			 src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+			 sizes="(min-width: 36em) 33.3vw, 100vw"/>
 	<figcaption>The Arctic Wolf</figcaption>
 </figure><!--
 
@@ -99,6 +103,7 @@ section img{
 </main>
 
 <h2>this section will use srcset and size attributes</h2>
+<p>I found that just via "srcset & seize", i can't fit 3 image on 1 row with 1px padding. I have to use css to fit the 3 </p>
 <section class="section_2">
   <div class="wrapper">
     <img srcset="https://via.placeholder.com/1024x768 1024w,
