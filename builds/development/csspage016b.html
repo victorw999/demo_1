@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Wolves</title>
+<link href='http://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet' type='text/css'>
+<style>
+* { box-sizing: border-box; }
+body, figure { margin: 0; }
+
+section .wrapper{
+	padding:1px;
+	//float:left; display: block;
+}
+
+section .wrapper img{
+	//width: 100%;
+	//position: relative;
+}
+</style>
+</head>
+
+<body>
+<h2><a href="https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/">Tutorial Page</a></h2>
+<h2><a href="https://ericportis.com/etc/smashing-mag-picture-examples/variable-size.html">Original Wolf Demo Page: </a></h2>
+<h1>Wolves</h1>
+
+<h2>this section will use srcset and size attributes</h2>
+<section class="section_2">
+  <figure class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) 33.3vw, 100vw"/>
+  </figure>
+  <figure class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) 33.3vw, 100vw"/>
+  </figure>
+  <figure class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) 33.3vw, 100vw"/>
+  </figure>
+</section>
+
+
+</body>
+</html>
