@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Wolves</title>
+<link href='http://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet' type='text/css'>
+<style>
+* { box-sizing: border-box; }
+body, figure, aside { margin: 0; }
+
+main .wrapper{
+	padding:1px;
+	float:left;
+}
+
+img{
+	display:block;
+	width: 100%;
+}
+
+aside {
+	padding: 3em 1em;
+	text-align: left;
+}
+
+@media (min-width: 36em) {
+	figure {
+		display: block;
+		float: left;
+		width: 33.3333333333333%;
+	}
+	main {
+		float: left;
+		width: calc(100% - 12rem);
+	}
+	aside {
+		float: right;
+		width: 12rem;
+		padding: 0;
+		margin: 0;
+		font-size: 0.875em;
+		}
+	aside h2 {
+		margin-left: 0.5em;
+		margin-top: -0.5em;
+	}
+}
+</style>
+</head>
+
+<body>
+<h2><a href="https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/">Tutorial Page</a></h2>
+<h2><a href="https://ericportis.com/etc/smashing-mag-picture-examples/variable-size.html">Original Wolf Demo Page: </a></h2>
+
+<h2>Calc() - 3 responsive img with a side bar</h2>
+<main>
+  <figure class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) calc(.333 * (100vw - 12em)), 100vw"/>
+
+  </figure>
+  <figure class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) calc(.333 * (100vw - 12em)), 100vw"/>
+  </figure>
+  <figure class="wrapper">
+    <img srcset="https://via.placeholder.com/1024x768 1024w,
+                 https://via.placeholder.com/640x480  640w,
+                 https://via.placeholder.com/320x240  320w"
+         src="https://via.placeholder.com/320x240 " alt="A gray wolf"
+         sizes="(min-width: 36em) calc(.333 * (100vw - 12em)), 100vw"/>
+  </figure>
+</main>
+
+
+<aside>
+<h2>Da Wolfroll</h2>
+<ul>
+<li><a href="http://giphy.com/gifs/7iH2LlvqzAwTu">Wolf Blitzer</a></li>
+<li><a href="http://www.youtube.com/watch?v=41yAXmyqnHQ">Howlin’ Wolf</a></li>
+<li><a href="http://www.wolfgangpuck.com">Wolfgang Puck</a></li>
+<li><a href="http://www.nba.com/timberwolves/">The Minnesota Timberwolves</a></li>
+<li><a href="http://www.youtube.com/watch?v=iszwuX1AK6A">The Wolf of Wall Street</a></li>
+<li><a href="http://www.youtube.com/watch?v=e4Lx5Bmpojw">The Big Bad Wolf</a></li>
+<li><a href="http://www.youtube.com/watch?v=oOg5VxrRTi0&feature=kp">Hungry Like the Wolf</a></li>
+<li><a href="http://mythfolklore.net/aesopica/oxford/151.htm">The Boy Who Cried Wolf</a></li>
+<li><a href="http://www.youtube.com/watch?v=sHXuIFBaxAw">Teen Wolf</a></li>
+<li><a href="http://animalnewyork.com/2013/tyler-the-creator-taps-mark-ryden-for-new-album-cover/">Tyler the Creator’s <cite>Wolf</cite></a></li>
+<li><a href="http://www.rogerebert.com/reviews/dances-with-wolves-1990">Dances with Wolves</a></li>
+<li><a href="http://www.npr.org/templates/story/story.php?storyId=19346650">Peter and the Wolf</a></li>
+<li><a href="http://www.loslobos.org">Los Lobos</a></li>
+<li><a href="http://www.wolfcreekski.com">Wolf Creek</a></li>
+<li><a href="http://www.amazon.com/The-Mountain-Three-Short-Sleeve/dp/B00G69KCO8">Wolf tee</a></li>
+<li><a href="https://www.wolframalpha.com/screencast/introducingwolframalpha.html">The Alpha Wolf</a></li>
+</ul>
+</aside>
+
+
+</body>
+</html>
