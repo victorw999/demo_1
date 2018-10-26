@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>016d</title>
+<link href='http://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet' type='text/css'>
+<style>
+* { box-sizing: border-box; }
+body, figure { margin: 0; }
+
+figure{
+	padding:1px;
+	float:left;
+}
+figcaption {
+	text-align: left;
+	padding: 0.5em;
+}
+
+img{
+	display:block;
+	width: 100%;
+}
+
+@media (min-width: 36em) {
+	figure {
+		display: block;
+		float: left;
+		width: 33.3333333333333%;
+	}
+}
+
+@media (max-width: 35.9999em) {
+	figure {
+		display: table-row;
+		float:none; // cancel the float feature
+	}
+	figure picture {
+		display: table-cell;
+		width: 6em; height: 6em; margin: 1em; margin-top: 2em; vertical-align: top;
+		border: 1px solid red;
+	}
+	figcaption {
+		display: table-cell; vertical-align: top; padding-top: 2em;
+		//width: calc(100vw - 11em); // once the float feature is disabled in figure, then this line is unnecessary
+		border: 1px solid red;
+	}
+}
+</style>
+</head>
+
+<body>
+<h1>Art Direction</h1>
+<h2><a href="https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/">Tutorial Page</a></h2>
+<h2><a href="https://ericportis.com/etc/smashing-mag-picture-examples/art-direction.html">Wolf Demo Page: this guy said he's using picture, but "page source" says he's using script</a></h2>
+
+<main>
+	<figure>
+		<picture>
+			<source media ="(min-width: 36em)"
+						  srcset="images/responsive_img/016d/1_large_1024x768.jpg  1024w,
+									    images/responsive_img/016d/1_medium_640x480.jpg  640w,
+									    images/responsive_img/016d/1_small_320x240.jpg   320w"
+						  sizes ="33.3vw" />
+			<source srcset="images/responsive_img/016d/1_cropped-large_192x192.jpg 2x,
+			     					  images/responsive_img/016d/1_cropped-small_96x96.jpg 	 1x" />
+			<img src="images/responsive_img/016d/1_small_320x240.jpg " alt="A rad wolf" />
+		</picture>
+		<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+	</figure>
+
+	<figure>
+		<picture>
+			<source media ="(min-width: 36em)"
+						  srcset="images/responsive_img/016d/2_large_1024x768.jpg  1024w,
+									    images/responsive_img/016d/2_medium_640x480.jpg  640w,
+									    images/responsive_img/016d/2_small_320x240.jpg   320w"
+						  sizes ="33.3vw" />
+			<source srcset="images/responsive_img/016d/2_cropped-large_192x192.jpg 2x,
+			     					  images/responsive_img/016d/2_cropped-small_96x96.jpg 	 1x" />
+
+			<img src="images/responsive_img/016d/2_small_320x240.jpg " alt="A rad wolf" />
+		</picture>
+		<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+	</figure>
+
+	<figure>
+		<picture>
+			<source media ="(min-width: 36em)"
+						  srcset="images/responsive_img/016d/1_large_1024x768.jpg  1024w,
+									    images/responsive_img/016d/1_medium_640x480.jpg  640w,
+									    images/responsive_img/016d/1_small_320x240.jpg   320w"
+						  sizes ="33.3vw" />
+			<source srcset="images/responsive_img/016d/1_cropped-large_192x192.jpg 2x,
+			     					  images/responsive_img/016d/1_cropped-small_96x96.jpg 	 1x" />
+			<img src="images/responsive_img/016d/1_small_320x240.jpg " alt="A rad wolf" />
+		</picture>
+		<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+	</figure>
+
+	<figure>
+		<picture>
+			<source media ="(min-width: 36em)"
+						  srcset="images/responsive_img/016d/1_large_1024x768.jpg  1024w,
+									    images/responsive_img/016d/1_medium_640x480.jpg  640w,
+									    images/responsive_img/016d/1_small_320x240.jpg   320w"
+						  sizes ="33.3vw" />
+			<source srcset="images/responsive_img/016d/1_cropped-large_192x192.jpg 2x,
+			     					  images/responsive_img/016d/1_cropped-small_96x96.jpg 	 1x" />
+			<img src="images/responsive_img/016d/1_small_320x240.jpg " alt="A rad wolf" />
+		</picture>
+		<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+	</figure>
+
+	<figure>
+		<picture>
+			<source media ="(min-width: 36em)"
+						  srcset="images/responsive_img/016d/1_large_1024x768.jpg  1024w,
+									    images/responsive_img/016d/1_medium_640x480.jpg  640w,
+									    images/responsive_img/016d/1_small_320x240.jpg   320w"
+						  sizes ="33.3vw" />
+			<source srcset="images/responsive_img/016d/1_cropped-large_192x192.jpg 2x,
+			     					  images/responsive_img/016d/1_cropped-small_96x96.jpg 	 1x" />
+			<img src="images/responsive_img/016d/1_small_320x240.jpg " alt="A rad wolf" />
+		</picture>
+		<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+	</figure>
+
+	<figure>
+		<picture>
+			<source media ="(min-width: 36em)"
+						  srcset="images/responsive_img/016d/1_large_1024x768.jpg  1024w,
+									    images/responsive_img/016d/1_medium_640x480.jpg  640w,
+									    images/responsive_img/016d/1_small_320x240.jpg   320w"
+						  sizes ="33.3vw" />
+			<source srcset="images/responsive_img/016d/1_cropped-large_192x192.jpg 2x,
+			     					  images/responsive_img/016d/1_.jpg 	 1x" />
+			<img src="images/responsive_img/016d/1_small_320x240.jpg " alt="A rad wolf" />
+		</picture>
+		<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+	</figure>
+
+</main>
+</body>
+</html>
