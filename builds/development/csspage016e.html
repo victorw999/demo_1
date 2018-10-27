@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>016d</title>
+<title>016e</title>
 <link href='http://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet' type='text/css'>
 <style>
 * { box-sizing: border-box; }
@@ -52,23 +52,17 @@ img{
 </head>
 
 <body>
-<h1>Art Direction</h1>
+<h1>Art Direction: switch img src using script</h1>
 <h2><a href="https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/">Tutorial Page</a></h2>
 <h2><a href="https://ericportis.com/etc/smashing-mag-picture-examples/art-direction.html">
-			Wolf Demo Page: this guy said he's using picture, but "page source" reveals he's using a script</a></h2>
-
+			Wolf Demo Page: this guy said he's using picture & source; but "page source" reveals he's using a script
+		</a>
+</h2>
+<p>If he implemented like this, I don't see how would it serve the most appropreiate image respnosively. And also, It'd be easier to implement this using CSS's Media Query
+</p>
 <main>
 	<figure>
-		<picture>
-			<source media ="(min-width: 36em)"
-						  srcset="images/responsive_img/016d/1_large_1024x768.jpg  1024w,
-									    images/responsive_img/016d/1_medium_640x480.jpg  640w,
-									    images/responsive_img/016d/1_small_320x240.jpg   320w"
-						  sizes ="33.3vw" />
-			<source srcset="images/responsive_img/016d/1_cropped-large_192x192.jpg 2x,
-			     					  images/responsive_img/016d/1_cropped-small_96x96.jpg 	 1x" />
-			<img src="images/responsive_img/016d/1_small_320x240.jpg " alt="A rad wolf" />
-		</picture>
+		<img src="images/responsive_img/016e/thumb/936-SSE_large.jpg "  />
 		<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
 	</figure>
 
