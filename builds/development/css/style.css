@@ -1224,7 +1224,7 @@ blockquote:after {
 #tween_002 .asset_button.css {
   background: #e77373;
 }
-/* line 21, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 22, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .object {
   text-align: center;
   width: 200px;
@@ -1237,12 +1237,12 @@ blockquote:after {
   transform: translateY(150px);
   transition: all 0.7s ease-out;
 }
-/* line 33, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 34, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .object.fade-in {
   opacity: 1;
   transform: translateY(0px);
 }
-/* line 39, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 40, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .object button {
   /* this 3 line veritcally align the button*/
   position: relative;
@@ -1254,10 +1254,26 @@ blockquote:after {
   transform: translateX(-400px);
   transition: all 1s ease-out;
 }
-/* line 51, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 52, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 button.fade-in-from-left {
   opacity: 1;
   transform: translateX(0px);
+}
+/* line 81, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 #intro {
+  border: none;
+  margin: 0;
+  padding: 10%;
+  background: #b3b3b3;
+}
+/* line 84, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 #intro img {
+  width: 100px;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  translateY: -50%;
 }
 
 /* line 2, ../../../components/sass/modules_vicmod/_cssjquery.scss */

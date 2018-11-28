@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tween_003</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body id="tween_002">
+
+  <section id="intro">
+
+    <img src="https://banner2.kisspng.com/20180821/uj/kisspng-shopify-computer-icons-e-commerce-application-soft-web-design-amp-development-kmj-web-design-las-5b7c6266365576.7598507315348783102226.jpg"/>
+
+  </section>
+
+  <section id="">
+    <h1>how to use pin</h1>
+    <br>
+    <span class="asset_button">1.11.2/jquery.min.js</span>
+    <span class="asset_button">2.0.5/ScrollMagic.min.js</span>
+    <span class="asset_button">2.0.5/plugins/debug.addIndicators.min.js</span>  <br>
+    <span class="asset_button css">../css/style.css (components/modules_vicmod/_tween_002.css)</span>
+
+    <li><a href="https://ihatetomatoes.net/module-1/s101-controller-scene-and-triggerelement-1227/" target="_blank">ScrollMagic tutorial</a></li>
+
+
+  </section>
+
+<section>001
+  <li>take notice that i refer to button using 'this.children[0]'</li>
+  <div id="obj01" class="object">
+    <button>obj01</button>
+  </div>
+</section>
+<section>002
+  <div id="obj02" class="object">
+    <button>obj02</button>
+  </div>
+</section>
+<section>003
+  <div id="obj03" class="object"><button>obj03</button></div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+<script type="text/javascript">
+
+//Init ScrollMagic
+var controller1 = new ScrollMagic.Controller();
+
+var pinIntroScene = new ScrollMagic.Scene({
+  triggerElement: '#intro',
+  triggerHook: 0, // pin the #intro to the TOP of the page
+  duration: '50%'
+})
+.setPin('#intro',
+  {pushFollowers:false} // force inner element stay still within the 'duration'
+)
+.addTo(controller1);
+/*
+//build ourScene1
+var ourScene1 = new ScrollMagic.Scene({
+  triggerElement: '#obj01',
+  //duration:200 // once added duration, there's a end of the scene. after 300 pixels
+  //duration: '90%',  // 100 percent of the viewport height, this is called 'responsive duration'
+                    // 90 percent means remove the scene after 90% of the viewport passed
+  triggerHook:0.9,  // default trigger position is at the center of viewport, 0 is at top, 1 is at bottom
+  reverse: false    // false means animation only happen once, default is true
+                    // also has to disable 'duration' in order for 'reverse' to work
+})
+.setClassToggle('#obj01', 'fade-in') // add class to project01
+.addIndicators({
+  name: 'fade scene',
+  colorTrigger: 'black',
+  indent: 200,
+  colorStart: '#75C695',
+  colorEnd:'pink'
+}) // this requires a plugin
+.addTo(controller1);
+
+//build ourScene2
+var ourScene2 = new ScrollMagic.Scene({
+  triggerElement: '#obj02'
+})
+.setClassToggle('#obj02', 'fade-in-from-left') // add class to project01
+.addIndicators() // this requires a plugin
+.addTo(controller1);
+*/
+
+/* more efficient way to build the scene
+    loop thru each .object element
+*/
+
+$('.object').each(function(){
+
+  // object sence
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: this,
+    triggerHook:0.9,
+  })
+  .setClassToggle(this, 'fade-in') // add class to project01
+  .addIndicators({
+    name: 'fade universal',
+    colorTrigger: 'black',
+    indent: 200,
+    colorStart: '#75C695',
+    colorEnd:'pink'
+  }) // this requires a plugin
+  .addTo(controller1);
+
+  // buttons scene
+
+});// end loop
+
+
+$('.object').each(function(){
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: this.children[0],
+    triggerHook:0.9,
+  })
+
+  .setClassToggle(this.children[0], 'fade-in-from-left') // add class to project01
+  .addIndicators({
+    name: 'fade in from left',
+    colorTrigger: 'black',
+    indent: 200,
+    colorStart: '#75C695',
+    colorEnd:'pink'
+  }) // this requires a plugin
+  .addTo(controller1);
+
+});// end loop
+
+
+</script>>
+
+</body>
+</html>
