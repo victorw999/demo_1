@@ -37,7 +37,10 @@ jsSources = [
 sassSources = ['components/sass/style.scss'];
 sassSources1 = ['components/sass/style_csspage001.scss'];
 sassSources5 = ['components/sass/style_csspage005.scss'];
-htmlSources = [outputDir + '*.html'];
+htmlSources = [
+  'builds/development/*.html',
+  'builds/development/**/*.html'
+]
 
 gulp.task('js', function() {
   gulp.src(jsSources)
@@ -95,7 +98,7 @@ gulp.task('watch', function() {
   gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass']);
   gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass1']);
   gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass5']);
-  gulp.watch('builds/development/*.html', ['html']);
+  gulp.watch(['builds/development/*.html', 'builds/development/**/*.html'], ['html']);
 });
 
 gulp.task('connect', function() {
@@ -106,9 +109,10 @@ gulp.task('connect', function() {
 });
 
 gulp.task('html', function() {
-  gulp.src('builds/development/*.html')
+  gulp.src(htmlSources)
     .pipe(gulpif(env === 'production', minifyHTML()))
     .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
+    //.pipe(gulp.dest(outputDir)) /* vicmod: add this line, to watch & update subfolders as well */
     .pipe(connect.reload())
 });
 

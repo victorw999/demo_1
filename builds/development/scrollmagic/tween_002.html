@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tween_002</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body id="tween_002">
+
+<section>Title Section
+</section>
+
+<section>001
+  <div id="obj01"></div>
+</section>
+<section>002
+</section>
+<section>003
+</section>
+
+<script src="../js/script.js"></sript>
+<script type="text/javascript">
+
+//Init ScrollMagic
+var controller1 = new ScrollMagic.Controller();
+
+//build a scene
+var ourScene = new ScrollMagic.Scene({
+triggerElement: '#obj01'
+})
+.setClassToggle('#obj01', 'fade-in') // add class to project01
+.addTo(controller1);
+
+</script>>
+
+</body>
+</html>
