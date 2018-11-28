@@ -15,17 +15,26 @@
   <span class="asset_button">2.0.5/ScrollMagic.min.js</span>
   <span class="asset_button">2.0.5/plugins/debug.addIndicators.min.js</span>  <br>
   <span class="asset_button css">../css/style.css (components/modules_vicmod/_tween_002.css)</span>
+
+  <li><a href="https://ihatetomatoes.net/module-1/s101-controller-scene-and-triggerelement-1227/" target="_blank">ScrollMagic tutorial</a></li>
+  <li> This is a more efficient way to build the scene;
+      loop thru each .object element</li>
 </section>
 
 <section>001
-  <div id="obj01" class="object">obj01</div>
+  <li>take notice that i refer to button using 'this.children[0]'</li>
+  <div id="obj01" class="object">
+    <button>obj01</button>
+  </div>
 </section>
 <section>002
-  <div id="obj02" class="object">obj02</div>
+  <div id="obj02" class="object">
+    <button>obj02</button>
+  </div>
 </section>
 <section>003
+  <div id="obj03" class="object"><button>obj03</button></div>
 </section>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
@@ -36,6 +45,7 @@
 //Init ScrollMagic
 var controller1 = new ScrollMagic.Controller();
 
+/*
 //build ourScene1
 var ourScene1 = new ScrollMagic.Scene({
   triggerElement: '#obj01',
@@ -63,27 +73,53 @@ var ourScene2 = new ScrollMagic.Scene({
 .setClassToggle('#obj02', 'fade-in-from-left') // add class to project01
 .addIndicators() // this requires a plugin
 .addTo(controller1);
-
+*/
 
 /* more efficient way to build the scene
     loop thru each .object element
 */
 
 $('.object').each(function(){
+
+  // object sence
   var ourScene = new ScrollMagic.Scene({
     triggerElement: this,
     triggerHook:0.9,
   })
   .setClassToggle(this, 'fade-in') // add class to project01
   .addIndicators({
-    name: 'fade scene',
+    name: 'fade universal',
     colorTrigger: 'black',
     indent: 200,
     colorStart: '#75C695',
     colorEnd:'pink'
   }) // this requires a plugin
   .addTo(controller1);
+
+  // buttons scene
+
 });// end loop
+
+
+$('.object').each(function(){
+  console.log(this);
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: this.children[0],
+    triggerHook:0.9,
+  })
+
+  .setClassToggle(this.children[0], 'fade-in-from-left') // add class to project01
+  .addIndicators({
+    name: 'fade in from left',
+    colorTrigger: 'black',
+    indent: 200,
+    colorStart: '#75C695',
+    colorEnd:'pink'
+  }) // this requires a plugin
+  .addTo(controller1);
+
+});// end loop
+
 
 </script>>
 

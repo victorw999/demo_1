@@ -17,15 +17,43 @@
   }// END: .asset_button
 
 
-  /* */
+  /* object's fade in animation */
   .object {
     text-align: center;
-    width:200px; height:200px; border-radius: 15px;
+    width:200px; height:400px; border-radius: 15px;
     background:lighten($red, 10%);
     margin:auto;
     border-bottom: 5px lighten($red, 30%) solid; // little shaddow
+
+    opacity:0;
+    transform: translateY(150px);
+    transition: all 0.7s ease-out;
   }
 
+  .object.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  /* button's fade in from left animation */
+  .object button{
+    /* this 3 line veritcally align the button*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 80%;    padding: 8px;
+
+    opacity:0;
+    transform: translateX(-400px);
+    transition: all 1s ease-out;
+  }
+  button.fade-in-from-left{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+/*
   #obj01{
     opacity:0;
     transform: translateY(50px);
@@ -36,6 +64,7 @@
     transform: translateY(0px);
   }
 
+
   #obj02{
     opacity:0;
     transform: translateX(-400px);
@@ -45,4 +74,5 @@
     opacity: 1;
     transform: translateX(0px);
   }
+  */
 }// End: #tween_002
