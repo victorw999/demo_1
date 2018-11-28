@@ -8,18 +8,28 @@
 </head>
 <body id="tween_002">
 
-<section>Title Section
+<section>
+  This html's manually (not via gulp) has these assets:
+  <br>
+  <span class="asset_button">1.11.2/jquery.min.js</span>
+  <span class="asset_button">2.0.5/ScrollMagic.min.js</span>
+  <span class="asset_button">2.0.5/plugins/debug.addIndicators.min.js</span>  <br>
+  <span class="asset_button css">../css/style.css (components/modules_vicmod/_tween_002.css)</span>
 </section>
 
 <section>001
-  <div id="obj01"></div>
+  <div id="obj01" class="object"></div>
 </section>
 <section>002
 </section>
 <section>003
 </section>
 
-<script src="../js/script.js"></sript>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
 <script type="text/javascript">
 
 //Init ScrollMagic
@@ -30,6 +40,7 @@ var ourScene = new ScrollMagic.Scene({
 triggerElement: '#obj01'
 })
 .setClassToggle('#obj01', 'fade-in') // add class to project01
+.addIndicators() // this requires a plugin
 .addTo(controller1);
 
 </script>>

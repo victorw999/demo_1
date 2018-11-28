@@ -1177,18 +1177,47 @@ blockquote:after {
   clear: both;
 }
 
+/* line 1, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 {
+  /* */
+}
 /* line 2, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 section {
   height: 80%;
   border: 50px #e6e6e6 solid;
   margin: 10px;
 }
-/* line 8, ../../../components/sass/modules_vicmod/_tween_002.scss */
-#tween_002 #obj01 {
+/* line 7, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 .asset_button {
+  display: inline-block;
+  background: #0a5c71;
+  color: white;
+  padding: 7px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+/* line 14, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 .asset_button.css {
+  background: #e77373;
+}
+/* line 23, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 .object {
+  text-align: center;
   width: 200px;
   height: 200px;
-  background: #b3b3b3;
+  border-radius: 15px;
+  background: #e77373;
   margin: auto;
+  border-bottom: 5px #f6caca solid;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-out;
+}
+/* line 34, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 .object.fade-in {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /* line 2, ../../../components/sass/modules_vicmod/_cssjquery.scss */

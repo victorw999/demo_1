@@ -4,11 +4,36 @@
     border: 50px darken(white,10%) solid;
     margin:10px;
   }
+  .asset_button{
+    display: inline-block;
+    background:lighten($blue, 10%);color:white;
+    padding:7px 10px; margin:10px;
+    border-radius: 5px;
+    font-weight:400;
 
+    &.css{
+      background:lighten($red, 10%);
+    }
+  }// END: .asset_button
+  
   #obj01{
-    width:200px; height:200px;
-    background: darken(white,30%);
-    margin:auto;
+
   }
 
+  /* */
+  .object {
+    text-align: center;
+    width:200px; height:200px; border-radius: 15px;
+    background:lighten($red, 10%);
+    margin:auto;
+    border-bottom: 5px lighten($red, 30%) solid; // little shaddow
+
+    opacity:0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+  }
+  .object.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }// End: #tween_002
