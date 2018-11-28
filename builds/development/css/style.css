@@ -1201,7 +1201,7 @@ blockquote:after {
 #tween_002 .asset_button.css {
   background: #e77373;
 }
-/* line 23, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 21, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .object {
   text-align: center;
   width: 200px;
@@ -1210,14 +1210,28 @@ blockquote:after {
   background: #e77373;
   margin: auto;
   border-bottom: 5px #f6caca solid;
+}
+/* line 29, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 #obj01 {
   opacity: 0;
-  transform: translateY(100px);
-  transition: all 1s ease-out;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out;
 }
 /* line 34, ../../../components/sass/modules_vicmod/_tween_002.scss */
-#tween_002 .object.fade-in {
+#tween_002 #obj01.fade-in {
   opacity: 1;
   transform: translateY(0px);
+}
+/* line 39, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 #obj02 {
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: all 0.5s ease-out;
+}
+/* line 44, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 #obj02.fade-in-from-left {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 /* line 2, ../../../components/sass/modules_vicmod/_cssjquery.scss */

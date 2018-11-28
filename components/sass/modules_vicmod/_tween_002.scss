@@ -15,10 +15,7 @@
       background:lighten($red, 10%);
     }
   }// END: .asset_button
-  
-  #obj01{
 
-  }
 
   /* */
   .object {
@@ -27,13 +24,25 @@
     background:lighten($red, 10%);
     margin:auto;
     border-bottom: 5px lighten($red, 30%) solid; // little shaddow
-
-    opacity:0;
-    transform: translateY(100px);
-    transition: all 1s ease-out;
   }
-  .object.fade-in {
+
+  #obj01{
+    opacity:0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+  }
+  #obj01.fade-in {
     opacity: 1;
     transform: translateY(0px);
+  }
+
+  #obj02{
+    opacity:0;
+    transform: translateX(-400px);
+    transition: all 0.5s ease-out;
+  }
+  #obj02.fade-in-from-left {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }// End: #tween_002
