@@ -1205,12 +1205,16 @@ blockquote:after {
     */
 }
 /* line 2, ../../../components/sass/modules_vicmod/_tween_002.scss */
-#tween_002 section {
-  height: 80%;
-  border: 50px #e6e6e6 solid;
-  margin: 10px;
+#tween_002 #main {
+  background: white;
+  position: relative;
 }
-/* line 7, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 6, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 section {
+  height: 95vh;
+  margin: 0px;
+}
+/* line 11, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .asset_button {
   display: inline-block;
   background: #0a5c71;
@@ -1220,11 +1224,11 @@ blockquote:after {
   border-radius: 5px;
   font-weight: 400;
 }
-/* line 14, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 18, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .asset_button.css {
   background: #e77373;
 }
-/* line 22, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 26, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .object {
   text-align: center;
   width: 200px;
@@ -1237,12 +1241,12 @@ blockquote:after {
   transform: translateY(150px);
   transition: all 0.7s ease-out;
 }
-/* line 34, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 38, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .object.fade-in {
   opacity: 1;
   transform: translateY(0px);
 }
-/* line 40, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 44, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 .object button {
   /* this 3 line veritcally align the button*/
   position: relative;
@@ -1254,26 +1258,58 @@ blockquote:after {
   transform: translateX(-400px);
   transition: all 1s ease-out;
 }
-/* line 52, ../../../components/sass/modules_vicmod/_tween_002.scss */
+/* line 56, ../../../components/sass/modules_vicmod/_tween_002.scss */
 #tween_002 button.fade-in-from-left {
   opacity: 1;
   transform: translateX(0px);
 }
-/* line 81, ../../../components/sass/modules_vicmod/_tween_002.scss */
-#tween_002 #intro {
-  border: none;
-  margin: 0;
-  padding: 10%;
-  background: #b3b3b3;
+/* line 85, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 section {
+  border: 1px solid grey;
 }
-/* line 84, ../../../components/sass/modules_vicmod/_tween_002.scss */
-#tween_002 #intro img {
+/* line 86, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 section img.main_icon {
   width: 100px;
   margin: auto;
   display: block;
   position: relative;
   top: 50%;
   translateY: -50%;
+}
+/* line 95, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 #intro {
+  border: none;
+  margin: 0;
+  padding: 10%;
+  background: #b3b3b3;
+}
+/* line 101, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 .bcg-parallax {
+  padding: 40px 0;
+  color: white;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+/* line 106, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 .bcg {
+  background: url("../images/main-banner-slub-terry.jpg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 140%;
+  top: 0;
+  z-index: 1;
+  opacity: .7;
+}
+/* line 112, ../../../components/sass/modules_vicmod/_tween_002.scss */
+#tween_002 .content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1140px;
+  position: relative;
+  z-index: 2;
 }
 
 /* line 2, ../../../components/sass/modules_vicmod/_cssjquery.scss */

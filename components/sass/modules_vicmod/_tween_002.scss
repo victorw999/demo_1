@@ -1,8 +1,12 @@
 #tween_002{
+  #main{
+    background: white;
+    position: relative;
+  }
   section{
-    height:80%;
-    border: 50px darken(white,10%) solid;
-    margin:10px;
+    height:95vh;
+    //border: 50px darken(white,10%) solid;
+    margin:0px;
   }
   .asset_button{
     display: inline-block;
@@ -78,17 +82,36 @@
   */
 
   // tween_003
-  #intro{
-    border:none;margin:0;padding:10%;
-    background: darken(white,30%);
-    img{
+  section{
+    img.main_icon{
       width: 100px;
       margin: auto;
       display: block;
       position: relative;
       top:50%; translateY:-50%;
     }
+    border: 1px solid grey;
+  }
+  #intro{
+    border:none;margin:0;padding:10%;
+    background: darken(white,30%);
   }
 
+  // tween_004 parallax
+  .bcg-parallax{
+    padding: 40px 0; color: white; background-color:black;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .bcg{
+    background: url('../images/main-banner-slub-terry.jpg') no-repeat;
+    background-size: cover;
+    position: absolute; width: 100%; height: 140%;
+    top: 0; z-index: 1; opacity: .7;
+  }
+  .content-wrapper{
+    width: 90%; margin: 0 auto;
+    max-width: 1140px; position: relative; z-index: 2;
+  }
 
 }// End: #tween_002
