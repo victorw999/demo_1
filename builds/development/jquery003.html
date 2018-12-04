@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery003</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <line rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="//codepen.io/fancyapps/pen/VGoRpV.css">
+  <link rel="stylesheet" href="//codepen.io/fancyapps/pen/Kxdwjj.css">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <style>
+    /* disable my previous formats */
+    .mydiv_format img{
+      padding:initial !important;
+      max-width: initial !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="">
+    <article class="fullheight" id="">
+      <div class="vic_subhead">
+        <h2>jQuery003</h2>
+        <p>fancybox</p>
+        <p><a href="https://fancyapps.com/fancybox/3/docs/#setup" target="_blank">REF:offical site</a></p>
+        <span class="asset_button css">3.5.2/jquery.fancybox.min.css</span><br>
+        <span class="asset_button    ">3.5.2/jquery.fancybox.min.js</span><br>
+        <span class="asset_button    ">jquery-3.2.1.min.js</span> jQuery is necessary in this example
+
+      </div>
+    </article>
+    <nav id="nav">
+      <div class="navbar">
+        <div class="brand"><a href="#welcome">  <span> </span></a></div>
+        <ul>
+        </ul>
+      </div><!-- navbar -->
+    </nav>
+  </header>
+  <main id="">
+
+    <!-- ex1 -->
+    <div class="mydiv_format">
+      <h2>ex1: fancybox v3.5 - Initialize with data attributes</h2>
+      <p> Individual images </p>
+      <hr class="my-5" />
+      <p class="imglist">
+        <a href="https://source.unsplash.com/IvfoDk30JnI/1500x1000"
+           data-fancybox
+           data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+          <img src="https://source.unsplash.com/IvfoDk30JnI/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/0JYgd2QuMfw/1500x1000" data-fancybox data-caption="This image has a simple caption">
+          <img src="https://source.unsplash.com/0JYgd2QuMfw/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/xAgvgQpYsf4/1500x1000" data-fancybox>
+          <img src="https://source.unsplash.com/xAgvgQpYsf4/240x160" />
+        </a>
+      </p>
+    </div> <!-- END: ex1 -->
+
+    <!-- ex2 -->
+    <div class="mydiv_format">
+      <h2>ex2: fancybox v3.5 - Initialize with data attributes</h2>
+      <p>
+        Groups are created by adding the same <code>data-fancybox</code> attribute value
+      </p>
+      <hr class="my-5" />
+      <p class="imglist" style="max-width: 1000px;">
+        <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images" data-caption="Backpackers following a dirt trail">
+          <img src="https://source.unsplash.com/juHayWuaaoQ/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/eWFdaPRFjwE/1500x1000" data-fancybox="images" data-caption="Mallorca, Llubí, Spain">
+          <img src="https://source.unsplash.com/eWFdaPRFjwE/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/c1JxO-uAZd0/1500x1000" data-fancybox="images" data-caption="Danish summer">
+          <img src="https://source.unsplash.com/c1JxO-uAZd0/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/eXHeq48Z-Q4/1500x1000" data-fancybox="images" data-caption="Sunrise above a sandy beach">
+          <img src="https://source.unsplash.com/eXHeq48Z-Q4/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/RFgO9B_OR4g/1500x1000" data-fancybox="images" data-caption="Woman on a slope by the shore">
+          <img src="https://source.unsplash.com/RFgO9B_OR4g/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/7bwQXzbF6KE/1500x1000" data-fancybox="images" data-caption="Mountain hiking sunset">
+          <img src="https://source.unsplash.com/7bwQXzbF6KE/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/NhU0nUR7920/1500x1000" data-fancybox="images" data-caption="Sunset Picnic">
+          <img src="https://source.unsplash.com/NhU0nUR7920/240x160" />
+        </a>
+        <a href="https://source.unsplash.com/B2LYYV9-y0s/1500x1000" data-fancybox="images" data-caption="On them Indiana Nights">
+          <img src="https://source.unsplash.com/B2LYYV9-y0s/240x160" />
+        </a>
+      </p>
+    </div> <!--END: ex2 -->
+
+    <div class="mydiv_format" style="height:2000px;">
+    </div>
+
+
+  </main>
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -8,17 +8,7 @@
     //border: 50px darken(white,10%) solid;
     margin:0px;
   }
-  .asset_button{
-    display: inline-block;
-    background:lighten($blue, 10%);color:white;
-    padding:7px 10px; margin:10px;
-    border-radius: 5px;
-    font-weight:400;
 
-    &.css{
-      background:lighten($red, 10%);
-    }
-  }// END: .asset_button
 
 
 
