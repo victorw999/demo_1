@@ -2095,37 +2095,37 @@ mark {
   text-align: center;
 }
 
-/* line 1, ../../../components/sass/modules_vicmod_css/_animate001.scss */
-#animate001 {
+/* line 1, ../../../components/sass/modules_vicmod_css/_animate_series.scss */
+.animate_series {
   text-align: center;
 }
-/* line 5, ../../../components/sass/modules_vicmod_css/_animate001.scss */
-#animate001 .mydiv_format .content {
+/* line 5, ../../../components/sass/modules_vicmod_css/_animate_series.scss */
+.animate_series .mydiv_format .content {
   background: initial;
 }
-/* line 10, ../../../components/sass/modules_vicmod_css/_animate001.scss */
-#animate001 xmp {
+/* line 10, ../../../components/sass/modules_vicmod_css/_animate_series.scss */
+.animate_series xmp {
   font: 1rem/1rem Monospace;
   background: white;
   color: black;
   white-space: normal;
 }
 /* line 45, ../../../components/sass/_mixins.scss */
-#animate001 .gallery:before, #animate001 .gallery:after {
+.animate_series .gallery:before, .animate_series .gallery:after {
   content: '';
   display: table;
 }
 /* line 51, ../../../components/sass/_mixins.scss */
-#animate001 .gallery:after {
+.animate_series .gallery:after {
   clear: both;
 }
-/* line 24, ../../../components/sass/modules_vicmod_css/_animate001.scss */
-#animate001 .gallery .imgblock img {
+/* line 24, ../../../components/sass/modules_vicmod_css/_animate_series.scss */
+.animate_series .gallery .imgblock img {
   width: 100%;
 }
 @media (min-width: 960px) {
-  /* line 23, ../../../components/sass/modules_vicmod_css/_animate001.scss */
-  #animate001 .gallery .imgblock {
+  /* line 23, ../../../components/sass/modules_vicmod_css/_animate_series.scss */
+  .animate_series .gallery .imgblock {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2136,35 +2136,35 @@ mark {
     display: inline;
   }
   /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-  #animate001 .gallery .imgblock:nth-child(3n + 1) {
+  .animate_series .gallery .imgblock:nth-child(3n + 1) {
     margin-left: 0;
     margin-right: -100%;
     clear: both;
   }
   /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-  #animate001 .gallery .imgblock:nth-child(3n + 2) {
+  .animate_series .gallery .imgblock:nth-child(3n + 2) {
     margin-left: 33.33333%;
     margin-right: -100%;
     clear: none;
   }
   /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-  #animate001 .gallery .imgblock:nth-child(3n + 3) {
+  .animate_series .gallery .imgblock:nth-child(3n + 3) {
     margin-left: 66.66667%;
     margin-right: -100%;
     clear: none;
   }
 }
 /* line 45, ../../../components/sass/_mixins.scss */
-#animate001 .gallery:before, #animate001 .gallery:after {
+.animate_series .gallery:before, .animate_series .gallery:after {
   content: '';
   display: table;
 }
 /* line 51, ../../../components/sass/_mixins.scss */
-#animate001 .gallery:after {
+.animate_series .gallery:after {
   clear: both;
 }
-/* line 34, ../../../components/sass/modules_vicmod_css/_animate001.scss */
-#animate001 .gallery.sixblock .imgblock {
+/* line 34, ../../../components/sass/modules_vicmod_css/_animate_series.scss */
+.animate_series .gallery.sixblock .imgblock {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2175,43 +2175,43 @@ mark {
   display: inline;
 }
 /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-#animate001 .gallery.sixblock .imgblock:nth-child(6n + 1) {
+.animate_series .gallery.sixblock .imgblock:nth-child(6n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
 }
 /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-#animate001 .gallery.sixblock .imgblock:nth-child(6n + 2) {
+.animate_series .gallery.sixblock .imgblock:nth-child(6n + 2) {
   margin-left: 16.66667%;
   margin-right: -100%;
   clear: none;
 }
 /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-#animate001 .gallery.sixblock .imgblock:nth-child(6n + 3) {
+.animate_series .gallery.sixblock .imgblock:nth-child(6n + 3) {
   margin-left: 33.33333%;
   margin-right: -100%;
   clear: none;
 }
 /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-#animate001 .gallery.sixblock .imgblock:nth-child(6n + 4) {
+.animate_series .gallery.sixblock .imgblock:nth-child(6n + 4) {
   margin-left: 50%;
   margin-right: -100%;
   clear: none;
 }
 /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-#animate001 .gallery.sixblock .imgblock:nth-child(6n + 5) {
+.animate_series .gallery.sixblock .imgblock:nth-child(6n + 5) {
   margin-left: 66.66667%;
   margin-right: -100%;
   clear: none;
 }
 /* line 66, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_gallery.scss */
-#animate001 .gallery.sixblock .imgblock:nth-child(6n + 6) {
+.animate_series .gallery.sixblock .imgblock:nth-child(6n + 6) {
   margin-left: 83.33333%;
   margin-right: -100%;
   clear: none;
 }
-/* line 37, ../../../components/sass/modules_vicmod_css/_animate001.scss */
-#animate001 .gallery.sixblock .imgblock img {
+/* line 37, ../../../components/sass/modules_vicmod_css/_animate_series.scss */
+.animate_series .gallery.sixblock .imgblock img {
   width: 50px;
 }
 
