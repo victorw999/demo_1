@@ -10,4 +10,7 @@
   &.css{
     background:lighten($red, 10%);
   }
+  &.js{
+    background:lighten($green, 10%);
+  }
 }// END: .asset_button

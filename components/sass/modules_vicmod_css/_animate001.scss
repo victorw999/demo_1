@@ -1,0 +1,42 @@
+#animate001{
+  text-align: center;
+
+  .mydiv_format{
+    .content{
+      background:initial;
+    }
+  }
+
+  xmp{
+    font:1rem/1rem Monospace;
+    background: white;
+    color: black;
+    white-space: normal; // wrap
+  }
+
+  article{
+  //  @include container(85%);
+  }// article
+
+  .gallery{
+      @include clearfix;
+      .imgblock{
+        img{width:100%;}
+        @include breakpoint($medium){
+          @include gallery(1 of 3);
+          display:inline;
+        }// breakpoint
+      }//.imgblock
+
+      @include clearfix;
+      &.sixblock{
+
+        .imgblock{
+          @include gallery(1 of 6);
+          display:inline;
+          img{width:50px;}
+        }
+      }// ..6block
+  }// .gallery
+
+}// #animate001
