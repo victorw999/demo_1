@@ -284,6 +284,27 @@ mark {
   padding: 2px 8px;
 }
 
+/* index_table */
+/* line 101, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+table.index_table {
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+  margin: auto !important;
+}
+/* line 105, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+table.index_table tr td {
+  border: 1px solid grey;
+  width: 400px;
+  padding: 10px;
+}
+/* line 106, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+table.index_table tr.header td {
+  color: white;
+  background: black;
+}
+
+/* END: index_table */
 /* line 1, ../../../components/sass/modules_vicmod_css/_csspage001.scss */
 #css001_html #header {
   height: 100vh;

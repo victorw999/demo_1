@@ -6,6 +6,28 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Scroll Animation: Animate.css Wow.js</title>
   <style>
+  <!-- use auto prefixer online -->
+  #test_btn button {
+      -webkit-animation-delay:1s;
+              animation-delay:1s;
+      -webkit-animation-duration:1s;
+              animation-duration:1s;
+      -webkit-animation-iteration-count:3;
+              animation-iteration-count:3;
+  }
+  a.button{
+    padding:8px 20px;
+    background: steelblue;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  input.blank{
+    border: 2px solid steelblue;
+    padding:8px 20px;
+    border-radius: 5px;
+  }
+
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
   <link rel="stylesheet" href="../css/style.css">
@@ -16,10 +38,13 @@
   <div class="mydiv_format">
     <h1>Scroll Animation: Animate.css Wow.js</h1>
     <h3>use Animate.css with <bold style='color:red'>jQuery</bold></h3>
-    <p><a href="https://www.youtube.com/watch?v=CBQGl6zokMs" rel="nofollow">View a video tutorial</a> on how to use Animate.css with jQuery here.</p>
+    <p><a href="https://www.youtube.com/watch?v=CBQGl6zokMs"
+          target="_blank" rel="nofollow">View a video tutorial</a> on how to use Animate.css with jQuery here.</p>
 
     <div class="asset_button css">//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css</div><br>
     <div class="asset_button js">//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js</div>
+    <div class="asset_button js">//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js</div>
+
     <br>
     <a href="https://daneden.github.io/animate.css/" target="_blank">REF: animate.css</a>
     <br>
@@ -27,76 +52,77 @@
   </div>
 
   <div class="mydiv_format" >
-
   </div>
 
-  <div class="mydiv_format" id="">
-    <article class="content">
-      <div class="gallery">
-        <div class="imgblock">
-          <img class="wow slideInLeft" src="https://via.placeholder.com/300x300/eeeeee/000000/?text=WOW_slideInLeft">
-          <xmp><img class="wow slideInLeft" ></xmp>
-        </div>
-        <div class="imgblock">
-          <img class="wow bounceInUp" src="../images/hotel/intro_pool.jpg" alt="Intro Gallery Pool Sample Pictures">
-          <xmp><img class="wow bounceInUp" ></xmp>
-        </div>
-        <div class="imgblock">
-          <img class="wow slideInRight" src="../images/hotel/intro_dining.jpg">
-          <xmp><img class="wow slideInRight" ></xmp>
-        </div>
-      </div><!-- .gallery -->
+  <hr>
+  <div class="mydiv_format" id="test_btn">
+    <div id='test1'>
+      <span style='text-align:left;display:block;'>#test1:</span>
+      <h3>click
+        <a href="#" class='button'>HERE</a>
+        to add animation to another element with jQuery
+      </h3>
+      <input class='blank' type='text' name='firstName' />
+      <br>
+      however, this animation can only be played once.
+      <hr>
+    </div><!-- # test1 -->
 
-      <xmp style="text-align:left;">
-        <script>
-          new WOW().init();
-        </script>
-      </xmp>
-      <h1>This scroll Animation not repeatable</h1>
-      <p>This scroll animation setup is not repeatable</p>
-    </article>
+    <div id='test2'>
+      <span style='text-align:left;display:block;'>#test2:</span>     
+      <h3>click
+        <a href="#" class='button'>HERE</a>
+        to add animation to another element with jQuery
+      </h3>
+      <input class='blank' type='text' name='firstName' />
+      <br>
+      <hr>
+    </div><!-- # test2 -->
+
+    <xmp style="white-space:pre;text-align:left;margin:0px 10%;">
+      $('#test2 a.button').on('click', function(e){
+        e.preventDefault(); // prevent the link jump to top of the page
+
+        var animationName = "animated shake";
+        var animationend  = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+
+
+        $('#test2 input[name=firstName]').addClass(animationName).one(animationend,
+          function(){
+            $(this).removeClass(animationName);
+          });
+        });
+      });
+    </xmp>
+    // using 'one' instead of 'on', is that: 'one' will only listen for the event once and then unbind itself
   </div>
-
-    <div class="mydiv_format" style="padding:0;">
-       <h3> recreating the same animation with '<span style="color:red;">animated</span>' instead of '<span style="color:red;">wow</span>' </h3>
-       <div class="gallery sixblock">
-
-         <div class="imgblock">
-           <img class="animated bounce infinite" src="https://via.placeholder.com/150/eeeeee/000000/?text=">
-           <xmp>"animated bounce infinite"</xmp>
-         </div>
-         <div class="imgblock">
-           <img class="animated flash infinite" src="https://via.placeholder.com/150/eeeeee/000000/?text=">
-           <xmp>"animated flash infinite" </xmp>
-         </div>
-         <div class="imgblock">
-           <img class="animated pulse infinite" src="https://via.placeholder.com/150/eeeeee/000000/?text=">
-           <xmp>"animated pulse infinite"</xmp>
-         </div>
-         <div class="imgblock">
-           <img class="animated rubberBand infinite" src="https://via.placeholder.com/150/eeeeee/000000/?text=">
-           <xmp>"animated rubberBand infinite"</xmp>
-         </div>
-         <div class="imgblock">
-           <img class="animated shake infinite" src="https://via.placeholder.com/150/eeeeee/000000/?text=">
-           <xmp>"animated shake infinite"</xmp>
-         </div>
-         <div class="imgblock">
-           <img class="animated headShake infinite" src="https://via.placeholder.com/150/eeeeee/000000/?text=">
-           <xmp>"animated headShake infinite"</xmp>
-         </div>
-       </div><!-- .gallery -->
-    </div><!-- .mydiv_format -->
-
-
-
+  <hr>
   <div style="height:150vh;"></div>
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
   <script>
-    new WOW().init();
+    //new WOW().init();
+    $(function(){
+        $('#test1 a.button').on('click', function(e){
+          e.preventDefault(); // prevent the link jump to top of the page
+          $('#test1 input[name=firstName]').addClass('animated shake');
+        });
+
+        $('#test2 a.button').on('click', function(e){
+          e.preventDefault(); // prevent the link jump to top of the page
+
+          var animationName = "animated shake";
+          var animationend = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+          // using 'one' instead of 'on', is that: 'one' will only listen for the event once and then unbind itself
+          $('#test2 input[name=firstName]').addClass(animationName).one(animationend,
+            function(){
+              $(this).removeClass(animationName);
+            });
+        });
+    });
+
   </script>
 </body>
 

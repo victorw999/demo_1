@@ -96,3 +96,13 @@ mark{
   font-weight: 900;
   padding: 2px 8px;
 }
+
+/* index_table */
+table.index_table{
+  border-collapse: collapse; width:80%;
+  text-align:center;
+  margin:auto !important;
+  tr td{border:1px solid grey;width: 400px;padding:10px;}
+  tr.header td{color:white; background:black;}
+}
+/* END: index_table */
