@@ -36,10 +36,11 @@
 <body id='' class="animate_series">
 
   <div class="mydiv_format">
-    <h1>Scroll Animation: Animate.css Wow.js</h1>
-    <h3>use Animate.css with <bold style='color:red'>jQuery</bold></h3>
-    <p><a href="https://www.youtube.com/watch?v=CBQGl6zokMs"
-          target="_blank" rel="nofollow">View a video tutorial</a> on how to use Animate.css with jQuery here.</p>
+    <h1></h1>
+    <h3>A jQuery function <br>to automatically <br>add and remove(reset) animation class to elements</h3>
+    <p><a href="https://github.com/daneden/animate.css"
+          target="_blank" rel="nofollow">referece</a>
+    </p>
 
     <div class="asset_button css">//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css</div><br>
     <div class="asset_button js">//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js</div>
@@ -68,32 +69,6 @@
       <hr>
     </div><!-- # test1 -->
 
-    <div id='test2'>
-      <span style='text-align:left;display:block;'>#test2:</span>
-      <h3>click
-        <a href="#" class='button'>HERE</a>
-        to add animation to another element with jQuery
-      </h3>
-      <input class='blank' type='text' name='firstName' />
-      <br>
-      <hr>
-    </div><!-- # test2 -->
-
-    <xmp style="white-space:pre;text-align:left;margin:0px 10%;">
-      $('#test2 a.button').on('click', function(e){
-        e.preventDefault(); // prevent the link jump to top of the page
-
-        var animationName = "animated shake";
-        var animationend  = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
-
-        $('#test2 input[name=firstName]').addClass(animationName).one(animationend,
-          function(){
-            $(this).removeClass(animationName);
-          });
-        });
-      });
-    </xmp>
-    // using 'one' instead of 'on', is that: 'one' will only listen for the event once and then unbind itself
   </div>
   <hr>
   <div style="height:150vh;"></div>
@@ -102,23 +77,41 @@
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
   <script>
-    //new WOW().init();
+
+/* add this function to auto add animation and then remove the animation class */
+  $.fn.extend({
+    animateCss: function(animationName, callback) {
+      var animationEnd = (function(el) {
+        var animations = {
+         animation: 'animationend',
+         OAnimation: 'oAnimationEnd',
+         MozAnimation: 'mozAnimationEnd',
+         WebkitAnimation: 'webkitAnimationEnd',
+        };
+        for (var t in animations) {
+         if (el.style[t] !== undefined) {
+           return animations[t];
+         }
+        }
+      })(document.createElement('div'));
+
+    this.addClass('animated ' + animationName).one(animationEnd, function() {
+      $(this).removeClass('animated ' + animationName);
+      if (typeof callback === 'function') callback();
+    });
+
+    return this;
+    },
+    });
+
+
+    //-------------------------
+
     $(function(){
         $('#test1 a.button').on('click', function(e){
           e.preventDefault(); // prevent the link jump to top of the page
-          $('#test1 input[name=firstName]').addClass('animated shake');
-        });
-
-        $('#test2 a.button').on('click', function(e){
-          e.preventDefault(); // prevent the link jump to top of the page
-
-          var animationName = "animated shake";
-          var animationend = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
-          // using 'one' instead of 'on', is that: 'one' will only listen for the event once and then unbind itself
-          $('#test2 input[name=firstName]').addClass(animationName).one(animationend,
-            function(){
-              $(this).removeClass(animationName);
-            });
+          //$('#test1 input[name=firstName]').addClass('animated shake');
+          $('#test1 input[name=firstName]').animateCss('bounce');
         });
     });
 
