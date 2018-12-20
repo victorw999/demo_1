@@ -3,23 +3,84 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>title</title>
+  <title>csspage007b</title>
   <style>
-    .element {
+
+    /*-----------------*/
+    .element1{
+      height:300px;
+      width:300px;
+      background-size:100%;
+      background-position: center;
+      transition: all 1s ease-in-out;
+    }
+    .element1:hover{
+      background-size: 130%;
+    }
+
+    /*-----------------*/
+    .element2 {
       height: 200px;
       background-color: red;
       transition: background-color linear .8s;
     }
-
-    .element:hover {
+    .element2:hover {
       background-color: blue;
+    }
+   /*-----------------*/
+
+    @-webkit-keyframes zoom {
+    	from {
+    		width: 100%;
+    		margin-left: 0;
+    	}
+    	to {
+    		width: 150%;
+    		margin-left: -25%;
+    	}
+    }
+    @keyframes zoom {
+    	from {
+    		width: 100%;
+    		margin-left: 0;
+    	}
+    	to {
+    		width: 150%;
+    		margin-left: -25%;
+    	}
+    }
+
+    #myDIV {
+      background: url('https://cdn.shopify.com/s/files/1/2313/1393/files/havana-2_720x.jpg') 50% 50% / 100% auto no-repeat scroll rgb(255,255,255);
+    	margin: 0;
+    	padding: 0;
+    	width: 100%;
+    	min-height: 100vh;
+    	-webkit-animation: zoom 5s 1s cubic-bezier(0, 0, 1, 1) 2 alternate;
+    	animation: zoom 5s 1s cubic-bezier(0, 0, 1, 1) 2 alternate;
     }
   </style>
 
 </head>
 
 <body>
-  <div class="element">
+  <h1>This page is to test IE11 animations</h1>
+  <h2>Test Case 1: (IE11) hover background-image transntion</h2>
+  <p>It all started when I tried to create a hover image animation.
+    It works on Chrome Firefox, but it doesn't work on IE11</p>
+  <div class='element1'
+       style="background-image:url('https://cdn.shopify.com/s/files/1/2313/1393/files/havana-2_720x.jpg');">
+  </div>
+
+  <h2>Test Case 2: (IE11) simple background-color transition</h2>
+  <div class="element2">
+  </div>
+
+
+
+  <h2>Test Case 3: (IE11) background image animation with keyframes</h2>
+  <div id="myDIV">
+
   </div>
 </body>
 
