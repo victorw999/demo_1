@@ -2016,85 +2016,111 @@ table.index_table tr.header td {
 #css007a #test3 {
   clear: both;
 }
-/* line 165, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 167, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a #test3 .box {
   position: relative;
   display: block;
   background: #90b0cc;
   width: 300px;
-  height: 300px;
-  margin: 20px;
+  height: 200px;
 }
-/* line 174, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 175, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a #test3 .box1:after {
-  display: block;
-  content: "test3";
+  content: "Pseudo :after test";
   position: absolute;
   top: 90%;
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 20px;
-  color: white;
   background-color: rgba(0, 0, 0, 0.6);
-  color: red;
+  color: white;
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
 }
-/* line 189, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
-#css007a #test3 .box1:hover::before {
-  top: 90%;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-}
-/* line 197, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 187, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a #test3 .box1:hover::after {
   top: 0px;
-  padding: 8px;
 }
-/* line 204, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 192, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a #test3 .box2 {
   background-color: #cb869f;
-  top: 0px;
+  left: 0;
   transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
 }
-/* line 212, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 196, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a #test3 .box2:hover {
   left: 500px;
 }
-/* line 218, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 201, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a #test3 .box3 {
-  background-color: red;
-  opacity: 1;
-  transition: opacity 5s linear 1s;
-  -ms-transition: opacity 5s linear 1s;
+  background-color: #7fbd86;
+  font-size: 15px;
+  transition-property: font-size;
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;
 }
-/* line 223, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 207, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a #test3 .box3:hover {
-  opacity: 0;
+  font-size: 30px;
 }
-/* line 230, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 212, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box4 {
+  background-image: url(https://cdn.shopify.com/s/files/1/2313/1393/files/geode_720x.jpg);
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  background-size: 20px 20px;
+  -webkit-animation: mymove 5s infinite;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  50% {
+    background-size: 125px 125px;
+  }
+}
+@-webkit-keyframes mymove {
+  50% {
+    background-size: 125px 125px;
+  }
+}
+/* line 239, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a .clearfix {
   overflow: auto;
   clear: both;
 }
-/* line 234, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+/* line 243, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
 #css007a .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+
+/* line 251, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+.vic_element {
+  height: 200px;
+  background-color: red;
+  transition: background-color linear .8s;
+}
+
+/* line 257, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+.vic_element:hover {
+  background-color: blue;
+}
+
+/* line 261, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+xmp {
+  text-align: left;
+  display: block;
+  font-size: 1rem;
+  background: white;
+  color: black;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 /* line 1, ../../../components/sass/modules_vicmod_css/_csspage008.scss */

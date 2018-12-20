@@ -162,68 +162,77 @@
 
     #test3{
       clear:both;
+
+
       .box{
         position:relative;
         display: block;
         background:#90b0cc;
-        width:300px;height:300px;
-        margin:20px;
+        width:300px;height:200px;
       }// .box
 
       .box1{
         &:after{
-          display: block;
-          content: "test3";
+          content: "Pseudo :after test";
           position: absolute;
           top:90%;bottom:0;left:0;right:0;
-          font-size:1.2rem; font-weight: bold; padding:20px;
-          color:white;
           background-color: rgba(0,0,0,0.6);
-          color: red;
-            transition: all 1s ease-in-out;
+          color: white;
+          transition: all 1s ease-in-out;
           -webkit-transition: all 1s ease-in-out;
           -moz-transition: all 1s ease-in-out;
           -ms-transition: all 1s ease-in-out;
           -o-transition: all 1s ease-in-out;
         }
-        &:hover::before{
-          top:90%;
-          transition: all 1s ease-in-out;
-        -webkit-transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
-        }
         &:hover::after{
-          //opacity:1;
           top:0px;
-          padding: 8px;
         }// hover
       }//.box1
 
       .box2{
         background-color: rgba(203, 134, 159, 1);
-        top:0px;
+        left:0;
         transition: all 1s ease-in-out;
-      -webkit-transition: all 1s ease-in-out;
-      -moz-transition: all 1s ease-in-out;
-      -ms-transition: all 1s ease-in-out;
-      -o-transition: all 1s ease-in-out;
         &:hover {
-          //opacity:1;
           left:500px;
         }// hover
       }// .box2
 
       .box3{
-        background-color: red;
-        opacity:1;
-        transition: opacity 5s linear 1s;
-          -ms-transition: opacity 5s linear 1s;
+        background-color: rgba(127, 189, 134, 1);
+        font-size: 15px;
+        transition-property: font-size;
+        transition-duration: 1.5s;
+        transition-delay: 0.5s;
         &:hover{
-          opacity:0;
-        }
+          font-size: 30px;
+        }// hover
       }//.box3
+
+      .box4{
+        background-image:url(https://cdn.shopify.com/s/files/1/2313/1393/files/geode_720x.jpg);
+      //  background-size:100%;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        background-size: 20px 20px;
+        -webkit-animation:mymove 5s infinite;
+        animation: mymove 5s infinite;
+
+        @keyframes mymove {
+         50% {background-size: 125px 125px;}
+        }
+        @-webkit-keyframes
+        mymove {
+         50% {background-size: 125px 125px;}
+        }
+
+        &:hover{
+        //  background-size:120%;
+        }// hover
+      }//.box4
 
     }//# test3
 //-------------------------------------------------
@@ -237,3 +246,24 @@
     display: table;
   }
 }//#css007a
+
+
+.vic_element {
+  height:200px;
+  background-color: red;
+  transition: background-color linear .8s;
+}
+
+.vic_element:hover {
+  background-color: blue;
+}
+
+xmp{
+  text-align: left;
+  display: block;
+  font-size: 1rem;
+  background: white;
+  color: black;
+  margin-top:-20px;
+  margin-bottom:20px;
+}

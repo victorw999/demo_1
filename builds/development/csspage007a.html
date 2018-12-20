@@ -5,9 +5,6 @@
   <title>CSSPAGE007a</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=9">
-  <meta http-equiv="X-UA-Compatible" content="IE=10">
-  <meta http-equiv="X-UA-Compatible" content="IE=11">
 </head>
 
 <body id="css007a">
@@ -68,17 +65,75 @@
   </div>
 
   <h2 style="margin-top:150px;">TEST3: test hover animation in Internet Explorer 11</h2>
-  <p>this animation doesn't work on IE. It seems IE is terrible at handling animations</p>
+  <p>
+    this transition should work on IE11. <br>
+    somehow, all IE animation stopped working <br>
+    I started from boilerplate to test the transitions on IE11<br>
+    maybe it was gulp related issue<br>
+    or atom issue: after i reboot atom, it was fixed
+  </p>
   <div class="mydiv_format" id="test3">
     <div class="box box1">
-    </div>
-    <div class="box box2">
-      test IE animation
-    </div>
-    <div class="box box3">
-      test IE animation
+      box1
     </div>
 
+    <xmp>
+      .box1{
+        &:after{
+          content: "Pseudo :after test";
+          position: absolute;
+          top:90%;bottom:0;left:0;right:0;
+
+          transition: all 1s ease-in-out;
+        }
+        &:hover::after{
+          top:0px;
+        }// hover
+      }//.box1
+    </xmp>
+
+    <div class="box box2">
+      box2<br>
+      position transition<br>
+      this also works in IE
+    </div>
+    <xmp>
+      .box2{
+        left:0;
+        transition: all 1s ease-in-out;
+        &:hover {
+          left:500px;
+        }// hover
+      }// .box2
+    </xmp>
+
+    <div class="box box3">
+      box3<br>
+      font size transition<br>
+      this also works in IE
+    </div>
+
+    <xmp>
+      .box3{
+        font-size: 15px;
+        transition-property: font-size;
+        transition-duration: 1.5s;
+        transition-delay: 0.5s;
+        &:hover{
+          font-size: 30px;
+        }// hover
+      }//.box3
+    </xmp>
+
+    <div class="box box4">
+      box4<br>
+      need to test background-size issue
+    </div>
+
+  </div>
+
+  <div class="vic_element">
+    test IE animation vic_element
   </div>
 </body>
 
