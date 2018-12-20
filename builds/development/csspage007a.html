@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSSPAGE007a</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
+</head>
+
+<body id="css007a">
+  <div class="mydiv_format">
+    <div class='content'>
+      <h2>Show Text Over An Image On Hover</h2>
+      <ul style="text-align:left;margin-left:10%;">
+        <li>using <span style="color:blue;">background-image</span></li>
+        <li>
+          <a href="https://youtu.be/EXWjMswCuf8"
+          target="_blank">Tutorial: Show Text Over An Image On Hover </a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes"
+          target="_blank">More about Custom attribute</a>
+        </li>
+      </ul>
+    </div>
+  </div><!-- .mydiv_format -->
+
+  <div class="mydiv_format">
+    <div class='textOverImage'
+         style="background-image:url('https://cdn.shopify.com/s/files/1/2313/1393/files/havana-2_720x.jpg');"
+         data-title="data-title-1"
+         data-text="data-text-title-1
+         Lorem ipsum dolor sit amet, mei in duis labores, ut vim adipisci interesset. Ex mei quas reprimique, sit eripuit ">
+    </div>
+    <div id='img2' class='textOverImage'
+         style=""
+         data-title="data-title-2"
+         data-text="data-text-title-2
+         radom delicatissimi at per, vocent cotidieque ex vix, vidit graece placerat eu nam. Ne illum utroque has">
+    </div>
+    <div class='test'
+    data-text="      Problem in IE 11:
+          - background-image transition not working
+          - hover text's first-line not working">
+    </div>
+  </div><!-- .mydiv_format -->
+  <br class="clearfix">
+  <div class="mydiv_format">
+    <h3>Problem in IE 11:</h3>
+    <ul>
+      <li> background-image transition not working </li>
+      <li> text reveal(top property) transition not working </li>
+      <li> hover text's first-line not working</li>
+      <li> it seems "white-space:pre-wrap" breaks first-line CSS in IE</li>
+    </ul>
+  </div>
+
+  <h2 style="margin-top:150px;">TEST2:<mark>:first-line</mark> won't work with other Pseudo element in Internet Explorer 11</h2>
+  <a href="https://stackoverflow.com/questions/19855499/css-animation-doesnt-work-in-ie-when-using-hover-and-hoverfirst-letter" target="_blank">Read more about this</a>
+  <br>
+
+  <div class="mydiv_format" id="test2">
+    <div class="box">
+    </div>
+  </div>
+
+  <h2 style="margin-top:150px;">TEST3: test hover animation in Internet Explorer 11</h2>
+  <p>this animation doesn't work on IE. It seems IE is terrible at handling animations</p>
+  <div class="mydiv_format" id="test3">
+    <div class="box box1">
+    </div>
+    <div class="box box2">
+      test IE animation
+    </div>
+    <div class="box box3">
+      test IE animation
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -218,32 +218,52 @@ body {
   padding: 10px;
   font-size: 1.7em;
 }
-/* line 56, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+@media screen and (max-width: 769px) {
+  /* line 45, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+  .mydiv_format h2, .mydiv_format .vic_subhead {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: initial;
+  }
+}
+/* line 61, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format h2 a, .mydiv_format .vic_subhead a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 61, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 66, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format h3 {
   padding: 1rem 10px;
 }
-/* line 64, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 69, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format p, .mydiv_format ul, .mydiv_format blockquote {
   font-size: 1.5em;
   line-height: 1.3em;
   font-weight: 600;
   padding: 10px;
 }
-/* line 67, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 72, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format p img, .mydiv_format ul img, .mydiv_format blockquote img {
   padding-top: 50px;
   max-width: 50px;
 }
-/* line 72, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 77, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format ul {
   list-style-type: square;
+  text-align: left;
+  margin-left: 10%;
 }
-/* line 73, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+@media screen and (max-width: 769px) {
+  /* line 77, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+  .mydiv_format ul {
+    font-size: 1rem;
+  }
+  /* line 83, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+  .mydiv_format ul li {
+    margin-bottom: 5px;
+  }
+}
+/* line 88, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format .content {
   max-width: 80%;
   margin-left: auto;
@@ -260,7 +280,7 @@ body {
   clear: both;
 }
 
-/* line 80, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 95, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .show_element_name {
   color: #ffffff;
   background: #ff5252bb;
@@ -269,7 +289,7 @@ body {
   font: 1em/1.1em Monospace !important;
 }
 
-/* line 89, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 104, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 xmp {
   background: black;
   font-weight: 500px;
@@ -278,27 +298,27 @@ xmp {
   font: 1.2em/1.4em Monospace;
 }
 
-/* line 95, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 110, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 mark {
   font-weight: 900;
   padding: 2px 8px;
 }
 
 /* index_table */
-/* line 101, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 116, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 table.index_table {
   border-collapse: collapse;
   width: 80%;
   text-align: center;
   margin: auto !important;
 }
-/* line 105, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 120, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 table.index_table tr td {
   border: 1px solid grey;
   width: 400px;
   padding: 10px;
 }
-/* line 106, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 121, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 table.index_table tr.header td {
   color: white;
   background: black;

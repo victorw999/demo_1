@@ -1,0 +1,239 @@
+#css007a{
+  .mydiv_format{
+    text-align: center;
+  }//#ex1
+
+  #img2{
+    background-image:url(https://cdn.shopify.com/s/files/1/2313/1393/files/geode_720x.jpg);
+  }
+
+  .textOverImage{
+    position:relative;
+    width:250px; height:300px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+
+    &:hover{
+      background-size:120%;
+      -webkit-background-size: 120%;
+      -moz-background-size: 120%;
+      -ms-background-size: 120%;
+    }// hover
+
+    &:after{
+      position:absolute;
+      top:90%;
+      bottom:0;left:0;right:0;
+      // word-wrap:break-word;
+      // white-space: pre-wrap;
+      // overflow: hidden;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      padding:0px 8px;
+      opacity:1;
+      content:attr(data-text); // 'data-text' is a custom attribute
+      //content:attr(data-title) " " attr(data-text);
+      -webkit-transition: all 1s ease-out;
+      -moz-transition: all 1s ease-out;
+      -ms-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      transition: all 1s ease-out;
+
+    }// after
+
+    &:hover:after{
+      opacity:1;
+      top:0;
+      padding: 8px;
+    }
+
+    /*  title, press ENTER after title*/
+    &:first-line{
+      color:white;
+      font-weight:900;
+      font-size:1.5em;
+      line-height: 2rem;
+      text-transform: uppercase;
+    }// first-line, title
+
+  }// .textOverImage
+
+
+//-------------------------------------------------------
+  .test{
+    position:relative;
+    width:300px; height:300px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: 100%;
+
+    background-position: center;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+
+    &:hover{
+      background-size:120%;
+    -webkit-background-size: 120%;
+    -moz-background-size: 120%;
+    -ms-background-size: 120%;
+    }// hover
+
+    &:after{
+      position:absolute;
+      top:90%;
+      bottom:0;left:0;right:0;
+      //word-wrap:break-word;
+      //white-space: pre-wrap;
+      //overflow: hidden;
+      background-color: rgba(0,0,0,0.6);
+      color: red;
+      padding:0px 8px;
+      opacity:1;
+
+      content:attr(data-title) attr(data-text); // 'data-text' is a custom attribute
+      -webkit-transition: all 1s ease-out;
+      -moz-transition: all 1s ease-out;
+      -ms-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      transition: all 1s ease-out;
+
+    }// after
+
+    &:hover:after{
+      opacity:1;
+      top:0;
+      padding: 8px;
+    }
+
+    /*  title, press ENTER after title*/
+    &:first-line{
+      color:BLUE;
+      font-weight:900;
+      font-size:1.5em;
+      line-height: 2rem;
+      text-transform: uppercase;
+    }// first-line, title
+
+  }// .test
+//-------------------------------------------------------
+
+  #test2{
+    clear:both;
+    .box{
+      position:relative;
+      display: block;
+      background:#90b0cc;
+      width:300px;height:300px;
+      background-color: rgba(0,0,0,0.6);
+      &::after{
+        content: "first line then
+        something else then something else then something else then something else";
+        position: absolute;
+        top:10%;bottom:0;left:0;right:0;
+        font-size:1.2rem; font-weight: bold; padding:20px;
+        color:white;
+      }
+      &:first-line{
+        font-size:2rem;
+        color:white;
+      }
+    }//.box
+  }//# test2
+
+  //-------------------------------------------------------
+
+    #test3{
+      clear:both;
+      .box{
+        position:relative;
+        display: block;
+        background:#90b0cc;
+        width:300px;height:300px;
+        margin:20px;
+      }// .box
+
+      .box1{
+        &:after{
+          display: block;
+          content: "test3";
+          position: absolute;
+          top:90%;bottom:0;left:0;right:0;
+          font-size:1.2rem; font-weight: bold; padding:20px;
+          color:white;
+          background-color: rgba(0,0,0,0.6);
+          color: red;
+            transition: all 1s ease-in-out;
+          -webkit-transition: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+        }
+        &:hover::before{
+          top:90%;
+          transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        }
+        &:hover::after{
+          //opacity:1;
+          top:0px;
+          padding: 8px;
+        }// hover
+      }//.box1
+
+      .box2{
+        background-color: rgba(203, 134, 159, 1);
+        top:0px;
+        transition: all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+        &:hover {
+          //opacity:1;
+          left:500px;
+        }// hover
+      }// .box2
+
+      .box3{
+        background-color: red;
+        opacity:1;
+        transition: opacity 5s linear 1s;
+          -ms-transition: opacity 5s linear 1s;
+        &:hover{
+          opacity:0;
+        }
+      }//.box3
+
+    }//# test3
+//-------------------------------------------------
+  .clearfix {
+    overflow: auto;
+    clear: both;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}//#css007a

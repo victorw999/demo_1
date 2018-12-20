@@ -53,6 +53,11 @@
     margin-top:15px;
     padding:10px;
     font-size: 1.7em;
+    @media screen and (max-width:769px){
+      font-size:1.5rem; font-weight: 400;
+      width: initial;
+    }
+
     a{
       text-decoration: none;
       color:$light;
@@ -69,7 +74,17 @@
       max-width:50px;
     }//img
   }//p
-  ul{ list-style-type: square;}
+  ul{
+    list-style-type: square;
+    text-align:left;
+    margin-left:10%;
+    @media screen and (max-width:769px){
+      font-size:1rem;
+      li{
+        margin-bottom: 5px;
+      }
+    }
+  }// ul
   .content{
     @include container(80%); min-height:300px;
     padding:30px;margin:30px auto;

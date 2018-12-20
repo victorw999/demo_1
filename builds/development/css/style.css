@@ -1623,32 +1623,52 @@ blockquote:after {
   padding: 10px;
   font-size: 1.7em;
 }
-/* line 56, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+@media screen and (max-width: 769px) {
+  /* line 45, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+  .mydiv_format h2, .mydiv_format .vic_subhead {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: initial;
+  }
+}
+/* line 61, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format h2 a, .mydiv_format .vic_subhead a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 61, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 66, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format h3 {
   padding: 1rem 10px;
 }
-/* line 64, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 69, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format p, .mydiv_format ul, .mydiv_format blockquote {
   font-size: 1.5em;
   line-height: 1.3em;
   font-weight: 600;
   padding: 10px;
 }
-/* line 67, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 72, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format p img, .mydiv_format ul img, .mydiv_format blockquote img {
   padding-top: 50px;
   max-width: 50px;
 }
-/* line 72, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 77, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format ul {
   list-style-type: square;
+  text-align: left;
+  margin-left: 10%;
 }
-/* line 73, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+@media screen and (max-width: 769px) {
+  /* line 77, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+  .mydiv_format ul {
+    font-size: 1rem;
+  }
+  /* line 83, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+  .mydiv_format ul li {
+    margin-bottom: 5px;
+  }
+}
+/* line 88, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .mydiv_format .content {
   max-width: 80%;
   margin-left: auto;
@@ -1665,7 +1685,7 @@ blockquote:after {
   clear: both;
 }
 
-/* line 80, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 95, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 .show_element_name {
   color: #ffffff;
   background: #ff5252bb;
@@ -1674,7 +1694,7 @@ blockquote:after {
   font: 1em/1.1em Monospace !important;
 }
 
-/* line 89, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 104, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 xmp {
   background: black;
   font-weight: 500px;
@@ -1683,27 +1703,27 @@ xmp {
   font: 1.2em/1.4em Monospace;
 }
 
-/* line 95, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 110, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 mark {
   font-weight: 900;
   padding: 2px 8px;
 }
 
 /* index_table */
-/* line 101, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 116, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 table.index_table {
   border-collapse: collapse;
   width: 80%;
   text-align: center;
   margin: auto !important;
 }
-/* line 105, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 120, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 table.index_table tr td {
   border: 1px solid grey;
   width: 400px;
   padding: 10px;
 }
-/* line 106, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
+/* line 121, ../../../components/sass/modules_vicmod_css/_vic_base.scss */
 table.index_table tr.header td {
   color: white;
   background: black;
@@ -1834,6 +1854,247 @@ table.index_table tr.header td {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+/* line 2, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .mydiv_format {
+  text-align: center;
+}
+/* line 6, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #img2 {
+  background-image: url(https://cdn.shopify.com/s/files/1/2313/1393/files/geode_720x.jpg);
+}
+/* line 10, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .textOverImage {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  float: left;
+  margin: 4px;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  /*  title, press ENTER after title*/
+}
+/* line 28, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .textOverImage:hover {
+  background-size: 120%;
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  -ms-background-size: 120%;
+}
+/* line 35, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .textOverImage:after {
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0px 8px;
+  opacity: 1;
+  content: attr(data-text);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+/* line 56, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .textOverImage:hover:after {
+  opacity: 1;
+  top: 0;
+  padding: 8px;
+}
+/* line 63, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .textOverImage:first-line {
+  color: white;
+  font-weight: 900;
+  font-size: 1.5em;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+/* line 75, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .test {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 4px;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  background-position: center;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  /*  title, press ENTER after title*/
+}
+/* line 92, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .test:hover {
+  background-size: 120%;
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  -ms-background-size: 120%;
+}
+/* line 99, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .test:after {
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: red;
+  padding: 0px 8px;
+  opacity: 1;
+  content: attr(data-title) attr(data-text);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+/* line 120, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .test:hover:after {
+  opacity: 1;
+  top: 0;
+  padding: 8px;
+}
+/* line 127, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .test:first-line {
+  color: BLUE;
+  font-weight: 900;
+  font-size: 1.5em;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+/* line 138, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test2 {
+  clear: both;
+}
+/* line 140, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test2 .box {
+  position: relative;
+  display: block;
+  background: #90b0cc;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 146, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test2 .box::after {
+  content: "first line then\a         something else then something else then something else then something else";
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px;
+  color: white;
+}
+/* line 154, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test2 .box:first-line {
+  font-size: 2rem;
+  color: white;
+}
+/* line 163, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 {
+  clear: both;
+}
+/* line 165, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box {
+  position: relative;
+  display: block;
+  background: #90b0cc;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+/* line 174, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box1:after {
+  display: block;
+  content: "test3";
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: red;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+/* line 189, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box1:hover::before {
+  top: 90%;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+/* line 197, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box1:hover::after {
+  top: 0px;
+  padding: 8px;
+}
+/* line 204, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box2 {
+  background-color: #cb869f;
+  top: 0px;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+/* line 212, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box2:hover {
+  left: 500px;
+}
+/* line 218, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box3 {
+  background-color: red;
+  opacity: 1;
+  transition: opacity 5s linear 1s;
+  -ms-transition: opacity 5s linear 1s;
+}
+/* line 223, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a #test3 .box3:hover {
+  opacity: 0;
+}
+/* line 230, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .clearfix {
+  overflow: auto;
+  clear: both;
+}
+/* line 234, ../../../components/sass/modules_vicmod_css/_csspage007a.scss */
+#css007a .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* line 1, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
