@@ -50,14 +50,91 @@
     	}
     }
 
-    #myDIV {
-      background: url('https://cdn.shopify.com/s/files/1/2313/1393/files/havana-2_720x.jpg') 50% 50% / 100% auto no-repeat scroll rgb(255,255,255);
+    .element3 {
+      background: url('https://source.unsplash.com/random') 50% 50% / 100% auto no-repeat scroll rgb(255,255,255);
     	margin: 0;
     	padding: 0;
     	width: 100%;
-    	min-height: 100vh;
+      min-height: 100vh;
     	-webkit-animation: zoom 5s 1s cubic-bezier(0, 0, 1, 1) 2 alternate;
     	animation: zoom 5s 1s cubic-bezier(0, 0, 1, 1) 2 alternate;
+    }
+
+/*  --------------   */
+    .container_3a, .container_3b, .container_4{
+      width:300px; height:300px; float:left; margin:0px 50px;
+      border: 10px solid grey;
+      overflow: hidden;
+    }
+
+
+    .element3a  {
+      background: url('https://source.unsplash.com/random') 50% 50% / 100% auto no-repeat scroll rgb(255,255,255);
+    	margin: 0;
+    	padding: 0;
+    	width: 100%;
+    	/* min-height: 100vh; */
+      height:100%;
+    	-webkit-animation: zoom 5s 1s cubic-bezier(0, 0, 1, 1) 2 alternate;
+    	animation: zoom 5s 1s cubic-bezier(0, 0, 1, 1) 2 alternate;
+    }
+/*  --------------   */
+    .element3b  {
+      background: url('https://source.unsplash.com/random') 50% 50% / 100% auto no-repeat scroll rgb(255,255,255);
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      /* min-height: 100vh; */
+      height:100%;
+
+    }
+    .element3b:hover{
+      -webkit-animation: zoom 2s 0s cubic-bezier(0, 0, 1, 1) 2 alternate;
+      animation: zoom 2s 0s cubic-bezier(0, 0, 1, 1) 2 alternate;
+    }
+/*  --------------   */
+    .element4  {
+      background: url('https://source.unsplash.com/random/200x200') 50% 50% / 100% auto no-repeat scroll rgb(255,255,255);
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height:100%;
+      transition: all 0.5s ease-in-out;
+    }
+    .element4:hover{
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+
+/*  --------------   */
+    .container_4a, .container_4b, .container_4c, .container_4d, .container_4e{
+      width:200px; height:200px; float:left; margin:0px 20px;
+      border: 1px solid grey;
+      overflow: hidden;
+    }
+    .container_4 span{
+      position:absolute;
+      margin-top:-15px;
+      transition: all 0.5s ease-in-out;
+    }
+    .container_4:hover span{
+      margin-top:-30px;
+    }
+
+    .element4a  {  transition: all 0.5s linear; }
+    .element4b  {  transition: all 0.5s ease; }
+    .element4c  {  transition: all 0.5s ease-in-out; }
+    .element4d  {  transition: all 0.5s ease-in; }
+    .element4e  {  transition: all 0.5s ease-out; }
+
+/*  --------------   */
+    .clearfix {
+      overflow: auto;width: 100%
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
     }
   </style>
 
@@ -65,23 +142,86 @@
 
 <body>
   <h1>This page is to test IE11 animations</h1>
-  <h2>Test Case 1: (IE11) hover background-image transntion</h2>
+  <h2>Test Case 1: hover background-image transntion</h2>
   <p>It all started when I tried to create a hover image animation.
     It works on Chrome Firefox, but it doesn't work on IE11</p>
   <div class='element1'
        style="background-image:url('https://cdn.shopify.com/s/files/1/2313/1393/files/havana-2_720x.jpg');">
   </div>
 
-  <h2>Test Case 2: (IE11) simple background-color transition</h2>
-  <div class="element2">
-  </div>
-
-
+  <h2>Test Case 2: background-color transition</h2>
+  <div class="element2"></div>
 
   <h2>Test Case 3: (IE11) background image animation with keyframes</h2>
-  <div id="myDIV">
+  <a href="https://stackoverflow.com/a/25574229" target="_blank">reference 1 </a><br>
+  <a href="http://asamuzak.jp/test/background_size_animate_test" target="_blank">reference 2</a>
+  <p>full width zoom animation, play only once</p>
+  <div class="element3"></div>
+
+  <h2>Test Case 3a: using same technique as above, restrict in contained area</h2>
+  <div class="container_3a">
+    use <span style="color:red">overflow: hidden;</span>
+    to prevent the background-image <span style="color:red">overflown out</span> of the parenet container
+    <br><br>
+    <span style="color:red">ISSUE:</span> image can't be "cover", unless it's ratio is 1:1
 
   </div>
+  <div class="container_3a">
+    <div class="element3a"></div>
+  </div>
+
+  <div class="clearfix"></div>
+  <h2>Test Case 3b: using hover to trigger the aniamtion</h2>
+  <div class="container_3b">
+    <div class="element3b"></div>
+  </div>
+
+  <div class="clearfix"></div>
+  <h2>Test Case 4: hover scale</h2>
+  <div class="container_4">
+    I think this one is the winner<br>
+    <a target="_blank" href="http://webdesignerwall.com/tutorials/easy-css-animation-using-keyframes">Inspiration#1</a>
+    <br>
+    <a target="_blank" href="https://codepen.io/vailjoy/pen/pRwmGP">Inspiration#2</a>
+  </div>
+  <div class="container_4">
+    <div class="element4"></div>
+  </div>
+  <div style="float:left;">
+    <xmp>
+      .element4  {
+        transition: 0.5s ease-in-out;
+      }
+      .element4:hover{
+        transform: scale(1.1);
+      }
+    </xmp>
+  </div>
+
+  <div class="clearfix"></div>
+  <h2 style="margin-bottom:100px;">Test Case 4a: transition-timing-function property</h2>
+
+  <div class="container_4 container_4a">
+    <span>linear</span>
+    <div class="element4 element4a"></div>
+  </div>
+  <div class="container_4 container_4b">
+    <span>ease</span>
+    <div class="element4 element4b"></div>
+  </div>
+  <div class="container_4 container_4c">
+    <span>ease-in-out</span>
+    <div class="element4 element4c"></div>
+  </div>
+  <div class="container_4 container_4d">
+    <span>ease-in</span>
+    <div class="element4 element4d"></div>
+  </div>
+  <div class="container_4 container_4e">
+    <span>ease-out</span>
+    <div class="element4 element4e"></div>
+  </div>
+
 </body>
 
 </html>

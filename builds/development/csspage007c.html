@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSSPAGE007c</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body id="css007c">
+  <div class="mydiv_format">
+    <div class='content'>
+      <h2>Show Text Over An Image On Hover</h2>
+      <ul style="text-align:left;margin-left:10%;">
+        <li>
+          <a href="https://youtu.be/EXWjMswCuf8"
+          target="_blank">Orig Tutorial: Show Text Over An Image On Hover </a>
+        </li>
+        <li>combine 007a and 007b (IE11 issue) </li>
+        <li>using <span style="color:red">img</span> instead of background-image</li>
+      </ul>
+    </div>
+  </div><!-- .mydiv_format -->
+
+  <div class="mydiv_format">
+    <h3>test1</h3>
+    <p><span style="color:red">::first-line</span> issue still have probelm with IE11
+    </p>
+    <div class="textOverImage_container"
+         data-title="data-title-1"
+         data-text="data-text-title-1
+
+         Lorem ipsum dolor sit amet, mei in duis labores, ut vim adipisci interesset. Ex mei quas reprimique, sit eripuit ">
+      <div class='textOverImage'
+           style="background-image:url('https://cdn.shopify.com/s/files/1/2313/1393/files/havana-2_720x.jpg');">
+      </div>
+    </div>
+
+    <div class="textOverImage_container"
+         data-title="data-title-2"
+         data-text="data-text-title-2
+
+         random delicatissimi at per, vocent cotidieque ex vix, vidit graece placerat eu nam. Ne illum utroque has">
+      <div id='img2' class='textOverImage'>
+      </div>
+    </div>
+
+    <div class='textOverImage_container'
+      data-text="      Problem in IE 11:
+            -
+            background-image transition not working
+            -
+            hover text's first-line not working">
+    </div>
+  </div><!-- .mydiv_format -->
+  <div class="clearfix"></div>
+  <div class="mydiv_format test2">
+    <h3>test2</h3>
+    <li>using <span style="color:red">img</span> instead of background-image</li>
+    <li><a href="https://codepen.io/dragoeco/pen/ibrzK" target="_blank">reference</a></li>
+    <div class="textOverImage_container">
+      <img src="https://cdn.shopify.com/s/files/1/2313/1393/files/havana-2_720x.jpg"></img>
+    </div>
+  </div>
+  <div class="clearfix" style="height:100vh;"></div>
+</body>
+
+</html>
