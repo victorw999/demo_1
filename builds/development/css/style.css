@@ -2616,4 +2616,14 @@ xmp {
   width: 50px;
 }
 
+/* line 2, ../../../components/sass/modules_vicmod_css/_csspage018b.scss */
+#csspage018b .container {
+  position: relative;
+  max-width: 1220px;
+  width: calc(90% + 20px);
+  margin: 0 auto;
+  background: #ffe6e6;
+  height: 100vh;
+}
+
 /*# sourceMappingURL=style.css.map */
