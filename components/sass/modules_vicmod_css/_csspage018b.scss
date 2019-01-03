@@ -6,5 +6,46 @@
     margin: 0 auto;
     background:lighten(red,45%);
     height: 100vh;
-  }
+
+    .imageWithText__section{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+
+      .children_item{
+        /* flex property: specify the width of the flex items
+           https://www.w3schools.com/cssref/css3_pr_flex.asp
+        */
+        -webkit-flex: 1 0 30%;
+        -ms-flex: 1 0 30%;
+        flex: 1 0 30%;
+      }// .children_item
+
+      .img1{
+        position: relative;
+        z-index: 3;
+        left: -47px;
+        margin-bottom: 20px;
+      }
+      .img2{
+        position: relative;
+        z-index: 2;
+        left: 40px;
+        top: 20px;
+      }
+      .textarea{
+        z-index: 1;
+        left: 79px;
+        position: relative;
+
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 20px 40px 20px;
+        border: 5px solid grey;
+      }// .textarea
+
+    }// .imageWithText__section
+
+  }// .container
 }
