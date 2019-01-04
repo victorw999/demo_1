@@ -9,8 +9,11 @@
     #index1 table.index_table tr td {
       border: 1px solid grey;
       width: initial;
-      padding: 10px;
+      padding: 0px 10px;
       min-width: 100px;
+    }
+    #index1 table.index_table tr.header td {
+      padding: 10px;
     }
     #index1 a.pagelink{
       display: inline-block;
@@ -22,6 +25,9 @@
       font-weight: 400;
       font-size: 16px;
       letter-spacing: 1px;
+    }
+    xmp{
+      margin:0;
     }
 
   </style>
@@ -94,14 +100,13 @@
         </td>
         <td>
           photo gallery, responsive <br>
-          <a href="https://codepen.io/team/css-tricks/pen/pvamyK"
-             target="_blank">Reference</a>
+          <a href="https://codepen.io/team/css-tricks/pen/pvamyK" target="_blank">Reference</a>
         </td>
       </tr>
       <tr class=" ">
         <td> </td>
         <td>
-          <a href="csspage007.html" class='pagelink'  target="_blank">csspage007</a>
+          <a href="csspage007.html" class='pagelink' target="_blank">csspage007</a>
         </td>
         <td>
           overlay<br>
@@ -137,221 +142,285 @@
         </td>
         <td>this is the working version (compaitible with IE11) for hovering animations</td>
       </tr>
-
-    </table>
-  </div>
-
-
-
-  <div class="mydiv_format" id="table_of_content">
-
-    <div class="overlay">
-      <section>
-        <h2><a href="scrollmagic/index_scrollmagic.html" target="_blank">ScrollMagic/TweenMax</a></h2>
-        <p>ScrollMagic.js</p>
-      </section>
-
-
-
-      <section>
-
-      </section>
-
-      <section>
-        <a href="csspage008.html" target="_blank">
-          <h2>csspage008</h2>
-          <p>
-            <ul>
-              <li>center using transform:translate</li>
-              <li>position:relative vs transform:translate()</li>
-            </ul>
-          </p>
-        </a>
-      </section>
-      <section>
-        <a href="csspage009.html" target="_blank">
-          <h2>csspage009</h2>
-          <p>
-            <ul>
-              <li>display: table-cell</li>
-            </ul>
-          </p>
-        </a>
-      </section>
-
-      <section>
-        <h2><a href="jquery001_offset.html" target="_blank">jquery001_offset</a></h2>
-      </section>
-
-      <section>
-        <h2><a href="jquery002.html" target="_blank">jquery002</a></h2>
-      </section>
-
-      <section>
-        <a href="csspage010.html" target="_blank">
-          <h2>csspage010</h2>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="csspage008.html" class='pagelink' target="_blank">csspage008</a>
+        </td>
+        <td>
+          <li>center using transform:translate</li>
+          <li>position:relative vs transform:translate()</li>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="csspage009.html" class='pagelink' target="_blank">csspage009</a>
+        </td>
+        <td>
+          <li>display: table-cell</li>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="csspage010.html" class='pagelink' target="_blank">csspage010</a>
+        </td>
+        <td>
           <li>responsive image</li>
           <xmp><picture> <source></xmp>
           <li>and javascript</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage011.html" target="_blank">
-          <h2>csspage011</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="csspage011.html" class='pagelink' target="_blank">csspage011</a>
+        </td>
+        <td>
           <li>responsive image #2</li>
           <li>srcset, size</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage012.html" target="_blank">
-          <h2>csspage012</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="csspage012.html" class='pagelink' target="_blank">csspage012</a>
+        </td>
+        <td>
           <li>media query</li>
           <li>min-width, max-width</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage013.html" target="_blank">
-          <h2>csspage013</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="csspage013.html" class='pagelink' target="_blank">csspage013</a>
+        </td>
+        <td>
           <li>media conditions</li>
           <li>(DPR) Device Pixel Ratio using FireFox Inspector Mode</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage014.html" target="_blank">
-          <h2>csspage014</h2>
-          <li>youtube tutorial: srcset & sizes</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage015.html" target="_blank">
-          <h2>csspage015</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage014.html" class='pagelink' target="_blank">csspage014</a>
+        </td>
+        <td><li>youtube tutorial: srcset & sizes</li>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage015.html" class='pagelink' target="_blank">csspage015</a>
+        </td>
+        <td>
           <li>'sizes' attribute</li>
           <li>build a size calculator</li>
-        </a>
-      </section>
-
-
-      <section style="background:pink;">
-        <a href="https://caniuse.com/#search=srcset" target="_blank">
-          <h2>Tool : "can I use"</h2>
-          <li>to find out which browser support certain commands</li>
-        </a>
-      </section>
-      <section style="background:pink;">
-        <a href="https://www.w3schools.com/css/css_rwd_templates.asp" target="_blank">
-          <h2>Cool CSS RWD Templates</h2>
-          <li>something to try</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage016.html" target="_blank">
-          <h2>csspage016</h2>
-          <li>'sizes' attribute #2</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage016a.html" target="_blank">
-          <h2>csspage016a</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage016.html" class='pagelink' target="_blank">csspage016</a>
+        </td>
+        <td><li>'sizes' attribute #2</li>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage016a.html" class='pagelink' target="_blank">csspage016a</a>
+        </td>
+        <td>
           <li>'sizes' attribute #2</li>
           <li>achieve 3 images fit in a row via
             <span style="color:red">CSS</span> &
             <span style="color:red">Srcset</span> &
             <span style="color:red">Size</span>
           </li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage016b.html" target="_blank">
-          <h2>csspage016b</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage016b.html" class='pagelink' target="_blank">csspage016b</a>
+        </td>
+        <td>
           <li>'sizes' attribute #2</li>
           <li>understand the role of <span style="color:red">"CSS"</span> in making 3 responsive img fit in a row</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage016c.html" target="_blank">
-          <h2>csspage016c</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage016c.html" class='pagelink' target="_blank">csspage016c</a>
+        </td>
+        <td>
           <li>'sizes' attribute #2</li>
           <li>Calc() - 3 responsive img with a side bar</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage016d.html" target="_blank">
-          <h2>csspage016d</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage016d.html" class='pagelink' target="_blank">csspage016d</a>
+        </td>
+        <td>
           <li>'sizes' attribute #2</li>
           <li>Art Direction - Changed to Cropped Images</li>
           <li>'picture' & 'source' element </li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage016e.html" target="_blank">
-          <h2>csspage016e</h2>
-          <li>implement responsive img via JAVASCRIPT</li>
-        </a>
-      </section>
-
-      <section style="background:pink;">
-        <a href="https://j.eremy.net/confused-about-rem-and-em/" target="_blank">
-          <h2>REM vs EM</h2>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage017.html" target="_blank">
-          <h2>csspage017</h2>
-          <li>EM vs REM demo</li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage017a.html" target="_blank">
-          <h2>csspage017a</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage016e.html" class='pagelink' target="_blank">csspage016e </a>
+        </td>
+        <td><li>implement responsive img via JAVASCRIPT</li>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage017.html" class='pagelink' target="_blank">csspage017 </a>
+        </td>
+        <td><li>EM vs REM demo</li>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage017a.html" class='pagelink' target="_blank">csspage017a</a>
+        </td>
+        <td>
           <li>EM: change 1 parent when mobile, will affect all children font-size</li>
-        </a>
-      </section>
-
-      <section style="background:pink;">
-        <a href="http://pxtoem.com/" target="_blank">
-          <h2>EM, Px calculator</h2>
-          In addition to calculating em or px values, there’s a handy table of the two which really helps to see the relationship.
-        </a>
-      </section>
-
-      <section style="">
-        <a href="jquery003.html" target="_blank">
-          <h2>jquery003 fancybox</h2>
-          use fancybox to launch a popup video
-        </a>
-      </section>
-
-      <section>
-        <a href="scrollanimation/index_animate.html" target="_blank">
-          <h2>sroll animation: animate.css wow.js</h2>
-          <li></li>
-        </a>
-      </section>
-
-      <section>
-        <a href="csspage018.html" target="_blank">
-          <h2>csspage018</h2>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td><a href="csspage018.html" class='pagelink' target="_blank">csspage018</a>
+        </td>
+        <td>
           <li>play w/ styling</li>
           <li>Experimenting Multi-layered Gallery CSS layout</li>
-        </a>
-      </section>
+        </td>
+      </tr>
 
-    </div ><!-- overlay -->
 
-  </div> <!-- #table_of_content -->
+      <!-- jQuery -->
+      <tr class=" ">
+        <td>jQuery</td>
+        <td>
+          <a href="jquery001_offset.html" class='pagelink' target="_blank">jquery001_offset</a>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr class=" ">
+        <td></td>
+        <td>
+          <a href="jquery002.html" class='pagelink' target="_blank">jquery002</a>
+        </td>
+        <td>
+        </td>
+      </tr>
+
+      <!-- ScrollMagic -->
+      <tr class=" ">
+        <td>Scroll Animation</td>
+        <td>
+          <a href="scrollmagic/index_scrollmagic.html" class='pagelink' target="_blank">ScrollMagic.js/TweenMax</a>
+        </td>
+        <td>index page
+        </td>
+      </tr>
+      <tr class=" ">
+        <td></td>
+        <td>
+          <a href="scrollanimation/index_animate.html" class='pagelink' target="_blank">Scroll Animation Index</a>
+        </td>
+        <td>scroll animation: animate.css wow.js
+        </td>
+      </tr>
+
+
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="" class='pagelink' target="_blank"></a>
+        </td>
+        <td></td>
+      </tr>
+
+
+      <!-- miscellaneous -->
+      <tr class=" ">
+        <td>miscellaneous</td>
+        <td>
+          <a href="https://caniuse.com/#search=srcset" class='pagelink' target="_blank">Tool : "can I use"</a>
+        </td>
+        <td>
+          find out which browser support certain commands
+        </td>
+      </tr>
+
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="https://www.w3schools.com/css/css_rwd_templates.asp" class='pagelink' target="_blank">Cool CSS RWD Templates</a>
+        </td>
+        <td></td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="https://j.eremy.net/confused-about-rem-and-em/" class='pagelink' target="_blank">REM vs EM</a>
+        </td>
+        <td></td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="http://pxtoem.com/"  class='pagelink' target="_blank">EM, Px calculator</a>
+        </td>
+        <td>
+          In addition to calculating em or px values, there’s a handy table of the two which really helps to see the relationship.
+        </td>
+      </tr>
+      <tr class=" ">
+        <td> </td>
+        <td>
+          <a href="" class='pagelink' target="_blank"></a>
+        </td>
+        <td></td>
+      </tr>
+
+
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="jquery003.html" target="_blank">jquery003 fancybox</a>
+        use fancybox to launch a popup video
+
+
+
+
+
+
+
+
 
 </main>
 
