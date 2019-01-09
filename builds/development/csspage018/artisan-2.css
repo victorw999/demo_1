@@ -1,0 +1,32 @@
+#test2 {
+  background: #f876442e;
+  margin-top: 200px;
+}
+/* right img */
+#test2 .vic_content_container .imageWithText__image-1-wrap{
+  flex:1 0 20% ;
+  max-width: 100%;
+  left: -16%;
+}
+/* middle img */
+#test2 .vic_content_container .imageWithText__image-2-wrap{
+  flex:1 0 66%;
+  max-width: 100%;
+}
+
+#test2 .imageWithText__text{
+    margin-left: 17%;
+    top:6rem;
+}
+
+#test2 .imageWithText__text h1.title1{
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 900;
+
+  font-size: 23rem;
+  line-height: 4rem;
+  margin: 0;
+  opacity: 0.5;
+  color: #f87644;
+  margin-top: -52px;
+}

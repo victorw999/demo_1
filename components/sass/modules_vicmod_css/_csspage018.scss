@@ -1,0 +1,21 @@
+#csspage018{
+
+  article{
+    @include container(85%);
+  }// article
+
+  .gallery{
+      @include clearfix;
+      img{
+        @include breakpoint($medium){
+          @include gallery(1 of 3);
+          display:inline;
+        }
+      }//.img
+  }// .gallery
+
+
+
+
+
+}// #csspage018
