@@ -1,0 +1,161 @@
+  .vicmod-artisan-section .background__shape.solid svg {
+    fill: #757575;
+  }
+
+  .vicmod-artisan-section .background__shape.outline svg {
+    stroke: #757575;
+    stroke-width: 1.5;
+    fill: none;
+  }
+
+  body:not(.index) .ls-shapeWrapper,
+  body:not(.index) .rs-shapeWrapper,
+  .vicmod-artisan-section .ls-shapeWrapper,
+  .vicmod-artisan-section .rs-shapeWrapper {
+    opacity: 0.5;
+  }
+
+  .vicmod-artisan-section .ls-shape1 {
+    opacity: 1;
+  }
+
+  .vicmod-artisan-section .rs-shape3 {
+    opacity: 1;
+  }
+
+  .vicmod-artisan-section .ls-shape2 {
+    opacity: 1;
+  }
+
+  /*Shapes*/
+  /* #Left side
+  ================================================== */
+  /*Shape 1*/
+  .vicmod-artisan-section .ls-shape1 {
+    top: 0;
+    left: 0;
+  }
+
+  .vicmod-artisan-section .ls-shape1 .svgShape {
+    -webkit-transform: translateX(-35%) scale(0.6);
+    -ms-transform: translateX(-35%) scale(0.6);
+    transform: translateX(-35%) scale(0.6);
+    -webkit-transform-origin: center 0;
+    -ms-transform-origin: center 0;
+    transform-origin: center 0;
+    width: 50%;
+  }
+
+  /*Shape 2*/
+  .vicmod-artisan-section .ls-shape2 {
+    top: 20%;
+    left: 0;
+  }
+
+  .vicmod-artisan-section .ls-shape2 .svgShape {
+    -webkit-transform: translateX(0) scale(0.6);
+    -ms-transform: translateX(0) scale(0.6);
+    transform: translateX(0) scale(0.6);
+    -webkit-transform-origin: center 0;
+    -ms-transform-origin: center 0;
+    transform-origin: center 0;
+    width: 80%;
+  }
+
+  /*Shape 3*/
+  .vicmod-artisan-section .ls-shape3 {
+    bottom: 0;
+    left: 0;
+  }
+
+  .vicmod-artisan-section .ls-shape3 .svgShape {
+    -webkit-transform: translateX(-50%) scale(0.6);
+    -ms-transform: translateX(-50%) scale(0.6);
+    transform: translateX(-50%) scale(0.6);
+    -webkit-transform-origin: center 100%;
+    -ms-transform-origin: center 100%;
+    transform-origin: center 100%;
+    width: 100%;
+  }
+
+  /*Shape 4*/
+  .vicmod-artisan-section .ls-shape4 {
+    bottom: 0;
+    left: 0;
+  }
+
+  .vicmod-artisan-section .ls-shape4 .svgShape {
+    -webkit-transform: translateX(0) scale(0.6);
+    -ms-transform: translateX(0) scale(0.6);
+    transform: translateX(0) scale(0.6);
+    -webkit-transform-origin: center 100%;
+    -ms-transform-origin: center 100%;
+    transform-origin: center 100%;
+    width: 30%;
+  }
+
+  /* #Right side
+  ================================================== */
+  /*Shape 1*/
+  .vicmod-artisan-section .rs-shape1 {
+    top: 0;
+    right: 0;
+  }
+
+  .vicmod-artisan-section .rs-shape1 .svgShape {
+    -webkit-transform: translateX(35%) scale(0.6);
+    -ms-transform: translateX(35%) scale(0.6);
+    transform: translateX(35%) scale(0.6);
+    -webkit-transform-origin: center 0;
+    -ms-transform-origin: center 0;
+    transform-origin: center 0;
+    width: 50%;
+  }
+
+  /*Shape 2*/
+  .vicmod-artisan-section .rs-shape2 {
+    top: 20%;
+    right: 0;
+  }
+
+  .vicmod-artisan-section .rs-shape2 .svgShape {
+    -webkit-transform: translateX(0) scale(0.6);
+    -ms-transform: translateX(0) scale(0.6);
+    transform: translateX(0) scale(0.6);
+    -webkit-transform-origin: center 0;
+    -ms-transform-origin: center 0;
+    transform-origin: center 0;
+    width: 80%;
+  }
+
+  /*Shape 3*/
+  .vicmod-artisan-section .rs-shape3 {
+    bottom: 0;
+    right: 0;
+  }
+
+  .vicmod-artisan-section .rs-shape3 .svgShape {
+    -webkit-transform: translateX(50%) scale(0.6);
+    -ms-transform: translateX(50%) scale(0.6);
+    transform: translateX(50%) scale(0.6);
+    -webkit-transform-origin: center 100%;
+    -ms-transform-origin: center 100%;
+    transform-origin: center 100%;
+    width: 100%;
+  }
+
+  /*Shape 4*/
+  .vicmod-artisan-section .rs-shape4 {
+    bottom: 0;
+    right: 0;
+  }
+
+  .vicmod-artisan-section .rs-shape4 .svgShape {
+    -webkit-transform: translateX(0) scale(0.6);
+    -ms-transform: translateX(0) scale(0.6);
+    transform: translateX(0) scale(0.6);
+    -webkit-transform-origin: center 100%;
+    -ms-transform-origin: center 100%;
+    transform-origin: center 100%;
+    width: 30%;
+  }
