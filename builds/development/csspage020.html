@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>020</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    main {
+      display: flex;
+      max-width: 900px;
+    }
+    .col{
+      height:100px;
+    }
+    section {
+      flex-grow: 2;
+      background:grey;
+    }
+    aside {
+      flex-grow: 1;
+      background:red;
+    }
+</style>
+</head>
+
+<body id="csspage019">
+  <div class='mydiv_format'>
+    <h1>flex-grow, flex-shrink example</h1>
+    <h2><a href="https://css-tricks.com/flex-grow-is-weird/#article-header-id-0">Tutorial REF</a></h2>
+    <h2><a href="https://codepen.io/matuzo/pen/zvXQyj">codepen REF</a></h2>
+  </div>
+
+  <hr>
+  <div class='mydiv_format'>
+    <h1>flex-grow</h1>
+  </div>
+  <div style="width:900px;height:20px;background:khaki;text-align:center;">[RULER] width: 900px</div>
+  <div style="width:600px;height:20px;background:aquamarine;text-align:center;">[RULER] width: 600px</div>
+  <main>
+
+    <section class="col">
+      <!-- SECTION -->
+    </section>
+    <aside class="col">
+      <!-- ASIDE -->
+    </aside>
+  </main>
+
+  <ol>
+    <li>width section: <span></span> </li>
+    <li>width aside: <span></span></li>
+  </ol>
+
+  <hr>
+  <h2>explanatory graphic</h2>
+  <img src="https://css-tricks.com/wp-content/uploads/2015/12/step1.jpg" alt=""><br>
+  <img src="https://css-tricks.com/wp-content/uploads/2015/12/step2.jpg" alt=""><br>
+  <img src="https://css-tricks.com/wp-content/uploads/2015/12/step3.jpg" alt=""><br>
+
+  <div class='mydiv_format'>
+    <h1>flex-shrink</h1>
+    <h2>
+      <a href="https://medium.freecodecamp.org/even-more-about-how-flexbox-works-explained-in-big-colorful-animated-gifs-a5a74812b053">REF</a>
+    </h2>
+  </div>
+  <h2>explanatory graphic</h2>
+  <img src="https://cdn-images-1.medium.com/max/2000/1*FVO9kX3wwqakhcT9JWS2Ww.gif" alt=""><br>
+  <img src="https://cdn-images-1.medium.com/max/2000/1*GrLzJ4jH3v2Z5Va_TMOXkQ.gif" alt=""><br>
+
+  <hr>
+  <!-- play with flex-shrink -->
+  <style>
+    #test3, #test4{
+      display: flex;
+      background-color:#ebeff1;
+    }
+    #test3 .block, #test4 .block{
+      flex:1 1 3rem;
+      height:10rem; border:1px solid grey;
+      font-size: 3rem;line-height: 10rem;
+      color: #d1d1d1; text-align: center;
+      margin:1rem;
+      box-sizing: border-box;
+    }
+    #test3 .two, #test3 .four, #test3 .six{
+      flex: 4 4 3rem;
+    }
+  </style>
+  <h2>flex-shrink demo</h2>
+  <h2>test3</h2>
+  <div id="test3">
+    <div class="block one">1</div>
+    <div class="block two">2</div>
+    <div class="block three">3</div>
+    <div class="block four">4</div>
+    <div class="block five">5</div>
+  </div>
+
+  <style>
+    #test4 .one{ flex:1 2 400px; }
+    #test4 .two{ flex:2 1 400px; }
+  </style>
+
+  <hr>
+  <h2>test4</h2>
+  <div style="width:400px;height:20px;background:khaki;text-align:center;">[RULER] width: 400px</div>
+  <div style="width:800px;height:20px;background:lightpink;text-align:center;">[RULER] width: 800px</div>
+  <div id="test4">
+
+    <div class="block one">1</div>
+    <div class="block two">2</div>
+  </div>
+
+  <div style="height:1000px;"></div>
+
+
+  <script>
+    getsize();
+
+    function getsize() {
+      var n = 0;
+      for (var node of document.querySelectorAll('.col')) {
+        document.querySelectorAll('span')[n].textContent = node.getBoundingClientRect().width+"px";
+        n++;
+      }
+    }
+
+    window.onresize = function(event) {
+      getsize();
+    };
+
+  </script>
+</body>
+
+</html>

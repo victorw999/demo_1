@@ -17,22 +17,28 @@
         /* flex property: specify the width of the flex items
            https://www.w3schools.com/cssref/css3_pr_flex.asp
         */
-        -webkit-flex: 1 0 30%;
-        -ms-flex: 1 0 30%;
-        flex: 1 0 30%;
-      }// .children_item
+        -webkit-flex: 1 1 30%;
+        -ms-flex: 1 1 30%;
+        flex: 1 1 30%;
 
+      }// .children_item
+      .children_item img{
+        max-width: 100%;
+        max-height: 90vh;
+      }
       .img1{
         position: relative;
         z-index: 3;
         left: -47px;
         margin-bottom: 20px;
+        flex:1 0 25%;
       }
       .img2{
         position: relative;
         z-index: 2;
         left: 40px;
         top: 20px;
+        flex:1 0 25%;
       }
       .textarea{
         z-index: 1;
@@ -44,8 +50,23 @@
         padding: 20px 40px 20px;
         border: 5px solid grey;
       }// .textarea
-
     }// .imageWithText__section
-
   }// .container
+
+  // test2
+  #test2{
+    .img1{
+      -ms-flex: 1 1 14%;
+      flex:1 1 14% ;
+    }
+    .img2{
+      -ms-flex: 1 2 56%;
+      flex: 1 2 56%;
+    }
+    .textarea{
+      -ms-flex: 1 1 30%;
+      flex:1 1 30% ;
+      top:6rem;
+    }
+  }
 }

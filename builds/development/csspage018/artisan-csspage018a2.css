@@ -1,22 +1,31 @@
 #test2 {
   background: #f876442e;
   margin-top: 200px;
+  background: linear-gradient(180deg, transparent 50%, #dddddd 50%);
 }
 /* right img */
 #test2 .vic_content_container .imageWithText__image-1-wrap{
-  flex:1 0 20% ;
+  -ms-flex: 1 1 14%;
+  flex:1 1 14% ;
   max-width: 100%;
-  left: -16%;
+  //left: -16%;
 }
 /* middle img */
 #test2 .vic_content_container .imageWithText__image-2-wrap{
-  flex:1 0 66%;
+  -ms-flex: 1 1 56%;
+  flex:1 1 56%;
   max-width: 100%;
 }
 
 #test2 .imageWithText__text{
-    margin-left: 17%;
-    top:6rem;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  top:6rem;
+}
+@media only screen and (max-width: 1024px){
+  #test2 .imageWithText__text{
+    flex: initial;
+  }
 }
 
 #test2 .imageWithText__text h1.title1{
