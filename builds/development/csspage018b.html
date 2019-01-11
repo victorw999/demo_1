@@ -57,6 +57,77 @@
         </div>
       </div>
     </div><!-- .container -->
+    <div style="height:50vh;"></div>
+    <!-- TEST3 -->
+    <style>
+    #test3{
+      position: relative;
+      max-width: 1220px;
+      width:calc(90%);
+      margin:0 auto;
+      background:lightpink;
+      height:100vh;
+    }
+    #test3 .flex_container{
+      display:flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+    }
+    #test3 .children_item{
+      flex: 1 1 30%;
+      border: 2px solid red;
+    }
+    #test3 .children_item img{
+      max-width: 100%;
+      max-height: 90vh;
+    }
+    #test3 .img1{
+      flex: 1 0 25%;
+      left: -5%;
+      position: relative;
+      margin-bottom: 40px;
+      z-index: 3;
+    }
+    #test3 .img2{
+      flex: 1 0 25%;
+      left: -20px;
+      position: relative;
+      z-index: 2;
+    }
+    #test3 .img3{
+      position: relative;
+      margin-left: 5%;
+      top:20px;
+    }
+
+    @media only screen and (max-width: 1024px){
+      #test3 .flex_container{
+        flex-wrap: wrap;
+      }
+      #test3 .img1{ left: -10px;}
+      #test3 .img2{ left: 10px;}
+      #test3 .img3{
+        flex:1 0 100%;
+        margin:10px 0;
+      }
+    }
+    </style>
+    <h2>test3</h2>
+    <div id="test3">
+      <div class="flex_container">
+        <div class="img1 children_item">
+          <img src="https://via.placeholder.com/800x1000/98FB98">
+        </div>
+        <div class="img2 children_item">
+          <img src="https://via.placeholder.com/800x1000/D8BFD8">
+        </div>
+        <div class="img3 children_item">
+          <img src="https://via.placeholder.com/800x1000/FFEBCD">
+        </div>
+      </div> <!-- .flex_container -->
+    </div> <!-- #test3 -->
+
 
     <div style="height:1000px;"></div>
   </body>

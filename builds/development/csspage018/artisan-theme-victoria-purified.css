@@ -1,0 +1,1215 @@
+section {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?&hmac=9b44f1b8d0838c9ac675952e35834e313f8613dc57b8dac9f5bd407fa737a447") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?&hmac=a2ddfdd7d87fb2a6b6030063f73bc2e197096aa8c8a631fcb4632f104726a9c8") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.8cfc646eab1e39e2d81a26284624600ccae49d55.woff2?&hmac=483950e1b5a4c701731c51c7d599e7e521b6687653632dd49172c3a632be4fec") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.25b10f8089bc87dfd8e50a7c68b433da7a04bc87.woff?&hmac=949a47f28226694553f4530022fc5bfa1066a050f0a1dc68177b93ec8c81ef8e") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i4.f1583d9f457b68e44fbda187a48b4096d547d7f4.woff2?&hmac=eb195891d1aec3f08f7da7a0e00c1be1d806ae0730dec15ab5f0c1a0f0cabbc3") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i4.67fb53a3e0351125941146246183577ae8d8bf23.woff?&hmac=134ef29f41155b818269532f499616d05acb9009a177fee09098910a4c36d2e8") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.3a67996166b5b7f1b7cc3b35490ebd6824908dc5.woff2?&hmac=af3d0f0649a6fa3ec131be4036a88e968a030a63c9c370cbbaa14cf17107bd3f") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.b872875ff437f0efb4c2321d0016eaa726b649ae.woff?&hmac=523722c4c3759c28ca62ecdaa5358dc515eed1983a479562425731ec3ee4ba2b") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?&hmac=9b44f1b8d0838c9ac675952e35834e313f8613dc57b8dac9f5bd407fa737a447") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?&hmac=a2ddfdd7d87fb2a6b6030063f73bc2e197096aa8c8a631fcb4632f104726a9c8") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.8cfc646eab1e39e2d81a26284624600ccae49d55.woff2?&hmac=483950e1b5a4c701731c51c7d599e7e521b6687653632dd49172c3a632be4fec") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.25b10f8089bc87dfd8e50a7c68b433da7a04bc87.woff?&hmac=949a47f28226694553f4530022fc5bfa1066a050f0a1dc68177b93ec8c81ef8e") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i4.f1583d9f457b68e44fbda187a48b4096d547d7f4.woff2?&hmac=eb195891d1aec3f08f7da7a0e00c1be1d806ae0730dec15ab5f0c1a0f0cabbc3") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i4.67fb53a3e0351125941146246183577ae8d8bf23.woff?&hmac=134ef29f41155b818269532f499616d05acb9009a177fee09098910a4c36d2e8") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.3a67996166b5b7f1b7cc3b35490ebd6824908dc5.woff2?&hmac=af3d0f0649a6fa3ec131be4036a88e968a030a63c9c370cbbaa14cf17107bd3f") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.b872875ff437f0efb4c2321d0016eaa726b649ae.woff?&hmac=523722c4c3759c28ca62ecdaa5358dc515eed1983a479562425731ec3ee4ba2b") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n5.972a96b7a049f12c89d6d1cd0e1b6c9211f7ba14.woff2?&hmac=9ecce13e9758a49a481fe140022e957c9a20af75e385b055e68099bfe3c72cce") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n5.9e88d20fa9eb66ba268ac60ab013006ef69a310a.woff?&hmac=95062bdc6bf310fb603835ca66e932d1af8cc220ca11613365819e0c2b7a1364") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.8cfc646eab1e39e2d81a26284624600ccae49d55.woff2?&hmac=483950e1b5a4c701731c51c7d599e7e521b6687653632dd49172c3a632be4fec") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.25b10f8089bc87dfd8e50a7c68b433da7a04bc87.woff?&hmac=949a47f28226694553f4530022fc5bfa1066a050f0a1dc68177b93ec8c81ef8e") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i5.2d1a6d537e5b485482d6bcca34a56cc10d441a55.woff2?&hmac=a8dd0488ce0fdd35c7291cbdf320891647f3c0b4e7887e56d254106824cdcadb") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i5.fcfa37c68ca483c41031623bfae4701d99bb4b95.woff?&hmac=68358ee5e996a895f992ae0b4bfcd0540af5511e6f06db2e465c09a832640c0f") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.3a67996166b5b7f1b7cc3b35490ebd6824908dc5.woff2?&hmac=af3d0f0649a6fa3ec131be4036a88e968a030a63c9c370cbbaa14cf17107bd3f") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.b872875ff437f0efb4c2321d0016eaa726b649ae.woff?&hmac=523722c4c3759c28ca62ecdaa5358dc515eed1983a479562425731ec3ee4ba2b") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n5.972a96b7a049f12c89d6d1cd0e1b6c9211f7ba14.woff2?&hmac=9ecce13e9758a49a481fe140022e957c9a20af75e385b055e68099bfe3c72cce") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n5.9e88d20fa9eb66ba268ac60ab013006ef69a310a.woff?&hmac=95062bdc6bf310fb603835ca66e932d1af8cc220ca11613365819e0c2b7a1364") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.8cfc646eab1e39e2d81a26284624600ccae49d55.woff2?&hmac=483950e1b5a4c701731c51c7d599e7e521b6687653632dd49172c3a632be4fec") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.25b10f8089bc87dfd8e50a7c68b433da7a04bc87.woff?&hmac=949a47f28226694553f4530022fc5bfa1066a050f0a1dc68177b93ec8c81ef8e") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i5.2d1a6d537e5b485482d6bcca34a56cc10d441a55.woff2?&hmac=a8dd0488ce0fdd35c7291cbdf320891647f3c0b4e7887e56d254106824cdcadb") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i5.fcfa37c68ca483c41031623bfae4701d99bb4b95.woff?&hmac=68358ee5e996a895f992ae0b4bfcd0540af5511e6f06db2e465c09a832640c0f") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.3a67996166b5b7f1b7cc3b35490ebd6824908dc5.woff2?&hmac=af3d0f0649a6fa3ec131be4036a88e968a030a63c9c370cbbaa14cf17107bd3f") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.b872875ff437f0efb4c2321d0016eaa726b649ae.woff?&hmac=523722c4c3759c28ca62ecdaa5358dc515eed1983a479562425731ec3ee4ba2b") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 100;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n1.b8db8a35a9e768fa29117855e86900d589e2e1ae.woff2?&hmac=21c486bf9773039c8c03ee7eb4ab9a9e00080efbdfb9679cfa513cf2303fdbd1") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n1.5fb63ff533b99b9d715091a5ae2c97cd28d2d1cc.woff?&hmac=ec6874ef49295c6782ed3cb36decba7e1a506768425298bf2a667da6307d370c") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 100;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i1.31c809dff84d92dcfb8fa5a6fd79575a7f086dc6.woff2?&hmac=c782c3b66226320c97ec1844ba5dc573d6701c2707ca0c20706c1143be64e289") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i1.00bfce4a9e0878a90fe6f0f0ff643cb637284547.woff?&hmac=1f43e35fa6ce04c5d353277391256d34604dadfd4e93c839ff18bfc05a4d565b") format("woff");
+}
+
+@font-face {
+  font-family: "Bauer Bodoni";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/bauer_bodoni/bauerbodoni_n4.8461148e5de43869667fbe64194eb80450bb3636.woff2?&hmac=a333c1934ceb18d1c861049cf034da36fe0cbc3bc589f455607c0cf973872f56") format("woff2"),url("https://fonts.shopifycdn.com/bauer_bodoni/bauerbodoni_n4.e9cf5576fd91ce7d52b2505eaf85e88df4688ec5.woff?&hmac=f61a9e1c609e527e55c39a874ae31a107a5b477d9b71d7d53247e09c30761767") format("woff");
+}
+
+@font-face {
+  font-family: "Bauer Bodoni";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/bauer_bodoni/bauerbodoni_n7.6ba4277576da62f25b86b1485f3bf74f24b35351.woff2?&hmac=98022ef0c5055959f9369a62621de9e328fd3512f63973cd111e00839a1f2c36") format("woff2"),url("https://fonts.shopifycdn.com/bauer_bodoni/bauerbodoni_n7.16cb5adc3ffc65b9d07d9d1e94107baa561c116a.woff?&hmac=98198180a78abb79a3d2f3f71ac89f2f1378027bf16bec5a54ad373382c8a773") format("woff");
+}
+
+@font-face {
+  font-family: "Bauer Bodoni";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/bauer_bodoni/bauerbodoni_i4.629e501801cd2728e1e604c00c2ac79e7bf5aba0.woff2?&hmac=f3aa83d0f2b89c50c154eb72a6c754455086f9226720e35622a475bc9a4c4206") format("woff2"),url("https://fonts.shopifycdn.com/bauer_bodoni/bauerbodoni_i4.59a7104d3afdbc896a10c3cfb5bdfe104dee7632.woff?&hmac=be8c40e97b9910d9d056b2e99e809ff3e8f8d6af3486db6ffe4a3fdc0ee5b8fd") format("woff");
+}
+
+@font-face {
+  font-family: "Bauer Bodoni";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/bauer_bodoni/bauerbodoni_i7.45574c34af6dada8ba83a51bd03e97653308a8b6.woff2?&hmac=130572e48b41d0adca9a58a5f142b189e308b3bee167b3dc2563b5ebda36600c") format("woff2"),url("https://fonts.shopifycdn.com/bauer_bodoni/bauerbodoni_i7.c2927baeebce96b0d87411c9e2bc5e22b89dfc0f.woff?&hmac=42d8ee9859b47bdd1b93c9234725b5a61f6a86108afeff92139dce81273b2bca") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?&hmac=9b44f1b8d0838c9ac675952e35834e313f8613dc57b8dac9f5bd407fa737a447") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?&hmac=a2ddfdd7d87fb2a6b6030063f73bc2e197096aa8c8a631fcb4632f104726a9c8") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.8cfc646eab1e39e2d81a26284624600ccae49d55.woff2?&hmac=483950e1b5a4c701731c51c7d599e7e521b6687653632dd49172c3a632be4fec") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n7.25b10f8089bc87dfd8e50a7c68b433da7a04bc87.woff?&hmac=949a47f28226694553f4530022fc5bfa1066a050f0a1dc68177b93ec8c81ef8e") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i4.f1583d9f457b68e44fbda187a48b4096d547d7f4.woff2?&hmac=eb195891d1aec3f08f7da7a0e00c1be1d806ae0730dec15ab5f0c1a0f0cabbc3") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i4.67fb53a3e0351125941146246183577ae8d8bf23.woff?&hmac=134ef29f41155b818269532f499616d05acb9009a177fee09098910a4c36d2e8") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.3a67996166b5b7f1b7cc3b35490ebd6824908dc5.woff2?&hmac=af3d0f0649a6fa3ec131be4036a88e968a030a63c9c370cbbaa14cf17107bd3f") format("woff2"),url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i7.b872875ff437f0efb4c2321d0016eaa726b649ae.woff?&hmac=523722c4c3759c28ca62ecdaa5358dc515eed1983a479562425731ec3ee4ba2b") format("woff");
+}
+
+body {
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: none;
+  color: #1f1f21;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  background-color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #000;
+  color: #fff;
+}
+
+::selection {
+  background: #FFF7B6;
+  color: black;
+}
+
+img[data-sizes="auto"] {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image__container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.show {
+  display: block !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.container {
+  position: relative;
+  max-width: 1220px;
+  width: calc(90% + 20px);
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+
+[class*="offset-by"] {
+  position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  [class*="offset-by"] {
+    position: static;
+  }
+}
+
+.container:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@media print {
+@page {
+    size: landscape;
+}
+}
+
+/*!
+ * Datepicker v0.6.3
+ * https://github.com/fengyuanchen/datepicker
+ *
+ * Copyright (c) 2014-2017 Fengyuan Chen
+ * Released under the MIT license
+ *
+ * Date: 2017-09-29T14:28:02.764Z
+ */
+
+/*! Flickity v2.0.10
+http://flickity.metafizzy.co
+---------------------------------------------- */
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateZ(0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@font-face {
+  font-family: 'artisan';
+  src: url("artisan.eot?dipe04");
+  src: url("artisan.eot?dipe04#iefix") format("embedded-opentype"),url("artisan.ttf?dipe04") format("truetype"),url("artisan.woff?dipe04") format("woff"),url("artisan.svg?dipe04#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],[class*=" icon-"] {
+  font-family: 'artisan' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,.h1 {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 31px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  line-height: normal;
+  color: #181821;
+  display: block;
+  letter-spacing: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 798px) {
+  h1,  .h1 {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  line-height: normal;
+  color: #181821;
+  display: block;
+  letter-spacing: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 798px) {
+  h2 {
+    font-size: 21px;
+  }
+}
+
+h3 {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  line-height: normal;
+  color: #181821;
+  display: block;
+  letter-spacing: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 798px) {
+  h3 {
+    font-size: 19px;
+  }
+}
+
+h4 {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  line-height: normal;
+  color: #181821;
+  display: block;
+  letter-spacing: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 798px) {
+  h4 {
+    font-size: 16px;
+  }
+}
+
+h5 {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  line-height: normal;
+  color: #181821;
+  display: block;
+  letter-spacing: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 798px) {
+  h5 {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  line-height: normal;
+  color: #181821;
+  display: block;
+  letter-spacing: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 798px) {
+  h6 {
+    font-size: 14px;
+  }
+}
+
+p {
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+em {
+  font-style: italic;
+}
+
+a,a:visited {
+  color: #2c365e;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover,a:focus {
+  color: #771f52;
+}
+
+a {
+  touch-action: manipulation;
+}
+
+a.hoverButton {
+  position: relative;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+a.hoverButton::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 3px;
+  width: 0;
+  display: block;
+  height: 1px;
+  background-color: #771f52;
+  content: '';
+  transition: width 0.5s;
+}
+
+a.hoverButton:hover::before,a.hoverButton:focus::before {
+  width: 100%;
+}
+
+img[data-sizes="auto"] {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image__container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  float: right;
+  position: relative;
+}
+
+.left {
+  float: left;
+}
+
+.inline {
+  display: inline;
+}
+
+.svgShape {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.svgShape svg {
+  display: inline-block;
+}
+
+.shape--hexagon {
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.shopify a {
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA0JJREFUeNqMU81vG0UU/83sR73YG+M4xrHj4jj9UCFNSaGlQQUhhFBRpXIo6jEHQFXFAbhy4B/gioTgzgGV7ws5IAoqUgUSoWoIaZJGpGpMHDuptf5a7+fM8nZpJaRy4M0+jd7szO/93u/NsAsX5vFvi6IInHNUq5NnstnsqXp96xur3f392HNlrIcLePHkS8hlTchIJvtVSTOjIaSAwhkiGsXi+BudjjVp28Oj+XzhrPDZh5qqfoIQD5j6wrxHCAJ6UMXVr3pgnB0c9O2843jrE5XMtZER47GTp+bOqfn++d9+Ct5TuLrCGAcjpgnAWEVSdg8HSyWUzTl8v7D08szxSltPB6/OPDWeW/q1caI2O0zfbrThBM7pjdbiz9PG7LsK01epYKiCaMlIQadnHag9UZ2vbuqvl47tVMwcY3fdFjLFCIHksB0bQojCTmfzlWyHf53S0qsyigESMRS0uqtvNbs330nXNHhRAWl3ChnNhLG/jzBy4fg27pGG5TSqWsARV6EGwk+WScgymIQ5auLpyTdRHj2arC//9QXuDpfgeDYkQcgoZixq4DKuAGoo7wEwVg5DD3PVt1EafRzL21/C0HJo9f4gYUO4gZNkFMk5Nkli3wcI4vP7yIvxhsLIIXhBHzfqlzHwWihkDiNjPEwlDJNE/zDABGPQKfR5QAzI8wRU9IWNurWIlJbF+dmP8Ig5ja67Az8cwvWdmCVi4YSMSlTzODjAQxGAvCZkaIpI4MeN97Fc/xbpfXk8WXmNqPcw9C1idR8gKSNN06GYEScZYwZVJ+xj/8hpPJp9HmvNK/Bd6g0zEXfJ9rvEwE0A4qbFLOibimN15RcLR57JVFx7iLGHpvFs9RJ8QZvofmzsXoEXDqAqWiIiyUaAUSIkBTVVY1BuXuth6rhxcaxizDb619EcrGPg7+JG8zJWdj8HZwplk7hTHyDiKrU5BVWXyKT57ncfNz9TRBjxrRWn3/zT2+7seV7DWuabnR+MTrCm6ikNnLLEL3R720dmQkMqFz8dia3rdmvhg8an7MH3hZRhKuVsQTtcPmCcGK+lZvLl1JEdK9T7PW9t75a72L7tXh3sBbdEELXxP00h1//rx98CDACS7p3N/ZPUwQAAAABJRU5ErkJggg==);
+  padding-left: 21px;
+  text-decoration: none;
+}
+
+@keyframes drawCheckmark {
+  from {
+    stroke-dashoffset: 19.79;
+    opacity: 1;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes drawCheckmark {
+  from {
+    stroke-dashoffset: 19.79;
+    opacity: 1;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeCheckmark {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeCheckmark {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.shapesOption {
+  position: relative;
+}
+
+.ls-shapeWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+.rs-shapeWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+.rs-shapeWrapper .background__shape {
+  text-align: right;
+}
+
+.background__shape {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.background__shape .svgShape {
+  max-width: 350px;
+}
+
+.ls-shape1 .svgShape {
+  opacity: 0.5;
+}
+
+.ls-shape1 .svgShape svg {
+  -ms-transform: rotate(-43deg);
+  -webkit-transform: rotate(-43deg);
+  transform: rotate(-43deg);
+}
+
+.ls-shape2 .svgShape {
+  opacity: 0.8;
+}
+
+.ls-shape2 .svgShape svg {
+  -ms-transform: rotate(80deg);
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+.ls-shape3 .svgShape {
+  opacity: 0.4;
+}
+
+.ls-shape3 .svgShape svg {
+  -ms-transform: rotate(22deg);
+  -webkit-transform: rotate(22deg);
+  transform: rotate(22deg);
+}
+
+.ls-shape4 .svgShape {
+  opacity: 1;
+}
+
+.ls-shape4 .svgShape svg {
+  -ms-transform: rotate(43deg);
+  -webkit-transform: rotate(43deg);
+  transform: rotate(43deg);
+}
+
+.rs-shape1 .svgShape {
+  opacity: 0.6;
+}
+
+.rs-shape1 .svgShape svg {
+  -ms-transform: rotate(-140deg);
+  -webkit-transform: rotate(-140deg);
+  transform: rotate(-140deg);
+}
+
+.rs-shape2 .svgShape {
+  opacity: 0.5;
+}
+
+.rs-shape2 .svgShape svg {
+  -ms-transform: rotate(93deg);
+  -webkit-transform: rotate(93deg);
+  transform: rotate(93deg);
+}
+
+.rs-shape3 .svgShape {
+  opacity: 0.8;
+}
+
+.rs-shape3 .svgShape svg {
+  -ms-transform: rotate(-43deg);
+  -webkit-transform: rotate(-43deg);
+  transform: rotate(-43deg);
+}
+
+.rs-shape4 .svgShape {
+  opacity: 0.3;
+}
+
+.rs-shape4 .svgShape svg {
+  -ms-transform: rotate(64deg);
+  -webkit-transform: rotate(64deg);
+  transform: rotate(64deg);
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .background__shape {
+    height: 400px !important;
+  }
+
+  .svgShape {
+    height: 100% !important;
+  }
+}
+
+.image1--true .imageWithText__text,.image2--true .imageWithText__text {
+  -webkit-box-flex: 1 0 60%;
+  -moz-box-flex: 1 0 60%;
+  -webkit-flex: 1 0 60%;
+  -ms-flex: 1 0 60%;
+  flex: 1 0 60%;
+  top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .image1--true .imageWithText__text,  .image2--true .imageWithText__text {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    top: 0;
+    -webkit-box-flex: 1 0 100%;
+    -moz-box-flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .image1--true .imageWithText__text,  .image2--true .imageWithText__text {
+    margin-top: 20px;
+  }
+}
+
+.imageWithText__image-wrapper {
+  position: relative;
+  z-index: 2;
+  -webkit-box-flex: 1 0 40%;
+  -moz-box-flex: 1 0 40%;
+  -webkit-flex: 1 0 40%;
+  -ms-flex: 1 0 40%;
+  flex: 1 0 40%;
+  text-align: right;
+  max-width: 420px;
+}
+
+.imageWithText__text {
+  position: relative;
+  z-index: 0;
+  width: 60%;
+}
+
+@media only screen and (max-width: 798px) {
+  .imageWithText__text {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.image1--true.image2--true .imageWithText__image-wrapper {
+  -webkit-box-flex: 1 0 25%;
+  -moz-box-flex: 1 0 25%;
+  -webkit-flex: 1 0 25%;
+  -ms-flex: 1 0 25%;
+  flex: 1 0 25%;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .image1--true.image2--true .imageWithText__image-wrapper {
+    -webkit-box-flex: none;
+    -moz-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+}
+
+.image1--true.image2--true .imageWithText__text {
+  -webkit-box-flex: 1 0 30%;
+  -moz-box-flex: 1 0 30%;
+  -webkit-flex: 1 0 30%;
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%;
+}
+
+.image1--true.image2--true .imageWithText__image-1-wrap {
+  margin-bottom: 40px;
+}
+
+.imageWithText__section.image-position--left.image1--true .imageWithText__text,.imageWithText__section.image-position--left.image2--true .imageWithText__text {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--left.image1--true .imageWithText__text,  .imageWithText__section.image-position--left.image2--true .imageWithText__text {
+    margin-right: 0;
+  }
+}
+
+.imageWithText__section.image-position--left .imageWithText__info {
+  padding-left: 60px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--left .imageWithText__info {
+    padding: 40px 20px;
+  }
+}
+
+.imageWithText__section.image-position--left .imageWithText__image-wrapper {
+  right: -20px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--left .imageWithText__image-wrapper {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--left.image1--true.image2--true .imageWithText__image-wrapper {
+    right: 10px;
+  }
+}
+
+.imageWithText__section.image-position--left.image1--true.image2--true .imageWithText__text {
+  margin-right: 5%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--left.image1--true.image2--true .imageWithText__text {
+    -webkit-box-flex: 1 0 100%;
+    -moz-box-flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    margin: 20px 0 0;
+  }
+}
+
+.imageWithText__section.image-position--left.image1--true.image2--true .imageWithText__image-1-wrap {
+  right: -5%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--left.image1--true.image2--true .imageWithText__image-1-wrap {
+    left: 10px;
+  }
+}
+
+.imageWithText__section.image-position--right {
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.imageWithText__section.image-position--right.image1--true .imageWithText__text,.imageWithText__section.image-position--right.image2--true .imageWithText__text {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--right.image1--true .imageWithText__text,  .imageWithText__section.image-position--right.image2--true .imageWithText__text {
+    margin-left: 10px;
+  }
+}
+
+.imageWithText__section.image-position--right .imageWithText__info {
+  padding-right: 60px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--right .imageWithText__info {
+    padding: 40px 20px;
+  }
+}
+
+.imageWithText__section.image-position--right .imageWithText__image-wrapper {
+  left: -20px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--right .imageWithText__image-wrapper {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--right.image1--true.image2--true .imageWithText__image-wrapper {
+    left: 10px;
+  }
+}
+
+.imageWithText__section.image-position--right.image1--true.image2--true .imageWithText__text {
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--right.image1--true.image2--true .imageWithText__text {
+    -webkit-box-flex: 1 0 100%;
+    -moz-box-flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    margin: 10px 0;
+  }
+}
+
+.imageWithText__section.image-position--right.image1--true.image2--true .imageWithText__image-1-wrap {
+  left: -5%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section.image-position--right.image1--true.image2--true .imageWithText__image-1-wrap {
+    right: 20px;
+  }
+}
+
+.imageWithText__topIndex--true {
+  position: relative;
+  z-index: 3;
+}
+
+.imageWithText__section {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageWithText__section {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.imageWithText__section svg.imageWithText__image2 {
+  fill: #9ea8d2;
+  background-color: #7b89c1;
+}
+
+.imageBox {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: right top;
+  object-position: right top;
+  font-family: "object-fit: cover; object-position: right top";
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 90vh;
+}
+
+.imageWithText__info {
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.imageWithText__info.show-border--true {
+  border: thin solid #cccccc;
+}
+
+.imageWithText__info .title {
+  margin-top: 0;
+}
