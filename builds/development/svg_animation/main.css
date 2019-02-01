@@ -1,0 +1,48 @@
+body, html{
+  height:100%;
+  margin:0;padding:0;
+}
+
+body{
+  background: #282a2c;
+  width:100%;
+  display:grid;
+  grid-template-columns: auto;
+}
+
+svg{
+  width:300px;
+  align-self:center;
+  justify-self:center;
+  margin-left:500px;
+}
+
+svg:hover #logo{
+  animation-duration: 1.2s;
+  animation-name: animateLogo;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  mix-blend-mode: overlay;
+}
+
+#logo{
+  opacity:0;
+}
+@keyframes animateLogo {
+  from{
+    transform:translatex(0) translateY(0);
+    opacity: 0;
+  }
+  to{
+    transform:translatex(150px) translateY(-100px);
+    opacity: 1;
+  }
+
+}
+
+
+.st0{fill:#714D59;}
+.st1{fill:#D691A9;}
+.st2{fill:#FAFAFA;}
+.st3{fill:#F7F7F7;}
+.st4{fill:#858585;}
