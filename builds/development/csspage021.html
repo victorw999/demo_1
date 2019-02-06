@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>021</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body id="csspage021">
+  <div class='mydiv_format'>
+    <h1>css grid layout</h1>
+    <h2><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">css grid tutorial 1</a></h2>
+    <h2><a href="https://www.shopify.com/partners/blog/css-grid">css grid tutorial 2 (shopify)</a></h2>
+ 
+    <center>
+      <h3>other CSS Grid Resource</h3>
+      <li><a href="https://gridbyexample.com/">Grid By Example</a>  </li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">Firefox Inspector Tool has a Grid Inspector</a>  </li>
+      <li><a href="https://labs.jensimmons.com/"> Experimental Layout Lab </a></li>
+      <li><a href="http://brandonbrule.com/css-grid.html">highly comprehensive guide</a>   </li>
+    </center>
+  </div>
+
+  <hr>
+
+  <main>
+
+
+    <style>
+      .grid-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        margin: 1em;
+        background-color: white;
+      }
+
+      .grid-number {
+        background-color: #5C6AC4;
+        display: grid;
+        justify-content: center;
+        padding: 20px;
+        font-size: 70px;
+        color: white;
+        line-height: 1;
+        border-radius: 5px;
+      }
+    </style>
+
+    <div class="grid-wrapper">
+      <div class="grid-number">
+        1
+      </div>
+      <div class="grid-number">
+        2
+      </div>
+      <div class="grid-number">
+        3
+      </div>
+      <div class="grid-number">
+        4
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
