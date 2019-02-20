@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>jQuery is() method</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<style>
+	div.prompt{
+		width: 100px; height:40px; font-size: 1.8rem;
+		padding: .5rem 1rem;
+		text-align: center; border: 5px solid #f7f7f7; margin:2rem auto;
+	}
+	ul.test1 {text-align: center; }
+	ul.test1 li {display:inline; padding:.5rem 1rem; margin:0px 5px; border: 5px solid #f7f7f7;}
+
+	span, strong{border:1px solid blue;}
+</style>
+<body>
+	<h1><a href="http://www.jquerybyexample.net/2011/12/jquery-is-method-explained.html">REF: jQuery is() method explained</a></h1>
+
+	<div style="background:lightgrey;padding:2rem;">
+		<div class="prompt"></div>
+		<ul class="test1">
+			<li class="akwa" > AKWA </li>
+			<li class="sunmoda" > SunModa </li>
+			<li class="icantoo" > iCantoo </li>
+			<li class="loveusa" > LoveUSAApparel </li>
+			<li class="aflex" > AflexUSA</li>
+		</ul>
+		<xmp>
+			<ul class="test1">
+				<li class="akwa" > AKWA </li>
+				<li class="sunmoda" > SunModa </li>
+				<li class="icantoo" > iCantoo </li>
+				<li class="loveusa" > LoveUSAApparel </li>
+				<li class="aflex" > AflexUSA</li>
+			</ul>
+
+			$("ul.test1").click(function(event) {
+				var $target = $(event.target);
+				var $prompt = $("div.prompt");
+				if ($target.is(".akwa")) {
+					 $target.css("background-color", "lightgreen");
+					 $prompt.css("background-color", "lightgreen");
+					 $prompt.text('akwa');
+				}
+				...
+			});
+
+		</xmp>
+	</div>
+
+	<div style="background:lightblue;padding:2rem;">
+		<h4>test2:  triggered only when a list item itself, not one of its children, is clicked. Children are boxed.</h4>
+		<a href="http://api.jquery.com/is/">ref</a><br>
+		<ul class="test2">
+			<li>list <strong>item 1</strong></li>
+			<li><span>list item 2:click here won't trigger, try click the white space at the end of the row</span></li>
+			<li>list item 3</li>
+		</ul>
+		<xmp>
+			<ul class="test2">
+				<li>list <strong>item 1</strong></li>
+				<li><span>list item 2</span></li>
+				<li>list item 3</li>
+			</ul>
+
+			script:
+			$( "ul.test2" ).click(function( event ) {
+				var target = $( event.target );
+				if ( target.is( "li" ) ) {
+					target.css( "background-color", "red" );
+				}
+			});
+		</xmp>
+	</div>
+
+<script>
+	/* test1 */
+	$(function(){
+		$("ul.test1").click(function(event) {
+			var $target = $(event.target);
+			var $prompt = $("div.prompt");
+			if ($target.is(".akwa")) {
+				 $target.css("background-color", "lightgreen");
+				 $prompt.css("background-color", "lightgreen");
+				 $prompt.text('akwa');
+			}
+			if ($target.is(".icantoo")) {
+				 $target.css("background-color", "lightpink");
+				 $prompt.css("background-color", "lightpink");
+				 $prompt.text('icantoo');
+			}
+			if ($target.is(".sunmoda")) {
+				 $target.css("background-color", "AntiqueWhite");
+				 $prompt.css("background-color", "AntiqueWhite");
+				 $prompt.text('sunmoda');
+			}
+			if ($target.is(".aflex")) {
+				 $target.css("background-color", "Khaki");
+				 $prompt.css("background-color", "Khaki");
+				 $prompt.text('aflex');
+			}
+			if ($target.is(".loveusa")) {
+				 $target.css("background-color", "LightSalmon");
+				 $prompt.css("background-color", "LightSalmon");
+				 $prompt.text('loveusa');
+			}
+		});
+	});
+
+	/* test2 */
+	$( "ul.test2" ).click(function( event ) {
+	  var target = $( event.target );
+	  if ( target.is( "li" ) ) {
+	    target.css( "background-color", "red" );
+	  }
+	});
+</script>
+</body>
+</html>
