@@ -161,6 +161,13 @@
     $("[data-toggle=popover]").popover({  // must include this data-toggle line to trigger popoever
         container: 'body',
         trigger: 'focus hover',   // close the popover when click else where
+        //selector: '.detail_panel'
+
+    });
+
+
+    $('.detail_panel').popover({
+      content: $('#WS').html()
     });
 
     // btn contol popper https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=popover-methods

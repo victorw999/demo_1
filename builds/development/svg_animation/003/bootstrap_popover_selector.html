@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css">
+
+  <style id="compiled-css" type="text/css">
+    .example { margin: 8px 80px; }
+    .buttons, pre { display: none; }
+  </style>
+
+  <!-- TODO: Missing CoffeeScript 2 -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+
+      function usingSelectorOption() {
+        return $('#use_selector').is(':checked');
+      }
+
+      function updateCodeView() {
+        $('#with_selector_code').toggle(usingSelectorOption());
+        $('#without_selector_code').toggle(!usingSelectorOption());
+
+        /* toggle() method will switch element ON or OFF*/
+        $('#toggle1').toggle(usingSelectorOption());
+        $('#toggle2').toggle(!usingSelectorOption());
+      }
+
+      $(function() {
+        // update code view when checkbox is toggled
+        updateCodeView();
+        $('#use_selector').click(function() {
+          updateCodeView();
+        });
+        var startedDemo = false;
+        $('#add_button').click(function() {
+          // One-time initialization
+          if (!startedDemo) {
+            if (usingSelectorOption()) {
+              $('body').popover({
+                selector: '[rel=popover]'
+              });
+
+            } else {
+              $('[rel="popover"]').popover();
+
+            }
+            startedDemo = true;
+          }
+
+          // disable selector checkbox, put a tooltip on it, and show the buttons panel
+          $('#use_selector').attr('disabled', 'disabled');
+          $('#use_selector_label span').tooltip();
+          $('.buttons').show();
+
+          // add a new button that triggers (or doesn't) a popover, with the appropriate message
+          var does = usingSelectorOption() ? 'DOES' : 'does NOT';
+          $('<p><a class="btn btn-large btn-danger" rel="popover" data-title="Dynamic" data-content="This button was added dynamically by JavaScript" data-placement="top">notice that this ' + does + ' trigger a popup</a></p>').appendTo(
+            '.buttons');
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Examining bootstrap popover <em>selector</em> option</h1>
+  <h3><a href="https://github.com/twbs/bootstrap/issues/2091#issuecomment-6990215">REF: forum post</a></h3>
+  <h3><a href="http://jsfiddle.net/bfwa4s7r/1/">REF: Fiddle explaining boostrap's popover's <em>selector</em></a></h3>
+  <div class="example">
+    <p>This jsFiddle demonstrates the use of the 'selector' option passed to the Twitter Bootstrap tooltip and popover JavaScript plugins.</p>
+
+    <p>The 'selector' option essentially allows you to run tooltips and popovers using jQuery's 'on' function, which means that you can allow dynamically added HTML with the correct selectors to trigger popups as if they were present in the
+      originally loaded DOM. Without the selector option, only elements present in the initial DOM will trigger tooltips; any that are dynamically added will not.</p>
+
+    <p>Toggle the checkbox below and click the 'add new popover' button to observe the behavioral differences between using the selector option, and not using it.</p>
+    <div style="background:lightyellow;padding:2rem;">
+
+      <h4>vic testing: toggle() method will switch element ON or OFF</h4>
+      <span id="toggle1" class="btn-primary btn">test toggle1</span>
+      <span id="toggle2" class="btn-primary btn">test toggle2</span>
+
+    </div>
+    <p>
+      <label id="use_selector_label" class="checkbox">
+        <input id="use_selector" type="checkbox" />
+        <strong class="btn btn-small btn-danger">#use_selector</strong>
+        <span data-title="you must re-run this jsFiddle to change the selector option once you've started the demo">
+          use selector option
+        </span>
+      </label>
+    </p>
+
+    <pre id="with_selector_code">$('body').popover({
+      selector: '[rel=popover]'
+    });</pre>
+
+    <pre id="without_selector_code">$('[rel="popover"]').popover();</pre>
+
+    <p style="background:aliceblue;padding:1rem;">
+      <a id="add_button" class="btn btn-small btn-success">add new popover
+        <strong class="btn btn-small btn-danger">#add_button</strong>
+      </a>
+    </p>
+
+    <p class="prompt"  style="background:aliceblue;padding:1rem;">
+
+    </p>
+
+    <div class="buttons">
+      <hr />
+      <p>
+        <a class="btn btn-large btn-danger" rel="popover" data-title="Static"
+        data-content="This button was specified in the initial HTML document"
+        data-placement="top">hover for popover</a>
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent) {
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "bfwa4s7r"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+</body>
+
+</html>
