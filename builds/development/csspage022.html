@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+      body {
+        padding: 10px;
+        background-color: #F4F4F4;
+      }
+      .wrapper{
+        display:block;    margin-bottom: 50vh;
+      }
+      .imageContainer {
+        background-color: pink;
+        width: 350px;
+        height: 200px;
+        border-radius: 5px;
+        border: 10px solid pink;
+      }
+      .imageContainer img{
+        mix-blend-mode: multiply; // use mix-blend-mode to show parent's bg
+      }
+      .ex2{
+        overflow:hidden;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>test overflow</h1>
+    <h2>ref: https://www.kirupa.com/html5/clipping_content_using_css.htm</h2>
+    <blockquote>
+      Clipping is where the contents outside of a designated region are simply ignored
+    </blockquote>
+
+    <div class="wrapper">
+      <h1>#1 default </h1>
+      <div class="imageContainer ex1">
+        <img src="https://banner2.kisspng.com/20171219/cdt/target-png-5a39dac22c83a5.81462180151374099418239624.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <h1>#2  parent overflow hidden </h1>
+      <div class="imageContainer ex2">
+        <img src="https://banner2.kisspng.com/20171219/cdt/target-png-5a39dac22c83a5.81462180151374099418239624.jpg" alt="">
+      </div>
+    </div>
+
+
+  </body>
+</html>

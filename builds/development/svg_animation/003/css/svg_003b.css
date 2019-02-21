@@ -1,9 +1,15 @@
-body{ background:#ffaaa5;}
-.img-container svg#legging{
-  background-color:#a8e6cf; height: 90vh;
+body{}
+.img-container .svg_wrapper{
+  background-color:#f7f7f7; height: 90vh;
+}
+.img-container .svg_wrapper svg{
+  width:100%; height:100%;
+}
+.img-container .svg_wrapper svg image{
+  mix-blend-mode: multiply;
 }
 .img-container .detail_panel {
-  background-color:#ffd3b6; height: 90vh;
+  background-color:#f7f7f7; height: 90vh;
 }
 
 path {
@@ -31,6 +37,12 @@ path {
   /* max-height:50vh;
   height:50vh; */
 }
+#myCarousel .carousel-item {
+  background-color: #f7f7f7;
+}
+#myCarousel .carousel-item img{
+  mix-blend-mode: multiply;
+}
 
 #myCarousel p,
 #myCarousel-2 p {
@@ -38,19 +50,26 @@ path {
 }
 
 .popover {
-  /* position:relative !important; */
-  display:inline !important;
-  /* border: 1px solid #cecece; */
+  /* display:inline !important; */
   transform: initial !important;
-  /* //top: 0 !important;
-  //left: 50vw !important; */
-  height: 90vh ; // same as svg
+  height: 90vh;
   overflow: hidden !important;
   max-width: 100% !important;
+  border:none !important;
+  background: #f7f7f7 !important;
 }
 
+.popover .popover-header{
+  font-size: 0.7rem !important;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #f7f7f7 !important;
+}
 .popover .popover-body{
-
+  padding: 0;
+  margin: 0;
 }
 .popover.bottom>.arrow {
   /* border-bottom-color: rgba(255, 158, 0, 1); */
