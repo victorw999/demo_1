@@ -30,4 +30,14 @@ $(function(e) {
     });
   });
 
+
+
+
+});
+
+
+
+// Swipe functions for Bootstrap Carousel
+$( document ).ready(function() {
+  $('.carousel').bcSwipe({ threshold: 50 });
 });
