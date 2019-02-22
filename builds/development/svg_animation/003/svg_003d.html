@@ -12,19 +12,8 @@
 <body>
 
 <div class="container m-5 p-5">
-  <h1> Add <em>swipe</em> to bootstrap carousel</h1>
-  <li>article REF: <a href="https://lazcreative.com/blog/adding-swipe-support-to-bootstrap-carousel-3-0/">Adding swipe support to Bootstrap Carousel 3.0</a></li>
-  <li><a href="https://stackoverflow.com/a/21350139">forum REF: </a></li>
-  <li><a href="http://jquerymobile.com/download-builder/">jQuery Mobile</a>:  build you own custom version here (just select the <em>touch</em> event and it will include everything you need)</li>
-  <li>I used this <a href="http://jquerymobile.com/download-builder/">jQuery Mobile</a> to build my custom Jquery Mobile lib
-    <ul>
-      <li>version: 1.4.5 (I suspect this is getting obsolete as <a href="https://blog.jquerymobile.com/2014/10/31/jquery-mobile-1-4-5-released/"> this is posted on 2014</a>)</li>
-      <li>only select Event:touch</li>
-      <li>Supported jQuery versions: jQuery Mobile 1.4 supports jQuery core 1.8 and newer.</li>
-      <li><xmp><script src="js/jquery.mobile.custom.min.js"></script></xmp></li>
-    </ul>
-  </li>
-  <li class="bg-warning text-primary" ><BOLD>CONCLUSION:</BOLD> this is a dead end. jQuery Mobile only support older jQuery</li>
+  <h1> Add <em>swipe</em> to bootstrap carousel : try#2</h1>
+
 </div>
 <hr>
 
@@ -234,20 +223,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script src="js/jquery.mobile.custom.js"></script>
-
 <script src="js\svg_003b.js"></script>
 
 <script>
-// enable touch support
-  $(document).ready(function() {
-  		 $("#myCarousel").swiperight(function() {
-    		  $(this).carousel('prev');
-	    		});
-		   $("#myCarousel").swipeleft(function() {
-		      $(this).carousel('next');
-	   });
-	});
+// Thanks to Maaaaark - https://github.com/maaaaark/bcSwipe/blob/master/jquery.bcSwipe.min.js
+!function(t){t.fn.bcSwipe=function(e){var n={threshold:50};return e&&t.extend(n,e),this.each(function(){function e(t){1==t.touches.length&&(u=t.touches[0].pageX,c=!0,this.addEventListener("touchmove",o,!1))}function o(e){if(c){var o=e.touches[0].pageX,i=u-o;Math.abs(i)>=n.threshold&&(h(),t(this).carousel(i>0?"next":"prev"))}}function h(){this.removeEventListener("touchmove",o),u=null,c=!1}var u,c=!1;"ontouchstart"in document.documentElement&&this.addEventListener("touchstart",e,!1)}),this}}(jQuery);
+
+// Swipe functions for Bootstrap Carousel
+$('.carousel').bcSwipe({ threshold: 50 });
 </script>
 
 </body>
