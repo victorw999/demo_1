@@ -223,10 +223,30 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/jquery.bcSwipe.min.js"></script>
+
 <script src="js/svg_003b.js"></script>
 
 <script>
+
+// Add Swipe functions for Bootstrap Carousel
+// adjust the sensitivity of the swipe by adjust the 5 and -5
+$( document ).ready(function() {
+  $(".carousel").on("touchstart", function(event){
+      var xClick = event.originalEvent.touches[0].pageX;
+      $(this).one("touchmove", function(event){
+          var xMove = event.originalEvent.touches[0].pageX;
+          if( Math.floor(xClick - xMove) > 5 ){
+              $(this).carousel('next');
+          }
+          else if( Math.floor(xClick - xMove) < -5 ){
+              $(this).carousel('prev');
+          }
+      });
+      $(".carousel").on("touchend", function(){
+              $(this).off("touchmove");
+      });
+  });
+});
 
 
 </script>

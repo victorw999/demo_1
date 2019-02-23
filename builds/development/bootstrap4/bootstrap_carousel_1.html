@@ -26,8 +26,10 @@
 <body>
   <div class="container">
     <div class="title m-5 p-5">
-      <h1>bootstrap4 + swipe(solution#2: jQuery code)</h1>
-      <li><a href="https://stackoverflow.com/a/40401975">REF</a></li>
+      <h1>bootstrap4 + swipe(bcSwipe.min.js)</h1>
+      <li>boostrap 4 carousel </li>
+      <li>add swipe (<em>bcSwipe.min.js</em>): <a href="https://github.com/maaaaark/bcSwipe">REF1</a>,  <a href="https://millionclues.com/wordpress-tips/mobile-swipe-bootstrap-carousel/">REF2</a></li>
+      <xmp><script src="js/jquery.bcSwipe.min.js"></script></xmp>
     </div>
     <div class="row">
       <div id="carouselExampleIndicators" class="carousel slide col-12  " data-ride="carousel">
@@ -64,25 +66,11 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <script src="js/jquery.bcSwipe.min.js"></script>
   <script>
     // Swipe functions for Bootstrap Carousel
     $( document ).ready(function() {
-      $(".carousel").on("touchstart", function(event){
-          var xClick = event.originalEvent.touches[0].pageX;
-          $(this).one("touchmove", function(event){
-              var xMove = event.originalEvent.touches[0].pageX;
-              if( Math.floor(xClick - xMove) > 5 ){
-                  $(this).carousel('next');
-              }
-              else if( Math.floor(xClick - xMove) < -5 ){
-                  $(this).carousel('prev');
-              }
-          });
-          $(".carousel").on("touchend", function(){
-                  $(this).off("touchmove");
-          });
-      });
+      $('.carousel').bcSwipe({ threshold: 50 });
     });
 
   </script>
