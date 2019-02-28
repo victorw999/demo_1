@@ -1,4 +1,8 @@
-// REF: https://codepen.io/_danko/pen/wavmjG
+/* this script is for
+  Bootstrap Popover & Owl Carousel
+
+  REF: https://codepen.io/_danko/pen/wavmjG
+*/
 
 $(function(e) {
   e.preventDefault;
@@ -11,12 +15,34 @@ $(function(e) {
     container: ".detail_panel"
   });
 
-  // initialize carousel in the first input / popover
-  $('path').on('shown.bs.popover', function() {
-    $('#myCarousel').carousel({
-      interval: 2500
-    });
+
+  // this code is modified for owl-carousel
+  // select all path elements that have a owlCarousel in its data-content
+
+  $('path#RL1').on('shown.bs.popover', function() {
+
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      autoplay: 1,
+      autoplaySpeed:500, /* transition effect speed:*/
+      autoplayTimeout: 3000, /*speed: how long it stays at one position default: 5000*/
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
   });
+
+
 
 
   // close previously opened popovers by clicking outside them

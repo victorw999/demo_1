@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,600,800");
-/* line 5, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,50 +21,50 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 21, ../../../../../../.rvm/gems/ruby-2.4.1/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -114,7 +114,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../.rvm/gems/ruby-2.4.1/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 .scene article:after {
   content: " ";
   display: block;
@@ -133,7 +133,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../.rvm/gems/ruby-2.4.1/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
   .scene article:after {
     content: " ";
     display: block;
@@ -274,7 +274,7 @@ body {
   margin: 30px auto;
   background-color: #cccccc;
 }
-/* line 12, ../../../../../../.rvm/gems/ruby-2.4.1/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 .mydiv_format .content:after {
   content: " ";
   display: block;
@@ -480,11 +480,11 @@ div#header h1, div#main h1 {
   color: white;
 }
 
-/* line 8, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 7, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_01 {
   padding-top: 0px;
 }
-/* line 10, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 9, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_01 .outter {
   background: gray;
   border: 20px solid aliceblue;
@@ -492,18 +492,18 @@ div#header h1, div#main h1 {
   height: 400px;
   color: white;
 }
-/* line 15, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 14, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_01 .inner {
   background: #cccccc;
   width: 200px;
   height: 200px;
   color: black;
 }
-/* line 20, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 19, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_01 .outter {
   position: relative;
 }
-/* line 22, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 21, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_01 .outter .inner {
   position: absolute;
   top: 50%;
@@ -511,11 +511,11 @@ div#header h1, div#main h1 {
   transform: translate(-50%, -50%);
 }
 
-/* line 31, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 30, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_02 {
   padding: 0;
 }
-/* line 34, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 33, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_02 .parent {
   background: #ffe6e6;
   width: 50%;
@@ -523,7 +523,7 @@ div#header h1, div#main h1 {
   margin: auto;
   position: relative;
 }
-/* line 37, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 36, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_02 .parent .child {
   position: absolute;
   top: 50%;
@@ -531,79 +531,79 @@ div#header h1, div#main h1 {
   transform: translate(-50%, -50%);
   border: 20px solid grey;
 }
-/* line 44, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 43, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_02 .vic_subhead {
   max-width: none;
   width: 50%;
   padding: 0px 50px;
   background: white;
 }
-/* line 46, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 45, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_02 .vic_subhead h2, #csspage008_02 .vic_subhead ul li, #csspage008_02 .vic_subhead a {
   font-size: 18px;
   letter-spacing: 1px;
   color: black;
 }
-/* line 47, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 46, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_02 .vic_subhead ul {
   text-align: left;
   line-height: 0.6em;
 }
-/* line 52, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 51, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_02 xmp {
   width: 50%;
   margin: auto;
 }
 
-/* line 58, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 57, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_03 {
   padding-top: 0px;
 }
-/* line 60, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 59, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_03 .box {
   width: 200px;
   height: 200px;
   color: white;
   font-weight: 900;
 }
-/* line 63, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 62, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_03 .position-relative {
   background: #cc0000;
   position: relative;
   left: 50%;
 }
-/* line 68, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 67, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_03 .position-absolute {
   background: #660000;
   position: absolute;
   left: 50%;
 }
-/* line 73, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 72, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #csspage008_03 .translate {
   background: black;
   transform: translate(50%, -50%);
 }
 
-/* line 81, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 80, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 img {
   width: 100%;
 }
-/* line 82, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 81, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 img.angled_edge_via_clip_path {
   -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
 }
-/* line 88, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 87, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .hero img {
   -webkit-clip-path: polygon(20% 20%, 100% 0, 80% 80%, 0 100%);
   clip-path: polygon(20% 20%, 100% 0, 80% 80%, 0 100%);
 }
-/* line 92, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 91, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .hero {
   position: relative;
   text-align: center;
 }
-/* line 95, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 94, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .hero figcaption {
   left: 50%;
   position: absolute;
@@ -612,12 +612,12 @@ div#header h1, div#main h1 {
   width: 100%;
   background: yellow;
 }
-/* line 104, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 103, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .promo {
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 }
-/* line 108, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 107, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #css_003 .promo {
   background: url(https://unsplash.it/1600/900?image=830) no-repeat;
   background-size: cover;
@@ -628,38 +628,38 @@ div#header h1, div#main h1 {
   text-align: center;
 }
 
-/* line 120, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 119, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_001 {
   padding: 0;
   height: 500px;
   background: #e4f8fd;
 }
-/* line 122, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 121, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_001 .topbar {
   width: 100%;
   height: 300px;
   background: #0f83a0;
 }
-/* line 123, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 122, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_001 section {
   width: 100%;
   height: 100vh;
   background: #ccf1fa;
 }
 
-/* line 126, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 125, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_002 {
   padding: 0;
   background: white;
 }
-/* line 128, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 127, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_002 #header {
   width: 100%;
   height: 1000px;
   overflow: hidden;
   background: white;
 }
-/* line 135, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 134, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_002 #header__background {
   background-image: url("https://unsplash.it/2000/1200/?random");
   background-size: cover;
@@ -668,7 +668,7 @@ div#header h1, div#main h1 {
   height: inherit;
   display: table;
 }
-/* line 143, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
+/* line 142, ../../../components/sass/modules_vicmod_css/_csspage008.scss */
 #parallax_002 #header__centered {
   display: table-cell;
   vertical-align: middle;
@@ -867,7 +867,7 @@ div#header h1, div#main h1 {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../.rvm/gems/ruby-2.4.1/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 #css_005 #div_1:after {
   content: " ";
   display: block;
@@ -879,7 +879,7 @@ div#header h1, div#main h1 {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../.rvm/gems/ruby-2.4.1/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 #css_005 #div_2:after {
   content: " ";
   display: block;

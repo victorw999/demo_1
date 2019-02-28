@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>nav-tabs & nav-pills</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css\owl_carousel_1.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=latin-ext" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="../css/style.css"> -->
+
+  <style>
+    .owl-carousel .item {
+      height: 20rem;
+      padding: 1rem;
+    }
+
+    #profile .item {
+      background: #F57382;
+    }
+
+    #buzz .item {
+      background: #FAB496;
+    }
+
+    #references .item {
+      background: #4DC7A0;
+    }
+
+    /*  fix the issue: in bootstrap tab-content, the 1st pane usually hidden
+        PROBLEM with this solution:
+        it doesn't auto hide the tab-pane after i switched to a new tab-pane.
+        This won't be notice when displaying images.
+        But when displaying, text, all text from diff tab-panes will be visible.
+    */
+    /* .tab-content>.tab-pane {
+      display: block;
+      height: 0;
+    }
+
+    .tab-content>.active {
+      height: auto;
+    } */
+
+
+    /* <!-- codepen style --> */
+
+    body {
+      padding: 10px;
+    }
+
+    #exTab1 .tab-content {
+      color: white;
+      background-color: #428bca;
+      padding: 5px 15px;
+    }
+
+    #exTab2 h3 {
+      color: white;
+      background-color: #428bca;
+      padding: 5px 15px;
+    }
+
+    /* remove border radius for the tab */
+
+    #exTab1 .nav-pills>li>a {
+      border-radius: 0;
+    }
+
+    /* change border radius for the tab , apply corners on top*/
+
+    #exTab3 .nav-pills>li>a {
+      border-radius: 4px 4px 0 0;
+    }
+
+    #exTab3 .tab-content {
+      color: white;
+      background-color: #428bca;
+      padding: 5px 15px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="text-center m-5 p-5 bg-light container d-flex flex-column align-items-center">
+    <h1 class="text-primary"> <em>nav-tabs</em> and <em>nav-pills</em></h1>
+    <h1 class="text-primary"><a href="https://codepen.io/wizly/pen/BlKxo">CodePen Reference</a></h1>
+
+    <div class="text-left ">
+    </div>
+  </div>
+
+  <div class="container">
+    <hr>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#p1">1 Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#p2">2 Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab"  href="#p3">3 Link2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" data-toggle="tab" href="#p4">4 Disabled</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active fadein bg-primary" id="p1">
+        <div class="p-5 text-light">
+          <h3>P1</h3>
+          <h3>Remember to Use <em>data attributes</em></h3>
+          You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Use these data attributes on .nav-tabs or .nav-pills.
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane fade bg-secondary" id="p2">
+        <div class="p-5 text-light">
+          <h3>P2</h3>
+          <div class="p-3 bg-warning" style="z-index:100;margin:2rem"> demo the issue... demo the issue...demo the issue...demo the issue...demo the issue...demo the issue...demo the issue...demo the issue...demo the issue...demo the issue...demo the issue...</div>
+          <div class="bg-primary p-5" >
+            This CSS hack was trying to fix: <br>
+            in bootstrap tab-content, the 1st pane usually hidden <br><br>
+
+            <span class="text-warning font-weight-bold">PROBLEM</span> <br>
+            However, after CSS is applied, it doesn't auto hide the previous tab-pane after i switched to a new tab-pane. <br>
+            This won't be noticed when displaying images carousels. But when displaying, text, all text from diff tab-panes will be visible.
+
+          </div>
+
+          <xmp>
+            .tab-content>.tab-pane {
+              display: block;
+              height: 0;
+            }
+
+            .tab-content>.active {
+              height: auto;
+            }
+          </xmp>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane fade bg-warning" id="p3">
+        <div class="p-5 text-light">
+          <h3>P3</h3>
+          <h3>Remember to Use <em>data attributes</em></h3>
+          You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Use these data attributes on .nav-tabs or .nav-pills.
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="p4"> p4 </div>
+    </div> <!-- tab-content -->
+
+
+
+    <!-- ----------------------- -->
+    <div class="p-5 m-5" style="height:50vh">
+      <div class="text-primary font-weight-bold lead">
+      There seems to be a margin issue with above <em>tab-content</em>.
+      The below div is collapsing onto the above tab-pane, when i switching tab-pane
+    </div>
+    </div>
+    <hr class="">
+
+
+    <h1 class="text-primary p-5 m-5"><a href="https://codepen.io/wizly/pen/BlKxo">CodePen Example Begins ...</a></h1>
+    <h1>Bootstrap tab panel example (using nav-pills) </h1>
+
+    <div id="exTab1" class="container">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#pane1" data-toggle="tab">Overview</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="#pane2" data-toggle="tab">Using nav-pills</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#pane3" data-toggle="tab">Applying clearfix</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#pane4" data-toggle="tab">Background color</a> </li>
+      </ul> <!-- nav nav-pills -->
+
+      <div class="tab-content clearfix p-5 m-5">
+        <div class="tab-pane active" id="pane1" role="tabpanel">
+          <h3>1. Content's background color is the same for the tab</h3>
+        </div>
+        <div class="tab-pane" id="pane2" role="tabpanel">
+          <h3>2. We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+        </div>
+        <div class="tab-pane" id="pane3" role="tabpanel">
+          <h3>3. We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+        </div>
+        <div class="tab-pane" id="pane4" role="tabpanel">
+          <h3>4. We use css to change the background color of the content to be equal to the tab</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <hr>
+    </hr>
+
+    <div class="container">
+      <h2>Example tab 2 (using standard nav-tabs)</h2>
+    </div>
+
+    <div id="exTab2" class="container">
+
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#extab-1" data-toggle="tab" class="nav-link">Overview</a>
+        </li>
+        <li><a href="#extab-2" data-toggle="tab" class="nav-link">Without clearfix</a>
+        </li>
+        <li><a href="#extab-3" data-toggle="tab" class="nav-link">Solution</a>
+        </li>
+      </ul>
+
+      <div class="tab-content ">
+        <div class="tab-pane active" id="extab-1">
+          <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+        </div>
+        <div class="tab-pane" id="extab-2">
+          <h3>Notice the gap between the content and tab after applying a background color</h3>
+        </div>
+        <div class="tab-pane" id="extab-3">
+          <h3>add clearfix to tab-content (see the css)</h3>
+        </div>
+      </div> <!-- tab-content  -->
+    </div><!-- .container#exTab2 -->
+
+    <hr>
+    </hr>
+
+    <div class="container">
+      <h2>Example 3 </h2>
+    </div>
+    <div id="exTab3" class="container">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#extab-1b" data-toggle="tab" class="nav-link active">Overview</a>
+        </li>
+        <li class="nav-item"><a href="#extab-2b" data-toggle="tab" class="nav-link">Using nav-pills</a>
+        </li>
+        <li class="nav-item"><a href="#extab-3b" data-toggle="tab" class="nav-link">Applying clearfix</a>
+        </li>
+        <li class="nav-item"><a href="#pane4" data-toggle="tab" class="nav-link">Background color</a>
+        </li>
+      </ul>
+
+      <div class="tab-content clearfix">
+        <div class="tab-pane active" id="extab-1b">
+          <h3>Same as example 1 but we have now styled the tab's corner</h3>
+        </div>
+        <div class="tab-pane" id="extab-2b">
+          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+        </div>
+        <div class="tab-pane" id="extab-3b">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+        </div>
+        <div class="tab-pane" id="extab-4b">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- container -->
+
+  <div style="height:100vh"></div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script> -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: 1,
+        navSpeed: 100,
+        autoplaySpeed: 10,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>

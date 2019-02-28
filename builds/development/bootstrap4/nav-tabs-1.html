@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nav Tabs </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" /> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <link rel="stylesheet" href="css\owl_carousel_1.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=latin-ext" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="../css/style.css"> -->
+</head>
+
+<body>
+  <div class="text-center m-5 p-5 bg-light container d-flex flex-column align-items-center" style="width:800px; max-width:800px; margin:auto !important;">
+    <h1 class="text-primary">Use nav-tabs to display several owl-carousel</h1>
+    <h1 class="text-primary"><a href="https://codepen.io/jek/pen/BoWNRy">Reference</a></h1>
+    <div class="text-left ">
+      <span class="text-danger"> ISSUE: </span>
+      <em>Owl-carousel</em> doesn't load on the first nav-tab pane?
+      <br>
+      <span class="text-success"> SOLUTION: </span>
+      Because <a href="https://stackoverflow.com/a/35888450">(ref) Bootstraps tabs are hidden initially</a> <br>
+
+      <span class="text-danger"> ISSUE: </span> this is not a elegant solution. After applied this css,
+      the preveious tab-pane was not hidden. The next tab-pane was just on top of the previous tab.
+      I also tried with z-index. it won't fix the issue.
+      <br>
+      <span class="text-success"> SOLUTION: </span> it turned out we don't need the css after all.
+      Just add <em>active</em> class to the first tab-pane
+
+      <br>
+      So I inserted below code to overirde the default bootstrap css
+      <xmp>
+        .tab-content > .tab-pane{
+            display: block;
+            height: 0;
+        }
+        .tab-content > .active{
+            height: auto;
+        }
+      </xmp>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Bootstrap CSS -->
+    <!-- jQuery first, then Bootstrap JS. -->
+    <!-- Nav tabs -->
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item active">
+        <a class="nav-link " href="#profile" role="tab" data-toggle="tab">profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">buzz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#references" role="tab" data-toggle="tab">references</a>
+      </li>
+    </ul>
+
+    <style>
+    .owl-carousel .item {
+      height: 20rem;
+      padding: 1rem;
+    }
+    #profile .item { background: #F57382;}
+    #buzz .item { background: #FAB496;}
+    #references .item { background: #4DC7A0;}
+
+    /* .tab-content > .tab-pane{
+        display: block;
+        height: 0;
+    }
+    .tab-content > .active{
+        height: auto;
+    } */
+</style>
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+      <div role="tabpanel" class="tab-pane fadein active " id="profile">
+        <h1>tab-pane 1</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+        </div><!-- owl-carousel  -->
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="buzz">
+        <h1>tab-pane 2</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div>
+        </div><!-- owl-carousel  -->
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="references">
+        <h1>tab-pane 3</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+        </div><!-- owl-carousel  -->
+      </div>
+    </div> <!-- tab-content -->
+
+  </div> <!-- container -->
+
+  <div style="height:100vh"></div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script> -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: 1,
+        autoplaySpeed:500, /* transition effect speed:*/
+        autoplayTimeout: 3000, /*speed: how long it stays at one position default: 5000*/
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>

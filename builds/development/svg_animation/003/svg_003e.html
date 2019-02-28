@@ -3,22 +3,49 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SVG hover leggings using Popover</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Add swipe</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
   <link rel="stylesheet" href="css/svg_003b.css">
 </head>
 
 <body>
 
 <div class="container m-5 p-5">
-  <h1>using <a href="../../bootstrap4/carousel-in-popover/index.html">this carousel-in-popover</a> on leggings</h1>
-  <li>code <code>bootstrap carousel</code> in <code>data-content</code></li>
-  <li>manipute css <code>.popover</code> selector, so all popover will be at the same location</li>
+  <h1> use owl carousel </h1>
+  <span class="btn m-1 btn-primary">bootstrap/4.0.0 </span>
+  <span class="btn m-1 btn-primary">font-awesome/4.4.0 </span>
+  <span class="btn m-1 btn-primary">jquery-3.2.1.slim.min.js</span>
+  <span class="btn m-1 btn-primary">popper.js/1.12.9/</span>
+  <span class="btn m-1 btn-warning">OwlCarousel2/2.3.4</span>
 </div>
 <hr>
 
 <h1 class="text-center m-auto p-5 display-4 w-50">Interactive Custom Templates Gallery</h1>
+
+<div class="container">
+  <!-- owl-carousel -->
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <img class="d-block w-100" src="https://via.placeholder.com/1000x600?text=1" alt="First slide">
+    </div>
+    <div class="item">
+      <img class="d-block w-100" src="https://via.placeholder.com/1000x600?text=2" alt="First slide">
+    </div>
+    <div class="item">
+      <img class="d-block w-100" src="https://via.placeholder.com/1000x600?text=3" alt="First slide">
+    </div>
+  </div>
+  <!-- owl-carousel  -->
+</div>
+
 <div class="container">
 
 <div class="img-container row">
@@ -28,52 +55,35 @@
 		version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		viewBox="0 0 337 466.78" style="enable-background:new 0 0 337 466.78;" xml:space="preserve">
 
-		<image width="337" height="466.78" preserveAspectRatio="none" xlink:href="../../images/svg/leg_1.jpg" id="" />
+		<image width="337" height="466.78" preserveAspectRatio="none" xlink:href="../../images/svg/leg_1.jpg" id="">
+    </image>
 
-   	<path id="RL1"
+    <style>
+      .owl-carousel .item {
+        /* height: 20rem;
+        padding: 1rem; */
+      }
+    </style>
+    <path id="RL1"
 			d="M143.67,89.11c0,0,28.17-10.5,42.67-27.67L185,47.78c0,0-20.33-5.83-49.83,6.5
 			C135.17,54.28,137.33,83.95,143.67,89.11z"
       title="Panel: RL1"
       data-content='
-      <!-- bootstrap4 syntax -->
-      <div id="myCarousel" class="carousel slide" data-interval="true" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="https://cdn.shopify.com/s/files/1/2313/1393/files/design-L7001-blank-2-small.jpg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Image 1</h5>
-              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://cdn.shopify.com/s/files/1/2313/1393/files/design-L7001-5-small.jpg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Image 2</h5>
-              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://cdn.shopify.com/s/files/1/2313/1393/files/design-L7001-BT-3.jpg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>design-L7001-BT-3</h5>
-              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-            </div>
-          </div>
+      <!-- owl-carousel -->
+      <div id="myCarousel" class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="d-block w-100" src="https://via.placeholder.com/1000x600?text=1" alt="First slide">
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div><!-- End Carousel -->
+        <div class="item">
+          <img class="d-block w-100" src="https://via.placeholder.com/1000x600?text=2" alt="First slide">
+        </div>
+        <div class="item">
+          <img class="d-block w-100" src="https://via.placeholder.com/1000x600?text=3" alt="First slide">
+        </div>
+      </div>
+      <!-- owl-carousel  -->
+
+
     '/>
 		<path id="RL2"
 			d="M197,260.53c0,0,13.75,6.25,34.5,2c0,0,9.5-15.13,9.5-21.13s6.25-13.38-6-43.75
@@ -222,8 +232,36 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<script src="js\svg_003b.js"></script>
+<script src="js/bootstrap_popover_and_owlcarousel.js"></script>
+
+<script>
+
+
+
+$(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: 1,
+    autoplaySpeed:500, /* transition effect speed:*/
+    autoplayTimeout: 3000, /*speed: how long it stays at one position default: 5000*/
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
+  })
+});
+  </script>
 
 </body>
 </html>
