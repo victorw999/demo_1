@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>JS Toggle Elements</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css">
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap.min.js"></script>
+
+-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+  <style type="text/css">
+    .example { background: #e7e3e3; text-align: center; width:50vw;margin:auto; padding:3rem;}
+
+    @media only screen and (max-width: 640px){
+      .example{ width:100vw; }
+    }
+    .btn{
+      background:lightblue; margin:2rem; padding: 1rem; border-radius:4px;
+    }
+    .toggle_obj{
+      background:#efcb5d;
+      width:150px; height:150px; border: 4px solid lightgrey; margin:1rem auto;
+    }
+    .toggle_obj span.title{
+      background-color: lightgrey;
+      display: block; text-align: center; margin-top:-1.5rem;
+    }
+    .toggle_obj#image_1{
+      background: blue url("images/square_1.jpg")  center center / contain  ;
+    }
+    .toggle_obj#image_2{
+      background: yellow url("images/square_2.jpg") center center / contain ;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="example">
+    <h2>This page's technology: <span  >jquery/1.7.2</span></h2>
+
+    <label style="margin:2rem; display:block;">
+      <input id="use_selector" type="checkbox" />
+      <strong class="btn btn-small btn-danger"> click to toggle() two images </strong>
+      <span><code>#use_selector</code></span>
+    </label>
+    <hr class="" style="margin:3rem;">
+
+    <div id="image_1" class="toggle_obj"> <span class="title"> # image_1 </span></div>
+    <div id="image_2" class="toggle_obj"> <span class="title"> # image_2 </span></div>
+
+
+  </div>  <!-- .example -->
+
+  <script type="text/javascript">
+    $(window).load(function() { /* Without this line, it'll also work */
+
+      //main function
+      $(function() {
+        update();
+        $('#use_selector').click(function() {
+          update();
+        });
+      });
+
+      function update(){
+        $("#image_1").toggle(getCurrentStatus());
+        $("#image_2").toggle(!getCurrentStatus()); // <------ notice the bang ! sign
+      }
+
+      function getCurrentStatus() {
+        return $('#use_selector').is(':checked');
+      }
+
+
+
+    });
+  </script>
+</body>
+</html>
