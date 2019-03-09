@@ -11,14 +11,34 @@
   <meta name="keywords" content="keywords,here">
 
   <style media="screen">
+    body{
+      width: 80%; margin:auto;
+    }
     .loader {
       position: fixed;
-      z-index: 00;
+      z-index: 99;   /* loader on top of everything else!*/
       top:0;
-      left:0; width:100%; height:100%; background:red;
+      left:0;
+      width:100%;
+      height:100%;
+      background:white; opacity:0.9;
+      display: flex; /*center the image*/
+      justify-content: center;
+      align-items: center;
     }
+    .loader > img{ width: 100px; height:auto;}  /* increate the GIF size */
+    .loader.hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;  /* retain the style values from the last keyframe when the animation ends*/
+    }
+    @keyframes fadeOut {
+      100% {
+        opacicty:0;
+        visibility: hidden;
+      }
 
-    .thumb:{
+    }
+    .thumb{
       height:100px;
       border:1px solid black;
       margin:10px;
@@ -27,12 +47,41 @@
 </head>
 
 <body>
-  <h1><a href="https://www.youtube.com/watch?v=xuA83OYTE7I">
+  <h2><a href="https://www.youtube.com/watch?v=xuA83OYTE7I">
     Youtube Tutorial: Create your own Page Pre-Loader (HTML, CSS & JS) (No-jQuery Needed)</a>
-  </h1>
-  <h2>use <a href="https://loading.io/animation/icon/">this site</a> to generate icon animation</h2>
-  only can download GIF
-  <img src="../images/aflex_loader.gif" alt="">
+  </h2>
+
+  <h2><a href="https://loading.io/animation/icon/">handy website <em>http://loading.io</em></a> to generate icon animation</h2>
+  <ul>
+    <li>only can download GIF</li>
+  </ul>
+
+  <ul>
+    <li>configuration summary</li>
+    <li>CSS: animation "fadeout"</li>
+    <li>CSS: animation will be triggered by class ".loader.hidden"</li>
+  </ul>
+
+  <p>
+    <h2>ISSUE:</h2>
+    I commented on his video:
+    It seems to me that the loader's animation time is constant, not sync with the actual time needed for images to load. e.g. when i turn the browser inspector throttle to slow. The loader animation is gone after the one sec assigned to it. solution?﻿
+  </p>
+  <div class="loader hidden">
+    <img src="../images/aflex_loader.gif" alt="">
+  </div>
+  <hr>
+
+  <img src="../images/responsive_img/couple_1920.jpg" class="thumb" alt="">
+  <img src="../images/responsive_img/couple_1920.jpg" class="thumb" alt="">
+  <img src="../images/responsive_img/couple_1920.jpg" class="thumb" alt="">
+
+  <script type="text/javascript">
+    window.addEventListener("load", function (){
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+    });
+  </script>
 </body>
 
 </html>

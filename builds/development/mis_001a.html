@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>preloader</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+
+  <style media="screen">
+    body{
+      width: 80%; margin:auto;
+    }
+    .loader {
+      position: fixed;
+      z-index: 99;   /* loader on top of everything else!*/
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:white; opacity:0.9;
+      display: flex; /*center the image*/
+      justify-content: center;
+      align-items: center;
+    }
+    .loader > img{ width: 100px; height:auto;}  /* increate the GIF size */
+    .loader.hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;  /* retain the style values from the last keyframe when the animation ends*/
+    }
+    @keyframes fadeOut {
+      100% {
+        opacicty:0;
+        visibility: hidden;
+      }
+
+    }
+    .thumb{
+      height:100px;
+      border:1px solid black;
+      margin:10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2><a href="http://www.javascriptkit.com/javatutors/preloadimagesplus.shtml">
+      javascript: make sure all images are loaded</a>
+  </h2>
+
+  In <a href="mis_001.html">previous mis_001.html</a>,
+  <a href="https://www.youtube.com/watch?v=xuA83OYTE7I"> the tutorial </a>
+  's loader animation time is not synced with the actual time needed for images to load"</em>
+
+  <h5><a href="http://www.javascriptkit.com/javatutors/preloadimagesplus.shtml">
+      This is a very thorough tutorial</a>
+  </h5>
+  <p>Carefully study this tutorial, will help me know deeper about <em>closure</em> and <em>callbacks</em></p>
+
+
+  <div class="loader hidden">
+    <img src="../images/aflex_loader.gif" alt="">
+  </div>
+  <hr>
+
+  <img src="../images/responsive_img/couple_1920.jpg" class="thumb" alt="">
+  <img src="https://source.unsplash.com/random/300x500" class="thumb" alt="">
+  <img src="https://source.unsplash.com/random/800x500" class="thumb" alt="">
+
+  <script type="text/javascript">
+    window.addEventListener("load", function() {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+    });
+
+    function preloadimages(arr) {
+      var newimages = [],loadedimages = 0
+      var postaction=function(){}
+      var arr = (typeof arr != "object") ? [arr] : arr  /* force arr parameter to always be an array */
+
+      function imageloadpost() {
+        loadedimages++
+        if (loadedimages == arr.length) {
+          postaction(newimages); /* //call postaction and pass in newimages array as parameter */
+        }
+      }
+
+      for (var i = 0; i < arr.length; i++) {
+        newimages[i] = new Image()
+        newimages[i].src = arr[i]
+        newimages[i].onload = function() {
+          imageloadpost()
+        }
+        newimages[i].onerror = function() {
+          imageloadpost()
+        }
+      }// end for
+
+      return { //return blank object with done() method
+        done:function(f){
+          postaction=f || postaction //remember user defined callback functions to be called when images load
+        }
+      }
+
+    }// end preloadimages()
+
+
+    //sample run
+    preloadimages([
+    '../images/responsive_img/couple_1920.jpg',
+    'https://source.unsplash.com/random/300x500',
+    'https://source.unsplash.com/random/800x500']).done(function(images){
+
+      images.sort(function(a,b){
+        return a.width-b.width //sort images by each image's width property, ascending
+      })
+      alert("total "+ images.length + "images. Smallest width is " + images[0].src+" "+images[0].width) //alerts '1.gif 220'
+    })
+  </script>
+</body>
+
+</html>
