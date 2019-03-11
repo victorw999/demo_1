@@ -51,14 +51,14 @@
       javascript: make sure all images are loaded</a>
   </h2>
 
-  In <a href="mis_001.html">previous mis_001.html</a>,
-  <a href="https://www.youtube.com/watch?v=xuA83OYTE7I"> the tutorial </a>
-  's loader animation time is not synced with the actual time needed for images to load"</em>
+  <p>
+  <h5>this page is focusing on the <em>javascript</em></h5>
+  improving mis_001a.html, in this page. I'm add an <em>array of Image() obj</em>
 
-  <h5><a href="http://www.javascriptkit.com/javatutors/preloadimagesplus.shtml">
-      This is a very thorough tutorial</a>
-  </h5>
-  <p>Carefully study this tutorial, will help me know deeper about <em>closure</em> and <em>callbacks</em></p>
+  <h5><a href="https://stackoverflow.com/questions/1232793/javascript-set-img-src">REF1</a></h5>
+  <h5><a href="https://stackoverflow.com/questions/9287091/javascript-load-images-in-an-array-and-show-in-image-source">REF2</a></h5>
+  <h5><a href="https://www.techrepublic.com/article/preloading-and-the-javascript-image-object/">REF3</a></h5>
+  </p>
 
 
   <div class="loader hidden">
@@ -78,15 +78,22 @@
 
     // create a array of images
 
-    // create a constructor for it
+    // create a constructor that takes in image path
+    // function ImageItem(src) {
+    //   this.image = new Image();
+    //   this.image.src = src;
+    // }
 
-    var imgSources = new array();
-    imgSources[0] = new image();
+    // i just need a string Array, which contains all the paths,
+    // becuase the preloadimages() is creating the Image obj
+    var imgPaths = new Array();
 
-    '../images/responsive_img/couple_1920.jpg',
-    'https://source.unsplash.com/random/300x500',
-    'https://source.unsplash.com/random/800x500']
-    document.write("<br>"  + imgSources.join("<br>"))
+    imgPaths = [
+      "../images/responsive_img/couple_1920.jpg",
+      'https://source.unsplash.com/random/300x500',
+      'https://source.unsplash.com/random/800x500'
+    ];
+
 
 
     function preloadimages(arr) {
@@ -102,13 +109,13 @@
       }
 
       for (var i = 0; i < arr.length; i++) {
-        newimages[i] = new Image()
-        newimages[i].src = arr[i]
+        newimages[i] = new Image();
+        newimages[i].src = arr[i];
         newimages[i].onload = function() {
-          imageloadpost()
+          imageloadpost();
         }
         newimages[i].onerror = function()  {
-          imageloadpost()
+          imageloadpost();
         }
       }// end for
 
@@ -121,8 +128,8 @@
     }// end preloadimages()
 
 
-    //sample run
-    preloadimages(imgSources).done(function(images){
+
+    preloadimages(imgPaths).done(function(images){
 
       images.sort(function(a,b){
         return a.width-b.width //sort images by each image's width property, ascending
@@ -130,8 +137,8 @@
       alert("total "+ images.length + "images. Smallest width is " + images[0].src+" "+images[0].width) //alerts '1.gif 220'
     })
 
-    var x = prompt("which image's dimension info you want? (1~3)", 0);
-    document.write("<br> w:" + document.images[x-1].width + " h:"+document.images[x-1].height)
+    // var x = prompt("which image's dimension info you want? (1~3)", 0);
+    // document.write("<br> w:" + document.images[x-1].width + " h:"+document.images[x-1].height)
 
 
 
