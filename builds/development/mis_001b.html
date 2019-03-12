@@ -36,7 +36,6 @@
         opacicty:0;
         visibility: hidden;
       }
-
     }
     .thumb{
       height:100px;
@@ -61,28 +60,26 @@
   </p>
 
 
-  <div class="loader hidden">
+  <div class="loader">
     <img src="../images/aflex_loader.gif" alt="">
   </div>
   <hr>
 
+  <div id="image_area"></div>
+  <!--
   <img src="../images/responsive_img/couple_1920.jpg" class="thumb" alt="">
   <img src="https://source.unsplash.com/random/300x500" class="thumb" alt="">
   <img src="https://source.unsplash.com/random/800x500" class="thumb" alt="">
+  -->
 
   <script type="text/javascript">
+  const loader = document.querySelector(".loader");
     window.addEventListener("load", function() {
-      const loader = document.querySelector(".loader");
-      loader.className += " hidden";
+
+      // loader.className += " hidden";
     });
 
-    // create a array of images
 
-    // create a constructor that takes in image path
-    // function ImageItem(src) {
-    //   this.image = new Image();
-    //   this.image.src = src;
-    // }
 
     // i just need a string Array, which contains all the paths,
     // becuase the preloadimages() is creating the Image obj
@@ -94,8 +91,6 @@
       'https://source.unsplash.com/random/800x500'
     ];
 
-
-
     function preloadimages(arr) {
       var newimages = [],loadedimages = 0
       var postaction=function(){}
@@ -104,6 +99,7 @@
       function imageloadpost() {
         loadedimages++
         if (loadedimages == arr.length) {
+          //console.log("loadedimages:" + loadedimages )
           postaction(newimages); /* //call postaction and pass in newimages array as parameter */
         }
       }
@@ -117,6 +113,12 @@
         newimages[i].onerror = function()  {
           imageloadpost();
         }
+
+        // vicmod: insert into html
+        let imageParent = document.getElementById("image_area");
+        newimages[i].className = "thumb";
+        imageParent.appendChild(newimages[i]);
+
       }// end for
 
       return { //return blank object with done() method
@@ -130,16 +132,25 @@
 
 
     preloadimages(imgPaths).done(function(images){
-
-      images.sort(function(a,b){
-        return a.width-b.width //sort images by each image's width property, ascending
-      })
-      alert("total "+ images.length + "images. Smallest width is " + images[0].src+" "+images[0].width) //alerts '1.gif 220'
+      loader.className += " hidden";
+   
+      // images.sort(function(a,b){
+      //   return a.width-b.width //sort images by each image's width property, ascending
+      // })
+      // alert("total "+ images.length + "images. Smallest width is " + images[0].src+" "+images[0].width) //alerts '1.gif 220'
     })
 
     // var x = prompt("which image's dimension info you want? (1~3)", 0);
     // document.write("<br> w:" + document.images[x-1].width + " h:"+document.images[x-1].height)
 
+    // Use Script to add image manually
+    //for (var m=0; m<imgPaths.length; m++){
+      // let image = document.createElement("img");
+      // let imageParent = document.getElementById("image_area");
+      // image.className = "thumb";
+      // image.src = imgPaths[m];
+      // imageParent.appendChild(image);
+    //}
 
 
   </script>

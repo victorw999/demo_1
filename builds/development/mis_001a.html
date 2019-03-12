@@ -61,7 +61,7 @@
   <p>Carefully study this tutorial, will help me know deeper about <em>closure</em> and <em>callbacks</em></p>
 
 
-  <div class="loader hidden">
+  <div class="loader">
     <img src="../images/aflex_loader.gif" alt="">
   </div>
   <hr>
@@ -77,16 +77,16 @@
     });
 
     // create a array of images
+    // i just need a string Array, which contains all the paths,
+    // becuase the preloadimages() is creating the Image obj
+    var imgPaths = new Array();
 
-    // create a constructor for it
+    imgPaths = [
+      "../images/responsive_img/couple_1920.jpg",
+      'https://source.unsplash.com/random/300x500',
+      'https://source.unsplash.com/random/800x500'
+    ];
 
-    var imgSources = new array();
-    imgSources[0] = new image();
-
-    '../images/responsive_img/couple_1920.jpg',
-    'https://source.unsplash.com/random/300x500',
-    'https://source.unsplash.com/random/800x500']
-    document.write("<br>"  + imgSources.join("<br>"))
 
 
     function preloadimages(arr) {
@@ -122,7 +122,7 @@
 
 
     //sample run
-    preloadimages(imgSources).done(function(images){
+    preloadimages(imgPaths).done(function(images){
 
       images.sort(function(a,b){
         return a.width-b.width //sort images by each image's width property, ascending
