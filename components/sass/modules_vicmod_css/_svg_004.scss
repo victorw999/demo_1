@@ -1,0 +1,194 @@
+#svg_004 {
+  $base_color: #DA94AC;
+  $colors: $base_color
+    lighten($base_color, 1%)
+    lighten($base_color, 5%)
+    lighten($base_color, 10%)
+    lighten($base_color, 15%)
+    lighten($base_color, 20%)
+    lighten($base_color, 25%)
+    lighten($base_color, 30%);
+  $inner: 60px;
+  $border: 3px;
+  $spacing: 1px;
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  section.wrapper {
+    padding: 40px 0;
+    &.dark {
+      background: #313134;
+    }
+  }
+
+
+  div.spinner {
+    //background: #e1e0e0;
+    // @include animation(rotate 10s infinite linear);
+    position: relative;
+    display: block;
+    margin: auto;
+    $size: $inner + length($colors) * ($border + $spacing) * 2;
+    width: $size;
+    height: $size;
+    .ball{
+      img{width:100%;}
+      position: absolute;
+      display: inline-block;
+      $size: $inner +2;
+      width: $size; height: $size;
+      border-radius: $size;
+      background:transparent;
+      top: 50%;
+      left: 50%;
+      margin-top: -$size / 2;
+      margin-left: -$size / 2;
+      @include animation(rotate 6s infinite linear);
+      transform-origin: 50% 50% 0;
+    }
+    i {
+      @include animation(rotate 3s infinite cubic-bezier(.09, .6, .8, .03));
+      @include transform-origin(50%, 100%, 0);
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      border: solid $border transparent;
+      border-bottom: none;
+      @each $current in $colors {
+        $i: index($colors, $current);
+        @debug $i + " color: " + $current;
+
+        &:nth-child(#{$i}) {
+          $size: $inner + $i * ($border + $spacing) * 2;
+          @include animation-timing-function(cubic-bezier(.09, .3 * $i, .12 * $i, .03));
+          width: $size;
+          height: $size / 2;
+          margin-top: -$size / 2;
+          margin-left: -$size / 2;
+          border-color: $current;
+          border-top-left-radius: $inner + $i * $border;
+          border-top-right-radius: $inner + $i * $border;
+        }
+      }// @each
+    }// i
+  }//end spinner
+  @include keyframes(rotate) {
+    to {
+      @include rotateZ(360deg);
+    }
+  }
+
+
+  section.wrapper.test2{
+
+    .spinner{
+      &:hover{
+        background: url("../../images/icons/aflex_logo.svg") center/50% no-repeat ;
+        transition: all 1s ease-in;
+      }
+
+      background: url("../../images/icons/aflex_logo.svg") center/58% no-repeat ;
+
+
+      @include animation(rotate 10s infinite linear);
+      position: relative;
+      display: block;
+      margin: auto;
+      //$spacing: 0px;
+      $size: $inner + length($colors) * ($border + $spacing) * 2;
+      width: $size;
+      height: $size;
+
+      i {
+        @include animation(rotate 3s infinite cubic-bezier(.09, .6, .8, .03));
+        @include transform-origin(50%, 100%, 0);
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        border: solid $border transparent;
+        border-bottom: none;
+        @each $current in $colors {
+          $i: index($colors, $current);
+          @debug $i + " color: " + $current;
+
+          &:nth-child(#{$i}) {
+            $size: $inner + $i * ($border + $spacing) * 2;
+            @include animation-timing-function(cubic-bezier(.09, .3 * $i, .12 * $i, .03));
+            width: $size;
+            height: $size / 2;
+            margin-top: -$size / 2;
+            margin-left: -$size / 2;
+            border-color: $current;
+            border-top-left-radius: $inner + $i * $border;
+            border-top-right-radius: $inner + $i * $border;
+          }
+        }// @each
+      }// i
+    }//spinner
+  }//section.wrapper.test2
+
+
+
+
+  .wrapper.test3{
+    div.spinner {
+      //background: #e1e0e0;
+      // @include animation(rotate 10s infinite linear);
+      position: relative;
+      display: block;
+      margin: auto;
+      $size: $inner + length($colors) * ($border + $spacing) * 2;
+      width: $size;
+      height: $size;
+      .ball{
+        img{width:100%;}
+        position: absolute;
+        display: inline-block;
+        $size: $inner - 20;
+        width: $size; height: $size;
+        border-radius: $size;
+        background:transparent;
+        top: 50%;
+        left: 50%;
+        margin-top: -$size / 2;
+        margin-left: -$size / 2;
+        //@include animation(rotate 6s infinite linear);
+        transform-origin: 50% 50% 0;
+      }
+      i {
+        @include animation(rotate 3s infinite cubic-bezier(.09, .6, .8, .03));
+        @include transform-origin(50%, 100%, 0);
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        border: solid $border transparent;
+        border-bottom: none;
+        @each $current in $colors {
+          $i: index($colors, $current);
+          @debug $i + " color: " + $current;
+
+          &:nth-child(#{$i}) {
+            $size: $inner + $i * ($border + $spacing) * 2;
+            @include animation-timing-function(cubic-bezier(.09, .3 * $i, .12 * $i, .03));
+            width: $size;
+            height: $size / 2;
+            margin-top: -$size / 2;
+            margin-left: -$size / 2;
+            border-color: $current;
+            border-top-left-radius: $inner + $i * $border;
+            border-top-right-radius: $inner + $i * $border;
+          }
+        }// @each
+      }// i
+    }//end spinner
+  }// end wrapper test3
+
+
+}// #svg_004

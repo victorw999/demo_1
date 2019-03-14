@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animate SVG Icons</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    img {
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+    <h1> <a href="https://www.shopify.com/partners/blog/69475267-how-to-upload-and-animate-svg-icons-in-3-simple-steps">
+        Vivus.js can only animate SVG <em>strokes</em></a> </h1>
+
+
+    <h2>use <a href="https://maxwellito.github.io/vivus-instant/">vivus-instant</a> to animate the SVG, the file size kinda big</h2>
+
+    <img src="graphic5_animated.svg" alt="">
+    
+    <img src="graphic6_animated.svg" alt="">
+    <hr>
+    <h5>test with js script </h5>
+    <a href="https://github.com/maxwellito/vivus/issues/83#issuecomment-361001241"> using script for infinite loop</a>
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <div id="my-svg" style="width:200px;"></div>
+
+    <script src="vivus.min.js"></script>
+    <script>
+
+      new Vivus('my-svg', {start: 'autostart', type: 'delayed', duration: 200, file:'graphic6.svg'},
+        myVivus => {
+          if (myVivus.getStatus() === 'end') {
+            myVivus.reset().play();
+          }
+        }
+      );
+    </script>
+</body>
+
+</html>

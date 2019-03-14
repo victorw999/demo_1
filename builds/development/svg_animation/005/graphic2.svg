@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{fill:#010101;}
+	.st2{mask:url(#aflex_x5F_logo_1_);fill:#DA95AD;}
+	.slice{opacity:1;fill:#FFFFFF;}
+</style>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="1.5" y="1.5" width="97" height="97">
+		<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="1.5" y="1.5" width="97" height="97" id="aflex_x5F_logo_1_">
+	<g class="st0">
+		<g>
+			<g>
+				<path class="st1" d="M52.6,45.8c0,0-14.6-3-28.8,13.2c-13,14.9,3.6,26.3,23.8,15.4C47.6,74.5,31.2,70.4,52.6,45.8z"/>
+			</g>
+			<path class="st1" d="M61.4,19.5c4.8-0.6,28.1-6.2,14.6,12.7c0,0-5.1,6.8-5.6,7.4c-2.6,3.2-3,4-3.2,4.4c-0.9,1.4-3.7,6.6,5.2,4.7
+				c8.8-1.9,11.8-2.7,12-2.8c-0.6,1-15,23.4-15,23.4L52.3,70c-9.8-1.9-8.6-5.9-8.3-7.4c0.9-3.9,11.9-19.5,11.9-19.5
+				c4.8-9.6-9.5-5.5-12.3-4.9C39.7,39.1,26,44.3,26,44.3L36.6,23"/>
+		</g>
+	</g>
+</mask>
+<circle id="aflex_x5F_logo" class="st2" cx="50" cy="50" r="48.5"/>
+<g id="slice_group">
+	<path class="slice" d="M1.5,50c0,15.6,7.4,29.5,18.8,38.3V11.7C8.9,20.5,1.5,34.4,1.5,50z">
+		<animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0s" />
+	</path>
+	<path class="slice" d="M20.3,11.7v76.7c5.7,4.4,12.4,7.6,19.8,9.1v-95C32.8,4,26,7.2,20.3,11.7z">
+		<animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin=".2s" />
+	</path>
+	<path class="slice" d="M50,1.5c-3.4,0-6.7,0.4-9.9,1v95c3.2,0.7,6.5,1,9.9,1s6.7-0.4,9.9-1v-95C56.7,1.9,53.4,1.5,50,1.5z">
+		<animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin=".4s" />
+	</path>
+	<path class="slice" d="M59.9,2.5v95c7.3-1.5,14.1-4.7,19.8-9.1V11.7C74,7.2,67.2,4,59.9,2.5z">
+		<animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin=".6s" />
+	</path>
+
+
+	<path class="slice" d="M79.7,11.7v76.7C91.1,79.5,98.5,65.6,98.5,50C98.5,34.4,91.1,20.5,79.7,11.7z">
+		<animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin=".8s" />
+	</path>
+</g>
+</svg>
