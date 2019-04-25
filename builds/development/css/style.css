@@ -3929,6 +3929,10 @@ body#gallery03 section.mix_gallery .text {
   width: 100%;
 }
 
+/* line 1, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 {
+  /* VIEW OFFSET POSITION */
+}
 /* line 3, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
 #waypoint01 #about-us {
   background-color: white;
@@ -3971,7 +3975,27 @@ body#gallery03 section.mix_gallery .text {
   border-radius: 0;
   opacity: 0;
 }
-/* line 45, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+/* line 46, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 .progress-bar {
+  border-top: 1px solid red;
+}
+/* line 49, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 div.indicator {
+  width: 100%;
+  border-top: 1px solid red;
+  position: fixed;
+  top: 75%;
+}
+/* line 54, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 div.indicator span {
+  background: red;
+  color: white;
+  padding: 3px 6px;
+  font-size: 0.8rem;
+  margin-top: -1rem;
+  position: absolute;
+}
+/* line 61, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
 #waypoint01 .progress .progress-value {
   display: block;
   font-size: 13px;
@@ -3989,6 +4013,22 @@ body#gallery03 section.mix_gallery .text {
   0% {
     width: 0%;
   }
+}
+/* line 83, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 #features {
+  text-align: center;
+}
+/* line 87, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 #features i {
+  font-size: 2rem;
+  margin: 1rem;
+}
+/* line 91, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 #features h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
