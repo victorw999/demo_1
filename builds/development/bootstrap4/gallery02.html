@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> MixItUp3 </title>
+
+  <!-- MixItUp3 -->
+  <!-- <link rel="stylesheet" href="./css/gallery02.css"> -->
+  <link rel="stylesheet" href="./css/gallery02a.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <script src="./js/mixitup.min.js"></script>
+
+  <!-- bootstrap4 -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" /> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script> -->
+
+</head>
+
+<body>
+  <div class="main container">
+    <div class="container header">
+      <h1>MixItUp3 Filter Gallery</h1>
+      <h6>it doesn't need jQuery to work (jquery/3.1.1)</h6>
+      <h6><button class="btn btn-primary">MixItUp v3.3.1</button></h6>
+      <h6>Reversed Engineering from <a href="https://demos.kunkalabs.com/mixitup/toggle-filtering-or-logic/">LINK</a></h6>
+    </div>
+
+    <div class="mixitup">
+      <div class="controls ">
+        <ul>
+          <li class="control" data-filter="all">all</li>
+          <li class="control" data-filter=".cat1">category 1</li>
+          <li class="control" data-filter=".cat2">category 2</li>
+          <li class="control" data-filter=".cat3">category 3</li>
+          <li class="control" data-filter=".cat4">category 4</li>
+        </ul>
+        <ul class="menu">
+          <li data-filter="all">All</li>
+          <li data-filter=".cat1">Shopify</li>
+          <li data-filter=".cat2">Magento</li>
+          <li data-filter=".cat3">Bootstrap</li>
+          <li data-filter=".cat4">Javascript</li>
+          <li data-filter=".cat4">React</li>
+        </ul>
+      </div> <!-- mixitup_menu -->
+
+      <div class="mixitup_content container">
+        <div class="mix cat1"> <img src="../../images/square_1.jpg" > </div>
+        <div class="mix cat2"> <img src="../../images/square_2.jpg" > </div>
+        <div class="mix cat3"> <img src="../../images/square_3.jpg" > </div>
+        <div class="mix cat4"> <img src="../../images/square_4.jpg" > </div>
+
+        <div class="mix cat1"> <img src="../../images/square_1.jpg" > </div>
+        <div class="mix cat2"> <img src="../../images/square_2.jpg" > </div>
+        <div class="mix cat3"> <img src="../../images/square_3.jpg" > </div>
+        <div class="mix cat4"> <img src="../../images/square_4.jpg" > </div>
+
+        <div class="mix cat1"> <img src="../../images/square_1.jpg" > </div>
+        <div class="mix cat2"> <img src="../../images/square_2.jpg" > </div>
+        <div class="mix cat3"> <img src="../../images/square_3.jpg" > </div>
+        <div class="mix cat4"> <img src="../../images/square_4.jpg" > </div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+
+
+      </div> <!-- mixitup_content -->
+
+    </div> <!-- .mixitup -->
+
+  </div> <!-- container -->
+
+  <script>
+    var containerEl = document.querySelector('.mixitup_content');
+    var mixer = mixitup(containerEl);
+  </script>
+
+</body>
+
+</html>

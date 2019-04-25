@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Filter Gallery</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!-- SCSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- jQuery, WAYPOINT, MIXITUP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/waypoints_frm_findmatthrew.js"></script>
+  <script src="js/mixitup_frm_findmatthrew.js"></script>
+
+</head>
+
+<body id="gallery03">
+  <h1>Filter Gallery:</h1>
+  <h6>Reverse Engineering http://findmatthew.com</h6>
+  <li>what we learnt from this:</li>
+  <li>* using SASS forloop to load images </li>
+
+  <section></section>
+  <section></section>
+  <section class="flex mix_gallery" id="portfolio">
+
+    <div class="header waypoint  slide-in-right" data-animation="slide-in-right">PROJECTS</div>
+    <div class="header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".3s" style="animation-delay: 0.3s;"></div>
+
+    <div class="filter-wrap waypoint animated fade-in" data-animation="fade-in">
+      <div class="flex row">
+        <div class="filter active" data-filter="all">ALL</div>
+        <div class="filter" data-filter=".node">NODE.JS</div>
+        <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+        <div class="filter" data-filter=".js">JAVASCRIPT</div>
+      </div>
+      <div class="float-bar" style="left: 25px; width: 112px;">
+        <div class="flex row" style="left: -25px;">
+          <div class="filter active" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".node">NODE.JS</div>
+          <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+          <div class="filter" data-filter=".js">JAVASCRIPT</div>
+        </div>
+      </div>
+    </div> <!-- catagory header -->
+
+    <div id="gallery" class="container flex row wrap animated">
+      <div class="mix js" data-my-order="1" style="display: inline-block;" data-bound="">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Roambi</div>
+            <span class="highlight">Pure JavaScript</span>
+          </div>
+          <div class="button" id="roambi">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix rails" data-my-order="1" style="display: inline-block;" data-bound="">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Walker Tracker</div>
+            <span class="highlight">Ruby on Rails+ JS</span>
+          </div>
+          <div class="button" id="walker">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix node" data-my-order="1" style="display: inline-block;" data-bound="">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">MY STAND</div>
+            <span class="highlight">Node.js on Sails</span>
+          </div>
+          <div class="button" id="mystand">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix js" data-my-order="1" style="display: inline-block;" data-bound="">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">NEVER SURRENDER</div>
+            <span class="highlight">Pure JavaScript</span>
+          </div>
+          <div class="button" id="never">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix rails" data-my-order="1" style="display: inline-block;" data-bound="">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Powur</div>
+            <span class="highlight">Ruby on Rails + Angular</span>
+          </div>
+          <div class="button" id="powur">LEARN MORE</div>
+        </div>
+      </div>
+
+
+      <div class="mix node" data-my-order="1" style="display: inline-block;" data-bound="">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">The Mall</div>
+            <span class="highlight">Node + React.js</span>
+          </div>
+          <div class="button" id="themall">LEARN MORE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/gallery03.js"></script>
+</body>
+
+</html>

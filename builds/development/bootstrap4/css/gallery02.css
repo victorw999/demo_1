@@ -1,0 +1,25 @@
+body{
+  font-family:arial;
+}
+.mixitup_menu ul{
+  text-align: center;
+}
+.mixitup_menu ul li{
+  list-style:none;
+  display: inline-block;
+  padding:10px;
+  cursor:pointer;
+  transition:all 0.5s ease;
+}
+.mixitup_menu ul li:hover{
+  color:white;
+  background: maroon;
+}
+
+.mixitup_content .mix{
+  width:25%;
+  padding:15px;
+  box-sizing: border-box;
+  float:left;
+}
+.mixitup_content .mix img{ width:100%;height:250px;}

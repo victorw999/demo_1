@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+body#gallery03 {
+  @media screen and (min-width: 768px) {
+    padding: 0 8rem;
+  }
+  #gallery {
+    margin: 20px 0;
+    .text,
+    .button {
+      z-index: 2;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      color: #1b242f;
+    } // .text, .button
+
+    .text .bold,
+    .button .bold {
+      font-size: 16pt;
+    }
+
+    .button {
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      border: 2px solid #e31b6d;
+      width: 170px;
+      margin: 0 auto;
+      font-size: 13pt;
+      padding: 7px 0;
+    } // .button
+
+    .mix {
+      display: none;
+      position: relative;
+      .waypoint {
+        background: #fff;
+      }
+      .button:hover {
+        background: #e31b6d;
+        color: #fff;
+      }
+      .card {
+        height: 240px;
+        max-width: 100%;
+        width: calc(50vw - 8px);
+        cursor: pointer;
+        transition: opacity 0.5s;
+      } // .card
+
+      &:hover {
+        .card {
+          opacity: 0;
+        }
+        .text {
+          opacity: 1;
+          top: 24%;
+        }
+        .button {
+          opacity: 1;
+          bottom: 24%;
+        }
+      } // .mix:hover
+    } //.mix
+  } // #gallery
+
+  @for $i from 1 through 12 {
+    #gallery .mix:nth-child(#{$i}) .card {
+      background: url("http://findmatthew.com/style/../img/thumb-#{$i}.jpg")
+        center
+        center/cover;
+    }
+  }
+
+  /* FLEX */
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &.row {
+      flex-direction: row;
+    }
+    &.wrap {
+      flex-wrap: wrap;
+    }
+  } // .flex
+
+  /* CONTAINER */
+  section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  } // .container
+
+  // RESPONSIVE
+  #gallery .mix .card {
+    width: 390px;
+  }
+
+  @media screen and (max-width: 400px) {
+    #gallery .mix .card {
+      width: 100vw;
+    }
+  }
+  //------------------------------------------------------------------------------
+  @media screen and (min-width: 600px) {
+    body {
+      font-size: 12pt;
+    }
+
+    .container {
+      padding: 0 20px;
+    }
+
+    .header {
+      font-size: 30pt;
+    }
+
+    .header-bar {
+      margin: 25px 0 100px 0;
+    }
+
+    .label {
+      font-size: 18pt;
+    }
+
+    .hex-wrap {
+      height: 100px;
+      width: 100px;
+    }
+
+    .slide,
+    .carousel-wrap {
+      height: 450px;
+    }
+
+    .mdi-chevron-left,
+    .mdi-chevron-right {
+      font-size: 25pt !important;
+    }
+
+    .modal-wrap .modal {
+      top: -6vh;
+      height: initial;
+    }
+    .modal-wrap .info-box {
+      padding: 35px 60px 90px 25px;
+    }
+    .modal-wrap .title {
+      font-size: 22pt;
+      line-height: 30pt;
+    }
+    .modal-wrap .tag {
+      font-size: 11pt;
+    }
+    .modal-wrap .detail {
+      font-size: 11pt;
+      line-height: 18pt;
+      margin-top: 15px;
+    }
+    .modal-wrap .close {
+      right: 25px;
+    }
+    .modal-wrap .button {
+      left: 25px;
+    }
+
+    nav .link-wrap {
+      position: initial;
+      background: none;
+      overflow: visible;
+      height: initial;
+      text-align: left;
+    }
+    nav .link-wrap .visible {
+      height: initial;
+    }
+    nav .link-wrap div {
+      margin: 0 20px;
+      padding: initial;
+      font-size: initial;
+      display: inline;
+    }
+    nav .link-wrap div:first-child {
+      padding: 0;
+    }
+    nav .mdi-menu {
+      display: none;
+    }
+
+    section {
+      line-height: 18pt;
+      padding: 100px 0 130px 0;
+    }
+    section .container {
+      padding: 0 10px;
+    }
+    section:nth-of-type(1) .text {
+      font-size: 32pt;
+      line-height: 36pt;
+    }
+    section:nth-of-type(1) .button {
+      padding: 12px 50px 12px 20px;
+    }
+    section:nth-of-type(1) .button .mdi {
+      top: 16px;
+    }
+    section:nth-of-type(2) .label-wrap .label {
+      margin: 15px 0 5px 0;
+    }
+    section:nth-of-type(2) .label-wrap > div {
+      padding: 0 15px;
+    }
+    section:nth-of-type(2) .bullet-wrap {
+      height: 230px;
+    }
+    section:nth-of-type(2) .skills-wrapper > .flex:first-child {
+      padding: 0 50px 0 50px;
+    }
+    section:nth-of-type(2) .skills-wrapper .me {
+      height: 250px;
+    }
+    section:nth-of-type(2) .bar {
+      height: 28px;
+      margin: 0 0 15px 0;
+      font-size: 11pt;
+    }
+    section:nth-of-type(2) .bar span {
+      display: initial;
+    }
+    section:nth-of-type(2) .bar .tag {
+      width: 110px;
+    }
+    section:nth-of-type(2) .hexagon i {
+      font-size: 40pt;
+    }
+    section:nth-of-type(3) .filter {
+      font-size: 11pt;
+      margin: 0 15px;
+      padding: 0 30px;
+    }
+    section:nth-of-type(3) .float-bar {
+      height: 30px;
+    }
+    section:nth-of-type(3) #gallery .mix .card {
+      height: 300px;
+    }
+    section:nth-of-type(4) {
+      padding: 130px 0 180px 0;
+    }
+    section:nth-of-type(4) .label {
+      line-height: 22pt;
+      font-size: 16pt;
+    }
+    section:nth-of-type(4) .date {
+      font-size: 8.5pt;
+    }
+    section:nth-of-type(4) .bar {
+      margin: 15px 0px;
+    }
+    section:nth-of-type(4) .text {
+      font-size: 11pt;
+      line-height: 15pt;
+    }
+    section:nth-of-type(4) .blog-wrap {
+      width: 400px;
+    }
+    section:nth-of-type(4) .thumb {
+      height: 200px;
+    }
+    section:nth-of-type(5) form {
+      min-width: 500px;
+    }
+  }
+  // END @media (min-width: 600px)
+
+  //------------------------------------------------------------------------------
+  @media screen and (min-width: 960px) {
+    #gallery .mix .card {
+      width: 390px;
+    }
+
+    .waypoint {
+      opacity: 0;
+    }
+    .animated.waypoint#gallery {
+      opacity: 1;
+    }
+    @for $i from 1 through 12 {
+      .animated.waypoint#gallery .mix:nth-child(#{$i}) > div {
+        opacity: 0;
+        animation: slideUp 0.75s #{$i/10}s ease both;
+      }
+    }
+
+    .filter {
+      font-size: 13pt;
+      padding: 0 40px;
+      margin: 0 25px;
+    }
+
+    .animated.slide-up {
+      animation: slideUp 0.75s ease both;
+    }
+    .animated.slide-down {
+      animation: slideDown 0.75s ease both;
+    }
+    .animated.slide-in-left {
+      animation: slideInLeft 0.75s ease both;
+    }
+    .animated.slide-in-right {
+      animation: slideInRight 0.75s ease both;
+    }
+    .animated.flip-in-x {
+      animation: flipInX 0.75s ease both;
+    }
+    .animated.fade-in {
+      animation: fadeIn 0.75s ease both;
+    }
+    .animated.pop-in {
+      animation: popIn 1s both;
+    }
+
+    .canvas {
+      background: #252934;
+    }
+
+    .button {
+      font-size: 16pt;
+    }
+
+    .flex.row-gt-sm {
+      flex-direction: row;
+    }
+
+    .flex-50-gt-sm {
+      -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+      flex: 1 1 50%;
+      max-width: 50%;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+
+    section:nth-of-type(2) .bars-wrap {
+      margin: 0 0 0 0;
+    }
+    section:nth-of-type(2) .skills-wrapper {
+      margin: 50px 0 0 0;
+    }
+    section:nth-of-type(2) .skills-wrapper .me {
+      margin: 0;
+    }
+    section:nth-of-type(2) .bar {
+      max-width: 90%;
+    }
+    section:nth-of-type(2) .bullet-wrap {
+      margin: 0;
+      padding: 0 10px;
+      height: intial;
+    }
+    section:nth-of-type(3) #gallery .mix .card {
+      width: 390px;
+    }
+    section:nth-of-type(3) .filter {
+      font-size: 13pt;
+      padding: 0 40px;
+      margin: 0 25px;
+    }
+    section:nth-of-type(4) .blog-wrap {
+      width: 400px;
+      margin: 0 0 50px 20px;
+      opacity: 0;
+    }
+  } // @media (min-width: 960px)
+  //------------------------------------------------------------------------------
+
+  /* BOLD */
+  .bold {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  #gallery .text .bold,
+  #gallery .button .bold {
+    font-size: 16pt;
+  }
+
+  //------------------------------------------------------------------------------
+  section.mix_gallery {
+    background: #137ec0;
+  }
+  section.mix_gallery .container {
+    padding: 0;
+  }
+  section.mix_gallery .filter-wrap {
+    position: relative;
+  }
+  section.mix_gallery .filter {
+    font-size: 6pt;
+    font-weight: 600;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  section.mix_gallery .float-bar {
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    position: absolute;
+    margin: auto 0;
+    position: absolute;
+    overflow: hidden;
+    height: 25px;
+    border-radius: 1px;
+    background: #e31b6d;
+    transition: all 0.5s ease-in-out;
+  }
+  section.mix_gallery .float-bar .row {
+    top: 0;
+    bottom: 0;
+    left: -30px;
+    position: absolute;
+    margin: auto 0;
+    transition: left 0.5s ease-in-out;
+  }
+  section.mix_gallery .float-bar .row .filter {
+    color: #fff;
+  }
+  section.mix_gallery .text {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}

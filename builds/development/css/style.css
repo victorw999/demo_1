@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,600,800");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 /* line 5, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -3330,6 +3331,664 @@ xmp {
   border-color: white;
   border-top-left-radius: 84px;
   border-top-right-radius: 84px;
+}
+
+/* line 2, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 {
+  /* FLEX */
+  /* CONTAINER */
+  /* BOLD */
+}
+@media screen and (min-width: 768px) {
+  /* line 2, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 {
+    padding: 0 8rem;
+  }
+}
+/* line 6, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery {
+  margin: 20px 0;
+}
+/* line 8, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .text,
+body#gallery03 #gallery .button {
+  z-index: 2;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  color: #1b242f;
+}
+/* line 17, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .text .bold,
+body#gallery03 #gallery .button .bold {
+  font-size: 16pt;
+}
+/* line 22, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .button {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border: 2px solid #e31b6d;
+  width: 170px;
+  margin: 0 auto;
+  font-size: 13pt;
+  padding: 7px 0;
+}
+/* line 34, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix {
+  display: none;
+  position: relative;
+}
+/* line 37, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix .waypoint {
+  background: #fff;
+}
+/* line 40, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix .button:hover {
+  background: #e31b6d;
+  color: #fff;
+}
+/* line 44, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix .card {
+  height: 240px;
+  max-width: 100%;
+  width: calc(50vw - 8px);
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+/* line 53, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:hover .card {
+  opacity: 0;
+}
+/* line 56, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:hover .text {
+  opacity: 1;
+  top: 24%;
+}
+/* line 60, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:hover .button {
+  opacity: 1;
+  bottom: 24%;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(1) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-1.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(2) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-2.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(3) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-3.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(4) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-4.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(5) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-5.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(6) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-6.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(7) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-7.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(8) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-8.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(9) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-9.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(10) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-10.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(11) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-11.jpg") center center/cover;
+}
+/* line 69, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix:nth-child(12) .card {
+  background: url("http://findmatthew.com/style/../img/thumb-12.jpg") center center/cover;
+}
+/* line 77, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 82, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 .flex.row {
+  flex-direction: row;
+}
+/* line 85, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 .flex.wrap {
+  flex-wrap: wrap;
+}
+/* line 91, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 100, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .mix .card {
+  width: 390px;
+}
+@media screen and (max-width: 400px) {
+  /* line 105, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 #gallery .mix .card {
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 111, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 body {
+    font-size: 12pt;
+  }
+  /* line 115, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .container {
+    padding: 0 20px;
+  }
+  /* line 119, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .header {
+    font-size: 30pt;
+  }
+  /* line 123, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .header-bar {
+    margin: 25px 0 100px 0;
+  }
+  /* line 127, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .label {
+    font-size: 18pt;
+  }
+  /* line 131, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .hex-wrap {
+    height: 100px;
+    width: 100px;
+  }
+  /* line 136, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .slide,
+  body#gallery03 .carousel-wrap {
+    height: 450px;
+  }
+  /* line 141, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .mdi-chevron-left,
+  body#gallery03 .mdi-chevron-right {
+    font-size: 25pt !important;
+  }
+  /* line 146, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .modal-wrap .modal {
+    top: -6vh;
+    height: initial;
+  }
+  /* line 150, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .modal-wrap .info-box {
+    padding: 35px 60px 90px 25px;
+  }
+  /* line 153, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .modal-wrap .title {
+    font-size: 22pt;
+    line-height: 30pt;
+  }
+  /* line 157, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .modal-wrap .tag {
+    font-size: 11pt;
+  }
+  /* line 160, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .modal-wrap .detail {
+    font-size: 11pt;
+    line-height: 18pt;
+    margin-top: 15px;
+  }
+  /* line 165, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .modal-wrap .close {
+    right: 25px;
+  }
+  /* line 168, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .modal-wrap .button {
+    left: 25px;
+  }
+  /* line 172, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 nav .link-wrap {
+    position: initial;
+    background: none;
+    overflow: visible;
+    height: initial;
+    text-align: left;
+  }
+  /* line 179, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 nav .link-wrap .visible {
+    height: initial;
+  }
+  /* line 182, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 nav .link-wrap div {
+    margin: 0 20px;
+    padding: initial;
+    font-size: initial;
+    display: inline;
+  }
+  /* line 188, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 nav .link-wrap div:first-child {
+    padding: 0;
+  }
+  /* line 191, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 nav .mdi-menu {
+    display: none;
+  }
+  /* line 195, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section {
+    line-height: 18pt;
+    padding: 100px 0 130px 0;
+  }
+  /* line 199, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section .container {
+    padding: 0 10px;
+  }
+  /* line 202, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(1) .text {
+    font-size: 32pt;
+    line-height: 36pt;
+  }
+  /* line 206, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(1) .button {
+    padding: 12px 50px 12px 20px;
+  }
+  /* line 209, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(1) .button .mdi {
+    top: 16px;
+  }
+  /* line 212, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .label-wrap .label {
+    margin: 15px 0 5px 0;
+  }
+  /* line 215, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .label-wrap > div {
+    padding: 0 15px;
+  }
+  /* line 218, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .bullet-wrap {
+    height: 230px;
+  }
+  /* line 221, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .skills-wrapper > .flex:first-child {
+    padding: 0 50px 0 50px;
+  }
+  /* line 224, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .skills-wrapper .me {
+    height: 250px;
+  }
+  /* line 227, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .bar {
+    height: 28px;
+    margin: 0 0 15px 0;
+    font-size: 11pt;
+  }
+  /* line 232, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .bar span {
+    display: initial;
+  }
+  /* line 235, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .bar .tag {
+    width: 110px;
+  }
+  /* line 238, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .hexagon i {
+    font-size: 40pt;
+  }
+  /* line 241, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(3) .filter {
+    font-size: 11pt;
+    margin: 0 15px;
+    padding: 0 30px;
+  }
+  /* line 246, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(3) .float-bar {
+    height: 30px;
+  }
+  /* line 249, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(3) #gallery .mix .card {
+    height: 300px;
+  }
+  /* line 252, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(4) {
+    padding: 130px 0 180px 0;
+  }
+  /* line 255, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(4) .label {
+    line-height: 22pt;
+    font-size: 16pt;
+  }
+  /* line 259, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(4) .date {
+    font-size: 8.5pt;
+  }
+  /* line 262, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(4) .bar {
+    margin: 15px 0px;
+  }
+  /* line 265, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(4) .text {
+    font-size: 11pt;
+    line-height: 15pt;
+  }
+  /* line 269, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(4) .blog-wrap {
+    width: 400px;
+  }
+  /* line 272, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(4) .thumb {
+    height: 200px;
+  }
+  /* line 275, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(5) form {
+    min-width: 500px;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 283, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 #gallery .mix .card {
+    width: 390px;
+  }
+  /* line 287, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .waypoint {
+    opacity: 0;
+  }
+  /* line 290, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery {
+    opacity: 1;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(1) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.1s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(2) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.2s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(3) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.3s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(4) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.4s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(5) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.5s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(6) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.6s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(7) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.7s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(8) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.8s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(9) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 0.9s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(10) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 1s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(11) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 1.1s ease both;
+  }
+  /* line 294, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.waypoint#gallery .mix:nth-child(12) > div {
+    opacity: 0;
+    animation: slideUp 0.75s 1.2s ease both;
+  }
+  /* line 300, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .filter {
+    font-size: 13pt;
+    padding: 0 40px;
+    margin: 0 25px;
+  }
+  /* line 306, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.slide-up {
+    animation: slideUp 0.75s ease both;
+  }
+  /* line 309, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.slide-down {
+    animation: slideDown 0.75s ease both;
+  }
+  /* line 312, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.slide-in-left {
+    animation: slideInLeft 0.75s ease both;
+  }
+  /* line 315, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.slide-in-right {
+    animation: slideInRight 0.75s ease both;
+  }
+  /* line 318, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.flip-in-x {
+    animation: flipInX 0.75s ease both;
+  }
+  /* line 321, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.fade-in {
+    animation: fadeIn 0.75s ease both;
+  }
+  /* line 324, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .animated.pop-in {
+    animation: popIn 1s both;
+  }
+  /* line 328, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .canvas {
+    background: #252934;
+  }
+  /* line 332, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .button {
+    font-size: 16pt;
+  }
+  /* line 336, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .flex.row-gt-sm {
+    flex-direction: row;
+  }
+  /* line 340, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 .flex-50-gt-sm {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    max-width: 50%;
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+  /* line 349, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .bars-wrap {
+    margin: 0 0 0 0;
+  }
+  /* line 352, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .skills-wrapper {
+    margin: 50px 0 0 0;
+  }
+  /* line 355, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .skills-wrapper .me {
+    margin: 0;
+  }
+  /* line 358, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .bar {
+    max-width: 90%;
+  }
+  /* line 361, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(2) .bullet-wrap {
+    margin: 0;
+    padding: 0 10px;
+    height: intial;
+  }
+  /* line 366, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(3) #gallery .mix .card {
+    width: 390px;
+  }
+  /* line 369, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(3) .filter {
+    font-size: 13pt;
+    padding: 0 40px;
+    margin: 0 25px;
+  }
+  /* line 374, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+  body#gallery03 section:nth-of-type(4) .blog-wrap {
+    width: 400px;
+    margin: 0 0 50px 20px;
+    opacity: 0;
+  }
+}
+/* line 383, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 .bold {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+/* line 388, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 #gallery .text .bold,
+body#gallery03 #gallery .button .bold {
+  font-size: 16pt;
+}
+/* line 394, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section.mix_gallery {
+  background: #137ec0;
+}
+/* line 397, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section.mix_gallery .container {
+  padding: 0;
+}
+/* line 400, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section.mix_gallery .filter-wrap {
+  position: relative;
+}
+/* line 403, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section.mix_gallery .filter {
+  font-size: 6pt;
+  font-weight: 600;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+/* line 410, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section.mix_gallery .float-bar {
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  position: absolute;
+  margin: auto 0;
+  position: absolute;
+  overflow: hidden;
+  height: 25px;
+  border-radius: 1px;
+  background: #e31b6d;
+  transition: all 0.5s ease-in-out;
+}
+/* line 423, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section.mix_gallery .float-bar .row {
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  position: absolute;
+  margin: auto 0;
+  transition: left 0.5s ease-in-out;
+}
+/* line 431, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section.mix_gallery .float-bar .row .filter {
+  color: #fff;
+}
+/* line 434, ../../../components/sass/modules_vicmod_css/_gallery03.scss */
+body#gallery03 section.mix_gallery .text {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 3, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 #about-us {
+  background-color: white;
+  padding: 60px 0;
+}
+/* line 8, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 #about-us h2 {
+  margin-top: 0;
+  color: #333;
+}
+/* line 13, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 #about-us .lead {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* line 18, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 #about-us h1 {
+  margin-bottom: 30px;
+}
+/* line 22, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 .progress-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+/* line 29, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 .progress {
+  height: 20px;
+  line-height: 15px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  margin-bottom: 30px;
+  box-shadow: none;
+  overflow: visible;
+}
+/* line 39, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 .progress-bar {
+  position: relative;
+  border-radius: 0;
+  opacity: 0;
+}
+/* line 45, ../../../components/sass/modules_vicmod_css/_waypoint01.scss */
+#waypoint01 .progress .progress-value {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+@-webkit-keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
