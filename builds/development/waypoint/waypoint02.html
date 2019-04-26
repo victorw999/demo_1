@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>waypoint</title>
+
+  <!-- SCSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- WAYPOINT JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <style>
+    .prompt{position: fixed; background:lightblue; width:50%; color:blue; margin:auto; left:0; right:0; opacity:.7; }
+    .header.container {
+      height: 50vh;
+    }
+
+    .gap {
+      height: 100vh;
+    }
+
+    #basic-waypoint, #direction-waypoint, #px-offset-waypoint, #element-waypoint {
+      border-top: 1px solid red;
+      width: 100%;
+      color: red;
+    }
+    .marker{
+      border-top: 0.5px solid grey;
+      width: 10%;
+      color: grey; position: fixed;left:0;right:0;margin: auto; font-size: 0.9rem;
+    }
+    .marker.one{top:50px;}
+    .marker.two{top:75%;}
+  </style>
+</head>
+
+<body id="waypoint01">
+  <div class="prompt">test</div>
+  <div class="marker one">50px</div>
+  <div class="marker two">75%</div>
+  <div class="container header">
+    <p> <a class="btn btn-primary m-5" href="http://imakewebthings.com/waypoints/guides/getting-started/"> REF tutorial</a></p>
+  </div> <!-- container header -->
+
+  <div id="basic-waypoint">basic-waypoint</div>
+  <div class="gap"></div>
+
+  <div id="direction-waypoint">direction-waypoint</div>
+  <div class="gap"></div>
+
+  <div id="px-offset-waypoint">px-offset-waypoint</div>
+  <div class="gap"></div>
+
+  <div id="element-waypoint">element-waypoint</div>
+  <div class="gap"></div>
+
+
+  <div class="gap"></div>
+
+  <!-- <script src="http://imakewebthings.com/waypoints/js/infinite.min.js"></script>
+  <script src="http://imakewebthings.com/waypoints/js/inview.min.js"></script>
+  <script src="http://imakewebthings.com/waypoints/js/sticky.min.js"></script>
+  <!-- <script src="js/waypoint02.js"></script> --> -->
+  <script>
+    function random(){
+      return Math.floor(Math.random() * 100);
+    }
+    var prompt = document.querySelector(".prompt")
+    var waypoint = new Waypoint({
+      element: document.getElementById('basic-waypoint'),
+      handler: function() {
+        prompt.innerHTML=("Basic waypoint triggered " + random() );
+      }
+    })
+
+    // SHOW TRIGGER DIRECTION
+    var waypoint = new Waypoint({
+      element: document.getElementById('direction-waypoint'),
+      handler: function(direction) {
+        prompt.innerHTML=('Direction: ' + direction + " " + random() );
+      }
+    })
+
+    // OFFSET TRIGGER 50px from TOP
+    var waypoint = new Waypoint({
+      element: document.getElementById('px-offset-waypoint'),
+      handler: function(direction) {
+        prompt.innerHTML=('I am 50px from the top of the window ' + random() );
+      },
+      offset: 50
+    })
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('element-waypoint'),
+      handler: function(direction) {
+        prompt.innerHTML=(this.element.id + ' triggers at ' + this.triggerPoint + " " + random() );
+      },
+      offset: '75%'
+    })
+
+
+
+  </script>
+</body>
+
+</html>
