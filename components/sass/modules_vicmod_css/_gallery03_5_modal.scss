@@ -1,0 +1,174 @@
+body#gallery03 {
+  .carousel-wrap {
+    position: relative;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .window {
+    overflow: hidden;
+    position: relative;
+    background: #222;
+  }
+
+  #carousel {
+    width: 10000px;
+    position: relative;
+    top: 0;
+  }
+
+  .slide {
+    height: 250px;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mdi-chevron-left,
+  .mdi-chevron-right {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14pt !important;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .mdi-chevron-left {
+    left: 0;
+  }
+
+  .mdi-chevron-right {
+    right: 0;
+  }
+
+  .transition {
+    transition: 0.7s;
+  }
+
+  .modal-wrap {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .modal-wrap .mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .modal-wrap .modal {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+    color: #333;
+    height: 100vh;
+  }
+
+  .modal-wrap .close {
+    bottom: 25px;
+    right: 10px;
+    color: #bbb;
+    font-size: 20pt;
+    position: absolute;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  .modal-wrap .info-box {
+    border-top: 3px solid #1b242f;
+    padding: 15px 10px 85px 10px;
+    box-sizing: border-box;
+    color: #444;
+  }
+
+  .modal-wrap .title {
+    font-size: 16pt;
+    line-height: 20pt;
+    font-family: "Raleway-bold";
+  }
+
+  .modal-wrap .tag {
+    display: block;
+    font-weight: 300;
+    color: #c0c0c0;
+    font-family: "Raleway-bold";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    font-size: 8pt;
+  }
+
+  .modal-wrap .detail {
+    font-size: 9pt;
+    line-height: 14pt;
+    margin-top: 13px;
+  }
+
+  .modal-wrap .mdi-open-in-new {
+    position: relative;
+    left: -10px;
+    font-size: 11pt;
+  }
+
+  .modal-wrap .button {
+    padding: 11px 30px;
+    font-size: 10pt;
+    transition: all 0.5s;
+    cursor: pointer;
+    background: #e31b6d;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+  }
+
+  .modal-wrap .button.visible {
+    pointer-events: initial;
+    visibility: visible;
+  }
+
+  .modal-wrap .button:hover {
+    color: #e31b6d;
+    background: #fff;
+  }
+
+  .modal-wrap .carousel {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .modal-wrap.visible {
+    pointer-events: initial;
+  }
+
+  .modal-wrap.visible .modal {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .modal-wrap.visible .mask {
+    opacity: 1;
+  }
+} // body#gallery03

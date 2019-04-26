@@ -1,0 +1,115 @@
+body#gallery03 {
+  @media screen and (min-width: 960px) {
+    .waypoint {
+      opacity: 0;
+    }
+
+    .animated.waypoint#gallery {
+      opacity: 1;
+    }
+
+    @for $i from 1 through 6 {
+      .animated.waypoint#gallery .mix:nth-child(#{$i}) > div {
+        opacity: 0;
+        animation: slideUp 0.75s #{$i/10}s ease both;
+      }
+    }
+
+    .animated.slide-up {
+      animation: slideUp 0.75s ease both;
+    }
+
+    .animated.slide-down {
+      animation: slideDown 0.75s ease both;
+    }
+
+    .animated.slide-in-left {
+      animation: slideInLeft 0.75s ease both;
+    }
+
+    .animated.slide-in-right {
+      animation: slideInRight 0.75s ease both;
+    }
+
+    .animated.flip-in-x {
+      animation: flipInX 0.75s ease both;
+    }
+
+    .animated.fade-in {
+      animation: fadeIn 0.75s ease both;
+    }
+
+    .animated.pop-in {
+      animation: popIn 1s both;
+    }
+
+    .canvas {
+      background: #252934;
+    }
+
+    .button {
+      font-size: 16pt;
+    }
+
+    .flex.row-gt-sm {
+      flex-direction: row;
+    }
+
+    .flex-50-gt-sm {
+      -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+      flex: 1 1 50%;
+      max-width: 50%;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+
+    section:nth-of-type(2){
+      .bars-wrap {
+        margin: 0 0 0 0;
+      }
+      .skills-wrapper {
+        margin: 50px 0 0 0;
+        .me {
+          margin: 0;
+        }
+      }
+      .bar {
+        max-width: 90%;
+      }
+      .bullet-wrap {
+        margin: 0;
+        padding: 0 10px;
+        height: intial;
+      }
+    }//   section:nth-of-type(2)
+
+
+    section:nth-of-type(3){
+      #gallery{
+        .mix .card {
+          width: 390px;
+        }
+      }//  #gallery
+      .filter {
+        font-size: 13pt;
+        padding: 0 40px;
+        margin: 0 25px;
+      }//.filter
+    }//section:nth-of-type(3)
+
+    section:nth-of-type(4) .blog-wrap {
+      width: 400px;
+      margin: 0 0 50px 20px;
+      opacity: 0;
+    }
+  } // @media screen and (min-width: 960px)
+
+  @media screen and (min-width: 1280px) {
+    section:nth-of-type(4) .blog-wrap {
+      width: 270px;
+      margin: 0 0 50px 20px;
+    }
+  }//@media screen and (min-width: 1280px)
+
+} // body#gallery03

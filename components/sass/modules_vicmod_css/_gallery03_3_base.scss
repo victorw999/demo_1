@@ -1,0 +1,144 @@
+body#gallery03 {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  body {
+    color: #fff;
+    font-family: "Raleway";
+    text-align: center;
+    margin: 0px;
+    font-size: 8pt;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  #preload {
+    display: none;
+  }
+
+  .disable-hover {
+    pointer-events: none;
+  }
+
+  .overflow-wrap {
+    overflow-x: hidden;
+  }
+
+  .canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: url("http://findmatthew.com/style/../img/filler.png") center
+      center/cover;
+  }
+
+  .button {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 13pt;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #04c2c9;
+    border-color: #04c2c9;
+  }
+
+  .button .mdi {
+    vertical-align: middle;
+  }
+
+  .bold {
+    font-family: "Raleway-bold";
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex.row {
+    flex-direction: row;
+  }
+
+  .flex.wrap {
+    flex-wrap: wrap;
+  }
+
+  .hex-wrap {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+
+  .hexagon {
+    background-color: #04c2c9;
+    height: 100%;
+    width: calc(100% * 0.57735);
+    display: inline-block;
+  }
+
+  .hexagon:before {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: "";
+    transform: rotateZ(60deg);
+  }
+
+  .hexagon:after {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: "";
+    transform: rotateZ(-60deg);
+  }
+
+  .highlight {
+    color: #e31b6d;
+  }
+
+  .header {
+    font-size: 25pt;
+    //font-family: "raleway-bold";
+    color: #444649;
+    position: relative;
+    font-family: "raleway";
+    font-weight: 700;
+  }
+
+  .header-bar {
+    margin: 25px 0 75px 0;
+    width: 70px;
+    height: 4px;
+    background: #444649;
+  }
+
+  .label {
+    font-size: 14pt;
+    font-weight: 500;
+  }
+
+  .resume {
+    background: #455261;
+    height: 100px;
+  }
+} // body#gallery03
