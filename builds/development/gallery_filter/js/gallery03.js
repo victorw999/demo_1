@@ -72,7 +72,7 @@ $(function() {
     lockTimer = setTimeout(function() {
       $('body').removeClass('disable-hover')
     }, 500);
-  });
+  }); //  $(window).on('scroll'
 
   function highlightLink(anchor) {
     $('nav .active').removeClass('active');

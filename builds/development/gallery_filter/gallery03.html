@@ -39,15 +39,15 @@
   <section></section>
   <section class="flex mix_gallery" id="portfolio">
 
-    <div class="header waypoint slide-in-right animated" data-animation="slide-in-right">PROJECTS</div>
+    <div class="header waypoint slide-in-right animated" data-animation="slide-in-right">LOVEUSA</div>
     <div class="header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".3s" style="animation-delay: 0.3s;"></div>
 
     <div class="filter-wrap waypoint animated fade-in" data-animation="fade-in">
       <div class="flex row">
-        <div class="filter active"  data-filter="all">ALL</div>
-        <div class="filter"         data-filter=".node">NODE.JS</div>
-        <div class="filter"         data-filter=".rails">RUBY/RAILS</div>
-        <div class="filter"         data-filter=".js">JAVASCRIPT</div>
+        <div class="filter"  data-filter="all">TEE</div>
+        <div class="filter"  data-filter=".node">NODE.JS</div>
+        <div class="filter"  data-filter=".rails">RUBY/RAILS</div>
+        <div class="filter"  data-filter=".js">JAVASCRIPT</div>
       </div>
       <div class="float-bar" style="left: 25px; width: 112px;">
         <div class="flex row" style="left: -25px;">
@@ -128,11 +128,34 @@
     </div>     <!-- #gallery -->
   </section>
 
-  <!-- <script src="js/gallery03.js"></script> -->
+  <script src="js/gallery03.js"></script>
   <script>
     // try using gallery02.html's way trigger MixItUp
-    var containerEl = document.querySelector('#gallery');
-    var mixer = mixitup(containerEl);
+    // var containerEl = document.querySelector('#gallery');
+    // var mixer = mixitup(containerEl);
+
+
+      // RESIZE RESETS
+      $(window).resize(function() {
+        posFilterBar($('.filter').first());
+      });
+
+      posFilterBar($('.filter').first());
+
+      $('.filter').click(function() {
+        posFilterBar(this);
+      });
+
+      function posFilterBar(elem) {
+        var origin = $(elem).parent().offset().left;
+        var pos = $(elem).offset().left;
+        $('.float-bar').css({
+          left: pos - origin,
+          width: $(elem).innerWidth()
+        });
+        $('.float-bar .row').css('left', (pos - origin) * -1);
+      }
+
   </script>
 
 </body>
