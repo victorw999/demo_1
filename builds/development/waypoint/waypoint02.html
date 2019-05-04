@@ -18,7 +18,17 @@
   <!-- WAYPOINT JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <style>
-    .prompt{position: fixed; background:lightblue; width:50%; color:blue; margin:auto; left:0; right:0; opacity:.7; }
+    .prompt {
+      position: fixed;
+      background: lightblue;
+      width: 50%;
+      color: blue;
+      margin: auto;
+      left: 0;
+      right: 0;
+      opacity: .7;
+    }
+
     .header.container {
       height: 50vh;
     }
@@ -27,22 +37,37 @@
       height: 100vh;
     }
 
-    #basic-waypoint, #direction-waypoint, #px-offset-waypoint, #element-waypoint {
+    #basic-waypoint,
+    #direction-waypoint,
+    #px-offset-waypoint,
+    #element-waypoint {
       border-top: 1px solid red;
       width: 100%;
       color: red;
     }
-    .marker{
+
+    .marker {
       border-top: 0.5px solid grey;
       width: 10%;
-      color: grey; position: fixed;left:0;right:0;margin: auto; font-size: 0.9rem;
+      color: grey;
+      position: fixed;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: 0.9rem;
     }
-    .marker.one{top:50px;}
-    .marker.two{top:75%;}
+
+    .marker.one {
+      top: 50px;
+    }
+
+    .marker.two {
+      top: 75%;
+    }
   </style>
 </head>
 
-<body id="waypoint01">
+<body id=" ">
   <div class="prompt">test</div>
   <div class="marker one">50px</div>
   <div class="marker two">75%</div>
@@ -68,16 +93,17 @@
   <!-- <script src="http://imakewebthings.com/waypoints/js/infinite.min.js"></script>
   <script src="http://imakewebthings.com/waypoints/js/inview.min.js"></script>
   <script src="http://imakewebthings.com/waypoints/js/sticky.min.js"></script>
-  <!-- <script src="js/waypoint02.js"></script> --> -->
+  <!-- <script src="js/waypoint02.js"></script> -->
+  -->
   <script>
-    function random(){
+    function random() {
       return Math.floor(Math.random() * 100);
     }
     var prompt = document.querySelector(".prompt")
     var waypoint = new Waypoint({
       element: document.getElementById('basic-waypoint'),
       handler: function() {
-        prompt.innerHTML=("Basic waypoint triggered " + random() );
+        prompt.innerHTML = ("Basic waypoint triggered " + random());
       }
     })
 
@@ -85,7 +111,7 @@
     var waypoint = new Waypoint({
       element: document.getElementById('direction-waypoint'),
       handler: function(direction) {
-        prompt.innerHTML=('Direction: ' + direction + " " + random() );
+        prompt.innerHTML = ('Direction: ' + direction + " " + random());
       }
     })
 
@@ -93,7 +119,7 @@
     var waypoint = new Waypoint({
       element: document.getElementById('px-offset-waypoint'),
       handler: function(direction) {
-        prompt.innerHTML=('I am 50px from the top of the window ' + random() );
+        prompt.innerHTML = ('I am 50px from the top of the window ' + random());
       },
       offset: 50
     })
@@ -101,13 +127,10 @@
     var waypoint = new Waypoint({
       element: document.getElementById('element-waypoint'),
       handler: function(direction) {
-        prompt.innerHTML=(this.element.id + ' triggers at ' + this.triggerPoint + " " + random() );
+        prompt.innerHTML = (this.element.id + ' triggers at ' + this.triggerPoint + " " + random());
       },
       offset: '75%'
     })
-
-
-
   </script>
 </body>
 

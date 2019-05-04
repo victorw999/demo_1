@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>waypoint04</title>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- WAYPOINT JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <style>
+    .prompt {
+      position: fixed; text-align: center; font-size: 1.2rem; padding:0.8rem;
+      z-index: 999;
+      background: black; color:white;
+      opacity: .7;
+    }
+
+    .gap {
+      height: 100vh;
+    }
+
+    #basic-waypoint {
+      border-top: 1px solid red;
+      width: 100%;
+      color: red;
+    }
+
+    .marker {
+      border-top: 0.5px solid red;
+      z-index: 999;
+      width: 10%;
+      color: red;
+      position: fixed;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: 0.9rem;
+    }
+
+    .marker.one {
+      top: 200px;
+    }
+
+    .marker.two {
+      top: 75%;
+    }
+  </style>
+</head>
+
+<body id="waypoint04">
+  <div class="prompt container-fluid">test</div>
+  <div class="marker one">200px</div>
+  <div class="marker two">75%</div>
+  <div class="container header bg-light">
+    <h1 class="p-5 text-center display-4">Use Waypoint.js to trigger progress bar</h1>
+    <p> <a class="btn btn-primary m-5" href="http://imakewebthings.com/waypoints/guides/getting-started/"> REF tutorial</a></p>
+  </div> <!-- container header -->
+
+  <div id="basic-waypoint">basic-waypoint</div>
+
+
+  <style>
+    .container {
+      background: #d7d7d7;
+    }
+
+    .bar {
+      background: lightblue;
+    }
+
+    .tag,
+    .caption {
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      /* center text */
+      padding: 1rem;
+      width: 10%;
+    }
+
+    .tag {
+      background: LimeGreen;
+    }
+
+    .caption {
+      background: Chocolate;
+      /* //margin-left: auto; */
+    }
+
+    .fill-area {
+      border: 1px solid black;
+      width: 100%;
+      display: flex;
+    }
+
+    .fill {
+      background: DarkGreen;
+      width: 75%;
+      opacity: 0;
+    }
+
+    @keyframes animate-positive {
+      0% {
+        width: 0%;
+      }
+    }
+  </style>
+
+
+  <div class="container">
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-8 text-center bg-warning ">
+        <h4 class="display-4 text-center p-4" style="font-size:2rem;">the fill area is perfectly aligned</h4>
+
+        <!-- .bar -->
+        <div class="bar d-flex justify-content-between">
+          <div class="tag">SKU</div>
+          <div class="fill-area">
+            <div class="fill"></div>
+          </div>
+          <span class="caption">85%</span>
+        </div>
+        <!-- .bar -->
+
+      </div>
+    </div>
+  </div><!-- .progress_bar -->
+
+
+  <div class="gap"></div>
+  <div class="footer container bg-dark">Footer</div>
+  <script>
+    function random() {
+      return Math.floor(Math.random() * 100);
+    }
+    var prompt = document.querySelector(".prompt")
+    var waypoint = new Waypoint({
+      element: document.getElementById('basic-waypoint'),
+      handler: function() {
+        prompt.innerHTML = ("Basic waypoint triggered " + random());
+        $('.fill').css({
+          animation: 'animate-positive 2s',
+          opacity: "1"
+        });
+      },
+      offset: 200
+    })
+
+    var waypoint2 = new Waypoint({
+      element: document.getElementById('waypoint04'), /* body's ID */
+      handler: function(direction) {
+        prompt.innerHTML = ("Bottom of <body> hit bottom of viewport" + random());
+        $('.fill').css({
+          animation: '',
+          opacity: "0"
+        });
+      },
+      offset: 'bottom-in-view'     /* ref: http://imakewebthings.com/waypoints/api/offset-option/#bottom-in-view */
+    })
+  </script>
+</body>
+
+</html>
