@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>js promise 001</title>
+</head>
+
+<body>
+  <h3>
+    <a href="https://www.youtube.com/watch?v=MYOaw8ZrwGU">youtube: Wrap AJAX in a Promise</a>
+    <a href="https://www.lynda.com/Web-Development-tutorials/What-relationship-between-promises-callbacks/580663/704857-4.html">lynda: JS Promise, then()</a></h3>
+    <p>This tutorial is excellent on explaining how he catches errors and exceptions</p>
+  <script type="text/javascript">
+
+    function promiseJax (url, parseJson){
+      return new Promise(function(resolve, reject) {
+        const xhr = new XMLHttpRequest();
+
+        xhr.onload = function(){
+          resolve(this);
+        }
+
+        xhr.onerror = function() {
+          reject(new Error("network error!"));
+        }
+
+        xhr.open('get', url);
+        xhr.send();
+      });
+    }
+
+    promiseJax('data/people1.json', true).then( (xhr) => {
+      if(xhr.status !== 200) {
+        console.log("there is a error: status is not 200");
+      }
+      console.log(jsonString);
+    }).catch(function (err) {
+      console.error(err);
+    })
+
+  </script>
+</body>
+
+</html>

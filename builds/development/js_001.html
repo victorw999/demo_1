@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>js promise 001</title>
+</head>
+
+<body>
+  <h3><a href="https://www.lynda.com/Web-Development-tutorials/What-relationship-between-promises-callbacks/580663/704857-4.html">lynda: JS Promise, then()</a></h3>
+  <button class="load-calendar">load-calendar-first</button><br>
+  <button class="load-artists">load-artists-first</button>
+
+  <script type="text/javascript">
+    var lynda_url = 'https://raw.githubusercontent.com/planetoftheweb/masteringcode/EP018e/builds/masteringcode/js/data.json';
+    var calendar, artists;
+
+    function loadData(url) {
+      return new Promise(function(resolve, reject) {
+        var req = new XMLHttpRequest();
+        req.open('GET', url);
+        req.onload = function() {
+          if (req.status == 200) {
+            console.log("...getting " + url);
+            resolve(JSON.parse(req.response));
+          } else {
+            reject(Error(' onload callback: problem loading data'));
+          }
+        } // onload callback
+
+        req.send();
+      }); /* new Promise */
+    }
+
+    calendar = loadData('data/data_schedule1.json');
+    artists = loadData('data/data_artists.json');
+
+    document.querySelector('.load-calendar')
+      .addEventListener('click', function() {
+        calendar.then((data) => {
+          console.log(data);
+          return artists;
+        }, function(error) {
+          console.log("Problem !!! ", error);
+        }).then(function(otherData) {
+          console.log(otherData);
+        })
+      });
+
+    document.querySelector('.load-artists')
+      .addEventListener('click', function() {
+        artists.then((data) => {
+          console.log(data);
+          return calendar;
+        }, function(error) {
+          console.log("problem", error);
+        }).then(function(otherData) {
+          console.log(otherData);
+        })
+      });
+
+
+    // loadData(lynda_url).then(() => {
+    //     console.log('starting...')
+    //   })
+    //   .then((data) => {
+    //     console.log(data);
+    //   }).then((data) => {
+    //     console.log("finished")
+    //   });
+  </script>
+</body>
+
+</html>
